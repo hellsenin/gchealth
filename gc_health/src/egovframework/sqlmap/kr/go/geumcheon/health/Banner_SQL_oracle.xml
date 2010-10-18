@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Banner">
+
+    
+	<typeAlias  alias="Banner" 	type="egovframework.kr.go.geumcheon.health.vo.Banner"/> 
+    	
+    <select id="BannerDAO.selectBannerPK" resultClass="int">
+		<![CDATA[ 
+			SELECT SEQ_BANNER.NEXTVAL AS CODE FROM DUAL
+		 ]]>
+    </select>
+    
+    
+	<select id="BannerDAO.selectBannerListTotCnt" parameterClass="Banner" resultClass="int">
+		<![CDATA[
+			SELECT  COUNT(*) as totcnt 
+			  FROM  BANNER
+			 WHERE	IS_DEL LIKE 'N' 
+		]]>
+		
+		<isNotEmpty prepend="AND" property="searchKeyword">
+				BNR_NM LIKE '%$searchKeyword$%'
+		</isNotEmpty>
+		
+	</select>
+	
+	
+	<select id="BannerDAO.selectBannerList" parameterClass="Banner" resultClass="Banner">
+		<![CDATA[
+			SELECT  * 
+				FROM  (
+					SELECT ROWNUM AS RNUM, ALL_LIST.* 
+					FROM  (
+					SELECT	BNR_CD
+					, BNR_NM
+					, BNR_URL
+					, BNR_IMG_PATH
+					, DEPT_ID
+					, REG_DT
+					, REG_USER_ID
+					, LAST_MOD_DT
+					, LAST_MOD_USER_ID
+					, IS_DEL
+					, PUBLISH
+					, DEPT
+					, DONG
+					, BNR_IMG_ORG_NM
+					, BNR_IMG_NM
+					  FROM  BANNER
+	 			     WHERE	IS_DEL LIKE 'N' 
+		]]>
+		<isNotEmpty prepend="AND" property="searchKeyword">
+				BNR_NM LIKE '%$searchKeyword$%'
+		</isNotEmpty>
+		
+		
+		<![CDATA[
+				ORDER BY	REG_DT DESC) ALL_LIST 
+				) 
+			 WHERE  RNUM > $firstIndex$
+			   AND  RNUM <= $firstIndex$ + $recordCountPerPage$
+		]]>
+	</select>
+	
+	
+	<select id="BannerDAO.selectPublishList" parameterClass="Banner" resultClass="Banner">
+		<![CDATA[
+				SELECT	BNR_CD
+					, BNR_NM
+					, BNR_URL
+					, BNR_IMG_PATH
+					, DEPT_ID
+					, REG_DT
+					, REG_USER_ID
+					, LAST_MOD_DT
+					, LAST_MOD_USER_ID
+					, IS_DEL
+					, PUBLISH
+					, DEPT
+					, DONG
+					, BNR_IMG_ORG_NM
+					, BNR_IMG_NM
+				  FROM  BANNER
+			     WHERE	IS_DEL LIKE 'N' 
+			     		AND PUBLISH = 'Y'
+			     		AND DEPT = '$dept$'
+			     		AND DONG = '$dong$' 
+			ORDER BY	REG_DT DESC
+		]]>
+	</select>
+	
+	<select id="BannerDAO.selectPublishDeptList" parameterClass="Banner" resultClass="Banner">
+		<![CDATA[
+				SELECT	BNR_CD
+					, BNR_NM
+					, BNR_URL
+					, BNR_IMG_PATH
+					, DEPT_ID
+					, REG_DT
+					, REG_USER_ID
+					, LAST_MOD_DT
+					, LAST_MOD_USER_ID
+					, IS_DEL
+					, PUBLISH
+					, DEPT
+					, DONG
+					, BNR_IMG_ORG_NM
+					, BNR_IMG_NM
+				  FROM  BANNER
+			     WHERE	IS_DEL LIKE 'N' 
+			     		AND PUBLISH = 'Y'
+			ORDER BY	REG_DT DESC
+		]]>
+	</select>
+	
+	
+	
+	
+	<select id="BannerDAO.selectBannerDetail" parameterClass="Banner" resultClass="Banner">
+		<![CDATA[
+			SELECT	BNR_CD
+					, BNR_NM
+					, BNR_URL
+					, BNR_IMG_PATH
+					, DEPT_ID
+					, REG_DT
+					, REG_USER_ID
+					, LAST_MOD_DT
+					, LAST_MOD_USER_ID
+					, IS_DEL
+					, PUBLISH
+					, DEPT
+					, DONG
+					, BNR_IMG_ORG_NM
+					, BNR_IMG_NM
+			  FROM  BANNER
+			 WHERE	BNR_CD = $bnr_cd$
+		]]>
+	</select>
+	
+	
+	
+	<update id="BannerDAO.updateBanner" parameterClass="Banner">
+		<![CDATA[
+            UPDATE  BANNER  
+               SET  BNR_NM				= '$bnr_nm$'
+					, BNR_URL			= '$bnr_url$'
+					, BNR_IMG_PATH		= '$bnr_img_path$'
+					, DEPT_ID			= '$dept_id$'
+					, LAST_MOD_DT		= SYSDATE
+					, LAST_MOD_USER_ID	= '$last_mod_user_id$'
+					, PUBLISH			= '$publish$'
+					, DEPT				= '$dept$'
+					, DONG				= '$dong$'
+					, BNR_IMG_ORG_NM    = '$bnr_img_org_nm$'
+					, BNR_IMG_NM        = '$bnr_img_nm$'
+             WHERE	BNR_CD = $bnr_cd$
+		]]>
+	</update>
+	
+	<insert id="BannerDAO.insertBanner" parameterClass="Banner">
+		<![CDATA[
+		    INSERT 
+		      INTO  BANNER
+		        (	BNR_CD
+					, BNR_NM
+					, BNR_URL
+					, BNR_IMG_PATH
+					, DEPT_ID
+					, REG_DT
+					, REG_USER_ID
+					, LAST_MOD_DT
+					, LAST_MOD_USER_ID
+					, IS_DEL
+					, PUBLISH
+					, DEPT
+					, DONG
+					, BNR_IMG_ORG_NM
+					, BNR_IMG_NM
+		        ) 
+		    VALUES  
+		        (	$bnr_cd$
+					, '$bnr_nm$'
+					, '$bnr_url$'
+					, '$bnr_img_path$'
+					, '$dept_id$'
+					, SYSDATE
+					, '$reg_user_id$'
+					, SYSDATE
+					, '$last_mod_user_id$'
+					, 'N'
+					, '$publish$'
+					, '$dept$'
+					, '$dong$'
+					, #bnr_img_org_nm#
+					, #bnr_img_nm#
+		        ) 
+		]]>
+	</insert>
+	
+	
+	<delete id="BannerDAO.deleteBanner" parameterClass="Banner">
+		<![CDATA[
+		    DELETE FROM BANNER WHERE BNR_CD = $bnr_cd$
+		]]>
+	</delete>
+	
+
+</sqlMap>

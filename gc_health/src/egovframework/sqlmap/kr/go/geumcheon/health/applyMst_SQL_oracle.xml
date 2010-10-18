@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="applyMst">
+
+	<typeAlias  alias="zvl" type="egovframework.kr.go.geumcheon.health.util.ZValue"/>
+    			
+	<insert id="applyMstDAO.addApplyMst" parameterClass="zvl">
+		<![CDATA[ 			
+		     INSERT INTO PRTLTAPPLY_MASTER 
+			( 
+				APPLY_CODE
+				,APPLY_NAME
+				,APPLY_DESC
+				,APPLY_ATTRB
+				,REPLY_YN
+				,REG_DATE
+				,USE_YN 
+				,FILE_ATTATCH_YN
+			)
+			VALUES ( 
+				#applyCode#
+				,#applyName#
+				,#applyDesc#
+				,#applyAttrb#
+				,#replyYn#
+				,SYSDATE
+				,#useYn#  
+				,#fileAttatchYn#
+			)
+		]]> 
+	</insert>
+		
+	<update id="applyMstDAO.modifyApplyMst" parameterClass="zvl">
+		<![CDATA[ 			
+		    UPDATE PRTLTAPPLY_MASTER 
+			SET 
+				 APPLY_NAME=#applyName#
+				,APPLY_DESC=#applyDesc#
+				,APPLY_ATTRB=#applyAttrb#
+				,REPLY_YN=#replyYn#
+				,USE_YN =#useYn#  
+				,FILE_ATTATCH_YN=#fileAttatchYn#
+			WHERE
+				APPLY_CODE = #applyCode#
+		]]> 
+	</update>
+		
+	<select id="applyMstDAO.selectApplyMst" parameterClass="string" resultClass="zvl">
+		<![CDATA[ 
+			SELECT 
+				 APPLY_CODE
+				,APPLY_NAME
+				,APPLY_DESC
+				,APPLY_ATTRB
+				,REPLY_YN
+				,REG_DATE
+				,USE_YN 
+				,FILE_ATTATCH_YN
+			FROM PRTLTAPPLY_MASTER
+			WHERE APPLY_CODE = #applyCode#
+		 ]]>
+	</select>	
+		
+	<select id="applyMstDAO.selectApplyMstList" parameterClass="zvl" resultClass="zvl">
+		<![CDATA[ 
+			SELECT * FROM ( SELECT rownum rn, TB.* FROM (
+			SELECT 
+				 APPLY_CODE
+				,APPLY_NAME
+				,APPLY_ATTRB
+				,REPLY_YN
+				,REG_DATE
+				,USE_YN 
+			FROM PRTLTAPPLY_MASTER
+			WHERE 1=1
+		 ]]>
+			<isEqual property="searchType" compareValue="1">
+				<isNotEmpty prepend="AND" property="searchTxt">
+					<![CDATA[	APPLY_NAME LIKE '%' || #searchTxt# || '%'	]]>
+				</isNotEmpty>
+			</isEqual>
+		<![CDATA[ 
+			ORDER BY 
+				REG_DATE DESC
+		       ) TB )  WHERE rn BETWEEN #firstIndex# + 1 AND #firstIndex# + #recordCountPerPage#
+		 ]]>
+	</select>	
+		
+	<select id="applyMstDAO.selectApplyMstListCnt" parameterClass="zvl" resultClass="int">
+		<![CDATA[ 
+			SELECT COUNT(*) 
+			FROM PRTLTAPPLY_MASTER
+			WHERE 1=1
+		 ]]>
+			<isEqual property="searchType" compareValue="1">
+				<isNotEmpty prepend="AND" property="searchTxt">
+					<![CDATA[	APPLY_NAME LIKE '%' || #searchTxt# || '%'	]]>
+				</isNotEmpty>
+			</isEqual>
+	</select>	
+		
+</sqlMap>                            

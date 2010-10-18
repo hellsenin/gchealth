@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="minwon">
+	
+	<typeAlias  alias="zvl" type="egovframework.kr.go.geumcheon.health.util.ZValue"/>
+    <typeAlias  alias="minwonVO" type="egovframework.kr.go.geumcheon.health.vo.MinwonVO"/>
+    <typeAlias  alias="minwonFileVO" type="egovframework.kr.go.geumcheon.health.vo.MinwonFileVO"/>
+     		
+	<resultMap id="apply" class="zvl">
+		<result property="applyId" 		column="APPLY_ID"/>
+		<result property="applyCode" 	column="APPLY_CODE"/>
+		<result property="onlineId" 	column="ONLINE_ID"/>
+		<result property="name" 		column="NAME"/>
+		<result property="email" 		column="EMAIL"/>
+		<result property="cellPhone" 	column="CELL_PHONE"/>
+		<result property="tel" 		    column="TEL"/>
+		<result property="zipcode" 		column="ZIPCODE"/>
+		<result property="addr1" 		column="ADDR1"/>
+		<result property="addr2" 		column="ADDR2"/>
+		<result property="status" 		column="STATUS"/>
+		<result property="applyDate" 	column="APPLY_DATE"/>
+		<result property="title" 		column="TITLE"/>
+		<result property="openFlag" 	column="OPEN_FLAG" />
+		<result property="hit" 			column="HIT" />
+		<result property="smsFlag" 		column="SMS_FLAG" />
+		<result property="contents" 	column="CONTENTS" jdbcType="CLOB" javaType="java.lang.String" />		
+		<result property="etcContents1" column="ETC_CONTENTS1" />		
+		<result property="etcContents2" column="ETC_CONTENTS2" />
+		<result property="memberId" 	column="MEMBER_ID" />
+		<result property="pinno" 		column="PINNO" />
+		<result property="deadline" 	column="DEADLINE" />
+		<result property="petiGubun" 	column="PETI_GUBUN" />
+		<result property="etc1" 		column="ETC_1" />
+		<result property="etc2" 		column="ETC_2" />
+		<result property="etc3" 		column="ETC_3" />
+		<result property="etc4" 		column="ETC_4" />
+		<result property="etc5" 		column="ETC_5" />
+		<result property="etc6" 		column="ETC_6" />
+		<result property="etc7" 		column="ETC_7" />
+		<result property="etc8" 		column="ETC_8" />
+		<result property="etc9" 		column="ETC_9" />
+		<result property="etc10" 		column="ETC_10" />
+		<result property="etc11" 		column="ETC_11" />
+		<result property="etc12" 		column="ETC_12" />
+		<result property="etc13" 		column="ETC_13" />
+		<result property="etc14" 		column="ETC_14" />
+		<result property="etc15" 		column="ETC_15" />
+		<result property="etc16" 		column="ETC_16" />
+		<result property="etc17" 		column="ETC_17" />
+		<result property="etc18" 		column="ETC_18" />
+		<result property="etc19" 		column="ETC_19" />
+		<result property="etc20" 		column="ETC_20" />
+		<result property="etc21" 		column="ETC_21" />
+		<result property="etc22" 		column="ETC_22" />
+		<result property="etc23" 		column="ETC_23" />
+		<result property="etc24" 		column="ETC_24" />
+		<result property="etc25" 		column="ETC_25" />
+		<result property="etc26" 		column="ETC_26" />
+		<result property="etc27" 		column="ETC_27" />
+		<result property="etc28" 		column="ETC_28" />
+		<result property="etc29" 		column="ETC_29" />
+		<result property="etc30" 		column="ETC_30" />
+		<result property="delFlag" 		column="DEL_FLAG" />
+		<result property="delReason" 	column="DEL_REASON" />
+		<result property="delDate" 		column="DEL_DATE" />
+		<result property="deptId" 		column="DEPT_ID" />
+	</resultMap>
+	
+	<resultMap id="applyAnswer" class="zvl">
+		<result property="applyId" 		column="APPLY_ID"/>
+		<result property="name" 		column="NAME"/>
+		<result property="status" 		column="STATUS"/>
+		<result property="applyDate" 	column="APPLY_DATE"/>
+		<result property="title" 		column="TITLE"/>
+		<result property="openFlag" 	column="OPEN_FLAG" />
+		<result property="hit" 			column="HIT" />
+		<result property="smsFlag" 		column="SMS_FLAG" />
+		<result property="contents" 	column="CONTENTS" jdbcType="CLOB" javaType="java.lang.String" />		
+		<result property="etcContents1" 	column="ETC_CONTENTS1" />		
+		<result property="etcContents2" column="ETC_CONTENTS2" />
+		<result property="memberId" 	column="MEMBER_ID" />
+		<result property="pinno" 		column="PINNO" />
+		<result property="deadline" 	column="DEADLINE" />
+		<result property="petiGubun" 	column="PETI_GUBUN" />
+		<result property="delFlag" 		column="DEL_FLAG" />
+		<result property="delReason" 		column="DEL_REASON" />
+		<result property="delDate" 		column="DEL_DATE" />
+		<result property="answerId" 		column="ANSWER_ID" />
+		<result property="deptId" 		column="DEPT_ID" />
+		<result property="userId" 		column="USER_ID" />
+		<result property="userName" 		column="USER_NAME" />
+		<result property="answerStatus" 		column="ANSWER_STATUS" />
+	</resultMap>
+	
+	<resultMap id="officerApplyView" class="zvl">
+		<result property="applyId" 		column="APPLY_ID"/>
+		<result property="name" 		column="NAME"/>
+		<result property="status" 		column="STATUS"/>
+		<result property="applyDate" 	column="APPLY_DATE"/>
+		<result property="title" 		column="TITLE"/>
+		<result property="openFlag" 	column="OPEN_FLAG" />
+		<result property="hit" 			column="HIT" />
+		<result property="smsFlag" 		column="SMS_FLAG" />
+		<result property="contents" 	column="CONTENTS" jdbcType="CLOB" javaType="java.lang.String" />	
+		<result property="memberId" 	column="MEMBER_ID" />
+		<result property="pinno" 		column="PINNO" />
+		<result property="deadline" 	column="DEADLINE" />
+		<result property="petiGubun" 	column="PETI_GUBUN" />
+		<result property="delFlag" 		column="DEL_FLAG" />
+		<result property="delReason" 		column="DEL_REASON" />
+		<result property="delDate" 		column="DEL_DATE" />
+		<result property="answerId" 		column="ANSWER_ID" />
+		<result property="deptId" 		column="DEPT_ID" />
+		<result property="userId" 		column="USER_ID" />
+		<result property="userName" 		column="USER_NAME" />
+		<result property="answerStatus" 		column="ANSWER_STATUS" />
+	</resultMap>
+	
+	<resultMap id="petitionView" class="zvl">
+		<result property="applyId" 		column="APPLY_ID"/>
+		<result property="name" 		column="NAME"/>
+		<result property="status" 		column="STATUS"/>
+		<result property="applyDate" 	column="APPLY_DATE"/>
+		<result property="title" 		column="TITLE"/>
+		<result property="openFlag" 	column="OPEN_FLAG" />
+		<result property="hit" 			column="HIT" />
+		<result property="smsFlag" 		column="SMS_FLAG" />
+		<result property="contents" 	column="CONTENTS" jdbcType="CLOB" javaType="java.lang.String" />
+		<result property="answerContent" 	column="ANSWER_CONTENT" jdbcType="CLOB" javaType="java.lang.String" />
+		<result property="memberId" 	column="MEMBER_ID" />
+		<result property="pinno" 		column="PINNO" />
+		<result property="deadline" 	column="DEADLINE" />
+		<result property="petiGubun" 	column="PETI_GUBUN" />
+		<result property="answerId" 		column="ANSWER_ID" />
+		<result property="deptId" 		column="DEPT_ID" />
+		<result property="userId" 		column="USER_ID" />
+		<result property="userName" 		column="USER_NAME" />
+		<result property="deptName" 		column="DEPT_NAME" />
+		<result property="tel" 		column="TEL" />
+		<result property="email" 		column="EMAIL" />
+	</resultMap>
+	
+	<resultMap id="answerList" class="zvl">
+		<result property="applyId" 		column="APPLY_ID"/>
+		<result property="answerId" 		column="ANSWER_ID"/>
+		<result property="deptId" 		column="DEPT_ID"/>
+		<result property="userId" 	column="USER_ID"/>
+		<result property="status" 		column="STATUS"/>
+		<result property="answerDate" 	column="ANSWER_DATE" />
+		<result property="answerContent" 	column="ANSWER_CONTENT" jdbcType="CLOB" javaType="java.lang.String" />	
+		<result property="approveDate" 		column="APPROVE_DATE" />	
+		<result property="tempFlag" 	column="TEMP_FLAG" />		
+		<result property="deptAssignDate" column="DEPT_ASSIGN_DATE" />
+		<result property="deadline" 	column="DEADLINE" />
+	</resultMap>
+		
+	<sql id="applyDAO.select-apply-list">
+		<![CDATA[ 
+			SELECT 
+				APPLY_ID, APPLY_CODE, ONLINE_ID, NAME, EMAIL, CELL_PHONE, TEL, ZIPCODE, ADDR1, ADDR2, 
+				STATUS, TO_CHAR(APPLY_DATE, 'YYYY-MM-DD') AS APPLY_DATE, TITLE,OPEN_FLAG, HIT,
+				SMS_FLAG, PETI_GUBUN, TO_CHAR(DEADLINE, 'YYYY-MM-DD') AS DEADLINE, TO_CHAR(RECV_DATE, 'YYYY-MM-DD') AS RECV_DATE,
+				ETC_1,ETC_2,ETC_3,ETC_4,ETC_5,ETC_6,ETC_7,ETC_8,ETC_9,
+				ETC_10,ETC_11,ETC_12,ETC_13,ETC_14,ETC_15,ETC_16,ETC_17,ETC_18,ETC_19,
+				ETC_20,ETC_21,ETC_22,ETC_23,ETC_24,ETC_25,ETC_26,ETC_27,ETC_28,ETC_29,ETC_30,
+				DEL_FLAG, DEPT_ID
+			FROM PRTLTAPPLY
+			WHERE 1=1
+		 ]]>
+	</sql>
+	
+    <select id="applyDAO.selectApplyId" resultClass="int">
+		<![CDATA[ 
+			SELECT SEQ_PRTLTAPPLY.NEXTVAL AS APPLY_ID FROM DUAL
+		 ]]>
+    </select>
+    
+    <select id="applyDAO.selectAnswerId" resultClass="int">
+		<![CDATA[ 
+			SELECT SEQ_PRTLTPETIANSWER.NEXTVAL AS ANSWER_ID FROM DUAL
+		 ]]>
+    </select>
+    
+	<insert id="applyDAO.apply" parameterClass="zvl" >
+		<![CDATA[
+			INSERT INTO PRTLTAPPLY
+			(
+				APPLY_ID,APPLY_DATE,TITLE,CONTENTS,OPEN_FLAG,MEMBER_ID,PINNO,HIT,
+				SMS_FLAG,NAME,ETC_CONTENTS1,ETC_CONTENTS2,PETI_GUBUN,STATUS,DEL_FLAG,
+				ETC_1,ETC_2,ETC_3,ETC_4,ETC_5,ETC_6,ETC_7,ETC_8,ETC_9,
+				ETC_10,ETC_11,ETC_12,ETC_13,ETC_14,ETC_15,ETC_16,ETC_17,ETC_18,ETC_19,
+				ETC_20,ETC_21,ETC_22,ETC_23,ETC_24,ETC_25,ETC_26,ETC_27,ETC_28,ETC_29,ETC_30,
+				DEPT_ID,
+				EMAIL, CELL_PHONE, TEL, ZIPCODE, ADDR1, ADDR2,
+				APPLY_CODE, ONLINE_ID
+			)
+			VALUES
+			(
+				#applyId#, SYSDATE, #title#, #contents:CLOB#,#openFlag#,#memberId#,#pinno#,0,
+				#smsFlag#, #name#, #etcContents1#, #etcContents2#, #petiGubun#, 1, 'N',
+				#etc1#, #etc2#, #etc3#, #etc4#,#etc5#,#etc6#,#etc7#,#etc8#,#etc9#,
+				#etc10#,#etc11#,#etc12#,#etc13#,#etc14#,#etc15#,#etc16#,#etc17#,#etc18#,#etc19#,
+				#etc20#,#etc21#,#etc22#,#etc23#,#etc24#,#etc25#,#etc26#,#etc27#,#etc28#,#etc29#,#etc30#,
+				#deptId#,
+				#email#, #cellPhone#, #tel#, #zipcode#, #addr1#, #addr2#,
+				#applyCode#, #onlineId#
+			)
+		]]>
+	</insert>	
+		
+	<insert id="applyDAO.addFile" parameterClass="minwonFileVO" >
+		<selectKey resultClass="java.lang.Long" keyProperty="fileId">
+			SELECT SEQ_PRTLTPETIATTATCHFILE.NEXTVAL FROM DUAL
+		</selectKey>			
+		<![CDATA[
+			INSERT INTO PRTLTPETIATTATCHFILE
+			(
+				FILE_ID, APPLY_ID, ANSWER_ID, FILE_PATH, FILE_NAME,
+				ORG_FILE_NAME, FILE_EXT, FILE_SIZE, APPLY_CODE, FILE_FIELD_NAME
+			)
+			VALUES
+			(
+				#fileId#, #applyId#, #answerId#, #filePath#, #fileName#,
+				#orgFileName#, #fileExt#, #fileSize#, #applyCode#, #fileFieldName#
+			)
+		]]>
+	</insert>
+	
+	<insert id="applyDAO.addApplyFile" parameterClass="zvl" >
+		<selectKey resultClass="java.lang.Long" keyProperty="fileId">
+			SELECT SEQ_PRTLTPETIATTATCHFILE.NEXTVAL FROM DUAL
+		</selectKey>			
+		<![CDATA[
+			INSERT INTO PRTLTPETIATTATCHFILE
+			(
+				FILE_ID, APPLY_ID, ANSWER_ID, FILE_PATH, FILE_NAME,
+				ORG_FILE_NAME, FILE_EXT, FILE_SIZE, APPLY_CODE, FILE_FIELD_NAME
+			)
+			VALUES
+			(
+				#fileId#, #applyId#, #answerId#, #filePath#, #fileName#,
+				#orgFileName#, #fileExt#, #fileSize#, #applyCode#, #fileFieldName#
+			)
+		]]>
+	</insert>
+	
+	<update id="applyDAO.updateFile" parameterClass="minwonFileVO" >
+		<![CDATA[
+			UPDATE PRTLTPETIATTATCHFILE
+			SET  
+				FILE_PATH=#filePath#,
+				FILE_NAME=#fileName#,
+				ORG_FILE_NAME=#orgFileName#,
+				FILE_EXT=#fileExt#,
+				FILE_SIZE=#fileSize#,
+				FILE_FIELD_NAME=#fileFieldName#
+			WHERE FILE_ID = #fileId#
+		]]>
+	</update>
+	
+	<delete id="applyDAO.delFile" parameterClass="string" >
+		<![CDATA[
+			DELETE PRTLTPETIATTATCHFILE
+			WHERE FILE_ID = #fileId#
+		]]>
+	</delete>
+	
+	<delete id="applyDAO.delApplyFile" parameterClass="zvl" >
+		<![CDATA[
+			DELETE PRTLTPETIATTATCHFILE
+			WHERE APPLY_ID = (SELECT APPLY_ID FROM PRTLTAPPLY WHERE APPLY_CODE = #applyCode# AND APPLY_ID = #applyId#)
+			AND APPLY_CODE = #applyCode#
+		]]>
+	</delete>
+	
+ 	<select id="applyDAO.selectFileListById" parameterClass="zvl" resultClass="zvl" >
+ 		<![CDATA[
+			SELECT 
+				FILE_ID,
+				APPLY_ID,
+				ANSWER_ID,
+				FILE_PATH,
+				FILE_NAME,
+				ORG_FILE_NAME,
+				FILE_EXT,
+				FILE_SIZE,
+				APPLY_CODE,
+				FILE_FIELD_NAME
+			FROM PRTLTPETIATTATCHFILE
+			WHERE 1=1
+ 		]]>
+			<isGreaterThan prepend="AND" property="applyId" compareValue="0">
+				<![CDATA[	APPLY_ID = #applyId# 		]]>
+			</isGreaterThan>	
+			<isGreaterThan prepend="AND" property="fileId" compareValue="0">
+				<![CDATA[	FILE_ID = #fileId#		]]>
+			</isGreaterThan>	
+			<isNotEmpty prepend="AND" property="applyCode">
+				<![CDATA[	APPLY_CODE = #applyCode#		]]>
+			</isNotEmpty>	
+		<![CDATA[			
+			ORDER BY FILE_ID DESC
+		]]>		 		
+ 	</select> 
+ 	
+	<select id="applyDAO.selectApplyListById" parameterClass="zvl" resultClass="zvl">
+		<![CDATA[ 
+			SELECT * FROM ( SELECT rownum rn, TB.* FROM (
+			SELECT 
+				APPLY_ID, NAME, STATUS, APPLY_DATE, TITLE,OPEN_FLAG, HIT,
+				SMS_FLAG, PETI_GUBUN, TO_CHAR(RECV_DATE, 'YYYY-MM-DD') AS RECV_DATE,
+				ETC_1,ETC_2,ETC_3,ETC_4,ETC_5,ETC_6,ETC_7,ETC_8,ETC_9,
+				ETC_10,ETC_11,ETC_12,ETC_13,ETC_14,ETC_15,ETC_16,ETC_17,ETC_18,ETC_19,
+				ETC_20,ETC_21,ETC_22,ETC_23,ETC_24,ETC_25,ETC_26,ETC_27,ETC_28,ETC_29,ETC_30,
+				DEPT_ID,
+				EMAIL, CELL_PHONE, TEL, ZIPCODE, ADDR1, ADDR2,
+				APPLY_CODE
+			FROM PRTLTAPPLY
+			WHERE APPLY_CODE = #applyCode#
+			AND NVL(DEL_FLAG,'N') = 'N'
+		 ]]>
+		<isNotEmpty prepend="AND" property="memberId">
+			<![CDATA[	MEMBER_ID = #memberId#	]]>
+		</isNotEmpty>
+		<isEmpty prepend="AND" property="memberId">
+			<![CDATA[	PINNO = #pinno#	]]>
+		</isEmpty>
+		<![CDATA[ 
+			ORDER BY 
+				APPLY_ID DESC
+		       ) TB )  WHERE rn BETWEEN #firstIndex# + 1 AND #firstIndex# + #recordCountPerPage#
+		 ]]>
+	</select>
+	
+	<select id="applyDAO.selectFileByFileId" resultClass="zvl">
+		<![CDATA[ 
+			SELECT *
+			FROM PRTLTPETIATTATCHFILE
+			WHERE FILE_ID = #fileId#		
+		]]> 
+	</select>	
+	
+	<select id="applyDAO.selectApplyList" parameterClass="zvl" resultClass="zvl">
+	
+			SELECT * FROM ( SELECT rownum rn, TB.* FROM (
+			
+		<include refid="applyDAO.select-apply-list" />
+		
+			<isNotEmpty prepend="AND" property="onlineId">
+				<![CDATA[	ONLINE_ID = #onlineId#	]]>
+			</isNotEmpty>		
+			<isNotEmpty prepend="AND" property="petiGubun">
+				<![CDATA[	PETI_GUBUN = #petiGubun#	]]>
+			</isNotEmpty>			
+			<isEqual prepend="AND" property="searchType" compareValue="0">
+				<![CDATA[	TITLE LIKE '%' || #searchTxt# || '%' 		]]>
+			</isEqual>
+			<isEqual prepend="AND" property="searchType" compareValue="1">
+				<![CDATA[	CONTENTS LIKE '%' || #searchTxt# || '%' 		]]>
+			</isEqual>
+		<![CDATA[ 
+			AND APPLY_CODE = #applyCode# AND NVL(DEL_FLAG,'N') = 'N'
+			ORDER BY 
+				APPLY_ID DESC
+		       ) TB )  WHERE rn BETWEEN #firstIndex# + 1 AND #firstIndex# + #recordCountPerPage#
+		 ]]>
+	</select>
+	
+	<select id="applyDAO.selectApplyListCnt" parameterClass="zvl" resultClass="int">
+		<![CDATA[ 
+			SELECT COUNT(*)
+			FROM PRTLTAPPLY
+			WHERE APPLY_CODE = #applyCode# AND NVL(DEL_FLAG,'N') = 'N'
+		]]> 
+			<isNotEmpty prepend="AND" property="onlineId">
+				<![CDATA[	ONLINE_ID = #onlineId#	]]>
+			</isNotEmpty>		
+			<isNotEmpty prepend="AND" property="petiGubun">
+				<![CDATA[	PETI_GUBUN = #petiGubun#	]]>
+			</isNotEmpty>
+			<isEqual property="listType" compareValue="title">
+				<isNotEmpty prepend="AND" property="title">
+					<![CDATA[	TITLE LIKE '%' || #title# || '%'	]]>
+				</isNotEmpty>
+			</isEqual>		
+			<isEqual prepend="AND" property="searchType" compareValue="0">
+				<![CDATA[	TITLE LIKE '%' || #searchTxt# || '%' 		]]>
+			</isEqual>
+			<isEqual prepend="AND" property="searchType" compareValue="1">
+				<![CDATA[	CONTENTS LIKE '%' || #searchTxt# || '%' 		]]>
+			</isEqual>
+	</select>	
+		
+	<select id="applyDAO.selectApplyListA" parameterClass="zvl" resultClass="zvl">
+	
+			SELECT * FROM ( SELECT rownum rn, TB.* FROM (
+			
+			SELECT 
+				APPLY_ID, NAME, STATUS, TO_CHAR(APPLY_DATE, 'YYYY-MM-DD') AS APPLY_DATE, TITLE,OPEN_FLAG, HIT,
+				SMS_FLAG, PETI_GUBUN, TO_CHAR(DEADLINE, 'YYYY-MM-DD') AS DEADLINE, TO_CHAR(RECV_DATE, 'YYYY-MM-DD') AS RECV_DATE,
+				ETC_1,ETC_2,ETC_3,ETC_4,ETC_5,ETC_6,ETC_7,ETC_8,ETC_9,
+				ETC_10,ETC_11,ETC_12,ETC_13,ETC_14,ETC_15,ETC_16,ETC_17,ETC_18,ETC_19,
+				ETC_20,ETC_21,ETC_22,ETC_23,ETC_24,ETC_25,ETC_26,ETC_27,ETC_28,ETC_29,ETC_30,
+				DEL_FLAG,
+				DEPT_ID,
+				EMAIL, CELL_PHONE, TEL, ZIPCODE, ADDR1, ADDR2
+			FROM PRTLTAPPLY
+			WHERE APPLY_CODE = #applyCode#
+			AND NVL(DEL_FLAG,'N') = 'N'	
+			<isNotEmpty prepend="AND" property="petiGubun">
+				<![CDATA[	PETI_GUBUN = #petiGubun#	]]>
+			</isNotEmpty>
+			<isNotEmpty property="sdate" prepend="AND">					
+				<![CDATA[	REPLACE(#sdate#, '-', '') <= TO_CHAR(APPLY_DATE,'YYYYMMDD')	]]>
+			</isNotEmpty>
+			<isNotEmpty property="edate" prepend="AND">	
+				<![CDATA[	REPLACE(#edate#, '-', '') >= TO_CHAR(APPLY_DATE,'YYYYMMDD')	]]>
+			</isNotEmpty>
+			<isEqual property="searchType" compareValue="1">
+				<isNotEmpty prepend="AND" property="searchTxt">
+					<![CDATA[	NAME LIKE '%' || #searchTxt# || '%'	]]>
+				</isNotEmpty>
+			</isEqual>				
+		<![CDATA[ 
+			ORDER BY 
+				APPLY_ID DESC
+		       ) TB )  WHERE rn BETWEEN #firstIndex# + 1 AND #firstIndex# + #recordCountPerPage#
+		 ]]>
+	</select>
+	
+	<select id="applyDAO.selectApplyListCntById" parameterClass="zvl" resultClass="int">
+		<![CDATA[ 
+			SELECT COUNT(*)
+			FROM PRTLTAPPLY
+			WHERE APPLY_CODE = #applyCode#
+			AND NVL(DEL_FLAG,'N') = 'N'
+		]]> 
+			<isNotEmpty prepend="AND" property="memberId">
+				<![CDATA[	MEMBER_ID = #memberId#	]]>
+			</isNotEmpty>
+			<isEmpty prepend="AND" property="memberId">
+				<![CDATA[	PINNO = #pinno#	]]>
+			</isEmpty>
+			<isNotEmpty prepend="AND" property="petiGubun">
+				<![CDATA[	PETI_GUBUN = #petiGubun#	]]>
+			</isNotEmpty>
+	</select>	
+	
+	<select id="applyDAO.selectApplyListCntA" parameterClass="zvl" resultClass="int">
+		<![CDATA[ 
+			SELECT COUNT(*)
+			FROM PRTLTAPPLY
+			WHERE APPLY_CODE = #applyCode#
+			AND NVL(DEL_FLAG,'N') = 'N'
+		]]> 	
+		<isNotEmpty prepend="AND" property="petiGubun">
+			<![CDATA[	PETI_GUBUN = #petiGubun#	]]>
+		</isNotEmpty>
+		<isNotEmpty property="sdate" prepend="AND">					
+			<![CDATA[	REPLACE(#sdate#, '-', '') <= TO_CHAR(APPLY_DATE,'YYYYMMDD')	]]>
+		</isNotEmpty>
+		<isNotEmpty property="edate" prepend="AND">	
+			<![CDATA[	REPLACE(#edate#, '-', '') >= TO_CHAR(APPLY_DATE,'YYYYMMDD')	]]>
+		</isNotEmpty>
+		<isEqual property="searchType" compareValue="1">
+			<isNotEmpty prepend="AND" property="searchTxt">
+				<![CDATA[	NAME LIKE '%' || #searchTxt# || '%'	]]>
+			</isNotEmpty>
+		</isEqual>						
+	</select>	
+	
+	<select id="applyDAO.excelSelectApplyListA" parameterClass="zvl" resultClass="zvl">
+	<![CDATA[ 
+			SELECT 
+				A.NAME, TEL, CELL_PHONE, EMAIL, ZIPCODE, ADDR1, ADDR2,
+				PETI_GUBUN,NAME,TO_CHAR(APPLY_DATE,'YYYY-MM-DD') AS APPLY_DATE, STATUS,				
+				ETC_1,ETC_2,ETC_3,ETC_4,ETC_5,ETC_6,ETC_7,ETC_8,ETC_9, TO_CHAR(RECV_DATE, 'YYYY-MM-DD') AS RECV_DATE,
+				ETC_10,ETC_11,ETC_12,ETC_13,ETC_14,ETC_15,ETC_16,ETC_17,ETC_18,ETC_19,
+				ETC_20,ETC_21,ETC_22,ETC_23,ETC_24,ETC_25,ETC_26,ETC_27,ETC_28,ETC_29,ETC_30,
+				ETC_CONTENTS1, ETC_CONTENTS2,
+				DEPT_ID, ONLINE_ID, APPLY_CODE
+			FROM PRTLTAPPLY
+			WHERE APPLY_CODE = #applyCode#	
+			AND NVL(DEL_FLAG,'N') = 'N'	
+			ORDER BY APPLY_ID DESC
+		 ]]>
+	</select>
+		
+	<select id="applyDAO.selectApplyView" parameterClass="zvl" resultMap="apply">
+		<![CDATA[ 
+			SELECT 
+				APPLY_ID, NAME, STATUS, TO_CHAR(APPLY_DATE, 'YYYY-MM-DD') AS APPLY_DATE, TITLE,OPEN_FLAG, HIT,
+				SMS_FLAG, CONTENTS, ETC_CONTENTS1, ETC_CONTENTS2, MEMBER_ID, PINNO, TO_CHAR(DEADLINE, 'YYYY-MM-DD') AS DEADLINE,
+				PETI_GUBUN,
+				ETC_1,ETC_2,ETC_3,ETC_4,ETC_5,ETC_6,ETC_7,ETC_8,ETC_9,
+				ETC_10,ETC_11,ETC_12,ETC_13,ETC_14,ETC_15,ETC_16,ETC_17,ETC_18,ETC_19,
+				ETC_20,ETC_21,ETC_22,ETC_23,ETC_24,ETC_25,ETC_26,ETC_27,ETC_28,ETC_29,ETC_30,
+				DEL_FLAG, DEL_REASON, TO_CHAR(DEL_DATE, 'YYYY-MM-DD') AS DEL_DATE,
+				DEPT_ID,
+				EMAIL, CELL_PHONE, TEL, ZIPCODE, ADDR1, ADDR2, APPLY_CODE,
+				ONLINE_ID
+			FROM PRTLTAPPLY	
+			WHERE APPLY_CODE = #applyCode#
+			AND APPLY_ID = #applyId#
+		 ]]>
+			<isNotEmpty prepend="AND" property="memberId">
+				<![CDATA[	MEMBER_ID = #memberId#	]]>
+			</isNotEmpty>
+			<isEmpty prepend="AND" property="memberId">
+				<![CDATA[	PINNO = #pinno#	]]>
+			</isEmpty>
+	</select>
+	
+	<select id="applyDAO.selectApplyViewByApplyId" parameterClass="zvl" resultMap="apply">
+		<![CDATA[ 
+			SELECT 
+				APPLY_ID, NAME, STATUS, TO_CHAR(APPLY_DATE, 'YYYY-MM-DD') AS APPLY_DATE, TITLE,OPEN_FLAG, HIT,
+				SMS_FLAG, CONTENTS, ETC_CONTENTS1, ETC_CONTENTS2, MEMBER_ID, PINNO, TO_CHAR(DEADLINE, 'YYYY-MM-DD') AS DEADLINE,
+				PETI_GUBUN,
+				ETC_1,ETC_2,ETC_3,ETC_4,ETC_5,ETC_6,ETC_7,ETC_8,ETC_9,
+				ETC_10,ETC_11,ETC_12,ETC_13,ETC_14,ETC_15,ETC_16,ETC_17,ETC_18,ETC_19,
+				ETC_20,ETC_21,ETC_22,ETC_23,ETC_24,ETC_25,ETC_26,ETC_27,ETC_28,ETC_29,ETC_30,
+				DEL_FLAG, DEL_REASON, TO_CHAR(DEL_DATE, 'YYYY-MM-DD') AS DEL_DATE,
+				DEPT_ID,
+				EMAIL, CELL_PHONE, TEL, ZIPCODE, ADDR1, ADDR2, APPLY_CODE,
+				ONLINE_ID
+			FROM PRTLTAPPLY
+			WHERE APPLY_ID = #applyId#
+			AND APPLY_CODE = #applyCode#
+		 ]]>
+	</select>
+		
+	<update id="applyDAO.updateApplyByApplyId" parameterClass="zvl">
+		<![CDATA[
+			UPDATE PRTLTAPPLY
+			SET  
+				TITLE=#title#,CONTENTS=#contents:CLOB#,OPEN_FLAG=#openFlag#,
+				SMS_FLAG=#smsFlag#,ETC_CONTENTS1=#etcContents1#,ETC_CONTENTS2=#etcContents2#,
+				ETC_1=#etc1#,ETC_2=#etc2#,ETC_3=#etc3#,ETC_4=#etc4#,ETC_5=#etc5#,
+				ETC_6=#etc6#,ETC_7=#etc7#,ETC_8=#etc8#,ETC_9=#etc9#,ETC_10=#etc10#,
+				ETC_11=#etc11#,ETC_12=#etc12#,ETC_13=#etc13#,ETC_14=#etc14#,ETC_15=#etc15#,
+				ETC_16=#etc16#,ETC_17=#etc17#,ETC_18=#etc18#,ETC_19=#etc19#,ETC_20=#etc20#,
+				ETC_21=#etc21#,ETC_22=#etc22#,ETC_23=#etc23#,ETC_24=#etc24#,ETC_25=#etc25#,
+				ETC_26=#etc26#,ETC_27=#etc27#,ETC_28=#etc28#,ETC_29=#etc29#,ETC_30=#etc30#,
+				NAME=#name#,
+				EMAIL=#email#, CELL_PHONE=#cellPhone#, TEL=#tel#, ZIPCODE=#zipcode#, ADDR1=#addr1#, ADDR2=#addr2#
+			WHERE APPLY_ID=#applyId# AND APPLY_CODE = #applyCode#
+		 ]]>
+	</update>
+	
+	<delete id="applyDAO.cancelApply" parameterClass="zvl" >
+		<![CDATA[
+			UPDATE PRTLTAPPLY
+			SET DEL_FLAG = 'Y'
+			WHERE APPLY_ID = #applyId#	
+			AND APPLY_CODE = #applyCode#
+		]]>	
+	</delete>
+	
+	<delete id="applyDAO.deleteApplyByApplyId" parameterClass="zvl" >
+		<![CDATA[
+			DELETE FROM PRTLTAPPLY
+			WHERE APPLY_ID = #applyId#	
+			AND APPLY_CODE = #applyCode#
+		]]>	
+	</delete>
+	
+	<select id="applyDAO.selectUserAnswer" parameterClass="zvl" resultMap="answerList">
+		<![CDATA[ 
+			SELECT 
+				A.APPLY_ID,A.ANSWER_ID,A.DEPT_ID,A.USER_ID,A.STATUS,
+				TO_CHAR(A.ANSWER_DATE,'YYYY-MM-DD') AS ANSWER_DATE,
+				A.ANSWER_CONTENT,
+				TO_CHAR(A.APPROVE_DATE,'YYYY-MM-DD') AS APPROVE_DATE,
+				A.TEMP_FLAG,
+				TO_CHAR(A.DEPT_ASSIGN_DATE,'YYYY-MM-DD') AS DEPT_ASSIGN_DATE, 
+				B.DEPT_NAME, C.USER_NAME,
+				TO_CHAR(D.DEADLINE,'YYYY-MM-DD') AS DEADLINE, 
+				C.TEL, C.EMAIL
+			FROM PRTLTPETIANSWER_RELY A 
+			INNER JOIN SSOV_DEPT@LINK_MEDI B ON B.DEPT_ID = A.DEPT_ID 
+			LEFT OUTER JOIN SSOX_USER@LINK_MEDI C ON C.USER_ID = A.USER_ID
+			INNER JOIN PRTLTAPPLY_RELY D ON A.APPLY_ID = D.APPLY_ID
+			WHERE A.APPLY_ID = #applyId#
+		 ]]>	
+		<isNotEmpty property="answerId" prepend="AND">
+			<![CDATA[	A.ANSWER_ID = #answerId#	]]>
+		</isNotEmpty>	
+		<isNotEmpty property="userId" prepend="AND">
+			<![CDATA[	C.USER_ID = #userId#	]]>
+		</isNotEmpty>			
+	</select>
+	
+	<select id="applyDAO.selectAnswer" parameterClass="string" resultClass="zvl">
+		<![CDATA[ 
+			SELECT 
+				ANSWER_ID,APPLY_ID,DEPT_ID,STATUS,TO_CHAR(ANSWER_DATE, 'YYYY-MM-DD') AS ANSWER_DATE,
+				TEMP_FLAG,TO_CHAR(DEPT_ASSIGN_DATE, 'YYYY-MM-DD') AS DEPT_ASSIGN_DATE,TO_CHAR(APPROVE_DATE, 'YYYY-MM-DD') AS APPROVE_DATE,USER_ID
+			FROM PRTLTPETIANSWER_RELY
+			WHERE ANSWER_ID = #answerId#
+
+		 ]]>			
+	</select>
+	
+	<select id="applyDAO.selectAnswerList" parameterClass="zvl" resultMap="answerList">
+		<![CDATA[ 
+			SELECT 
+				A.APPLY_ID,A.ANSWER_ID,A.DEPT_ID,A.USER_ID,A.STATUS,TO_CHAR(A.ANSWER_DATE,'YYYY-MM-DD') AS ANSWER_DATE,
+				A.ANSWER_CONTENT,TO_CHAR(A.APPROVE_DATE,'YYYY-MM-DD') AS APPROVE_DATE,A.TEMP_FLAG,
+				TO_CHAR(A.DEPT_ASSIGN_DATE,'YYYY-MM-DD') AS DEPT_ASSIGN_DATE,
+				TO_CHAR(D.DEADLINE,'YYYY-MM-DD') AS DEADLINE
+			FROM PRTLTPETIANSWER_RELY A
+			INNER JOIN PRTLTAPPLY D ON A.APPLY_ID = D.APPLY_ID
+			WHERE A.APPLY_ID = #applyId# AND D.APPLY_CODE = #applyCode#
+			ORDER BY A.STATUS DESC
+		 ]]>			
+	</select>
+	
+	<select id="applyDAO.selectAssignedDeptList" parameterClass="zvl" resultClass="zvl">
+		<![CDATA[ 
+			SELECT 
+				A.APPLY_ID,A.ANSWER_ID,A.DEPT_ID,A.STATUS,B.DEPT_NAME
+			FROM PRTLTPETIANSWER_RELY A, SSOV_DEPT@LINK_MEDI B
+			WHERE A.APPLY_ID = #applyId#
+			AND A.DEPT_ID = B.DEPT_ID
+		 ]]>			
+	</select>
+	
+	<insert id="applyDAO.addAnswer" parameterClass="zvl" >
+		<selectKey resultClass="java.lang.Long" keyProperty="answerId">		
+			SELECT SEQ_PRTLTPETIANSWER.NEXTVAL FROM DUAL
+		</selectKey>			
+		<![CDATA[
+			INSERT INTO PRTLTPETIANSWER_RELY
+			(
+				ANSWER_ID,APPLY_ID,DEPT_ID,USER_ID,STATUS,
+				ANSWER_CONTENT
+			)
+			VALUES
+			(
+				#answerId#, #applyId#, #deptId#, #userId#, #status#, 
+				#answerContent:CLOB#
+			)
+		]]>
+	</insert>
+	
+	<update id="applyDAO.updateAnswer" parameterClass="zvl" >
+	<![CDATA[
+				UPDATE PRTLTPETIANSWER_RELY
+				SET  
+					ANSWER_CONTENT = #answerContent:CLOB#
+				WHERE ANSWER_ID = #answerId#
+			]]>
+	</update>
+	
+	<update id="applyDAO.updateAssignedDeptAnswer" parameterClass="zvl" >
+	<![CDATA[
+				UPDATE PRTLTPETIANSWER_RELY
+				SET  
+					DEPT_ID = #deptId#,
+					USER_ID = #userId#,
+					ANSWER_CONTENT = #answerContent:CLOB#,
+					STATUS = 2
+				WHERE ANSWER_ID = #answerId#
+			]]>
+	</update>
+	
+	<insert id="applyDAO.assignDept" parameterClass="zvl" >
+		<selectKey resultClass="java.lang.Long" keyProperty="answerId">
+			SELECT SEQ_PRTLTPETIANSWER.NEXTVAL FROM DUAL
+		</selectKey>			
+			<![CDATA[
+				INSERT INTO PRTLTPETIANSWER_RELY
+				(
+					APPLY_ID,ANSWER_ID,DEPT_ID,TEMP_FLAG,STATUS,DEPT_ASSIGN_DATE
+				)
+				VALUES
+				(
+					#applyId#, #answerId#, #deptId#,'0',1,SYSDATE
+				)
+			]]>
+	</insert>	
+	
+	<update id="applyDAO.assignPersonInCharge" parameterClass="zvl" >
+	<![CDATA[
+				UPDATE PRTLTPETIANSWER_RELY
+				SET  
+					USER_ID = #userId#
+				WHERE ANSWER_ID = #answerId#
+			]]>
+	</update>
+	
+	<delete id="applyDAO.deleteAssignedDept" parameterClass="zvl" >
+		<![CDATA[
+			DELETE FROM PRTLTPETIANSWER_RELY
+			WHERE
+				APPLY_ID = #applyId#	
+			AND STATUS IN (1,5,6)
+		]]>	
+	</delete>
+	
+ 	<update id="applyDAO.updateDeadline" parameterClass="zvl">
+ 		<![CDATA[
+			UPDATE PRTLTAPPLY_RELY SET 
+				DEADLINE = TO_DATE(#deadline#, 'YYYY-MM-DD')
+			WHERE APPLY_ID = #applyId# 
+ 		]]>
+ 	</update>
+	
+ 	<update id="applyDAO.changeAnswerStatus" parameterClass="zvl">
+ 		<![CDATA[
+			UPDATE PRTLTPETIANSWER_RELY
+			SET 
+				STATUS = #status#
+			WHERE ANSWER_ID = #answerId# 
+ 		]]>
+ 	</update>
+	
+ 	<update id="applyDAO.ApplyReturnStatus" parameterClass="zvl">
+ 		<![CDATA[
+			UPDATE PRTLTAPPLY_RELY
+			SET 
+				ETC_29 = #returnStatus#
+			WHERE APPLY_ID = #applyId# 
+ 		]]>
+ 	</update>
+	
+ 	<select id="applyDAO.selectApplyReturnStatusCnt" parameterClass="zvl" resultClass="int">
+ 		<![CDATA[
+			SELECT COUNT(*)
+			FROM PRTLTPETIANSWER_RELY
+			WHERE NVL(STATUS, 0) >= 5
+			WHERE APPLY_ID = #applyId# 
+ 		]]>
+ 	</select>
+	
+ 	<update id="applyDAO.addHit" parameterClass="zvl">
+ 		<![CDATA[
+			UPDATE PRTLTAPPLY SET 
+				HIT = HIT + 1
+			WHERE APPLY_ID = #applyId#
+			AND APPLY_CODE = #applyCode# 
+ 		]]>
+ 	</update>
+ 	
+	<update id="applyDAO.updateStatus" parameterClass="zvl" >
+		<![CDATA[
+			UPDATE PRTLTAPPLY_RELY
+			SET  
+				STATUS = #status#
+			WHERE APPLY_ID = #applyId# 
+		]]>
+	</update>
+	
+	<update id="applyDAO.updateAnswerStatus" parameterClass="zvl" >
+			UPDATE PRTLTPETIANSWER_RELY
+			SET  
+				STATUS = #status#
+			   ,ANSWER_DATE = SYSDATE
+			WHERE ANSWER_ID = #answerId#
+	</update>
+	
+	<select id="applyDAO.selectApplyStatus" parameterClass="zvl" resultClass="zvl">
+		<![CDATA[ 
+			SELECT 
+				STATUS  
+			FROM PRTLTAPPLY
+			WHERE APPLY_ID = #applyId#
+			AND APPLY_CODE = #applyCode#	
+		]]>
+	</select>
+	
+	<select id="applyDAO.selectAnswerStatusByUserIdAndApplyId" parameterClass="zvl" resultClass="int">
+		<![CDATA[ 
+			SELECT 
+				STATUS  
+			FROM PRTLTPETIANSWER_RELY
+			WHERE APPLY_ID = #applyId#	
+			AND USER_ID = #userId#
+			AND ANSWER_ID = #answerId#
+		]]>
+	</select>
+	
+	<update id="applyDAO.changeStatus" parameterClass="zvl">
+		<![CDATA[ 
+			UPDATE PRTLTAPPLY
+			SET 
+				STATUS=#status#,
+				RECV_DATE=SYSDATE
+			WHERE APPLY_ID = #applyId#
+			AND APPLY_CODE = #applyCode#	
+		]]>
+	</update>
+	
+	<update id="applyDAO.exceptApplicant" parameterClass="zvl">
+		<![CDATA[ 
+			UPDATE PRTLTAPPLY
+				SET DEL_FLAG='Y'
+			WHERE APPLY_ID = #applyId#
+			AND APPLY_CODE = #applyCode#	
+		]]>
+	</update>
+	
+	<update id="applyDAO.inputOpinion" parameterClass="zvl" >
+		<![CDATA[
+			UPDATE PRTLTAPPLY
+			SET  
+				STATUS = #status#,				
+				ETC_CONTENTS1 = #etcContents1#
+			WHERE APPLY_ID = #applyId#
+			AND APPLY_CODE = #applyCode# 
+		]]>
+	</update>
+		
+	<update id="applyDAO.changePayment" parameterClass="zvl" >
+		<![CDATA[
+			UPDATE PRTLTAPPLY
+			SET  
+				ETC_29 = #etc29#
+			WHERE APPLY_ID = #applyId#
+			AND APPLY_CODE = #applyCode# 
+		]]>
+	</update>	
+	
+	<update id="applyDAO.changePaymentInfo" parameterClass="zvl" >
+		<![CDATA[
+			UPDATE PRTLTAPPLY
+			SET  
+				ETC_28 = #etc28#,
+				ETC_29 = #etc29#,
+				ETC_30 = #etc30#,
+				STATUS = #status#
+			WHERE APPLY_ID = #applyId# 
+			AND APPLY_CODE = #applyCode#
+		]]>
+	</update>	
+	
+ 	<select id="applyDAO.selectMaxNttId" resultClass="int">
+ 		<![CDATA[
+			SELECT NVL(MAX(NTT_ID),0)+1 AS NTT_ID  FROM COMTNBBS
+ 		]]>
+ 	</select>
+ 	
+	<insert id="applyDAO.transferApplyToFAQ" parameterClass="zvl" >
+		<selectKey resultClass="java.lang.Long" keyProperty="sortOrdr">
+			SELECT NVL(MAX(SORT_ORDR),0)+1 AS NTT_NO  FROM COMTNBBS
+			WHERE BBS_ID = 'BBSMSTR_000000000491'
+		</selectKey>			
+		<![CDATA[
+			INSERT INTO COMTNBBS
+			(
+				NTT_ID, BBS_ID, NTT_SJ, NTT_CN, SORT_ORDR, 
+			 	NTCR_ID, NTCR_NM, PASSWORD, INQIRE_CO, 
+			 	NTCE_BGNDE, NTCE_ENDDE, REPLY_AT,  			   
+			 	PARNTS, NTT_NO, REPLY_LC, ATCH_FILE_ID,
+			 	FRST_REGISTER_ID, FRST_REGISTER_PNTTM, USE_AT,
+			 	OPTION1, OPTION2, OPTION3, OPTION4, OPTION5, OPTION6,
+			 	OPTION7, OPTION8, OPTION9,
+			 	DELCODE
+			)
+			SELECT
+				#nttId#, 'BBSMSTR_000000000491', A.TITLE, A.CONTENTS, #sortOrdr#, 
+			  	B.USER_ID, C.USER_NAME, #password#, 0, 
+			  	'10000101', '99991231', 'N', 
+			  	0, 1, 0, 'APPLY_'||A.APPLY_ID||'_'||B.ANSWER_ID,
+			  	B.USER_ID, SYSDATE, 'Y',
+			  	C.DEPT_NAME, #option2#, C.USER_NAME, C.TEL, C.EMAIL, #option6#,
+			  	#option7#,#option8#,#option9#,
+			  	'0'
+			FROM PRTLTAPPLY_RELY A
+			INNER JOIN PRTLTPETIANSWER_RELY B ON B.APPLY_ID = A.APPLY_ID AND B.ANSWER_ID = #answerId#
+			INNER JOIN SSOX_USER@LINK_MEDI C ON C.USER_ID = B.USER_ID
+			WHERE A.APPLY_ID = B.APPLY_ID
+			AND B.USER_ID = C.USER_ID
+			AND A.APPLY_ID = #applyId#
+		]]>
+	</insert>
+		
+	<insert id="applyDAO._transferApplyToFAQ" parameterClass="zvl" >
+		<selectKey resultClass="java.lang.Long" keyProperty="sortOrdr">
+			SELECT NVL(MAX(SORT_ORDR),0)+1 AS NTT_NO  FROM COMTNBBS
+			WHERE BBS_ID = 'BBSMSTR_000000000491'
+		</selectKey>			
+		<![CDATA[
+			INSERT INTO COMTNBBS
+			(
+				NTT_ID, BBS_ID, NTT_SJ, NTT_CN, SORT_ORDR, 
+			 	NTCR_ID, NTCR_NM, PASSWORD, INQIRE_CO, 
+			 	NTCE_BGNDE, NTCE_ENDDE, REPLY_AT,  			   
+			 	PARNTS, NTT_NO, REPLY_LC, ATCH_FILE_ID,
+			 	FRST_REGISTER_ID, FRST_REGISTER_PNTTM, USE_AT,
+			 	OPTION1, OPTION2, OPTION3, OPTION4, OPTION5,
+			 	DELCODE
+			)
+			VALUES
+			(
+				#nttId#, 'BBSMSTR_000000000491', #title#, #answerContent:CLOB#, #sortOrdr#, 
+			  	#userId#, #userName#, #password#, 0, 
+			  	'10000101', '99991231', 'N', 
+			  	0, 1, 0, #atchFileId#,
+			  	#userId#, SYSDATE, 'Y',
+			  	#deptName#, #option2#, #userName#, #tel#, #email#,
+			  	'0'
+			)
+		]]>
+	</insert>
+	
+	<update id="applyDAO.transferApply" parameterClass="zvl" >
+		<![CDATA[
+			UPDATE PRTLTAPPLY_RELY
+			SET  
+				TITLE = #title#,
+				STATUS = #status#
+			WHERE APPLY_ID = #applyId# 
+		]]>
+	</update>	
+	
+	<select id="applyDAO.selectChargedPersonByApplyIdAndUserId" parameterClass="zvl" resultClass="int">
+		<![CDATA[
+			SELECT COUNT(*)
+			FROM  PRTLTPETIANSWER_RELY
+			WHERE APPLY_ID = #applyId# AND USER_ID = #userId#
+		]]>
+	</select>	
+	
+	<select id="applyDAO.selectOnlineApplyCnt" parameterClass="zvl" resultClass="int">
+		<![CDATA[
+			SELECT COUNT(*)
+			FROM  PRTLTAPPLY
+			WHERE APPLY_CODE = #applyCode# 
+			AND ONLINE_ID = #onlineId#	
+			AND NVL(DEL_FLAG,'N') = 'N'		 
+		]]>
+			<isNotEmpty prepend="AND" property="memberId">
+				<![CDATA[	MEMBER_ID = #memberId#	]]>
+			</isNotEmpty>
+			<isEmpty prepend="AND" property="memberId">
+				<![CDATA[	PINNO = #pinno#	]]>
+			</isEmpty>
+	</select>	
+	
+</sqlMap>                            

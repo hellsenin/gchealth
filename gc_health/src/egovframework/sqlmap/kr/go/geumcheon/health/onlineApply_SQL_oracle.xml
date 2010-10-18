@@ -1,0 +1,405 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="onlineApply">
+
+	<typeAlias  alias="zvl" type="egovframework.kr.go.geumcheon.health.util.ZValue"/>
+    			
+	<resultMap id="onlineApply" class="zvl">
+		<result property="onlineId" 		column="ONLINE_ID"/>
+		<result property="title" 		column="TITLE"/>
+		<result property="content" 		column="CONTENT" jdbcType="CLOB" javaType="java.lang.String"/>
+		<result property="useYn" 	column="USE_YN"/>
+		<result property="receiptSdate" 		column="RECEIPT_SDATE"/>
+		<result property="receiptEdate" 	column="RECEIPT_EDATE" />
+		<result property="appInwon" column="APP_INWON" />
+		<result property="waitInwon" 	column="WAIT_INWON" />
+		<result property="applyCode" 	column="APPLY_CODE" />
+		<result property="method" 	column="METHOD" />
+		<result property="eduSdate" 	column="EDU_SDATE" />
+		<result property="eduEdate" 	column="EDU_EDATE" />
+		<result property="eduStime" 	column="EDU_STIME" />
+		<result property="eduEtime" 	column="EDU_ETIME" />
+		<result property="eduPlace" 	column="EDU_PLACE" />
+		<result property="status" 	column="STATUS" />
+		<result property="dupYn" 	column="DUP_YN" />
+		<result property="weekOfMonth" 	column="WEEK_OF_MONTH" />
+		<result property="dayOfWeek" 	column="DAY_OF_WEEK" />
+	</resultMap>
+	
+	<select id="onlineApplyDAO.selectOnlineApplyList" parameterClass="zvl" resultClass="zvl">
+		<![CDATA[ 
+			SELECT * FROM ( SELECT rownum rn, TB.* FROM (
+			SELECT 
+				ONLINE_ID,TITLE,USE_YN,RECEIPT_SDATE,RECEIPT_EDATE,NVL(APP_INWON,0) AS APP_INWON,NVL(WAIT_INWON,0) AS WAIT_INWON,
+				(SELECT COUNT(*) FROM PRTLTAPPLY WHERE  NVL(DEL_FLAG,'N') = 'N' AND ONLINE_ID = A.ONLINE_ID) AS INWON_CNT,
+		     	CASE  
+		     	     WHEN TO_CHAR(SYSDATE, 'YYYYMMDD') >= REPLACE(A.RECEIPT_SDATE,'-','')
+		     		   AND TO_CHAR(SYSDATE, 'YYYYMMDD') <= REPLACE(A.RECEIPT_EDATE,'-','') THEN '2' 
+		     	     WHEN TO_CHAR(SYSDATE, 'YYYYMMDD') > REPLACE(A.RECEIPT_EDATE,'-','') THEN '3' 
+		     	     WHEN TO_CHAR(SYSDATE, 'YYYYMMDD') < REPLACE(A.RECEIPT_SDATE,'-','') THEN '1' 
+		     	END AS STATUS,
+		     	EDU_SDATE,EDU_EDATE,EDU_STIME,EDU_ETIME,EDU_PLACE,METHOD,
+		     	DUP_YN,
+		     	A.APPLY_CODE,
+		     	WEEK_OF_MONTH,
+		     	DAY_OF_WEEK
+			FROM PRTLTONLINE_APPLY A
+			WHERE 1=1 
+		]]>	
+		<isNotEmpty property="applyCode" prepend="AND" >
+			<![CDATA[	A.APPLY_CODE = #applyCode#	]]>
+		</isNotEmpty>	
+		<![CDATA[
+			ORDER BY 
+				ONLINE_ID DESC
+		       ) TB )  WHERE rn BETWEEN #firstIndex# + 1 AND #firstIndex# + #recordCountPerPage#
+		 ]]>
+	</select>
+	
+	<select id="onlineApplyDAO.selectOnlineApplyCnt" parameterClass="zvl" resultClass="int">
+		SELECT COUNT(*)
+		FROM PRTLTONLINE_APPLY
+		WHERE 1=1 
+		<isNotEmpty property="applyCode" prepend="AND" >
+			<![CDATA[	APPLY_CODE = #applyCode#	]]>
+		</isNotEmpty>	
+	</select>	
+		
+	<select id="onlineApplyDAO.selectOnlineApply" parameterClass="zvl" resultMap="onlineApply">
+		<![CDATA[ 
+			SELECT 
+				ONLINE_ID,TITLE,CONTENT,USE_YN,RECEIPT_SDATE,RECEIPT_EDATE,NVL(APP_INWON,0) AS APP_INWON,NVL(WAIT_INWON,0) AS WAIT_INWON,
+				APPLY_CODE,METHOD,EDU_SDATE,EDU_EDATE,EDU_STIME,EDU_ETIME,EDU_PLACE,
+				CASE  
+		     	     WHEN TO_CHAR(SYSDATE, 'YYYYMMDD') >= REPLACE(RECEIPT_SDATE,'-','')
+		     		   AND TO_CHAR(SYSDATE, 'YYYYMMDD') <= REPLACE(RECEIPT_EDATE,'-','') THEN '2' 
+		     	     WHEN TO_CHAR(SYSDATE, 'YYYYMMDD') > REPLACE(RECEIPT_EDATE,'-','') THEN '3' 
+		     	     WHEN TO_CHAR(SYSDATE, 'YYYYMMDD') < REPLACE(RECEIPT_SDATE,'-','') THEN '1' 
+		     	END AS STATUS,
+		     	DUP_YN,
+		     	WEEK_OF_MONTH,
+		     	DAY_OF_WEEK
+			FROM PRTLTONLINE_APPLY
+			WHERE ONLINE_ID = #onlineId#
+		 ]]>
+	</select>
+		
+	<select id="onlineApplyDAO.excelApplicantList" parameterClass="zvl" resultClass="zvl">
+		<![CDATA[ 
+			SELECT 
+				NAME, EMAIL, TEL, CELL_PHONE, ZIPCODE, ADDR1, ADDR2, APPLY_CODE, ONLINE_ID,
+				PETI_GUBUN,TO_CHAR(APPLY_DATE,'YYYY-MM-DD') AS APPLY_DATE, STATUS,	
+				DEL_FLAG,			
+				ETC_1,ETC_2,ETC_3,ETC_4,ETC_5,ETC_6,ETC_7,ETC_8,ETC_9,
+				ETC_10,ETC_11,ETC_12,ETC_13,ETC_14,ETC_15,ETC_16,ETC_17,ETC_18,ETC_19,
+				ETC_20,ETC_21,ETC_22,ETC_23,ETC_24,ETC_25,ETC_26,ETC_27,ETC_28,ETC_29,ETC_30
+			FROM PRTLTAPPLY
+			WHERE ONLINE_ID = #onlineId#
+			AND APPLY_CODE = #applyCode#
+			AND NVL(DEL_FLAG,'N') = 'N'
+		 ]]>
+	</select>
+	
+	<select id="onlineApplyDAO.selectApplicantList" parameterClass="zvl" resultClass="zvl">
+	<![CDATA[ 
+			SELECT * FROM ( SELECT rownum rn, TB.* FROM (
+			SELECT
+				NAME, EMAIL, TEL, CELL_PHONE, ZIPCODE, ADDR1, ADDR2, APPLY_CODE, ONLINE_ID,
+				APPLY_ID, STATUS, TO_CHAR(APPLY_DATE, 'YYYY-MM-DD') AS APPLY_DATE, TITLE,OPEN_FLAG, HIT,
+				SMS_FLAG, PETI_GUBUN,DEL_FLAG, 
+				ETC_1,ETC_2,ETC_3,ETC_4,ETC_5,ETC_6,ETC_7,ETC_8,ETC_9,
+				ETC_10,ETC_11,ETC_12,ETC_13,ETC_14,ETC_15,ETC_16,ETC_17,ETC_18,ETC_19,
+				ETC_20,ETC_21,ETC_22,ETC_23,ETC_24,ETC_25,ETC_26,ETC_27,ETC_28,ETC_29,ETC_30
+			FROM PRTLTAPPLY
+			WHERE ONLINE_ID = #onlineId#
+			AND APPLY_CODE = #applyCode#
+			AND STATUS = #status#
+			AND NVL(DEL_FLAG,'N') = 'N'
+			ORDER BY APPLY_ID DESC
+		       ) TB )  WHERE rn BETWEEN #firstIndex# + 1 AND #firstIndex# + #recordCountPerPage#
+		 ]]>
+	</select>
+	
+	<select id="onlineApplyDAO.selectApplicantListCnt" parameterClass="zvl" resultClass="int">
+		SELECT COUNT(*)
+		FROM PRTLTAPPLY
+		WHERE ONLINE_ID = #onlineId#
+		AND APPLY_CODE = #applyCode#
+		AND STATUS = #status#
+		AND NVL(DEL_FLAG,'N') = 'N'
+	</select>	
+	
+	<select id="onlineApplyDAO.selectAllApplicantList" parameterClass="zvl" resultClass="zvl">
+	<![CDATA[ 
+			SELECT
+				NAME, EMAIL, TEL, CELL_PHONE, ZIPCODE, ADDR1, ADDR2, APPLY_CODE, ONLINE_ID,
+				APPLY_ID, STATUS, TO_CHAR(APPLY_DATE, 'YYYY-MM-DD') AS APPLY_DATE, TITLE,OPEN_FLAG, HIT,
+				SMS_FLAG, PETI_GUBUN,DEL_FLAG, 
+				ETC_1,ETC_2,ETC_3,ETC_4,ETC_5,ETC_6,ETC_7,ETC_8,ETC_9,
+				ETC_10,ETC_11,ETC_12,ETC_13,ETC_14,ETC_15,ETC_16,ETC_17,ETC_18,ETC_19,
+				ETC_20,ETC_21,ETC_22,ETC_23,ETC_24,ETC_25,ETC_26,ETC_27,ETC_28,ETC_29,ETC_30
+			FROM PRTLTAPPLY
+			WHERE ONLINE_ID = #onlineId#
+			AND APPLY_CODE = #applyCode#
+			AND NVL(DEL_FLAG,'N') = 'N'
+			ORDER BY APPLY_ID DESC
+		 ]]>
+	</select>
+		
+	<insert id="onlineApplyDAO.registOnlineApply" parameterClass="zvl" >
+		<selectKey resultClass="java.lang.Long" keyProperty="onlineId">		
+			SELECT SEQ_PRTLTONLINE_APPLY.NEXTVAL FROM DUAL
+		</selectKey>			
+		<![CDATA[
+			INSERT INTO PRTLTONLINE_APPLY
+			(
+				ONLINE_ID,TITLE,CONTENT,USE_YN,RECEIPT_SDATE,RECEIPT_EDATE,APP_INWON,WAIT_INWON,
+				APPLY_CODE,METHOD,EDU_SDATE,EDU_EDATE,EDU_STIME,EDU_ETIME,EDU_PLACE,
+				DUP_YN,WEEK_OF_MONTH,DAY_OF_WEEK
+			)
+			VALUES
+			(
+				#onlineId#, #title#, #content:CLOB#, #useYn#, #receiptSdate#, #receiptEdate#, #appInwon#, #waitInwon#,
+				#applyCode#, #method#, #eduSdate#, #eduEdate#, #eduStime#, #eduEtime#, #eduPlace#,
+				#dupYn#,#weekOfMonth#,#dayOfWeek#
+			)
+		]]>
+	</insert>
+	
+	<update id="onlineApplyDAO.modifyOnlineApply" parameterClass="zvl" >
+		<![CDATA[
+			UPDATE PRTLTONLINE_APPLY
+			SET
+				TITLE=#title#,
+				CONTENT=#content:CLOB#,
+				USE_YN=#useYn#,
+				RECEIPT_SDATE=#receiptSdate#,
+				RECEIPT_EDATE=#receiptEdate#,
+				APP_INWON=#appInwon#,
+				WAIT_INWON=#waitInwon#,
+				APPLY_CODE=#applyCode#,METHOD=#method#,
+				EDU_SDATE=#eduSdate#,EDU_EDATE=#eduEdate#,
+				EDU_STIME=#eduStime#,EDU_ETIME=#eduEtime#,EDU_PLACE=#eduPlace#,
+				DUP_YN=#dupYn#,
+				WEEK_OF_MONTH=#weekOfMonth#,
+				DAY_OF_WEEK=#dayOfWeek#
+			WHERE
+				ONLINE_ID = #onlineId#
+		]]>
+	</update>
+	
+	<delete id="onlineApplyDAO.delOnlineApply" parameterClass="zvl" >
+		<![CDATA[
+			DELETE FROM PRTLTONLINE_APPLY
+			WHERE ONLINE_ID = #onlineId#	
+		]]>	
+	</delete>
+	
+	<delete id="onlineApplyDAO.delOnlineApplicant" parameterClass="zvl" >
+		<![CDATA[
+			DELETE FROM PRTLTAPPLY
+			WHERE ONLINE_ID = #onlineId#
+			AND APPLY_CODE = #applyCode#	
+		]]>	
+	</delete>
+	
+	<update id="onlineApplyDAO.lineUpOnlineApply" parameterClass="zvl" >
+		<![CDATA[
+			UPDATE PRTLTAPPLY
+			SET
+				STATUS='2'
+			WHERE
+				APPLY_CODE = #applyCode#
+			AND
+				ONLINE_ID = #onlineId#
+			AND 
+				APPLY_ID IN (
+					SELECT APPLY_ID 
+					FROM ( SELECT APPLY_ID
+						   FROM PRTLTAPPLY
+						   WHERE APPLY_CODE = #applyCode#
+						   AND ONLINE_ID = #onlineId# 
+						   AND STATUS = '1'
+						   AND NVL(DEL_FLAG,'N') = 'N'
+						   ORDER BY APPLY_ID ASC
+						 )
+					WHERE ROWNUM <= #inwon#
+				)
+		]]>
+	</update>
+	
+	<update id="onlineApplyDAO.lotteryOnlineApply" parameterClass="zvl" >
+		<![CDATA[
+			UPDATE PRTLTAPPLY
+			SET
+				STATUS='2'
+			WHERE
+				APPLY_CODE = #applyCode#
+			AND
+				APPLY_ID IN (
+					SELECT APPLY_ID 
+					FROM ( SELECT APPLY_ID
+						   FROM PRTLTAPPLY
+						   WHERE APPLY_CODE = #applyCode#
+						   AND ONLINE_ID = #onlineId# 
+						   AND STATUS = 1
+						   AND NVL(DEL_FLAG,'N') = 'N'
+						   ORDER BY DBMS_RANDOM.VALUE 
+						 )
+					WHERE ROWNUM <= #inwon#
+				)
+		]]>
+	</update>
+	
+	<update id="onlineApplyDAO.updateApplicantStatus" parameterClass="zvl" >
+		<![CDATA[
+			UPDATE PRTLTAPPLY
+			SET
+				STATUS=#status#
+			WHERE
+				ONLINE_ID = #onlineId#
+			AND APPLY_CODE = #applyCode#
+		]]>
+	</update>
+	
+	<update id="onlineApplyDAO.updateApplicantStatusByApplyId" parameterClass="zvl" >
+		<![CDATA[
+			UPDATE PRTLTAPPLY
+			SET
+				STATUS=#status#
+			WHERE
+				APPLY_ID = #applyId#
+			AND APPLY_CODE = #applyCode#
+		]]>
+	</update>
+	
+	<select id="onlineApplyDAO.selectMyOnlineApplyList" parameterClass="zvl" resultClass="zvl">
+		<![CDATA[
+		SELECT * FROM ( SELECT rownum rn, TB.* FROM (
+		SELECT 
+			A.ONLINE_ID
+			, B.TITLE
+			, B.USE_YN
+			, B.RECEIPT_SDATE
+			, B.RECEIPT_EDATE
+			, NVL(B.APP_INWON,0) AS APP_INWON
+			, NVL(B.WAIT_INWON,0) AS WAIT_INWON
+			, A.NAME
+			, CASE WHEN TO_CHAR(SYSDATE, 'YYYYMMDD') >= REPLACE(B.RECEIPT_SDATE,'-','')
+		     	   AND TO_CHAR(SYSDATE, 'YYYYMMDD') <= REPLACE(B.RECEIPT_EDATE,'-','') THEN '2' 
+		     	   WHEN TO_CHAR(SYSDATE, 'YYYYMMDD') > REPLACE(B.RECEIPT_EDATE,'-','') THEN '3' 
+		     	   WHEN TO_CHAR(SYSDATE, 'YYYYMMDD') < REPLACE(B.RECEIPT_SDATE,'-','') THEN '1' 
+		      END AS ONLINE_STATUS
+		    , A.APPLY_CODE
+		    , B.METHOD
+		    , B.EDU_SDATE
+		    , B.EDU_EDATE
+		    , B.EDU_STIME
+		    , B.EDU_ETIME
+		    , B.EDU_PLACE
+		    , A.APPLY_DATE
+		    , A.APPLY_ID
+		    , A.STATUS
+		    , ETC_1,ETC_2,ETC_3,ETC_4,ETC_5,ETC_6,ETC_7,ETC_8,ETC_9
+		    , ETC_10,ETC_11,ETC_12,ETC_13,ETC_14,ETC_15,ETC_16,ETC_17,ETC_18,ETC_19
+		    , ETC_20,ETC_21,ETC_22,ETC_23,ETC_24,ETC_25,ETC_26,ETC_27,ETC_28,ETC_29,ETC_30
+		FROM PRTLTAPPLY A 
+		INNER JOIN PRTLTONLINE_APPLY B ON B.APPLY_CODE = A.APPLY_CODE AND B.ONLINE_ID = A.ONLINE_ID
+		WHERE A.APPLY_CODE = #applyCode#
+		AND NVL(A.DEL_FLAG,'N') = 'N'
+		]]>	
+		<isNotEmpty property="memberId" prepend="AND" >
+			<![CDATA[	A.MEMBER_ID = #memberId#	]]>
+		</isNotEmpty>		
+		<isEmpty property="memberId" prepend="AND">
+			<![CDATA[	A.PINNO = #pinno#	]]>
+		</isEmpty>		
+		<![CDATA[
+		ORDER BY B.ONLINE_ID DESC, A.APPLY_ID DESC
+		       ) TB )  WHERE rn BETWEEN #firstIndex# + 1 AND #firstIndex# + #recordCountPerPage#
+		]]>
+	</select>	
+	
+	<select id="onlineApplyDAO.selectMyOnlineApplyListCnt" parameterClass="zvl" resultClass="int">
+		SELECT COUNT(*) 
+		FROM PRTLTAPPLY A
+		INNER JOIN PRTLTONLINE_APPLY B 
+		ON B.APPLY_CODE = A.APPLY_CODE 
+		AND B.ONLINE_ID = A.ONLINE_ID
+		WHERE A.APPLY_CODE = #applyCode# AND NVL(A.DEL_FLAG,'N') = 'N'
+		<isNotEmpty property="memberId" prepend="AND" >
+			<![CDATA[	A.MEMBER_ID = #memberId#	]]>
+		</isNotEmpty>		
+		<isEmpty property="memberId" prepend="AND">
+			<![CDATA[	A.PINNO = #pinno#	]]>
+		</isEmpty>		
+	</select>	
+	
+	<select id="onlineApplyDAO.getInwon" parameterClass="zvl" resultClass="zvl">
+		<![CDATA[ 
+			SELECT 
+				NVL(A.APP_INWON,0) AS APP_INWON,NVL(A.WAIT_INWON,0) AS WAIT_INWON,
+				(SELECT COUNT(*) FROM PRTLTAPPLY WHERE ONLINE_ID = A.ONLINE_ID AND APPLY_CODE = #applyCode# AND NVL(DEL_FLAG,'N') = 'N') AS INWON_CNT
+			FROM PRTLTONLINE_APPLY A
+			WHERE A.APPLY_CODE = #applyCode#
+			AND A.ONLINE_ID = #onlineId#
+		 ]]>
+	</select>
+	
+	<select id="onlineApplyDAO.selectRecentOnlineApply" parameterClass="string" resultMap="onlineApply">
+		<![CDATA[ 
+		SELECT * FROM (
+			SELECT 
+				ONLINE_ID,TITLE,CONTENT,USE_YN,RECEIPT_SDATE,RECEIPT_EDATE,NVL(APP_INWON,0) AS APP_INWON,NVL(WAIT_INWON,0) AS WAIT_INWON,
+				APPLY_CODE,METHOD,EDU_SDATE,EDU_EDATE,EDU_STIME,EDU_ETIME,EDU_PLACE,
+				CASE  
+		     	     WHEN TO_CHAR(SYSDATE, 'YYYYMMDD') >= REPLACE(RECEIPT_SDATE,'-','')
+		     		   AND TO_CHAR(SYSDATE, 'YYYYMMDD') <= REPLACE(RECEIPT_EDATE,'-','') THEN '2' 
+		     	     WHEN TO_CHAR(SYSDATE, 'YYYYMMDD') > REPLACE(RECEIPT_EDATE,'-','') THEN '3' 
+		     	     WHEN TO_CHAR(SYSDATE, 'YYYYMMDD') < REPLACE(RECEIPT_SDATE,'-','') THEN '1' 
+		     	END AS STATUS,
+		     	DUP_YN,
+		     	WEEK_OF_MONTH,
+		     	DAY_OF_WEEK
+			FROM PRTLTONLINE_APPLY
+			WHERE ONLINE_ID = (SELECT MAX(ONLINE_ID) FROM PRTLTONLINE_APPLY WHERE APPLY_CODE=#applyCode#)
+		) A
+		 ]]>
+	</select>
+	
+	<select id="onlineApplyDAO.selectOnlineApplyListByDate" parameterClass="zvl" resultClass="zvl">
+	<![CDATA[ 
+			SELECT 
+				ONLINE_ID
+				,TITLE
+				,APPLY_CODE
+				,REPLACE(EDU_SDATE,'-','') AS EDU_SDAY
+				,REPLACE(EDU_EDATE,'-','') AS EDU_EDAY
+				,WEEK_OF_MONTH
+				,DAY_OF_WEEK
+			FROM PRTLTONLINE_APPLY
+			WHERE #date# >= SUBSTR(REPLACE(EDU_SDATE,'-',''),1,6)
+		   	AND #date# <= SUBSTR(REPLACE(EDU_EDATE,'-',''),1,6)
+		 ]]>
+		<isNotEmpty property="applyCode" prepend="AND" >
+			<![CDATA[	APPLY_CODE = #applyCode#	]]>
+		</isNotEmpty>		
+	</select>
+		
+	<select id="onlineApplyDAO.selectEventListByDate" parameterClass="zvl" resultClass="zvl">
+	<![CDATA[ 
+			SELECT 
+				NTT_ID
+				,BBS_ID
+				,NTT_SJ
+				,OPTION2 AS EVT_SDATE
+				,SUBSTR(REPLACE(OPTION2,'-',''),7,8) AS EVT_SDAY
+			FROM COMTNBBS
+			WHERE SUBSTR(REPLACE(OPTION2,'-',''),1,6) = #date#
+			AND BBS_ID = #bbsId#
+			AND USE_AT = 'Y'
+		 ]]>	
+	</select>
+		
+</sqlMap>                            

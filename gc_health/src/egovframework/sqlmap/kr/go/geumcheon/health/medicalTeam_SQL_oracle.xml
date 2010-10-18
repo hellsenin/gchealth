@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="MedicalTeamDAO">
+
+	<typeAlias  alias="zvl" type="egovframework.kr.go.geumcheon.health.util.ZValue"/>
+    		
+	<select id="MedicalTeamDAO.selectMedicalTeamPetiGubun" resultClass="int">
+		    SELECT SEQ_MEDICAL_TEAM_PETI_GUBUN.NEXTVAL
+		    FROM DUAL
+	</select>	
+					
+	<select id="MedicalTeamDAO.selectMedicalTeamList" parameterClass="zvl" resultClass="zvl">
+		    SELECT A.NO,
+		       A.NAME,
+		       A.SUBJECT,
+		       A.INSTITUTION,
+		       A.TEL,
+		       A.ORG_IMG_NM,
+		       A.IMG_NM,
+		       A.URL
+		  FROM MEDICAL_TEAM A
+		  WHERE 1=1
+	<isNotEmpty prepend="AND" property="subject">
+		<![CDATA[	A.SUBJECT = #subject#		]]>
+	</isNotEmpty>
+		  ORDER BY A.NO ASC
+	</select>	
+	
+	<select id="MedicalTeamDAO.selectMedicalTeam" parameterClass="int" resultClass="zvl">
+		    SELECT A.NO,
+		       A.NAME,
+		       A.SUBJECT,
+		       A.INSTITUTION,
+		       A.TEL,
+		       A.ORG_IMG_NM,
+		       A.IMG_NM,
+		       A.URL
+		  FROM MEDICAL_TEAM A
+		  WHERE NO = #no#
+	</select>	
+		
+	<insert id="MedicalTeamDAO.addMedicalTeam" parameterClass="zvl">
+		<selectKey resultClass="java.lang.Integer" keyProperty="no">
+			SELECT To_Number('0' || Max(NO))+1 FROM MEDICAL_TEAM
+		</selectKey>			
+		<![CDATA[ 			
+		     INSERT INTO MEDICAL_TEAM ( NO,NAME,SUBJECT,INSTITUTION,TEL, ORG_IMG_NM, IMG_NM, URL )
+			 VALUES ( #no#, #name#, #subject#, #institution#, #tel#, #orgImgNm#, #imgNm#, #url# )
+
+		]]> 
+	</insert>
+		
+	<update id="MedicalTeamDAO.updateMedicalTeam" parameterClass="zvl">
+			UPDATE MEDICAL_TEAM
+			SET 
+				NAME = #name#
+				, SUBJECT = #subject#
+				, INSTITUTION = #institution#
+				, TEL = #tel#		
+			<isNotEmpty property="orgImgNm">
+				, ORG_IMG_NM = #orgImgNm#
+				, IMG_NM = #imgNm# 
+			</isNotEmpty>
+			WHERE NO = #no#
+	</update>	
+		
+	<delete id="MedicalTeamDAO.deleteMedicalTeam" parameterClass="int">
+		<![CDATA[ 
+			DELETE
+			FROM MEDICAL_TEAM
+			WHERE NO = #no#
+		 ]]>
+	</delete>	
+		
+</sqlMap>                            

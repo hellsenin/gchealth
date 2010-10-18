@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMapConfig PUBLIC "-//iBATIS.com//DTD SQL Map Config 2.0//EN"
+    "http://www.ibatis.com/dtd/sql-map-config-2.dtd">
+
+<sqlMapConfig>
+	
+	<!-- 배너관리 -->
+	<sqlMap resource="egovframework/sqlmap/kr/go/geumcheon/health/Banner_SQL_oracle.xml"/>
+	<sqlMap resource="egovframework/sqlmap/kr/go/geumcheon/health/apply_SQL_oracle.xml"/>
+	
+	<sqlMap resource="egovframework/sqlmap/kr/go/geumcheon/health/Freecheck_SQL_oracle.xml"/>
+	<sqlMap resource="egovframework/sqlmap/kr/go/geumcheon/health/Freecheck_User_SQL_oracle.xml"/>
+	
+	<sqlMap resource="egovframework/sqlmap/kr/go/geumcheon/health/member_SQL_oracle.xml"/>
+	
+	<sqlMap resource="egovframework/sqlmap/kr/go/geumcheon/health/onlineApply_SQL_oracle.xml"/>
+	
+	<sqlMap resource="egovframework/sqlmap/kr/go/geumcheon/health/PortalAlert_SQL_oracle.xml"/>
+	
+	<sqlMap resource="egovframework/sqlmap/kr/go/geumcheon/health/satisfaction_SQL_oracle.xml"/>
+	
+	<sqlMap resource="egovframework/sqlmap/kr/go/geumcheon/health/visitorLog_SQL_oracle.xml"/>
+	
+	<sqlMap resource="egovframework/sqlmap/kr/go/geumcheon/health/category_SQL_oracle.xml"/>
+	
+	<sqlMap resource="egovframework/sqlmap/kr/go/geumcheon/health/poll_SQL_oracle.xml"/>
+	
+	<sqlMap resource="egovframework/sqlmap/kr/go/geumcheon/health/wcmboard_SQL_oracle.xml"/>
+	
+	<sqlMap resource="egovframework/sqlmap/kr/go/geumcheon/health/zipcode_SQL_oracle.xml"/>
+	
+	<sqlMap resource="egovframework/sqlmap/kr/go/geumcheon/health/applyMst_SQL_oracle.xml"/>
+	
+	<sqlMap resource="egovframework/sqlmap/kr/go/geumcheon/health/discussion_SQL_oracle.xml"/>
+	
+	<sqlMap resource="egovframework/sqlmap/kr/go/geumcheon/health/medicalTeam_SQL_oracle.xml"/>
+	<sqlMap resource="egovframework/sqlmap/kr/go/geumcheon/health/infoCustomMade_SQL_oracle.xml"/>
+	<sqlMap resource="egovframework/sqlmap/kr/go/geumcheon/health/search_SQL_oracle.xml"/>
+	<sqlMap resource="egovframework/sqlmap/kr/go/geumcheon/health/metabolicSyndrome_SQL_oracle.xml"/>
+	<sqlMap resource="egovframework/sqlmap/kr/go/geumcheon/health/Comment_SQL.xml"/>
+</sqlMapConfig>

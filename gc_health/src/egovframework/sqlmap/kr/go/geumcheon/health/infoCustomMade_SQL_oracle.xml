@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="infoCustomMade">
+
+	<typeAlias  alias="zvl" type="egovframework.kr.go.geumcheon.health.util.ZValue"/>
+    			    
+	<insert id="infoCustomMadeDAO.addCustomMainMenuCategory" parameterClass="zvl">
+		<selectKey resultClass="java.lang.Long" keyProperty="cstmId">
+			SELECT To_Number('0' || Max(CSTM_ID))+1 FROM CUSTOM_MAIN_MENU_CATEGORY
+		</selectKey>			
+			INSERT INTO CUSTOM_MAIN_MENU_CATEGORY 
+			(
+				CSTM_ID,CATEGORY_NM,CATEGORY_ORDR
+			)
+			VALUES 
+			( 
+				#cstmId#, #categoryNm#, #categoryOrdr#
+			)
+	</insert>	
+			
+	<select id="infoCustomMadeDAO.selectCustomMainMenuCategoryList" parameterClass="string" resultClass="zvl">
+		SELECT 
+		      A.CSTM_ID, A.CATEGORY_NM,
+		      B.CSTM_MENU_NO, B.CSTM_MAIN_PRT_YN, B.CSTM_MENU_NM, B.CSTM_MENU_ORDER
+		FROM CUSTOM_MAIN_MENU_CATEGORY A
+		INNER JOIN CUSTOM_MAIN_MENU B ON B.CSTM_ID = A.CSTM_ID
+		ORDER BY A.CATEGORY_ORDR ASC, B.CSTM_MENU_ORDER ASC
+	</select>	
+		
+	<select id="infoCustomMadeDAO.selectUserCustomMainMenuList" parameterClass="zvl" resultClass="zvl">
+		SELECT 
+		      A.CSTM_ID, A.CATEGORY_NM,
+		      B.CSTM_MENU_NO, C.CSTM_MAIN_PRT_YN, B.CSTM_MENU_NM, B.CSTM_MENU_ORDER
+		FROM CUSTOM_MAIN_MENU_CATEGORY A
+		INNER JOIN CUSTOM_MAIN_MENU B ON B.CSTM_ID = A.CSTM_ID
+		LEFT OUTER JOIN 
+		(
+			SELECT 'Y' AS CSTM_MAIN_PRT_YN, CSTM_MENU_NO
+			FROM CUSTOM_MAIN_MENU
+			WHERE CSTM_MENU_NO IN ( $cstmMenuNoes$ )
+		) C ON C.CSTM_MENU_NO = B.CSTM_MENU_NO
+		WHERE A.SITE_ID = #siteId#
+		ORDER BY A.CATEGORY_ORDR ASC, B.CSTM_MENU_ORDER ASC
+	</select>	
+		
+	<select id="infoCustomMadeDAO.selectedBasicCustomMainMenuList" resultClass="zvl">
+		SELECT 
+		     A.CSTM_MENU_NO, A.CSTM_ID, A.CSTM_MENU_NM, C.FULL_MENU_LINK
+		FROM CUSTOM_MAIN_MENU A
+		INNER JOIN CATEGORY_ADDITION C ON C.CATEGORY_ID = A.CSTM_MENU_NO
+		ORDER BY A.CSTM_MENU_ORDER ASC
+	</select>	
+		
+	<select id="infoCustomMadeDAO.selectedUserCustomMainMenuList" parameterClass="string" resultClass="zvl">
+		SELECT 
+		     A.CSTM_MENU_NO, A.CSTM_ID, A.CSTM_MENU_NM, C.FULL_MENU_LINK
+		FROM CUSTOM_MAIN_MENU A
+		INNER JOIN COMTNMENUINFO C ON C.MENU_NO = A.CSTM_MENU_NO
+		WHERE A.CSTM_MENU_NO IN ( $cstmMenuNoes$ )
+		ORDER BY A.CSTM_MENU_ORDER ASC
+	</select>	
+		
+	<select id="infoCustomMadeDAO.selectCustomMainMenuCategorySortOrdrList" resultClass="zvl">
+		SELECT 
+		      A.CSTM_ID, A.CATEGORY_NM, A.CATEGORY_ORDR
+		FROM CUSTOM_MAIN_MENU_CATEGORY A
+		ORDER BY A.CATEGORY_ORDR ASC
+	</select>	
+		
+	<select id="infoCustomMadeDAO.selectCustomMainMenuCategory" parameterClass="string" resultClass="zvl">
+		SELECT 
+		      *
+		FROM CUSTOM_MAIN_MENU_CATEGORY
+		WHERE CSTM_ID = #cstmId#
+	</select>	
+		
+	<delete id="infoCustomMadeDAO.delCustomMainMenuCategory" parameterClass="string">
+		DELETE
+		FROM CUSTOM_MAIN_MENU_CATEGORY
+		WHERE CSTM_ID = #cstmId#
+	</delete>	
+			
+	<update id="infoCustomMadeDAO.updateCustomMainMenuCategory" parameterClass="zvl">
+		UPDATE CUSTOM_MAIN_MENU_CATEGORY
+		SET 
+			CATEGORY_NM = #categoryNm#,
+			CATEGORY_ORDR = #categoryOrdr#
+		WHERE CSTM_ID = #cstmId#
+	</update>	
+	
+	<select id="infoCustomMadeDAO.selectCustomMainMenuA" parameterClass="zvl" resultClass="zvl">
+		SELECT 
+		      A.CATEGORY_ID
+			, A.SEQUENCE 
+			, A.NAME
+			, A.PARENT_ID
+			, A.SITE_ID
+			, C.FULL_MENU_LINK 
+			, (SELECT count(B.CSTM_MENU_NO) 
+			   FROM CUSTOM_MAIN_MENU B   
+			   WHERE B.CSTM_MENU_NO  = A.CATEGORY_ID
+			   AND B.CSTM_ID = #cstmId#
+			  ) AS "chkYeoBu"
+		FROM GCWEB.WCM_CATEGORY A
+		INNER JOIN CATEGORY_ADDITION C ON C.CATEGORY_ID = A.CATEGORY_ID
+		WHERE NVL(A.MENU_USE_YN,'N') = 'Y'
+		AND A.SITE_ID = 14
+		ORDER BY A.PARENT_ID, A.SEQUENCE
+	</select>	
+		
+	<select id="infoCustomMadeDAO.selectedCustomMainMenuA" parameterClass="string" resultClass="zvl">
+		SELECT 
+		      A.CATEGORY_ID
+			, A.SEQUENCE 
+			, A.NAME   
+			, A.PARENT_ID  
+			, C.FULL_MENU_LINK
+		FROM gcweb.WCM_CATEGORY A
+		INNER JOIN CUSTOM_MAIN_MENU B ON B.CSTM_MENU_NO = A.CATEGORY_ID
+		INNER JOIN CATEGORY_ADDITION C ON C.CATEGORY_ID = A.CATEGORY_ID
+		WHERE A.CATEGORY_ID = #categoryId#
+		AND A.SITE_ID = 14
+		ORDER BY C.PARENT_ID, A.SEQUENCE
+	</select>	
+			
+	<select id="infoCustomMadeDAO.getSelectCustomMainMenuNo" parameterClass="string" resultClass="string">
+		SELECT 
+		      CSTM_MENU_NO
+		FROM CUSTOM_MAIN_MENU
+		WHERE CSTM_ID = #cstmId#
+	</select>	
+				
+	<insert id="infoCustomMadeDAO.addCustomMainMenu" parameterClass="zvl">
+			INSERT INTO CUSTOM_MAIN_MENU 
+			(
+				CSTM_MENU_NO,CSTM_MENU_NM, CSTM_MENU_ORDER, CSTM_MAIN_PRT_YN, CSTM_ID
+			)
+			SELECT CATEGORY_ID, NAME, SEQUENCE, 'N', #cstmId#
+			FROM gcweb.WCM_CATEGORY A
+			WHERE CATEGORY_ID = #categoryId#
+			AND A.SITE_ID = 14
+	</insert>	
+			
+	<insert id="infoCustomMadeDAO.updateCustomMainMenu" parameterClass="zvl">
+			UPDATE CUSTOM_MAIN_MENU
+			SET
+				CSTM_MENU_NM=#cstmMenuNm#, 
+				CSTM_MENU_ORDER=#cstmMenuOrder#, 
+				CSTM_MAIN_PRT_YN=#cstmMainPrtYn#
+			WHERE CSTM_MENU_NO = #cstmMenuNo#
+	</insert>	
+			
+	<delete id="infoCustomMadeDAO.delCustomMainMenu" parameterClass="zvl">
+		DELETE
+		FROM CUSTOM_MAIN_MENU
+		WHERE CSTM_ID = #cstmId# AND CSTM_MENU_NO = #cstmMenuNo#
+	</delete>	
+			
+	<delete id="infoCustomMadeDAO.delCustomMainMenuByCategoryId" parameterClass="string">
+		DELETE
+		FROM CUSTOM_MAIN_MENU
+		WHERE CSTM_ID = #cstmId#
+	</delete>	
+			
+</sqlMap>                            

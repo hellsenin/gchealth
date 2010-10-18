@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="zipcode">
+
+	<typeAlias  alias="zvl" type="egovframework.kr.go.geumcheon.health.util.ZValue"/>
+    	
+	<select id="zipcodeDAO.selectAddrList" parameterClass="zvl" resultClass="zvl">
+		<![CDATA[ 
+		     SELECT SIDO || ' ' || GUGUN || ' ' || DONG || ' ' || DONG2 AS ADDR, BUNSISTA, BUNSIEND, ZIPCOD 
+		     FROM gcweb.ZIPCOD
+		     WHERE SIDO LIKE '%' || #sido# || '%' AND GUGUN LIKE '%' || #gugun# || '%' AND DONG LIKE '%' || #dong# || '%'
+		 ]]>
+	</select>	
+		
+	<select id="zipcodeDAO.selectDongList" parameterClass="zvl" resultClass="zvl">
+		<![CDATA[ 
+		     SELECT DISTINCT SIDO || ' ' || GUGUN || ' ' || DONG AS DONG 
+		     FROM gcweb.ZIPCOD
+		     WHERE DONG LIKE '%' || #dongNm# || '%' OR DONG2 LIKE '%' || #dongNm# || '%'
+		 ]]>
+	</select>	
+		
+</sqlMap>                            

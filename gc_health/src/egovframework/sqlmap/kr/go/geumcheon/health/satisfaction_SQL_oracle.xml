@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="satisfaction">
+
+	<typeAlias  alias="zvl" type="egovframework.kr.go.geumcheon.health.util.ZValue"/>
+    			
+	<select id="satisfactionDAO.existsUserIp" parameterClass="zvl" resultClass="int">
+		SELECT COUNT(*)
+		FROM SATISFACTION
+		WHERE USER_IP = #userIp# AND CATEGORY_ID = #categoryId#
+	</select>	
+		
+	<insert id="satisfactionDAO.saveSatisfaction" parameterClass="zvl">
+		<selectKey resultClass="java.lang.Integer" keyProperty="sid">
+			SELECT SEQ_SATISFACTION.NEXTVAL FROM DUAL
+		</selectKey>			
+		<![CDATA[ 			
+		     INSERT INTO SATISFACTION (
+		     	SID,CATEGORY_ID,STATUS,OPINION,REG_DATE,SITE_ID,USER_IP
+		     )
+			VALUES ( #sid#, #categoryId#, #status#, #opinion#, SYSDATE, #siteId#, #userIp#)
+		]]> 
+	</insert>
+		
+	<select id="satisfactionDAO.selectSatisfactionList" parameterClass="zvl" resultClass="zvl">
+		<![CDATA[ 
+			SELECT * FROM ( SELECT rownum rn, TB.* FROM (
+			SELECT 
+				A.SID
+				,A.CATEGORY_ID
+				,A.STATUS
+				,A.OPINION
+				,A.REG_DATE
+				,A.SITE_ID
+				,A.USER_IP
+				,C.FULL_MENU_LINK
+				,B.FULL_PATH
+				,B.NAME
+			FROM SATISFACTION A
+			INNER JOIN gcweb.WCM_CATEGORY B ON B.CATEGORY_ID = A.CATEGORY_ID
+			INNER JOIN CATEGORY_ADDITION C ON C.CATEGORY_ID = A.CATEGORY_ID
+			WHERE B.SITE_ID = #siteId#
+		 ]]>
+			<isEqual property="searchType" compareValue="0">
+				<isNotEmpty prepend="AND" property="searchTxt">
+					<![CDATA[	B.NAME LIKE '%' || #searchTxt# || '%'	]]>
+				</isNotEmpty>
+			</isEqual>
+			<isEqual property="searchType" compareValue="1">
+				<isNotEmpty prepend="AND" property="searchTxt">
+					<![CDATA[	B.PATH LIKE '%' || #searchTxt# || '%'	]]>
+				</isNotEmpty>
+			</isEqual>
+		<![CDATA[ 
+			ORDER BY 
+				A.REG_DATE DESC
+		       ) TB )  WHERE rn BETWEEN #firstIndex# + 1 AND #firstIndex# + #recordCountPerPage#
+		 ]]>
+	</select>	
+		
+	<select id="satisfactionDAO.selectSatisfactionCnt" parameterClass="zvl" resultClass="int">
+		<![CDATA[ 
+			SELECT COUNT(*) 
+			FROM SATISFACTION A
+			INNER JOIN gcweb.WCM_CATEGORY B ON B.CATEGORY_ID = A.CATEGORY_ID
+			WHERE B.SITE_ID = #siteId#
+		 ]]>
+			<isEqual property="searchType" compareValue="0">
+				<isNotEmpty prepend="AND" property="searchTxt">
+					<![CDATA[	B.NAME LIKE '%' || #searchTxt# || '%'	]]>
+				</isNotEmpty>
+			</isEqual>
+			<isEqual property="searchType" compareValue="1">
+				<isNotEmpty prepend="AND" property="searchTxt">
+					<![CDATA[	B.FULL_PATH LIKE '%' || #searchTxt# || '%'	]]>
+				</isNotEmpty>
+			</isEqual>
+	</select>	
+		
+</sqlMap>                            

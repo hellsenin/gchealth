@@ -1,0 +1,504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="wcmboard">
+
+	<typeAlias  alias="zvl" type="egovframework.kr.go.geumcheon.health.util.ZValue"/>
+    
+    <resultMap id="boardResult" class="zvl">
+		<result property="boardId" column="BOARD_ID" columnIndex="1"/>
+		<result property="communityId" column="COMMUNITY_ID" columnIndex="2"/>
+		<result property="groupId" column="GROUP_ID" columnIndex="3"/>
+		<result property="reLevel" column="RE_LEVEL" columnIndex="4"/>
+		<result property="reDepth" column="RE_DEPTH" columnIndex="5"/>
+		<result property="title" column="TITLE" columnIndex="6"/>
+		<result property="korName" column="KOR_NAME" columnIndex="7"/>
+		<result property="realName" column="REAL_NAME" columnIndex="8"/>
+		<result property="passwd" column="PASSWD" columnIndex="9"/>		
+		<result property="jumin" column="JUMIN" columnIndex="10"/>
+		<result property="telephone" column="TELEPHONE" columnIndex="11"/>
+		<result property="addr1" column="ADDR1" columnIndex="12"/>
+		<result property="addr2" column="ADDR2" columnIndex="13"/>
+		<result property="zipCode1" column="ZIP_CODE1" columnIndex="14"/>
+		<result property="zipCode2" column="ZIP_CODE2" columnIndex="15"/> 
+		<result property="openYn" column="OPEN_YN" columnIndex="16"/>
+		<result property="reProcYn" column="RE_PROC_YN" columnIndex="17"/>
+		<result property="fileCount" column="FILE_COUNT" columnIndex="18"/>
+		<result property="readCnt" column="READ_CNT" columnIndex="19"/>
+		<result property="recmdCnt" column="RECMD_CNT" columnIndex="20"/>
+		<result property="agreeCnt" column="AGREE_CNT" columnIndex="21"/>
+		<result property="dissensionCnt" column="DISSENSION_CNT" columnIndex="22"/>
+		<result property="memoCnt" column="MEMO_CNT" columnIndex="23"/>
+		<result property="htmlYn" column="HTML_YN" columnIndex="24"/>
+		<result property="secretYn" column="SECRET_YN" columnIndex="25"/>
+		<result property="email" column="EMAIL" columnIndex="26"/>
+		<result property="ipAddr" column="IP_ADDR" columnIndex="27"/>
+		<result property="notifyYn" column="NOTIFY_YN" columnIndex="28"/>
+		<result property="notifySeq" column="NOTIFY_SEQ" columnIndex="29"/>
+		<result property="branchId" column="BRANCH_ID" columnIndex="30"/>
+		<result property="branchChildId" column="BRANCH_CHILD_ID" columnIndex="31"/>
+		<result property="dbsts" column="DBSTS" columnIndex="32"/>
+		<result property="isIndex" column="IS_INDEX" columnIndex="33"/>
+		<result property="createDateMod" column="CREATE_DATE_MOD" columnIndex="34"/>
+		<result property="startDate" column="START_DATE" columnIndex="35"/>
+		<result property="endDate" column="END_DATE" columnIndex="36"/>
+		<result property="etc1" column="ETC_1" columnIndex="37"/>
+		<result property="etc2" column="ETC_2" columnIndex="38"/>
+		<result property="etc3" column="ETC_3" columnIndex="39"/>
+		<result property="etc4" column="ETC_4" columnIndex="40"/>
+		<result property="etc5" column="ETC_5" columnIndex="41"/>
+		<result property="etc6" column="ETC_6" columnIndex="42"/>
+		<result property="etc7" column="ETC_7" columnIndex="43"/>
+		<result property="etc8" column="ETC_8" columnIndex="44"/>
+		<result property="etc9" column="ETC_9" columnIndex="45"/>
+		<result property="etc10" column="ETC_10" columnIndex="46"/>
+		<result property="etc11" column="ETC_11" columnIndex="47"/>
+		<result property="etc12" column="ETC_12" columnIndex="48"/>
+		<result property="etc13" column="ETC_13" columnIndex="49"/>
+		<result property="etc14" column="ETC_14" columnIndex="50"/>
+		<result property="etc15" column="ETC_15" columnIndex="51"/>
+		<result property="etc16" column="ETC_16" columnIndex="52"/>
+		<result property="etc17" column="ETC_17" columnIndex="53"/>
+		<result property="etc18" column="ETC_18" columnIndex="54"/>
+		<result property="etc19" column="ETC_19" columnIndex="55"/>
+		<result property="etc20" column="ETC_20" columnIndex="56"/>
+		<result property="etc21" column="ETC_21" columnIndex="57"/>
+		<result property="etc22" column="ETC_22" columnIndex="58"/>
+		<result property="etc23" column="ETC_23" columnIndex="59"/>
+		<result property="etc24" column="ETC_24" columnIndex="60"/>
+		<result property="etc25" column="ETC_25" columnIndex="61"/>
+		<result property="etc26" column="ETC_26" columnIndex="62"/>
+		<result property="etc27" column="ETC_27" columnIndex="63"/>
+		<result property="etc28" column="ETC_28" columnIndex="64"/>
+		<result property="etc29" column="ETC_29" columnIndex="65"/>
+		<result property="etc30" column="ETC_30" columnIndex="66"/>		
+		<result property="organ" column="ORGAN" columnIndex="67"/>
+		<result property="organCode" column="ORGAN_CODE" columnIndex="68"/>
+		<result property="position" column="POSITION" columnIndex="69"/>
+		<result property="positionCode" column="POSITION_CODE" columnIndex="70"/>
+		<result property="copyYn" column="COPY_YN" columnIndex="71"/>
+		<result property="mobile" column="MOBILE" columnIndex="72"/>
+		<result property="vg" column="VG" columnIndex="73"/>
+		<result property="g" column="G" columnIndex="74"/>
+		<result property="n" column="N" columnIndex="75"/>
+		<result property="b" column="B" columnIndex="76"/>
+		<result property="vb" column="VB" columnIndex="77"/>
+		<result property="contents" column="CONTENTS" columnIndex="78" jdbcType="CLOB" javaType="java.lang.String"/>
+		<result property="tagWord" column="TAG_WORD" columnIndex="79"/>
+		<result property="blind" column="BLIND" columnIndex="80"/>
+		<result property="answerAdmin" column="ANSWER_ADMIN" columnIndex="81"/>
+		<result property="answerSms" column="ANSWER_SMS" columnIndex="82"/>
+		<result property="answerEmail" column="ANSWER_EMAIL" columnIndex="83"/>
+		<result property="createDate" column="CREATE_DATE" columnIndex="84"/>
+		<result property="createUserId" column="CREATE_USER_ID" columnIndex="85"/>
+		<result property="updateDate" column="UPDATE_DATE" columnIndex="86"/>
+		<result property="updateUserId" column="UPDATE_USER_ID" columnIndex="87"/>
+	</resultMap>
+				
+	<select id="wcmboardDAO.selectWcmboard" parameterClass="zvl" resultMap="boardResult">
+		<![CDATA[ 
+				SELECT 
+				   W.BOARD_ID, W.COMMUNITY_ID, W.GROUP_ID, 
+				   W.RE_LEVEL, W.RE_DEPTH, W.TITLE, 
+				   W.KOR_NAME, W.REAL_NAME, W.PASSWD, 
+				   W.JUMIN, W.TELEPHONE, W.ADDR1, 
+				   W.ADDR2, W.ZIP_CODE1, W.ZIP_CODE2, 
+				   W.OPEN_YN, W.RE_PROC_YN,
+				   W.FILE_COUNT, W.READ_CNT, W.RECMD_CNT, 
+				   W.AGREE_CNT, W.DISSENSION_CNT, W.MEMO_CNT, 
+				   W.HTML_YN, W.SECRET_YN, W.EMAIL, 
+				   W.IP_ADDR, W.NOTIFY_YN, W.NOTIFY_SEQ, 
+				   W.BRANCH_ID, W.BRANCH_CHILD_ID, W.DBSTS, 
+				   W.IS_INDEX, W.CREATE_DATE_MOD, W.START_DATE, 
+				   W.END_DATE, W.ETC_1, W.ETC_2, 
+				   W.ETC_3, W.ETC_4, W.ETC_5, 
+				   W.ETC_6, W.ETC_7, W.ETC_8, 
+				   W.ETC_9, W.ETC_10, W.ETC_11, 
+				   W.ETC_12, W.ETC_13, W.ETC_14, 
+				   W.ETC_15, W.ETC_16, W.ETC_17, 
+				   W.ETC_18, W.ETC_19, W.ETC_20, 
+				   W.ETC_21, W.ETC_22, W.ETC_23, 
+				   W.ETC_24, W.ETC_25, W.ETC_26, 
+				   W.ETC_27, W.ETC_28, W.ETC_29, 
+				   W.ETC_30, W.ORGAN, W.ORGAN_CODE, 
+				   W.POSITION, W.POSITION_CODE, W.COPY_YN, 
+				   W.MOBILE, W.VG, W.G, 
+				   W.N, W.B, W.VB, W.CONTENTS,
+				   W.TAG_WORD, W.BLIND, W.ANSWER_ADMIN, 
+				   W.ANSWER_SMS, W.ANSWER_EMAIL, W.CREATE_DATE, 
+				   W.CREATE_USER_ID, W.UPDATE_DATE, W.UPDATE_USER_ID
+				FROM gcweb.WCM_BOARD_$communityId$ W
+				WHERE W.BOARD_ID = #boardId#
+		 ]]>
+	</select>	
+			
+	<select id="wcmboardDAO.selectWcmboardFileListByBoardId" parameterClass="zvl" resultClass="zvl">
+		<![CDATA[ 
+			SELECT 
+				FILE_APPD_ID, SAVE_FILE_NAME, APPD_FILE_NAME, FILE_SIZE, MIME_TYPE, DOWN_CNT, WEB_PATH, ETC, SERVER_PATH,
+				BOARD_ID, COMMUNITY_ID
+			FROM gcweb.WCM_FILE_APPD
+		    WHERE COMMUNITY_ID = #communityId# 
+		    AND BOARD_ID = #boardId#
+		    AND (etc <> 'MOVIE' or etc is null) 
+		 ]]>
+	</select>	
+		
+	<select id="wcmboardDAO.selectWcmboardFileList" parameterClass="zvl" resultClass="zvl">
+		<![CDATA[ 
+			SELECT 
+				FILE_APPD_ID, SAVE_FILE_NAME, APPD_FILE_NAME, FILE_SIZE, MIME_TYPE, DOWN_CNT, WEB_PATH, ETC, SERVER_PATH,
+				BOARD_ID, COMMUNITY_ID
+			FROM gcweb.WCM_FILE_APPD
+		    WHERE COMMUNITY_ID = #communityId#
+		    AND (etc <> 'MOVIE' or etc is null) 
+		    AND BOARD_ID IN (
+		    	SELECT AA.BOARD_ID FROM ( SELECT rownum rn, TB.* FROM (
+					SELECT W.BOARD_ID
+					FROM gcweb.WCM_BOARD_$communityId$ W
+					WHERE NVL(W.FILE_COUNT,0) = 1
+		 ]]>
+			<isEqual property="searchType" compareValue="1">
+				<isNotEmpty prepend="AND" property="searchTxt">
+					<![CDATA[	W.TITLE LIKE '%' || #searchTxt# || '%'	]]>
+				</isNotEmpty>
+			</isEqual>
+			<isEqual property="searchType" compareValue="3">
+				<isNotEmpty prepend="AND" property="searchTxt">
+					<![CDATA[	W.TITLE LIKE '%' || #searchTxt# || '%'	]]>
+				</isNotEmpty>
+			</isEqual>
+			<isEqual property="searchType" compareValue="4">
+				<isNotEmpty prepend="AND" property="searchTxt">
+					<![CDATA[	W.ETC_1 LIKE '%' || #searchTxt# || '%'	]]>
+				</isNotEmpty>
+			</isEqual>
+			<isEqual property="searchType" compareValue="5">
+				<isNotEmpty prepend="AND" property="searchTxt">
+					<![CDATA[	W.ETC_3 LIKE '%' || #searchTxt# || '%'	]]>
+				</isNotEmpty>
+			</isEqual>
+			<isNotEmpty prepend="AND" property="branchId">
+					<![CDATA[	W.BRANCH_ID = #branchId#	]]>
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="position">
+					<![CDATA[	W.POSITION = #position#	]]>
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="healthPosition">
+					<![CDATA[	W.POSITION IN ('보건위생과','건강증진과','의약과')	]]>
+			</isNotEmpty>
+		<![CDATA[ 
+					ORDER BY W.BOARD_ID DESC
+		       ) TB ) AA  WHERE rn BETWEEN #firstIndex# + 1 AND #firstIndex# + #recordCountPerPage#
+		    )
+		 ]]>
+	</select>	
+	
+	<select id="wcmboardDAO.selectWcmboardList" parameterClass="zvl" resultClass="zvl">
+		<![CDATA[ 
+			SELECT * FROM ( SELECT rownum rn, TB.* FROM (
+				SELECT 
+				   W.BOARD_ID, W.COMMUNITY_ID, W.GROUP_ID, 
+				   W.RE_LEVEL, W.RE_DEPTH, W.TITLE, 
+				   W.KOR_NAME, W.REAL_NAME, W.PASSWD, 
+				   W.JUMIN, W.TELEPHONE, W.ADDR1, 
+				   W.ADDR2, W.ZIP_CODE1, W.ZIP_CODE2, 
+				   W.OPEN_YN, W.RE_PROC_YN,
+				   W.FILE_COUNT, W.READ_CNT, W.RECMD_CNT, 
+				   W.AGREE_CNT, W.DISSENSION_CNT, W.MEMO_CNT, 
+				   W.HTML_YN, W.SECRET_YN, W.EMAIL, 
+				   W.IP_ADDR, W.NOTIFY_YN, W.NOTIFY_SEQ, 
+				   W.BRANCH_ID, W.BRANCH_CHILD_ID, W.DBSTS, 
+				   W.IS_INDEX, W.CREATE_DATE_MOD, W.START_DATE, 
+				   W.END_DATE, W.ETC_1, W.ETC_2, 
+				   W.ETC_3, W.ETC_4, W.ETC_5, 
+				   W.ETC_6, W.ETC_7, W.ETC_8, 
+				   W.ETC_9, W.ETC_10, W.ETC_11, 
+				   W.ETC_12, W.ETC_13, W.ETC_14, 
+				   W.ETC_15, W.ETC_16, W.ETC_17, 
+				   W.ETC_18, W.ETC_19, W.ETC_20, 
+				   W.ETC_21, W.ETC_22, W.ETC_23, 
+				   W.ETC_24, W.ETC_25, W.ETC_26, 
+				   W.ETC_27, W.ETC_28, W.ETC_29, 
+				   W.ETC_30, W.ORGAN, W.ORGAN_CODE, 
+				   W.POSITION, W.POSITION_CODE, W.COPY_YN, 
+				   W.MOBILE, W.VG, W.G, 
+				   W.N, W.B, W.VB, 
+				   W.TAG_WORD, W.BLIND, W.ANSWER_ADMIN, 
+				   W.ANSWER_SMS, W.ANSWER_EMAIL, W.CREATE_DATE, 
+				   W.CREATE_USER_ID, W.UPDATE_DATE, W.UPDATE_USER_ID
+				FROM gcweb.WCM_BOARD_$communityId$ W
+				WHERE 1=1
+		 ]]>
+			<isEqual property="searchType" compareValue="1">
+				<isNotEmpty prepend="AND" property="searchTxt">
+					<![CDATA[	W.TITLE LIKE '%' || #searchTxt# || '%'	]]>
+				</isNotEmpty>
+			</isEqual>
+			<isEqual property="searchType" compareValue="3">
+				<isNotEmpty prepend="AND" property="searchTxt">
+					<![CDATA[	W.TITLE LIKE '%' || #searchTxt# || '%'	]]>
+				</isNotEmpty>
+			</isEqual>
+			<isEqual property="searchType" compareValue="4">
+				<isNotEmpty prepend="AND" property="searchTxt">
+					<![CDATA[	W.ETC_1 LIKE '%' || #searchTxt# || '%'	]]>
+				</isNotEmpty>
+			</isEqual>
+			<isEqual property="searchType" compareValue="5">
+				<isNotEmpty prepend="AND" property="searchTxt">
+					<![CDATA[	W.ETC_3 LIKE '%' || #searchTxt# || '%'	]]>
+				</isNotEmpty>
+			</isEqual>
+			<isNotEmpty prepend="AND" property="branchId">
+					<![CDATA[	W.BRANCH_ID = #branchId#	]]>
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="position">
+					<![CDATA[	W.POSITION = #position#	]]>
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="healthPosition">
+					<![CDATA[	W.POSITION IN ('보건위생과','건강증진과','의약과')	]]>
+			</isNotEmpty>
+		<![CDATA[ 
+			ORDER BY 
+				W.BOARD_ID DESC
+		       ) TB )  WHERE rn BETWEEN #firstIndex# + 1 AND #firstIndex# + #recordCountPerPage#
+		 ]]>
+	</select>	
+		
+	<select id="wcmboardDAO.selectWcmboardListCnt" parameterClass="zvl" resultClass="int">
+		<![CDATA[ 
+			SELECT COUNT(*) 
+			FROM gcweb.WCM_BOARD_$communityId$ W
+			WHERE 1=1
+		 ]]>
+			<isEqual property="searchType" compareValue="1">
+				<isNotEmpty prepend="AND" property="searchTxt">
+					<![CDATA[	W.TITLE LIKE '%' || #searchTxt# || '%'	]]>
+				</isNotEmpty>
+			</isEqual>
+			<isEqual property="searchType" compareValue="3">
+				<isNotEmpty prepend="AND" property="searchTxt">
+					<![CDATA[	W.TITLE LIKE '%' || #searchTxt# || '%'	]]>
+				</isNotEmpty>
+			</isEqual>
+			<isEqual property="searchType" compareValue="4">
+				<isNotEmpty prepend="AND" property="searchTxt">
+					<![CDATA[	W.ETC_1 LIKE '%' || #searchTxt# || '%'	]]>
+				</isNotEmpty>
+			</isEqual>
+			<isEqual property="searchType" compareValue="5">
+				<isNotEmpty prepend="AND" property="searchTxt">
+					<![CDATA[	W.ETC_3 LIKE '%' || #searchTxt# || '%'	]]>
+				</isNotEmpty>
+			</isEqual>
+			<isNotEmpty prepend="AND" property="branchId">
+					<![CDATA[	W.BRANCH_ID = #branchId#	]]>
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="position">
+					<![CDATA[	W.POSITION = #position#	]]>
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="healthPosition">
+					<![CDATA[	W.POSITION IN ('보건위생과','건강증진과','의약과')	]]>
+			</isNotEmpty>
+	</select>	
+		
+	<insert id="wcmboardDAO.addWcmBoard" parameterClass="zvl" >
+		<selectKey resultClass="java.lang.Long" keyProperty="boardId">
+			SELECT NVL(MAX(BOARD_ID),0)+1 AS boardId  FROM WCM_BOARD_$communityId$
+			WHERE COMMUNITY_ID = $communityId$
+		</selectKey>			
+		<![CDATA[
+			INSERT INTO WCM_BOARD_$communityId$ ( 
+				BOARD_ID
+				,COMMUNITY_ID
+				,GROUP_ID
+				,RE_LEVEL
+				,RE_DEPTH
+				,TITLE
+				,KOR_NAME
+				,REAL_NAME
+				,PASSWD
+				,JUMIN
+				,TELEPHONE
+				,ADDR1
+				,ADDR2
+				,ZIP_CODE1
+				,ZIP_CODE2
+				,OPEN_YN
+				,RE_PROC_YN
+				,CONTENTS
+				,FILE_COUNT
+				,READ_CNT
+				,RECMD_CNT
+				,AGREE_CNT
+				,DISSENSION_CNT
+				,MEMO_CNT
+				,HTML_YN
+				,SECRET_YN
+				,EMAIL
+				,IP_ADDR
+				,NOTIFY_YN
+				,NOTIFY_SEQ
+				,BRANCH_ID
+				,BRANCH_CHILD_ID
+				,DBSTS
+				,IS_INDEX
+				,CREATE_DATE_MOD
+				,START_DATE
+				,END_DATE
+				,ETC_1
+				,ETC_2
+				,ETC_3
+				,ETC_4
+				,ETC_5
+				,ETC_6
+				,ETC_7
+				,ETC_8
+				,ETC_9
+				,ETC_10
+				,ETC_11
+				,ETC_12
+				,ETC_13
+				,ETC_14
+				,ETC_15
+				,ETC_16
+				,ETC_17
+				,ETC_18
+				,ETC_19
+				,ETC_20
+				,ETC_21
+				,ETC_22
+				,ETC_23
+				,ETC_24
+				,ETC_25
+				,ETC_26
+				,ETC_27
+				,ETC_28
+				,ETC_29
+				,ETC_30
+				,ORGAN
+				,ORGAN_CODE
+				,POSITION
+				,POSITION_CODE
+				,COPY_YN
+				,MOBILE
+				,VG
+				,G
+				,N
+				,B
+				,VB
+				,TAG_WORD
+				,BLIND
+				,ANSWER_ADMIN
+				,ANSWER_SMS
+				,ANSWER_EMAIL
+				,CREATE_DATE
+				,CREATE_USER_ID
+				,UPDATE_DATE
+				,UPDATE_USER_ID 
+				)
+				VALUES 
+				( 
+				#boardId#
+				,#communityId#
+				,#groupId#
+				,#reLevel#
+				,#reDepth#
+				,#title#
+				,#korName#
+				,#realName#
+				,#passwd#
+				,#jumin#
+				,#telephone#
+				,#addr1#
+				,#addr2#
+				,#zipCode1#
+				,#zipCode2#
+				,#openYn#
+				,#reProcYn#
+				,#contents#
+				,#fileCount#
+				,#readCnt#
+				,#recmdCnt#
+				,#agreeCnt#
+				,#dissensionCnt#
+				,#memoCnt#
+				,#htmlYn#
+				,#secretYn#
+				,#email#
+				,#ipAddr#
+				,#notifyYn#
+				,#notifySeq#
+				,#branchId#
+				,#branchChildId#
+				,#dbsts#
+				,#isIndex#
+				,#createDateMod#
+				,#startDate#
+				,#endDate#
+				,#etc1#
+				,#etc2#
+				,#etc3#
+				,#etc4#
+				,#etc5#
+				,#etc6#
+				,#etc7#
+				,#etc8#
+				,#etc9#
+				,#etc10#
+				,#etc11#
+				,#etc12#
+				,#etc13#
+				,#etc14#
+				,#etc15#
+				,#etc16#
+				,#etc17#
+				,#etc18#
+				,#etc19#
+				,#etc20#
+				,#etc21#
+				,#etc22#
+				,#etc23#
+				,#etc24#
+				,#etc25#
+				,#etc26#
+				,#etc27#
+				,#etc28#
+				,#etc29#
+				,#etc30#
+				,#organ#
+				,#organCode#
+				,#position#
+				,#positionCode#
+				,#copyYn#
+				,#mobile#
+				,#vg#
+				,#g#
+				,#n#
+				,#b#
+				,#vb#
+				,#tagWord#
+				,#blind#
+				,#answerAdmin#
+				,#answerSms#
+				,#answerEmail#
+				,TO_CHAR(SYSDATE, 'YYYYMMDD
+				,#createUserId#
+				,#updateDate#
+				,#updateUserId#
+				)
+		]]>
+	</insert>
+		
+	<update id="wcmboardDAO.updateB0048" parameterClass="zvl" >
+		<![CDATA[
+			UPDATE gcweb.WCM_BOARD_B0048
+			SET  
+				ETC_8 = #etc8#,
+				ETC_9 = #etc9#
+			WHERE BOARD_ID = #boardId# 
+		]]>
+	</update>	
+	
+</sqlMap>                            
