@@ -167,7 +167,7 @@ public class CommentController {
     	zvl.put("id",company.getId());
    		commentService.deleteCommentArticle(zvl);
 
-   		WebFactory.printHtml(response, "성공적으로 등록되었습니다.", 
+   		WebFactory.printHtml(response, "성공적으로 삭제되었습니다.", 
    				"/health/bbs/selectBoardArticle.do?categoryId="+zvl.getString("categoryId")+
    				"&amp;bbsId="+zvl.getString("bbsId")+"&amp;nttId="+zvl.getString("nttId"));   
 	}
