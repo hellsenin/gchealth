@@ -54,7 +54,8 @@ function commentDel(seq){
 	</tbody>
 </table>
 </form>
-
+<br/>
+<br/>
 <form name="commentFrm2" method="post" action="/healt/comment/deleteCommentArticle.do">
 <input type="hidden" name="categoryId" value="<c:out value='${param.categoryId}'/>" />
 <input type="hidden" name="bbsId" value="<c:out value='${param.bbsId}'/>" />
@@ -88,11 +89,14 @@ function commentDel(seq){
 		<fmt:formatDate value='${rdate}' pattern="yyyy년mm월dd일"/></td>
 			<td>
 		<c:if test="${comment.id == company.id}">
-			<a href="/healt/comment/deleteCommentArticle.do?seq=${comment.seq}&amp;bbsId=${param.bbsId}&amp;nttId=${param.nttId}&amp;categoryId=${param.categoryId}"><img src="/health/open_content/images/btn/btn_delcomment.gif" alt="삭제하기"/></a>
+			<a href="/health/comment/deleteCommentArticle.do?seq=${comment.seq}&amp;bbsId=${param.bbsId}&amp;nttId=${param.nttId}&amp;categoryId=${param.categoryId}"><img src="/health/open_content/images/btn/btn_delcomment.gif" alt="삭제하기"/></a>
 		</c:if>
 			</td>
 		</tr>
 	</c:forEach>
+	<c:if test="${fn:length(commentList) == 0}">
+		<tr><td colspan="5">데이터가 없습니다.</td></tr>	
+	</c:if>
 	</tbody>
 </table>
 </form>
