@@ -281,8 +281,11 @@ public class CalenderService
 		int ldcm = DateUtil.getLastDay(nYear, nMonth);				//월의 마지막 날짜
 		int cw = DateUtil.getWeekCount(fwcm,ldcm);				//월의 주 개수
 
+		String bbsId = "BBSMSTR_000000001153";
+		
 		ZValue param = new ZValue();
 		param.put("date", date);
+		param.put("bbsId", bbsId);
 		HashMap<String, List<ZValue>> map = getEventMapByDate(param);
 
 		int k = 1;
@@ -322,7 +325,7 @@ public class CalenderService
 						{	
 							title += val.getString("nttSj") + ",";
 						}
-						dataList.append("<a href=\"/health/onlineApply/selectEventCalendar.do?categoryId=2570"+"\" title=\""+title+"\">" + k + "</a>");
+						dataList.append("<a href=\"/health/onlineApply/selectEventCalendar.do?bbsId="+bbsId+"&amp;categoryId=2570"+"\" title=\""+title+"\">" + k + "</a>");
 					}
 					dataList.append("</td>");
 					
