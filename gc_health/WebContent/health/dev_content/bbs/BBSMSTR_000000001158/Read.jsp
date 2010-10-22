@@ -91,7 +91,8 @@
 </div>
 
 </form>
-
+<br/>
+<br/>
 
 			<jsp:include page="/health/dev_content/bbs/comment/CommentList.jsp"></jsp:include>
 
