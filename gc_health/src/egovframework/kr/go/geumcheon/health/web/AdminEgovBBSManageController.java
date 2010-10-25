@@ -400,6 +400,83 @@ public class AdminEgovBBSManageController {
     } 
 
     /**
+     * 구청 게시판과 연계
+     * @param multiRequest
+     * @param boardVO
+     * @param bdMstr
+     * @param board
+     * @param bindingResult
+     * @param status
+     * @param model
+     * @return
+     * @throws Exception
+     */
+    
+    @SuppressWarnings("unchecked")
+    @RequestMapping("/admin/bbs/insertBoardArticle2.do")
+    public String insertBoardArticle2(
+    		final MultipartHttpServletRequest multiRequest,
+    		HttpServletResponse response,
+    		ModelMap model) throws Exception {
+	//LoginVO user = (LoginVO)EgovUserDetailsHelper.getAuthenticatedUser();
+	//Boolean isAuthenticated = EgovUserDetailsHelper.isAuthenticated();
+
+    ZValue zvl = WebFactory.getAttributes(multiRequest);
+    log.debug(">>>>>>>>>>>>.zvl " + zvl);
+    
+	//beanValidator.validate(board, bindingResult);
+    BoardVO board = new BoardVO();
+	String communityKey = zvl.getString("communityKey");
+	String bbsId = null;
+	if("B0034".equals(communityKey))
+	{
+		bbsId = "BBSMSTR_000000001151";
+		board.setBbsId(bbsId);
+		board.setBbsAttrbCode("BBSA03");
+		board.setBbsTyCode("BBST03");
+		board.setReplyPosblAt("N");
+		board.setFileAtchPosblAt("Y");
+		board.setPosblAtchFileNumber(0);
+		board.setSecret("N");
+		
+		board.setNttSj(zvl.getString("title"));
+		board.setOption1(zvl.getString("position"));
+		board.setNttCn(zvl.getString("contents"));
+		
+	}
+	
+	List<FileVO> result = null;
+    String atchFileId = "";
+    
+    final Map<String, MultipartFile> files = multiRequest.getFileMap();
+    if (!files.isEmpty()) {
+    String storePathString = bbsId+"/";
+	result = fileUtil.parseFileInf(files, "BBS_", 0, "", storePathString);
+	atchFileId = fileMngService.insertFileInfs(result);
+    }
+    board.setAtchFileId(atchFileId);
+    //board.setFrstRegisterId(user.getId());
+    board.setBbsId(board.getBbsId());
+    
+    //board.setNtcrNm(user.getName());	// dummy 오류 수정 (익명이 아닌 경우 validator 처리를 위해 dummy로 지정됨)
+    board.setPassword("");	// dummy 오류 수정 (익명이 아닌 경우 validator 처리를 위해 dummy로 지정됨)
+    
+    board.setNttCn(unscript(board.getNttCn()));	// XSS 방지
+    
+    String event = "success.insert.msg";
+    try
+    {
+    	bbsMngService.insertBoardArticle(board);
+    }catch(Exception e)
+    {
+    	event = "error.insert.msg";
+    }
+
+	model.addAttribute("event", event);
+	return "http://admin.geumcheon.go.kr:9081/common/procEvent.jsp";
+    } 
+
+    /**
      * 게시물에 대한 답변 등록을 위한 등록페이지로 이동한다.
      * 
      * @param boardVO
