@@ -1,0 +1,1354 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<categories>
+  <siteId>18</siteId>
+  <category>
+    <categoryId>3600</categoryId>
+    <parentId>0</parentId>
+    <name>Ch?a b?nh Kham b?nh</name>
+    <fullPath>Ch?a b?nh Kham b?nh</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0101010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3600</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/01/01/01/0101010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3605</categoryId>
+    <parentId>3600</parentId>
+    <name>Kham s?c kh?e</name>
+    <fullPath>Ch?a b?nh Kham b?nh/Kham s?c kh?e</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0101010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3605</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/01/01/01/0101010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3607</categoryId>
+    <parentId>3605</parentId>
+    <name>Nh?ng đi?u c?n l?u y tr??c khi kham b?nh</name>
+    <fullPath>Ch?a b?nh Kham b?nh/Kham s?c kh?e/Nh?ng đi?u c?n l?u y tr??c khi kham b?nh</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0101010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3607</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/01/01/01/0101010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3608</categoryId>
+    <parentId>3605</parentId>
+    <name>Kham th? l?c</name>
+    <fullPath>Ch?a b?nh Kham b?nh/Kham s?c kh?e/Kham th? l?c</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0101020101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3608</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/01/01/02/0101020101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3609</categoryId>
+    <parentId>3605</parentId>
+    <name>Kham s?c kh?e cho ng??i n??c ngoai</name>
+    <fullPath>Ch?a b?nh Kham b?nh/Kham s?c kh?e/Kham s?c kh?e cho ng??i n??c ngoai</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0101030101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3609</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/01/01/03/0101030101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3610</categoryId>
+    <parentId>3605</parentId>
+    <name>Kham s?c kh?e theo b?o hi?m</name>
+    <fullPath>Ch?a b?nh Kham b?nh/Kham s?c kh?e/Kham s?c kh?e theo b?o hi?m</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0101040101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3610</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/01/01/04/0101040101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3611</categoryId>
+    <parentId>3605</parentId>
+    <name>Kham s?c kh?e th?i ki chuy?n giai đo?n sinh ly</name>
+    <fullPath>Ch?a b?nh Kham b?nh/Kham s?c kh?e/Kham s?c kh?e th?i ki chuy?n giai đo?n sinh ly</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0101050101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3611</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/01/01/05/0101050101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3612</categoryId>
+    <parentId>3605</parentId>
+    <name>Ch??ng trinh qu?c gia v? ch?n đoan b?nh ung th? giai đo?n đ?u</name>
+    <fullPath>Ch?a b?nh Kham b?nh/Kham s?c kh?e/Ch??ng trinh qu?c gia v? ch?n đoan b?nh ung th? giai đo?n đ?u</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0101060101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3612</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/01/01/06/0101060101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3606</categoryId>
+    <parentId>3600</parentId>
+    <name>Dich v? y t? đi?n t?</name>
+    <fullPath>Ch?a b?nh Kham b?nh/Dich v? y t? đi?n t?</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0102010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3606</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/01/02/01/0102010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3613</categoryId>
+    <parentId>3606</parentId>
+    <name>C?p t?t c? cac lo?i gi?y ch?ng minh</name>
+    <fullPath>Ch?a b?nh Kham b?nh/Dich v? y t? đi?n t?/C?p t?t c? cac lo?i gi?y ch?ng minh</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0102010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3613</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/01/02/01/0102010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3614</categoryId>
+    <parentId>3606</parentId>
+    <name>Ki?m tra chi ti?t kham b?nh</name>
+    <fullPath>Ch?a b?nh Kham b?nh/Dich v? y t? đi?n t?/Ki?m tra chi ti?t kham b?nh</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0102020101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3614</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/01/02/02/0102020101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3615</categoryId>
+    <parentId>3606</parentId>
+    <name>đ?t tr??c vi?c đao t?o y t?</name>
+    <fullPath>Ch?a b?nh Kham b?nh/Dich v? y t? đi?n t?/đ?t tr??c vi?c đao t?o y t?</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0102030101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3615</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/01/02/03/0102030101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3616</categoryId>
+    <parentId>3606</parentId>
+    <name>D?ch v? đ?t tr??c</name>
+    <fullPath>Ch?a b?nh Kham b?nh/Dich v? y t? đi?n t?/D?ch v? đ?t tr??c</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0102040101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3616</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/01/02/04/0102040101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3601</categoryId>
+    <parentId>0</parentId>
+    <name>Tiem phong</name>
+    <fullPath>Tiem phong</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0201010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3601</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/01/01/0201010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3617</categoryId>
+    <parentId>3601</parentId>
+    <name>Tiem phong đ?nh ki</name>
+    <fullPath>Tiem phong/Tiem phong đ?nh ki</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0201010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3617</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/01/01/0201010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3618</categoryId>
+    <parentId>3601</parentId>
+    <name>Tiem phong t?m th?i</name>
+    <fullPath>Tiem phong/Tiem phong t?m th?i</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0202010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3618</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/02/01/0202010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3622</categoryId>
+    <parentId>3618</parentId>
+    <name>H??ng d?n tiem ch?ng</name>
+    <fullPath>Tiem phong/Tiem phong t?m th?i/H??ng d?n tiem ch?ng</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0301010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3622</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/03/01/01/0301010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3623</categoryId>
+    <parentId>3618</parentId>
+    <name>Nh?ng đi?u c?n chu y khi  tiem phong</name>
+    <fullPath>Tiem phong/Tiem phong t?m th?i/Nh?ng đi?u c?n chu y khi  tiem phong</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0302010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3623</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/03/02/01/0302010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3619</categoryId>
+    <parentId>3601</parentId>
+    <name>Tiem phong cho tr? em</name>
+    <fullPath>Tiem phong/Tiem phong cho tr? em</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0203010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3619</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/03/01/0203010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3624</categoryId>
+    <parentId>3619</parentId>
+    <name>H??ng d?n tiem ch?ng</name>
+    <fullPath>Tiem phong/Tiem phong cho tr? em/H??ng d?n tiem ch?ng</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0303010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3624</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/03/03/01/0303010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3625</categoryId>
+    <parentId>3619</parentId>
+    <name>Nh?ng đi?u c?n chu y khi tiem phong</name>
+    <fullPath>Tiem phong/Tiem phong cho tr? em/Nh?ng đi?u c?n chu y khi tiem phong</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0304010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3625</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/03/04/01/0304010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3620</categoryId>
+    <parentId>3601</parentId>
+    <name>Lay truy?n viem gan B theo chi?u th?ng đ?ng</name>
+    <fullPath>Tiem phong/Lay truy?n viem gan B theo chi?u th?ng đ?ng</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0204010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3620</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/04/01/0204010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3626</categoryId>
+    <parentId>3620</parentId>
+    <name>Lay truy?n viem gan B theo chi?u th?ng đ?ng la gi?</name>
+    <fullPath>Tiem phong/Lay truy?n viem gan B theo chi?u th?ng đ?ng/Lay truy?n viem gan B theo chi?u th?ng đ?ng la gi?</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0204010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3626</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/04/01/0204010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3627</categoryId>
+    <parentId>3620</parentId>
+    <name>H??ng d?n tiem ch?ng</name>
+    <fullPath>Tiem phong/Lay truy?n viem gan B theo chi?u th?ng đ?ng/H??ng d?n tiem ch?ng</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0204020101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3627</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/04/02/0204020101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3621</categoryId>
+    <parentId>3601</parentId>
+    <name>Tiem phong do s? c?n thi?t cho toan qu?c gia</name>
+    <fullPath>Tiem phong/Tiem phong do s? c?n thi?t cho toan qu?c gia</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0205010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3621</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/05/01/0205010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3602</categoryId>
+    <parentId>0</parentId>
+    <name>D? an y t?</name>
+    <fullPath>D? an y t?</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0301010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3602</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/03/01/01/0301010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3622</categoryId>
+    <parentId>3602</parentId>
+    <name>S?c kh?e m? va be</name>
+    <fullPath>D? an y t?/S?c kh?e m? va be</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0301010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3622</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/03/01/01/0301010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3630</categoryId>
+    <parentId>3622</parentId>
+    <name>Qu?n ly s?c kh?e ph? n? mang thai va đang nuoi con</name>
+    <fullPath>D? an y t?/D? an y t?/S?c kh?e m? va be/Qu?n ly s?c kh?e ph? n? mang thai va đang nuoi con</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0301010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3630</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/02/01/0202010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3631</categoryId>
+    <parentId>3622</parentId>
+    <name>Khuy?n khich sinh s?n</name>
+    <fullPath>D? an y t?/D? an y t?/S?c kh?e m? va be/Khuy?n khich sinh s?n</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0301020101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3631</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/02/01/0202010201.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3635</categoryId>
+    <parentId>3631</parentId>
+    <name>Cho m??n may hut s?a</name>
+    <fullPath>D? an y t?/D? an y t?/S?c kh?e m? va be/Khuy?n khich sinh s?n/Cho m??n may hut s?a</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0301020101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3635</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/02/01/0202010201.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3636</categoryId>
+    <parentId>3631</parentId>
+    <name>D? an h? tr? cho v? ch?ng hi?m mu?n</name>
+    <fullPath>D? an y t?/D? an y t?/S?c kh?e m? va be/Khuy?n khich sinh s?n/D? an h? tr? cho v? ch?ng hi?m mu?n</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0301020201</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3636</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/02/01/0202010202.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3637</categoryId>
+    <parentId>3631</parentId>
+    <name>H? tr? giup đ? tr? s? sinh cho ph? n? đang ? c?</name>
+    <fullPath>D? an y t?/D? an y t?/S?c kh?e m? va be/Khuy?n khich sinh s?n/H? tr? giup đ? tr? s? sinh cho ph? n? đang ? c?</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0301020301</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3637</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/02/01/0202010203.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3633</categoryId>
+    <parentId>3622</parentId>
+    <name>Qu?n ly s?c kh?e tr? em</name>
+    <fullPath>D? an y t?/D? an y t?/S?c kh?e m? va be/Qu?n ly s?c kh?e tr? em</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0301030101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3633</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/02/01/0202010301.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3638</categoryId>
+    <parentId>3633</parentId>
+    <name>Kham th? l?c th?i ki đ?u cho tr?</name>
+    <fullPath>D? an y t?/D? an y t?/S?c kh?e m? va be/Qu?n ly s?c kh?e tr? em/Kham th? l?c th?i ki đ?u cho tr?</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0301030101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3638</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/02/01/0202010301.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3639</categoryId>
+    <parentId>3633</parentId>
+    <name>Kham s?c kh?e tr? em</name>
+    <fullPath>D? an y t?/D? an y t?/S?c kh?e m? va be/Qu?n ly s?c kh?e tr? em/Kham s?c kh?e tr? em</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0301030201</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3639</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/02/01/0202010302.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3634</categoryId>
+    <parentId>3622</parentId>
+    <name>D? an t?ng c??ng ch?t dinh d??ng</name>
+    <fullPath>D? an y t?/D? an y t?/S?c kh?e m? va be/D? an t?ng c??ng ch?t dinh d??ng</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0301040101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3634</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/02/01/0202010401.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3623</categoryId>
+    <parentId>3602</parentId>
+    <name>Qu?n ly AIDS</name>
+    <fullPath>D? an y t?/Qu?n ly AIDS</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0302010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3623</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/03/02/01/0302010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3624</categoryId>
+    <parentId>3602</parentId>
+    <name>H? tr? chi phi y t?</name>
+    <fullPath>D? an y t?/H? tr? chi phi y t?</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0303010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3624</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/03/03/01/0303010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3640</categoryId>
+    <parentId>3624</parentId>
+    <name>Tr? đ? non va tr?  b?m sinh khong binh th??ng</name>
+    <fullPath>D? an y t?/H? tr? chi phi y t?/Tr? đ? non va tr?  b?m sinh khong binh th??ng</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0303010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3640</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/03/01/0203010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3641</categoryId>
+    <parentId>3624</parentId>
+    <name>Ki?m tra đ? l?c ra cac tr? b?m sinh b? b?nh nan y</name>
+    <fullPath>D? an y t?/H? tr? chi phi y t?/Ki?m tra đ? l?c ra cac tr? b?m sinh b? b?nh nan y</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0303020101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3641</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/03/01/0203010201.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3642</categoryId>
+    <parentId>3624</parentId>
+    <name>Ng??i b? b?nh nan y hi?m co</name>
+    <fullPath>D? an y t?/H? tr? chi phi y t?/Ng??i b? b?nh nan y hi?m co</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0303030101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3642</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/03/01/0203010301.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3643</categoryId>
+    <parentId>3624</parentId>
+    <name>Chi phi ch?a tr? cho cac b?nh nhan b? ung th?</name>
+    <fullPath>D? an y t?/H? tr? chi phi y t?/Chi phi ch?a tr? cho cac b?nh nhan b? ung th?</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0303040101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3643</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/03/01/0203010401.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3644</categoryId>
+    <parentId>3624</parentId>
+    <name>Ki?m tra l?i b?m sinh trong qua trinh trao đ?i ch?t</name>
+    <fullPath>D? an y t?/H? tr? chi phi y t?/Ki?m tra l?i b?m sinh trong qua trinh trao đ?i ch?t</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0303050101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3644</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/03/01/0203010501.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3645</categoryId>
+    <parentId>3624</parentId>
+    <name>B?nh nhan đ??c ch?m soc t?i nha</name>
+    <fullPath>D? an y t?/H? tr? chi phi y t?/B?nh nhan đ??c ch?m soc t?i nha</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0303060101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3645</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/03/01/0203010601.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3646</categoryId>
+    <parentId>3624</parentId>
+    <name>Chi phi ph?u thu?t cho cac c?p v? ch?ng hi?m mu?n</name>
+    <fullPath>D? an y t?/H? tr? chi phi y t?/Chi phi ph?u thu?t cho cac c?p v? ch?ng hi?m mu?n</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0303070101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3646</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/03/01/0203010701.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3647</categoryId>
+    <parentId>3624</parentId>
+    <name>Chi phi ch?a tr? c?a cac b?nh nhan b? lao</name>
+    <fullPath>D? an y t?/H? tr? chi phi y t?/Chi phi ch?a tr? c?a cac b?nh nhan b? lao</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0303080101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3647</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/03/01/0203010801.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3648</categoryId>
+    <parentId>3624</parentId>
+    <name>Ki?m tra d? ?ng, suy?n</name>
+    <fullPath>D? an y t?/H? tr? chi phi y t?/Ki?m tra d? ?ng, suy?n</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0303090101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3648</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/03/01/0203010901.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3649</categoryId>
+    <parentId>3624</parentId>
+    <name>Chi phi y t? cho b?nh m?t tri nh? đ?i v?i ng??i co thu nh?p th?p</name>
+    <fullPath>D? an y t?/H? tr? chi phi y t?/Chi phi y t? cho b?nh m?t tri nh? đ?i v?i ng??i co thu nh?p th?p</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0303100101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3649</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/02/03/01/0203011001.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3625</categoryId>
+    <parentId>3602</parentId>
+    <name>V? sinh r?ng mi?ng</name>
+    <fullPath>D? an y t?/V? sinh r?ng mi?ng</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0304010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3625</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/03/04/01/0304010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3603</categoryId>
+    <parentId>0</parentId>
+    <name>V?i m? va v?i be</name>
+    <fullPath>V?i m? va v?i be</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0401010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3603</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/04/01/01/0401010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3650</categoryId>
+    <parentId>3603</parentId>
+    <name>Ch?m soc tr??c khi sinh</name>
+    <fullPath>V?i m? va v?i be/Ch?m soc tr??c khi sinh</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0401010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3650</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/04/01/01/0401010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3652</categoryId>
+    <parentId>3650</parentId>
+    <name>Cau chuy?n ch?m soctr??c khi sinh b?ng cach tro chuy?n v?i thai nhi</name>
+    <fullPath>V?i m? va v?i be/Ch?m soc tr??c khi sinh/Cau chuy?n ch?m soctr??c khi sinh b?ng cach tro chuy?n v?i thai nhi</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0401010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3652</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/04/01/01/0401010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3653</categoryId>
+    <parentId>3650</parentId>
+    <name>T?p luy?n theo t?ng giai đo?n mang thai</name>
+    <fullPath>V?i m? va v?i be/Ch?m soc tr??c khi sinh/T?p luy?n theo t?ng giai đo?n mang thai</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0401020101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3653</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/04/01/02/0401020101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3654</categoryId>
+    <parentId>3650</parentId>
+    <name>Ch?m soc tr??c khi sinh v? m? thu?t</name>
+    <fullPath>V?i m? va v?i be/Ch?m soc tr??c khi sinh/Ch?m soc tr??c khi sinh v? m? thu?t</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0401030101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3654</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/04/01/03/0401030101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3655</categoryId>
+    <parentId>3650</parentId>
+    <name>Ch?m soc tr??c khi sinh v? am nh?c</name>
+    <fullPath>V?i m? va v?i be/Ch?m soc tr??c khi sinh/Ch?m soc tr??c khi sinh v? am nh?c</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0401040101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3655</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/04/01/04/0401040101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3651</categoryId>
+    <parentId>3603</parentId>
+    <name>Mang thai</name>
+    <fullPath>V?i m? va v?i be/Mang thai</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0402010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3651</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/04/02/01/0402010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3656</categoryId>
+    <parentId>3651</parentId>
+    <name>Mang thai va s? chu?n b?</name>
+    <fullPath>V?i m? va v?i be/Mang thai/Mang thai va s? chu?n b?</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0402010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3656</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/04/02/01/0402010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3660</categoryId>
+    <parentId>3656</parentId>
+    <name>K? ho?ch mang thai, sinh con</name>
+    <fullPath>V?i m? va v?i be/Mang thai/K? ho?ch mang thai, sinh con</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0402010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3660</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/04/02/01/0402010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3657</categoryId>
+    <parentId>3656</parentId>
+    <name>Xac nh?n vi?c mang thai</name>
+    <fullPath>V?i m? va v?i be/Mang thai/Xac nh?n vi?c mang thai</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0402010201</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3657</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/04/02/01/0402010201.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3658</categoryId>
+    <parentId>3656</parentId>
+    <name>Mang thai va vi?c dung thu?c</name>
+    <fullPath>V?i m? va v?i be/Mang thai/Mang thai va vi?c dung thu?c</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0402010301</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3658</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/04/02/01/0402010301.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3659</categoryId>
+    <parentId>3656</parentId>
+    <name>Nh?ng h?ng m?c chu y khi mang thai</name>
+    <fullPath>V?i m? va v?i be/Mang thai/Nh?ng h?ng m?c chu y khi mang thai</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0402010401</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3659</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/04/02/01/0402010401.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3661</categoryId>
+    <parentId>3651</parentId>
+    <name>Ki?m tra tr??c khi sinh</name>
+    <fullPath>V?i m? va v?i be/Mang thai/Ki?m tra tr??c khi sinh</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0402020101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3661</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/04/02/02/0402020101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3662</categoryId>
+    <parentId>3651</parentId>
+    <name>Ch?a tr? t?i b?nh vi?n</name>
+    <fullPath>V?i m? va v?i be/Mang thai/Ch?a tr? t?i b?nh vi?n</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0402030101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3662</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/04/02/03/0402030101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3663</categoryId>
+    <parentId>3651</parentId>
+    <name>Pha thai</name>
+    <fullPath>V?i m? va v?i be/Mang thai/Pha thai</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0402040101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3663</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/04/02/04/0402040101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3664</categoryId>
+    <parentId>3651</parentId>
+    <name>Mang thai co đ? nguy hi?m cao</name>
+    <fullPath>V?i m? va v?i be/Mang thai co đ? nguy hi?m cao</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0402050101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3664</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/04/02/05/0402050101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3604</categoryId>
+    <parentId>0</parentId>
+    <name>Gi?i thi?u v? trung tam y t?</name>
+    <fullPath>Gi?i thi?u v? trung tam y t?</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0501010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3604</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/05/01/01/0501010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3665</categoryId>
+    <parentId>3604</parentId>
+    <name>L?i chao c?a giam đ?c</name>
+    <fullPath>Gi?i thi?u v? trung tam y t?/L?i chao c?a giam đ?c</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0501010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3665</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/05/01/01/0501010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3666</categoryId>
+    <parentId>3604</parentId>
+    <name>Gi?i thi?u v? cac b? ph?n</name>
+    <fullPath>Gi?i thi?u v? trung tam y t?/Gi?i thi?u v? cac b? ph?n</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0502010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3666</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/05/02/01/0502010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3668</categoryId>
+    <parentId>3666</parentId>
+    <name>S? đ? t? ch?c</name>
+    <fullPath>Gi?i thi?u v? trung tam y t?/S? đ? t? ch?c</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0502010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3668</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/05/02/01/0502010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3669</categoryId>
+    <parentId>3666</parentId>
+    <name>Gi?i thi?u v? cac t?ng</name>
+    <fullPath>Gi?i thi?u v? cac t?ng</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0502020101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3669</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/05/02/02/0502020101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3667</categoryId>
+    <parentId>3604</parentId>
+    <name>đ??ng đ?n</name>
+    <fullPath>Gi?i thi?u v? trung tam y t?/đ??ng đ?n</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0503010101</position>
+    <fullMenuLink>/btn/main/contents.do?categoryId=3667</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/btn/open_content/05/03/01/0503010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+</categories>
+
