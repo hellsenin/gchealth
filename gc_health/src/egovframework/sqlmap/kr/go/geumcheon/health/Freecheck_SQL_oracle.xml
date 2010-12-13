@@ -2,183 +2,191 @@
 <!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
 
 <sqlMap namespace="Freecheck">
-    
-    <typeAlias  alias="Industry" 		type="egovframework.kr.go.geumcheon.health.vo.Industry"/>
-    <typeAlias  alias="Company" 		type="egovframework.kr.go.geumcheon.health.vo.Company"/>
-    <typeAlias  alias="Master" 			type="egovframework.kr.go.geumcheon.health.vo.Master"/>
-    <typeAlias  alias="Question" 		type="egovframework.kr.go.geumcheon.health.vo.Question"/>
-    <typeAlias  alias="Question2" 		type="egovframework.kr.go.geumcheon.health.vo.Question2"/>
-    <typeAlias  alias="Handleitem" 		type="egovframework.kr.go.geumcheon.health.vo.Handleitem"/>
-    <typeAlias  alias="String" 			type="java.lang.String"/>
-	    
-    
-   	<resultMap id="IndustryList" 		class="Industry">
-		<result property="industry_cd"				column="INDUSTRY_CD"/>
-		<result property="divide_cd"				column="DIVIDE_CD"/>
-		<result property="name"						column="NAME"/>
-		<result property="use_yn"					column="USE_YN"/>
-		<result property="use_yn_name"				column="USE_YN_NAME"/>
-		<result property="insert_dt"				column="INSERT_DT"/>
-		<result property="industry_cnt"				column="INDUSTRY_CNT"/>
-		<result property="year_cd"					column="YEAR_CD"/>
-	</resultMap>
-	
-   	<resultMap id="IndustryListForSelection" 		class="Industry">
-		<result property="industry_cd"				column="INDUSTRY_CD"/>
-		<result property="divide_cd"				column="DIVIDE_CD"/>
-		<result property="name"						column="NAME"/>
-	</resultMap>
-	
-   	<resultMap id="Industry" 		class="Industry">
-		<result property="industry_cd"				column="INDUSTRY_CD"/>
-		<result property="divide_cd"				column="DIVIDE_CD"/>
-		<result property="name"						column="NAME"/>
-		<result property="use_yn"					column="USE_YN"/>
-		<result property="use_yn_name"				column="USE_YN_NAME"/>
-		<result property="insert_dt"				column="INSERT_DT"/>
-		<result property="update_dt"				column="UPDATE_DT"/>
-	</resultMap>
-	
-   	<resultMap id="CompanyList" 		class="Company">
-		<result property="company_cd"		column="COMPANY_CD"/>
-		<result property="id"				column="ID"/>
-		<result property="passwd"			column="PASSWD"/>
-		<result property="company"			column="COMPANY"/>
-		<result property="sa_no"			column="SA_NO"/>
-		<result property="ceo_name"			column="CEO_NAME"/>
-		<result property="jumin"			column="JUMIN"/>
-		<result property="pharmacist_no"	column="PHARMACIST_NO"/>
-		<result property="tel"				column="TEL"/>
-		<result property="fax"				column="FAX"/>
-		<result property="hp"				column="HP"/>
-		<result property="post"				column="POST"/>
-		<result property="addr1"			column="ADDR1"/>
-		<result property="addr2"			column="ADDR2"/>
-		<result property="email"			column="EMAIL"/>
-		
-		<result property="industry_cd"		column="INDUSTRY_CD"/>
-		<result property="type_cd_01_yn"	column="TYPE_CD_01_YN"/>
-		<result property="type_cd_02_yn"	column="TYPE_CD_02_YN"/>
-		<result property="type_cd_03_yn"	column="TYPE_CD_03_YN"/>
-		<result property="type_cd_04_yn"	column="TYPE_CD_04_YN"/>
-		<result property="type_cd_05_yn"	column="TYPE_CD_05_YN"/>
-		<result property="type_cd_06_yn"	column="TYPE_CD_06_YN"/>
-		<result property="type_cd_07_yn"	column="TYPE_CD_07_YN"/>
-		<result property="type_cd_08_yn"	column="TYPE_CD_08_YN"/>
-		<result property="type_cd_09_yn"	column="TYPE_CD_09_YN"/>
-		<result property="type_cd_10_yn"	column="TYPE_CD_10_YN"/>
-		<result property="type_cd_11_yn"	column="TYPE_CD_11_YN"/>
-		<result property="insert_dt"		column="insert_dt"/>
-		<result property="grade_cd"			column="grade_cd"/>
-		<result property="grade_cd_name"	column="grade_cd_name"/>
-		<result property="industry_name"	column="industry_name"/>
-		<result property="anser_cnt"		column="anser_cnt"/>
-		<result property="year_cd"			column="year_cd"/>
-	</resultMap>
-	
-	
-   	<resultMap id="Company" 			class="Company">
-		<result property="company_cd"		column="company_cd"/>
-		<result property="id"				column="id"/>
-		<result property="passwd"			column="passwd"/>
-		<result property="company"			column="company"/>
-		<result property="sa_no"			column="sa_no"/>
-		<result property="ceo_name"			column="ceo_name"/>
-		<result property="jumin"			column="jumin"/>
-		<result property="pharmacist_no"	column="pharmacist_no"/>
-		<result property="tel"				column="tel"/>
-		<result property="fax"				column="fax"/>
-		<result property="hp"				column="hp"/>
-		<result property="post"				column="post"/>
-		<result property="addr1"			column="addr1"/>
-		<result property="addr2"			column="addr2"/>
-		<result property="email"			column="email"/>
-		<result property="industry_cd"		column="industry_cd"/>
-		<result property="type_cd_01_yn"	column="type_cd_01_yn"/>
-		<result property="type_cd_02_yn"	column="type_cd_02_yn"/>
-		<result property="type_cd_03_yn"	column="type_cd_03_yn"/>
-		<result property="type_cd_04_yn"	column="type_cd_04_yn"/>
-		<result property="type_cd_05_yn"	column="type_cd_05_yn"/>
-		<result property="type_cd_06_yn"	column="type_cd_06_yn"/>
-		<result property="type_cd_07_yn"	column="type_cd_07_yn"/>
-		<result property="type_cd_08_yn"	column="type_cd_08_yn"/>
-		<result property="type_cd_09_yn"	column="type_cd_09_yn"/>
-		<result property="type_cd_10_yn"	column="type_cd_10_yn"/>
-		<result property="type_cd_11_yn"	column="type_cd_11_yn"/>
-		<result property="insert_dt"		column="insert_dt"/>
-		<result property="insert_ip"		column="insert_ip"/>
-		<result property="insert_id"		column="insert_id"/>
-		<result property="update_dt"		column="update_dt"/>
-		<result property="update_ip"		column="update_ip"/>
-		<result property="update_id"		column="update_id"/>
-		<result property="year_cd"			column="year_cd"/>
-		<result property="blog_url"			column="blog_url"/>		
-		<result property="grade_cd"			column="grade_cd"/>
-		
-		<result property="industry_name"	column="industry_name"/>
-		
-	</resultMap>
-	
-	
-   	<resultMap id="Master" 				class="Master">
-		<result property="master_cd"		column="MASTER_CD"/>
-		<result property="type_cd"			column="TYPE_CD"/>
-		<result property="title"			column="TITLE"/>
-		<result property="start_dt"			column="START_DT"/>
-		<result property="end_dt"			column="END_DT"/>
-		<result property="attachfile1"		column="ATTACHFILE1"/>
-		<result property="attachfileorg1"	column="ATTACHFILEORG1"/>
-		<result property="attachtype1"		column="ATTACHTYPE1"/>
-		<result property="insert_dt"		column="INSERT_DT"/>
-		<result property="insert_ip"		column="INSERT_IP"/>
-		<result property="insert_id"		column="INSERT_ID"/>
-		<result property="update_dt"		column="UPDATE_DT"/>
-		<result property="update_ip"		column="UPDATE_IP"/>
-		<result property="update_id"		column="UPDATE_ID"/>
-		<result property="question_cnt"		column="QUESTION_CNT"/>
-		<result property="gigan_open_yn"	column="GIGAN_OPEN_YN"/>
-		<result property="contents"			column="CONTENTS"		jdbcType="CLOB"/>
-		<result property="year_cd"			column="YEAR_CD"/>
-	</resultMap>
-	
-	<resultMap id="Handleitem" 			class="Handleitem">
-		<result property="handle_cd"  			column="HANDLE_CD"/>
-		<result property="item_name"  			column="ITEM_NAME"/>
-		<result property="unit"  				column="UNIT"/>
-		<result property="field1"  				column="FIELD1"/>
-		<result property="field2"  				column="FIELD2"/>
-		<result property="field3"  				column="FIELD3"/>
-		<result property="field4"  				column="FIELD4"/>
-		<result property="company_cd"  			column="COMPANY_CD"/>
-		<result property="company_id"  			column="COMPANY_ID"/>
-		<result property="company_name"  		column="COMPANY_NAME"/>
-		<result property="year_cd"  			column="YEAR_CD"/>
-	</resultMap>
-	
-	
-	
 
-<!-- 업종 관련 Query -->
-	
+	<typeAlias alias="Industry"
+		type="egovframework.kr.go.geumcheon.health.vo.Industry" />
+	<typeAlias alias="Company"
+		type="egovframework.kr.go.geumcheon.health.vo.Company" />
+	<typeAlias alias="Master"
+		type="egovframework.kr.go.geumcheon.health.vo.Master" />
+	<typeAlias alias="Question"
+		type="egovframework.kr.go.geumcheon.health.vo.Question" />
+	<typeAlias alias="Question2"
+		type="egovframework.kr.go.geumcheon.health.vo.Question2" />
+	<typeAlias alias="Handleitem"
+		type="egovframework.kr.go.geumcheon.health.vo.Handleitem" />
+	<typeAlias alias="String" type="java.lang.String" />
+
+
+	<resultMap id="IndustryList" class="Industry">
+		<result property="industry_cd" column="INDUSTRY_CD" />
+		<result property="divide_cd" column="DIVIDE_CD" />
+		<result property="name" column="NAME" />
+		<result property="use_yn" column="USE_YN" />
+		<result property="use_yn_name" column="USE_YN_NAME" />
+		<result property="insert_dt" column="INSERT_DT" />
+		<result property="industry_cnt" column="INDUSTRY_CNT" />
+		<result property="year_cd" column="YEAR_CD" />
+	</resultMap>
+
+	<resultMap id="IndustryListForSelection" class="Industry">
+		<result property="industry_cd" column="INDUSTRY_CD" />
+		<result property="divide_cd" column="DIVIDE_CD" />
+		<result property="name" column="NAME" />
+	</resultMap>
+
+	<resultMap id="Industry" class="Industry">
+		<result property="industry_cd" column="INDUSTRY_CD" />
+		<result property="divide_cd" column="DIVIDE_CD" />
+		<result property="name" column="NAME" />
+		<result property="use_yn" column="USE_YN" />
+		<result property="use_yn_name" column="USE_YN_NAME" />
+		<result property="insert_dt" column="INSERT_DT" />
+		<result property="update_dt" column="UPDATE_DT" />
+	</resultMap>
+
+	<resultMap id="CompanyList" class="Company">
+		<result property="company_cd" column="COMPANY_CD" />
+		<result property="id" column="ID" />
+		<result property="passwd" column="PASSWD" />
+		<result property="company" column="COMPANY" />
+		<result property="sa_no" column="SA_NO" />
+		<result property="ceo_name" column="CEO_NAME" />
+		<result property="jumin" column="JUMIN" />
+		<result property="pharmacist_no" column="PHARMACIST_NO" />
+		<result property="tel" column="TEL" />
+		<result property="fax" column="FAX" />
+		<result property="hp" column="HP" />
+		<result property="post" column="POST" />
+		<result property="addr1" column="ADDR1" />
+		<result property="addr2" column="ADDR2" />
+		<result property="email" column="EMAIL" />
+
+		<result property="industry_cd" column="INDUSTRY_CD" />
+		<result property="type_cd_01_yn" column="TYPE_CD_01_YN" />
+		<result property="type_cd_02_yn" column="TYPE_CD_02_YN" />
+		<result property="type_cd_03_yn" column="TYPE_CD_03_YN" />
+		<result property="type_cd_04_yn" column="TYPE_CD_04_YN" />
+		<result property="type_cd_05_yn" column="TYPE_CD_05_YN" />
+		<result property="type_cd_06_yn" column="TYPE_CD_06_YN" />
+		<result property="type_cd_07_yn" column="TYPE_CD_07_YN" />
+		<result property="type_cd_08_yn" column="TYPE_CD_08_YN" />
+		<result property="type_cd_09_yn" column="TYPE_CD_09_YN" />
+		<result property="type_cd_10_yn" column="TYPE_CD_10_YN" />
+		<result property="type_cd_11_yn" column="TYPE_CD_11_YN" />
+		<result property="insert_dt" column="insert_dt" />
+		<result property="grade_cd" column="grade_cd" />
+		<result property="grade_cd_name" column="grade_cd_name" />
+		<result property="industry_name" column="industry_name" />
+		<result property="anser_cnt" column="anser_cnt" />
+		<result property="year_cd" column="year_cd" />
+	</resultMap>
+
+
+	<resultMap id="Company" class="Company">
+		<result property="company_cd" column="company_cd" />
+		<result property="id" column="id" />
+		<result property="passwd" column="passwd" />
+		<result property="company" column="company" />
+		<result property="sa_no" column="sa_no" />
+		<result property="ceo_name" column="ceo_name" />
+		<result property="jumin" column="jumin" />
+		<result property="pharmacist_no" column="pharmacist_no" />
+		<result property="tel" column="tel" />
+		<result property="fax" column="fax" />
+		<result property="hp" column="hp" />
+		<result property="post" column="post" />
+		<result property="addr1" column="addr1" />
+		<result property="addr2" column="addr2" />
+		<result property="email" column="email" />
+		<result property="industry_cd" column="industry_cd" />
+		<result property="type_cd_01_yn" column="type_cd_01_yn" />
+		<result property="type_cd_02_yn" column="type_cd_02_yn" />
+		<result property="type_cd_03_yn" column="type_cd_03_yn" />
+		<result property="type_cd_04_yn" column="type_cd_04_yn" />
+		<result property="type_cd_05_yn" column="type_cd_05_yn" />
+		<result property="type_cd_06_yn" column="type_cd_06_yn" />
+		<result property="type_cd_07_yn" column="type_cd_07_yn" />
+		<result property="type_cd_08_yn" column="type_cd_08_yn" />
+		<result property="type_cd_09_yn" column="type_cd_09_yn" />
+		<result property="type_cd_10_yn" column="type_cd_10_yn" />
+		<result property="type_cd_11_yn" column="type_cd_11_yn" />
+		<result property="insert_dt" column="insert_dt" />
+		<result property="insert_ip" column="insert_ip" />
+		<result property="insert_id" column="insert_id" />
+		<result property="update_dt" column="update_dt" />
+		<result property="update_ip" column="update_ip" />
+		<result property="update_id" column="update_id" />
+		<result property="year_cd" column="year_cd" />
+		<result property="blog_url" column="blog_url" />
+		<result property="grade_cd" column="grade_cd" />
+
+		<result property="industry_name" column="industry_name" />
+
+	</resultMap>
+
+
+	<resultMap id="Master" class="Master">
+		<result property="master_cd" column="MASTER_CD" />
+		<result property="type_cd" column="TYPE_CD" />
+		<result property="title" column="TITLE" />
+		<result property="start_dt" column="START_DT" />
+		<result property="end_dt" column="END_DT" />
+		<result property="attachfile1" column="ATTACHFILE1" />
+		<result property="attachfileorg1" column="ATTACHFILEORG1" />
+		<result property="attachtype1" column="ATTACHTYPE1" />
+		<result property="insert_dt" column="INSERT_DT" />
+		<result property="insert_ip" column="INSERT_IP" />
+		<result property="insert_id" column="INSERT_ID" />
+		<result property="update_dt" column="UPDATE_DT" />
+		<result property="update_ip" column="UPDATE_IP" />
+		<result property="update_id" column="UPDATE_ID" />
+		<result property="question_cnt" column="QUESTION_CNT" />
+		<result property="gigan_open_yn" column="GIGAN_OPEN_YN" />
+		<result property="contents" column="CONTENTS" jdbcType="CLOB" />
+		<result property="year_cd" column="YEAR_CD" />
+	</resultMap>
+
+	<resultMap id="Handleitem" class="Handleitem">
+		<result property="handle_cd" column="HANDLE_CD" />
+		<result property="item_name" column="ITEM_NAME" />
+		<result property="unit" column="UNIT" />
+		<result property="field1" column="FIELD1" />
+		<result property="field2" column="FIELD2" />
+		<result property="field3" column="FIELD3" />
+		<result property="field4" column="FIELD4" />
+		<result property="company_cd" column="COMPANY_CD" />
+		<result property="company_id" column="COMPANY_ID" />
+		<result property="company_name" column="COMPANY_NAME" />
+		<result property="year_cd" column="YEAR_CD" />
+	</resultMap>
+
+
+
+
+	<!-- 업종 관련 Query -->
+
 	<!-- 업종 리스트에서 보여질 수 있는 총 갯수 (페이징 처리) -->
-	<select id="FreecheckAdminDAO.selectIndustryListTotCnt" parameterClass="Industry" resultClass="int">
+	<select id="FreecheckAdminDAO.selectIndustryListTotCnt"
+		parameterClass="Industry" resultClass="int">
 		<![CDATA[
 			SELECT	NVL(COUNT(*),0) AS CNT 
 			FROM	HETB_CK_INDUSTRY 
 			WHERE	STATUS = 'N' 
 		]]>
-		
+
 		<isEqual property="searchCondition" compareValue="1">
 			<![CDATA[
 					AND DIVIDE_CD LIKE '%$searchKeyword$%'
 			]]>
 		</isEqual>
-		
-		
+
+
 	</select>
-	
+
 	<!-- 업종 리스트에서 총 업소 갯수 -->
-	<select id="FreecheckAdminDAO.selectIndustryListTotCnt2" parameterClass="Industry" resultClass="int">
+	<select id="FreecheckAdminDAO.selectIndustryListTotCnt2"
+		parameterClass="Industry" resultClass="int">
 		<![CDATA[
 			SELECT	NVL(SUM(INDUSTRY_CNT),0) AS CNT 
 			FROM	HETB_CK_INDUSTRY A,
@@ -191,18 +199,19 @@
 			WHERE	A.STATUS = 'N'
 					AND A.INDUSTRY_CD = B.INDUSTRY_CD(+)
 		]]>
-		
-		
+
+
 		<isEqual property="searchCondition" compareValue="1">
 			<![CDATA[
 					AND A.DIVIDE_CD LIKE '%$searchKeyword$%'
 			]]>
 		</isEqual>
-		
+
 	</select>
-	
+
 	<!-- 업종 관리 (조회) -->
-	<select id="FreecheckAdminDAO.selectIndustryList" parameterClass="Industry" resultMap="IndustryList">
+	<select id="FreecheckAdminDAO.selectIndustryList"
+		parameterClass="Industry" resultMap="IndustryList">
 		<![CDATA[
 			SELECT  * 
 				FROM  (
@@ -226,8 +235,8 @@
 				 		WHERE 	A.STATUS = 'N' 
 								AND A.INDUSTRY_CD = B.INDUSTRY_CD(+)
 		]]>
-		
-		
+
+
 		<isEqual property="searchCondition" compareValue="1">
 			<![CDATA[
 								AND A.DIVIDE_CD LIKE '%$searchKeyword$%'
@@ -242,9 +251,10 @@
 			   AND  RNUM <= 10000
 		]]>
 	</select>
-	
-	
-	<select id="FreecheckAdminDAO.selectIndustryListForSelection" parameterClass="Industry" resultMap="IndustryListForSelection">
+
+
+	<select id="FreecheckAdminDAO.selectIndustryListForSelection"
+		parameterClass="Industry" resultMap="IndustryListForSelection">
 		<![CDATA[
 			SELECT	A.INDUSTRY_CD
 					, A.DIVIDE_CD
@@ -254,10 +264,11 @@
 			ORDER BY	A.DIVIDE_CD ASC, A.INDUSTRY_CD ASC
 		]]>
 	</select>
-	
-	
+
+
 	<!-- 업종 관리 (조회) -->
-	<select id="FreecheckAdminDAO.selectIndustry" parameterClass="Industry" resultMap="Industry">
+	<select id="FreecheckAdminDAO.selectIndustry" parameterClass="Industry"
+		resultMap="Industry">
 		<![CDATA[
 			SELECT	A.INDUSTRY_CD
 					, A.DIVIDE_CD
@@ -270,7 +281,7 @@
 			WHERE	INDUSTRY_CD = $industry_cd$
 		]]>
 	</select>
-	
+
 	<!-- 업종 관리 (등록) -->
 	<insert id="FreecheckAdminDAO.insertIndustry" parameterClass="Industry">
 		<![CDATA[
@@ -323,9 +334,10 @@
              WHERE	INDUSTRY_CD = $industry_cd$
 		]]>
 	</update>
-	
-<!-- 업소 관련 Query -->	
-	<select id="FreecheckAdminDAO.selectCompanyListTotCnt" parameterClass="Company" resultClass="int">
+
+	<!-- 업소 관련 Query -->
+	<select id="FreecheckAdminDAO.selectCompanyListTotCnt"
+		parameterClass="Company" resultClass="int">
 		<![CDATA[
 			SELECT	NVL(COUNT(*), 1) 
 			FROM	HETB_CK_COMPANY A
@@ -338,99 +350,100 @@
 			<isNotEqual property="industry_cd" compareValue="0">
 			<![CDATA[
 								AND A.INDUSTRY_CD = $industry_cd$
-				]]>	
+				]]>
 			</isNotEqual>
 		</isEqual>
 		<isEqual property="searchCondition" compareValue="2">
 			<isEqual property="type_cd" prepend="AND" compareValue="01">
 				<![CDATA[
 								A.TYPE_CD_01_YN LIKE 'Y'
-				]]>	
+				]]>
 			</isEqual>
 			<isEqual property="type_cd" prepend="AND" compareValue="02">
 				<![CDATA[
 								A.TYPE_CD_02_YN LIKE 'Y'
-				]]>	
+				]]>
 			</isEqual>
 			<isEqual property="type_cd" prepend="AND" compareValue="03">
 				<![CDATA[
 								A.TYPE_CD_03_YN LIKE 'Y'
-				]]>	
+				]]>
 			</isEqual>
 			<isEqual property="type_cd" prepend="AND" compareValue="04">
 				<![CDATA[
 								A.TYPE_CD_04_YN LIKE 'Y'
-				]]>	
+				]]>
 			</isEqual>
 			<isEqual property="type_cd" prepend="AND" compareValue="05">
 				<![CDATA[
 								A.TYPE_CD_05_YN LIKE 'Y'
-				]]>	
+				]]>
 			</isEqual>
 			<isEqual property="type_cd" prepend="AND" compareValue="06">
 				<![CDATA[
 								A.TYPE_CD_06_YN LIKE 'Y'
-				]]>	
+				]]>
 			</isEqual>
 			<isEqual property="type_cd" prepend="AND" compareValue="07">
 				<![CDATA[
 								A.TYPE_CD_07_YN LIKE 'Y'
-				]]>	
+				]]>
 			</isEqual>
 			<isEqual property="type_cd" prepend="AND" compareValue="08">
 				<![CDATA[
 								A.TYPE_CD_08_YN LIKE 'Y'
-				]]>	
+				]]>
 			</isEqual>
 			<isEqual property="type_cd" prepend="AND" compareValue="09">
 				<![CDATA[
 								A.TYPE_CD_09_YN LIKE 'Y'
-				]]>	
+				]]>
 			</isEqual>
 			<isEqual property="type_cd" prepend="AND" compareValue="10">
 				<![CDATA[
 								A.TYPE_CD_10_YN LIKE 'Y'
-				]]>	
+				]]>
 			</isEqual>
 			<isEqual property="type_cd" prepend="AND" compareValue="11">
 				<![CDATA[
 								A.TYPE_CD_11_YN LIKE 'Y'
-				]]>	
+				]]>
 			</isEqual>
-			
+
 		</isEqual>
 		<isEqual property="searchCondition" compareValue="3">
-			<isNotEmpty property="company" >
+			<isNotEmpty property="company">
 			<![CDATA[
 								AND A.COMPANY LIKE '%$company$%'
-				]]>	
+				]]>
 			</isNotEmpty>
 		</isEqual>
 		<isEqual property="searchCondition" compareValue="4">
-			<isNotEmpty property="ceo_name" >
+			<isNotEmpty property="ceo_name">
 			<![CDATA[
 								AND A.CEO_NAME LIKE '%$ceo_name$%'
-				]]>	
+				]]>
 			</isNotEmpty>
 		</isEqual>
 		<isEqual property="searchCondition" compareValue="5">
-			<isNotEmpty property="id" >
+			<isNotEmpty property="id">
 			<![CDATA[
 								AND A.ID LIKE '%$id$%'
-				]]>	
+				]]>
 			</isNotEmpty>
 		</isEqual>
 		<isEqual property="searchCondition" compareValue="6">
-			<isNotEmpty property="grade_cd" >
+			<isNotEmpty property="grade_cd">
 			<![CDATA[
 								AND A.GRADE_CD LIKE '$grade_cd$'
-				]]>	
+				]]>
 			</isNotEmpty>
 		</isEqual>
 	</select>
-	
-	
-	<select id="FreecheckAdminDAO.selectCompanyList" parameterClass="Company" resultMap="CompanyList">
+
+
+	<select id="FreecheckAdminDAO.selectCompanyList" parameterClass="Company"
+		resultMap="CompanyList">
 		<![CDATA[
 			SELECT  * 
 				FROM  (
@@ -485,35 +498,35 @@
 			<isNotEqual property="industry_cd" compareValue="0">
 			<![CDATA[
 								AND A.INDUSTRY_CD = $industry_cd$
-				]]>	
+				]]>
 			</isNotEqual>
 		</isEqual>
 		<isEqual property="searchCondition" compareValue="3">
-			<isNotEmpty property="company" >
+			<isNotEmpty property="company">
 			<![CDATA[
 								AND A.COMPANY LIKE '%$company$%'
-				]]>	
+				]]>
 			</isNotEmpty>
 		</isEqual>
 		<isEqual property="searchCondition" compareValue="4">
-			<isNotEmpty property="ceo_name" >
+			<isNotEmpty property="ceo_name">
 			<![CDATA[
 								AND A.CEO_NAME LIKE '%$ceo_name$%'
-				]]>	
+				]]>
 			</isNotEmpty>
 		</isEqual>
 		<isEqual property="searchCondition" compareValue="5">
-			<isNotEmpty property="id" >
+			<isNotEmpty property="id">
 			<![CDATA[
 								AND A.ID LIKE '%$id$%'
-				]]>	
+				]]>
 			</isNotEmpty>
 		</isEqual>
 		<isEqual property="searchCondition" compareValue="6">
-			<isNotEmpty property="grade_cd" >
+			<isNotEmpty property="grade_cd">
 			<![CDATA[
 								AND A.GRADE_CD LIKE '$grade_cd$'
-				]]>	
+				]]>
 			</isNotEmpty>
 		</isEqual>
 		
@@ -526,9 +539,10 @@
 			   AND  RNUM <= #firstIndex# + #recordCountPerPage#
 		]]>
 	</select>
-	
-	
-	<select id="FreecheckAdminDAO.selectCheckListByCompany" parameterClass="int" resultClass="string">
+
+
+	<select id="FreecheckAdminDAO.selectCheckListByCompany"
+		parameterClass="int" resultClass="string">
 		<![CDATA[
 			 SELECT	
 			 	B.TITLE
@@ -542,9 +556,10 @@
 			 AND A.COMPANY_CD = #companyCd#
 		]]>
 	</select>
-	
-	
-	<select id="FreecheckAdminDAO.selectCompany" parameterClass="Company" resultMap="Company">
+
+
+	<select id="FreecheckAdminDAO.selectCompany" parameterClass="Company"
+		resultMap="Company">
 		<![CDATA[
 			 SELECT	A.COMPANY_CD
 					, A.ID
@@ -590,10 +605,11 @@
 					AND A.INDUSTRY_CD = B.INDUSTRY_CD(+)
 		]]>
 	</select>
-	
-	
-	
-	<select id="FreecheckAdminDAO.checkCompanyId" parameterClass="Company" resultClass="java.lang.Integer">
+
+
+
+	<select id="FreecheckAdminDAO.checkCompanyId" parameterClass="Company"
+		resultClass="java.lang.Integer">
 		<![CDATA[
 			 SELECT		COUNT(*) 
 			 FROM 		HETB_CK_COMPANY 
@@ -606,8 +622,9 @@
 			]]>
 		</isNotEmpty>
 	</select>
-	
-	<select id="FreecheckAdminDAO.isExistCompanyId" parameterClass="java.lang.String" resultClass="java.lang.Integer">
+
+	<select id="FreecheckAdminDAO.isExistCompanyId" parameterClass="java.lang.String"
+		resultClass="java.lang.Integer">
 		<![CDATA[
 			 SELECT		COUNT(*) 
 			 FROM 		HETB_CK_COMPANY 
@@ -615,22 +632,23 @@
 			 			AND STATUS = 'N'
 		]]>
 	</select>
-	
-	<select id="FreecheckAdminDAO.selectDivideCd" parameterClass="int" resultClass="java.lang.String">
+
+	<select id="FreecheckAdminDAO.selectDivideCd" parameterClass="int"
+		resultClass="java.lang.String">
 		<![CDATA[
 			SELECT DIVIDE_CD 
 		     FROM HETB_CK_INDUSTRY
 		     WHERE INDUSTRY_CD = #industryCd#
 		]]>
 	</select>
-	
+
 	<select id="FreecheckAdminDAO.selectCompanyNextKey" resultClass="java.lang.String">
 		<![CDATA[
 			SELECT		LPAD(MAX(COMPANY_CD) +1, 4, '0') as key3
 			FROM 		HETB_CK_COMPANY 
 		]]>
 	</select>
-	
+
 	<!-- 업소 관리 (등록) -->
 	<insert id="FreecheckAdminDAO.insertCompany" parameterClass="Company">
 		<![CDATA[
@@ -715,8 +733,8 @@
 		        ) 
 		]]>
 	</insert>
-	
-	
+
+
 	<insert id="FreecheckAdminDAO.insertMember" parameterClass="Company">
 		<![CDATA[
 			INSERT INTO PRTLTMEMBER 
@@ -741,8 +759,8 @@
 			)
 		]]>
 	</insert>
-	
-	
+
+
 	<update id="FreecheckAdminDAO.updateCompany" parameterClass="Company">
 		<![CDATA[
             UPDATE  HETB_CK_COMPANY 
@@ -781,9 +799,9 @@
              WHERE	COMPANY_CD = $company_cd$
 		]]>
 	</update>
-	
-	
- 	<update id="FreecheckAdminDAO.updateMember" parameterClass="Company">
+
+
+	<update id="FreecheckAdminDAO.updateMember" parameterClass="Company">
  		<![CDATA[
 			UPDATE PRTLTMEMBER SET 
 				PWD = '$passwd$',
@@ -796,25 +814,27 @@
 				UPDATE_DATE = SYSDATE
 			WHERE ID = '$id$'
  		]]>
- 	</update>
-	
+	</update>
+
 	<delete id="FreecheckAdminDAO.deleteCompany" parameterClass="Company">
 		<![CDATA[
             DELETE HETB_CK_COMPANY
              WHERE	COMPANY_CD = $company_cd$
 		]]>
 	</delete>
-	
-	<delete id="FreecheckAdminDAO.deleteCompanyForExcel" parameterClass="zvl">
+
+	<delete id="FreecheckAdminDAO.deleteCompanyForExcel"
+		parameterClass="zvl">
 		<![CDATA[
             DELETE FROM HETB_CK_COMPANY 
              WHERE	YEAR_CD = #yearCd#
              AND INDUSTRY_CD = #industryCd#
 		]]>
 	</delete>
-	
-	
-	<delete id="FreecheckAdminDAO.deleteAnswerForCompanyId" parameterClass="Company">
+
+
+	<delete id="FreecheckAdminDAO.deleteAnswerForCompanyId"
+		parameterClass="Company">
 		<![CDATA[
 			DELETE 	FROM HETB_CK_ANSWER
 			WHERE 	COMPANY_ID = '$id$'
@@ -825,8 +845,9 @@
 			]]>
 		</isNotEqual>
 	</delete>
-	
-	<delete id="FreecheckAdminDAO.deleteAnswer2ForCompanyId" parameterClass="Company">
+
+	<delete id="FreecheckAdminDAO.deleteAnswer2ForCompanyId"
+		parameterClass="Company">
 		<![CDATA[
 			DELETE 	FROM HETB_CK_ANSWER2
 			WHERE 	COMPANY_ID = '$id$'
@@ -836,21 +857,22 @@
 					AND MASTER_CD = $master_cd$
 			]]>
 		</isNotEqual>
-		
+
 	</delete>
-	
-    
-    <update id="FreecheckAdminDAO.deleteHandleItem" parameterClass="Company">
+
+
+	<update id="FreecheckAdminDAO.deleteHandleItem" parameterClass="Company">
     	<![CDATA[
     		DELETE 	FROM HETB_CK_HANDLEITEM
 			WHERE 	COMPANY_ID = '$id$'
 					AND YEAR_CD = '$year_cd$'
     	]]>
-    </update>
-    
-    
-	
-	<select id="FreecheckAdminDAO.selectCheckformList" parameterClass="java.lang.String" resultClass="java.util.HashMap">
+	</update>
+
+
+
+	<select id="FreecheckAdminDAO.selectCheckformList"
+		parameterClass="java.lang.String" resultClass="java.util.HashMap">
 		<![CDATA[
 			SELECT	A.MASTER_CD
 					, A.TYPE_CD
@@ -893,6 +915,8 @@
 								  INNER JOIN HETB_CK_COMPANY B ON B.INDUSTRY_CD = C.INDUSTRY_CD
 								WHERE A.STATUS = 'N'  
 								  AND A.YEAR_CD = '$year_cd$'
+								  AND B.YEAR_CD = '$year_cd$'
+								  AND B.STATUS = 'N'
 								GROUP BY A.MASTER_CD  
 							) D 
 					WHERE	A.STATUS = 'N' AND A.MASTER_CD = B.MASTER_CD(+) 
@@ -904,9 +928,10 @@
 			ORDER BY TYPE_CD ASC
 		]]>
 	</select>
-	
 
-	<select id="FreecheckAdminDAO.selectCheckform" parameterClass="java.lang.Integer" resultMap="Master">
+
+	<select id="FreecheckAdminDAO.selectCheckform" parameterClass="java.lang.Integer"
+		resultMap="Master">
 		<![CDATA[
 			SELECT	MASTER_CD
 					, TYPE_CD
@@ -939,7 +964,7 @@
 					AND STATUS = 'N' 
 		]]>
 	</select>
-	
+
 
 	<!-- 의약업소 자율점검 (점검표관리) (등록) -->
 	<insert id="FreecheckAdminDAO.insertCheckform" parameterClass="Master">
@@ -978,7 +1003,7 @@
 		]]>
 	</insert>
 
-					
+
 	<update id="FreecheckAdminDAO.updateCheckform" parameterClass="Master">
 		<![CDATA[
             UPDATE  HETB_CK_MASTER 
@@ -987,11 +1012,12 @@
 					, START_DT			= #start_dt#
 					, END_DT			= #end_dt#
 		]]>
-		
+
 		<isNotEmpty property="attachfile1">
-					, ATTACHFILE1		= '$attachfile1$'
-					, ATTACHFILEORG1	= '$attachfileorg1$'
-					, ATTACHTYPE1		= '$attachtype1$'
+			, ATTACHFILE1 = '$attachfile1$'
+			,
+			ATTACHFILEORG1 = '$attachfileorg1$'
+			, ATTACHTYPE1 = '$attachtype1$'
 		</isNotEmpty>
 		
 		<![CDATA[		
@@ -1003,10 +1029,11 @@
              WHERE	MASTER_CD = $master_cd$
 		]]>
 	</update>
-	
-	
-	
-	<update id="FreecheckAdminDAO.deleteCheckformAttachFile" parameterClass="Master">
+
+
+
+	<update id="FreecheckAdminDAO.deleteCheckformAttachFile"
+		parameterClass="Master">
 		<![CDATA[
             UPDATE  HETB_CK_MASTER 
                SET	ATTACHFILE1			= ''
@@ -1015,9 +1042,9 @@
              WHERE	MASTER_CD = $master_cd$
 		]]>
 	</update>
-	
-	
-	
+
+
+
 	<update id="FreecheckAdminDAO.deleteCheckform" parameterClass="Master">
 		<![CDATA[
             UPDATE  HETB_CK_MASTER 
@@ -1027,11 +1054,12 @@
              WHERE	MASTER_CD = $master_cd$
 		]]>
 	</update>
-	
-	
-	
-	
-	<select id="FreecheckAdminDAO.selectCheckedCompanyListTotCnt" parameterClass="Master" resultClass="int">
+
+
+
+
+	<select id="FreecheckAdminDAO.selectCheckedCompanyListTotCnt"
+		parameterClass="Master" resultClass="int">
 		<![CDATA[
 			SELECT	COUNT(*)
 			FROM	(
@@ -1048,15 +1076,17 @@
 								, HETB_CK_INDUSTRY C
 						WHERE	A.MASTER_CD = $master_cd$ 
 								AND A.STATUS = 'N' 
+								AND B.STATUS = 'N' 
 								AND	A.COMPANY_CD = B.COMPANY_CD 
 								AND B.INDUSTRY_CD = C.INDUSTRY_CD(+) 
 						ORDER BY A.INSERT_DT DESC
 					) A 
 		]]>
 	</select>
-	
-	
-	<select id="FreecheckAdminDAO.selectCheckedCompanyList" parameterClass="Master" resultClass="java.util.HashMap">
+
+
+	<select id="FreecheckAdminDAO.selectCheckedCompanyList"
+		parameterClass="Master" resultClass="java.util.HashMap">
 		<![CDATA[
 			SELECT	* 
 			FROM	( 
@@ -1082,6 +1112,7 @@
 					                    ) D
 								WHERE	A.MASTER_CD = $master_cd$ 
 										AND A.STATUS = 'N' 
+										AND B.STATUS = 'N' 
 										AND	A.COMPANY_CD = B.COMPANY_CD 
 										AND B.INDUSTRY_CD = C.INDUSTRY_CD(+) 
                    						AND B.COMPANY_CD = D.COMPANY_CD(+)
@@ -1093,10 +1124,11 @@
 					AND RNUM <= #firstIndex# + #recordCountPerPage#
 		]]>
 	</select>
-	
-	
-	
-	<select id="FreecheckAdminDAO.selectNotCheckedCompanyListTotCnt" parameterClass="Master" resultClass="int">
+
+
+
+	<select id="FreecheckAdminDAO.selectNotCheckedCompanyListTotCnt"
+		parameterClass="Master" resultClass="int">
 		<![CDATA[
 			SELECT	COUNT(*) 
 			FROM	( 
@@ -1128,10 +1160,11 @@
 					AND B.MASTER_CD IS NULL
 		]]>
 	</select>
-	
-	
-	
-	<select id="FreecheckAdminDAO.selectNotCheckedCompanyList" parameterClass="Master" resultClass="java.util.HashMap">
+
+
+
+	<select id="FreecheckAdminDAO.selectNotCheckedCompanyList"
+		parameterClass="Master" resultClass="java.util.HashMap">
 		<![CDATA[
 			SELECT	* 
 			FROM	(
@@ -1179,9 +1212,10 @@
 					AND RNUM <= #firstIndex# + #recordCountPerPage#
 		]]>
 	</select>
-	
-	
-	<select id="FreecheckAdminDAO.selectQuestionList" parameterClass="Master" resultClass="java.util.HashMap">
+
+
+	<select id="FreecheckAdminDAO.selectQuestionList"
+		parameterClass="Master" resultClass="java.util.HashMap">
 		<![CDATA[
 			SELECT 	QUESTION_CD				AS QUESTION_CD
 					, QUESTION				AS QUESTION
@@ -1194,8 +1228,9 @@
 			ORDER BY ORDERBY ASC
 		]]>
 	</select>
-	
-	<select id="FreecheckAdminDAO.selectAnswerStatisticsList" parameterClass="Master" resultClass="java.util.HashMap">
+
+	<select id="FreecheckAdminDAO.selectAnswerStatisticsList"
+		parameterClass="Master" resultClass="java.util.HashMap">
 		<![CDATA[
 			SELECT	A.QUESTION2_CD						AS QUESTION2_CD
 					, A.QUESTION2						AS QUESTION2
@@ -1262,9 +1297,10 @@
 				
 		]]>
 	</select>
-	
-	
-	<select id="FreecheckAdminDAO.downloadExcelAnswerList" parameterClass="Master" resultClass="java.util.HashMap">
+
+
+	<select id="FreecheckAdminDAO.downloadExcelAnswerList"
+		parameterClass="Master" resultClass="java.util.HashMap">
 		<![CDATA[
 			SELECT	AB.SANGHO_NAME 
 					, AB.NAME1 
@@ -1288,12 +1324,13 @@
           			AND AB.MASTER_CD = $master_cd$ 
 		]]>
 	</select>
-	
-	
 
-	
+
+
+
 	<!-- 의약업소 자율점검 (점검표관리) (질문 HETB_CK_QUESTION) : 조회 (단일 레코드)  -->
-	<select id="FreecheckAdminDAO.selectQuestion" parameterClass="Question" resultClass="java.util.HashMap">
+	<select id="FreecheckAdminDAO.selectQuestion" parameterClass="Question"
+		resultClass="java.util.HashMap">
 		<![CDATA[
 			SELECT	QUESTION_CD
 					, MASTER_CD
@@ -1309,9 +1346,9 @@
 					AND STATUS = 'N' 
 		]]>
 	</select>
-	
-	
-	
+
+
+
 	<!-- 의약업소 자율점검 (점검표관리) (질문 HETB_CK_QUESTION) : 입력  -->
 	<insert id="FreecheckAdminDAO.insertQuestion" parameterClass="Question">
 		<![CDATA[
@@ -1342,9 +1379,9 @@
 					, SYSDATE)
 		]]>
 	</insert>
-	
-	
-	
+
+
+
 	<!-- 의약업소 자율점검 (점검표관리) (질문 HETB_CK_QUESTION) : 수정  -->
 	<update id="FreecheckAdminDAO.updateQuestion" parameterClass="Question">
 		<![CDATA[
@@ -1359,11 +1396,12 @@
 					AND MASTER_CD = $master_cd$
 		]]>
 	</update>
-	
-	
-	
+
+
+
 	<!-- 의약업소 자율점검 (점검표관리) (질문 HETB_CK_QUESTION) : 삭제 -->
-	<update id="FreecheckAdminDAO.updateQuestionForDelete" parameterClass="Question">
+	<update id="FreecheckAdminDAO.updateQuestionForDelete"
+		parameterClass="Question">
 		<![CDATA[
 			UPDATE	HETB_CK_QUESTION 
 			SET		STATUS = 'Y'
@@ -1373,10 +1411,11 @@
 					AND MASTER_CD = $master_cd$ 
 		]]>
 	</update>
-	
-	
+
+
 	<!-- 의약업소 자율점검 (점검표관리) (질문 항목 HETB_CK_QUESTION2) : 조회 (복수 레코드)  -->
-	<select id="FreecheckAdminDAO.selectQuestion2ForUpdate" parameterClass="Question2" resultClass="Question2">
+	<select id="FreecheckAdminDAO.selectQuestion2ForUpdate"
+		parameterClass="Question2" resultClass="Question2">
 		<![CDATA[	
 			/* 의약업소 자율점검 (점검표관리) (질문 항목 HETB_CK_QUESTION2) : 조회 (복수 레코드) */
 			SELECT	QUESTION2_CD
@@ -1392,8 +1431,8 @@
 			ORDER BY ORDERBY ASC	
 		]]>
 	</select>
-	
-	
+
+
 	<insert id="FreecheckAdminDAO.insertQuestion2" parameterClass="Question2">
 		<![CDATA[
 			/* 질문 항목 등록 */
@@ -1414,22 +1453,24 @@
 					,  #validation#)
 		]]>
 	</insert>
-	
-	
+
+
 	<update id="FreecheckAdminDAO.updateQuestion2" parameterClass="Question2">
 		<![CDATA[
 			/* 질문 항목 수정 */
 			UPDATE	HETB_CK_QUESTION2 
 		]]>
 		<isEqual property="status" compareValue="N">
-			SET		QUESTION2 = '$question2$'
-					, UPDATE_DT = SYSDATE
-					, VALIDATION = #validation#
+			SET QUESTION2 =
+			'$question2$'
+			, UPDATE_DT = SYSDATE
+			, VALIDATION = #validation#
 		</isEqual>
 		<isEqual property="status" compareValue="Y">
-			SET		STATUS = 'Y'
-					, UPDATE_DT = SYSDATE
-					, VALIDATION = #validation#
+			SET STATUS = 'Y'
+			,
+			UPDATE_DT = SYSDATE
+			, VALIDATION = #validation#
 		</isEqual>
 		<![CDATA[
 			WHERE	QUESTION2_CD = $question2_cd$ 
@@ -1437,17 +1478,19 @@
 					AND MASTER_CD = $master_cd$
 		]]>
 	</update>
-	
-    <select id="FreecheckAdminDAO.selectCheckedHandleitemListTotCnt" parameterClass="Company" resultClass="java.lang.Integer">
+
+	<select id="FreecheckAdminDAO.selectCheckedHandleitemListTotCnt"
+		parameterClass="Company" resultClass="java.lang.Integer">
     	<![CDATA[
     		SELECT 	count(HANDLE_CD)
 			FROM 	HETB_CK_HANDLEITEM
 			WHERE 	COMPANY_CD = $company_cd$
 					AND YEAR_CD = '$year_cd$'
     	]]>
-    </select>
-    
-    <select id="FreecheckAdminDAO.selectCheckedHandleitemList" parameterClass="Company" resultMap="Handleitem">
+	</select>
+
+	<select id="FreecheckAdminDAO.selectCheckedHandleitemList"
+		parameterClass="Company" resultMap="Handleitem">
     	<![CDATA[
     		SELECT 	HANDLE_CD
 					, ITEM_NAME
@@ -1465,9 +1508,10 @@
 			WHERE 	COMPANY_CD = $company_cd$
 					AND YEAR_CD = '$year_cd$'
     	]]>
-    </select>
-    
-    <select id="FreecheckAdminDAO.selectCheckedQuestionCntList" parameterClass="Company" resultClass="zvl">
+	</select>
+
+	<select id="FreecheckAdminDAO.selectCheckedQuestionCntList"
+		parameterClass="Company" resultClass="zvl">
     	<![CDATA[
 			SELECT
 				CC.ID
@@ -1522,10 +1566,12 @@
 			      AND C.MASTER_CD = A.MASTER_CD
 			  GROUP BY A.COMPANY_ID
 			) BB ON BB.COMPANY_ID = CC.ID
+			WHERE CC.STATUS = 'N' 
     	]]>
-    </select>
-    
-    <select id="FreecheckAdminDAO.selectWrongQuestionList" parameterClass="Company" resultClass="zvl">
+	</select>
+
+	<select id="FreecheckAdminDAO.selectWrongQuestionList"
+		parameterClass="Company" resultClass="zvl">
     	<![CDATA[			
 			  SELECT A.COMPANY_ID, C.QUESTION, C.ORDERBY
 			  FROM HETB_CK_ANSWER2 A
@@ -1541,9 +1587,10 @@
 			  WHERE A.MASTER_CD = 2
 			  AND NVL(B.VALIDATION,'N') = 'N'
     	]]>
-    </select>
-    	
-    <select id="FreecheckAdminDAO.selectLinkedMasterList" resultClass="zvl">
+	</select>
+
+	<select id="FreecheckAdminDAO.selectLinkedMasterList"
+		resultClass="zvl">
     	<![CDATA[			
 			  SELECT A.MASTER_CD,
 			       A.INDUSTRY_CD,
@@ -1556,16 +1603,17 @@
 			  INNER JOIN HETB_CK_MASTER C ON A.MASTER_CD = C.MASTER_CD
 			  ORDER BY A.REG_DATE DESC
     	]]>
-    </select>
-    	
-    <insert id="FreecheckAdminDAO.addLinkedMaster" parameterClass="zvl">
+	</select>
+
+	<insert id="FreecheckAdminDAO.addLinkedMaster" parameterClass="zvl">
     	<![CDATA[			
 			  INSERT INTO HETB_CK_LINKED_MASTER ( MASTER_CD,INDUSTRY_CD,USE_YN,REG_DATE )
 				VALUES ( #masterCd#, #industryCd#, #useYn#,  SYSDATE )
     	]]>
-    </insert>
-    	
-    <select id="FreecheckAdminDAO.selectIndustryAttrList" resultClass="zvl">
+	</insert>
+
+	<select id="FreecheckAdminDAO.selectIndustryAttrList"
+		resultClass="zvl">
     	<![CDATA[			
 			  SELECT 
 			  	   A.INDUSTRY_CD,
@@ -1576,9 +1624,10 @@
 			  WHERE A.STATUS = 'N'
 			  ORDER BY A.INDUSTRY_CD DESC
     	]]>
-    </select>
-    	
-    <select id="FreecheckAdminDAO.selectLinkedMasterByIndustry" parameterClass="string" resultClass="zvl">
+	</select>
+
+	<select id="FreecheckAdminDAO.selectLinkedMasterByIndustry"
+		parameterClass="string" resultClass="zvl">
     	<![CDATA[			
 			  SELECT 
 			  	   A.MASTER_CD
@@ -1591,9 +1640,10 @@
 			 ) AND YEAR_CD NOT IN ('000000')
 			  ORDER BY A.MASTER_CD DESC
     	]]>
-    </select>
-    	
-    <select id="FreecheckAdminDAO.selectMasterListByIndustry" parameterClass="string" resultClass="zvl">
+	</select>
+
+	<select id="FreecheckAdminDAO.selectMasterListByIndustry"
+		parameterClass="string" resultClass="zvl">
     	<![CDATA[			
 			  SELECT 
 			  	   A.MASTER_CD
@@ -1606,16 +1656,17 @@
 			 ) AND YEAR_CD NOT IN ('000000')
 			  ORDER BY A.MASTER_CD DESC
     	]]>
-    </select>
-    	
-    <delete id="FreecheckAdminDAO.delLinkedMaster" parameterClass="zvl">
+	</select>
+
+	<delete id="FreecheckAdminDAO.delLinkedMaster" parameterClass="zvl">
     	<![CDATA[			
     		DELETE FROM HETB_CK_LINKED_MASTER
     		WHERE MASTER_CD = #masterCd# AND INDUSTRY_CD = #industryCd#
     	]]>
-    </delete>
-    	
-    <select id="FreecheckAdminDAO.selectMasterCompanyPointList" parameterClass="zvl" resultClass="zvl">
+	</delete>
+
+	<select id="FreecheckAdminDAO.selectMasterCompanyPointList"
+		parameterClass="zvl" resultClass="zvl">
     	<![CDATA[
     	SELECT 
 			A.COMPANY, NVL(B.QUESTION_CNT,0) AS QUESTION_CNT, NVL(C.CORRECT_ANSWER_CNT,0) AS CORRECT_ANSWER_CNT,
@@ -1665,10 +1716,10 @@
 		    GROUP BY C1.MASTER_CD, C1.COMPANY_ID
 		) D ON D.COMPANY_ID = A.ID AND D.MASTER_CD = A.MASTER_CD
 		WHERE 1=1
-		]]> 	
+		]]>
 		<isNotEmpty prepend="AND" property="masterCd">
 			<![CDATA[	A.MASTER_CD = #masterCd#	]]>
-		</isNotEmpty>	
+		</isNotEmpty>
 		<isNotEmpty prepend="AND" property="gradeCd">
 			<![CDATA[	A.GRADE_CD = #gradeCd#	]]>
 		</isNotEmpty>
@@ -1676,20 +1727,21 @@
 			<isNotEmpty prepend="AND" property="searchTxt">
 				<![CDATA[	A.COMPANY LIKE '%' || #searchTxt# || '%'	]]>
 			</isNotEmpty>
-		</isEqual>		
+		</isEqual>
 		<isEqual property="searchType" compareValue="2">
 			<isNotEmpty prepend="AND" property="searchTxt">
 				<![CDATA[	A.ID LIKE '%' || #searchTxt# || '%'	]]>
 			</isNotEmpty>
-		</isEqual>		
+		</isEqual>
 		<isEqual property="searchType" compareValue="3">
 			<isNotEmpty prepend="AND" property="searchTxt">
 				<![CDATA[	A.CEO_NAME LIKE '%' || #searchTxt# || '%'	]]>
 			</isNotEmpty>
-		</isEqual>			
-    </select>
-    	
-    <select id="FreecheckAdminDAO.selectMasterListForItem" parameterClass="string" resultClass="zvl">
+		</isEqual>
+	</select>
+
+	<select id="FreecheckAdminDAO.selectMasterListForItem"
+		parameterClass="string" resultClass="zvl">
     	<![CDATA[			
 			  SELECT A.MASTER_CD,
 			       A.TITLE
@@ -1697,9 +1749,10 @@
 			  WHERE SUBSTR(YEAR_CD,1,4) = #yearCd#
 			  AND TYPE_CD = '02'
     	]]>
-    </select>
-    	
-    <select id="FreecheckAdminDAO.selectItemList" parameterClass="string" resultClass="zvl">
+	</select>
+
+	<select id="FreecheckAdminDAO.selectItemList" parameterClass="string"
+		resultClass="zvl">
     	<![CDATA[			
 			  SELECT A.ITEM_ID,
 			       A.ITEM_NAME,
@@ -1712,22 +1765,23 @@
 			  INNER JOIN HETB_CK_MASTER B ON B.MASTER_CD = A.MASTER_CD
 			  WHERE A.YEAR_CD = #yearCd#
     	]]>
-    </select>
-    	
-    <insert id="FreecheckAdminDAO.addItem" parameterClass="zvl">
+	</select>
+
+	<insert id="FreecheckAdminDAO.addItem" parameterClass="zvl">
 		<selectKey resultClass="java.lang.Long" keyProperty="itemId">
-			SELECT To_Number('0' || Max(ITEM_ID))+1 FROM HETB_CK_ITEM
+			SELECT
+			To_Number('0' || Max(ITEM_ID))+1 FROM HETB_CK_ITEM
 		</selectKey>			
     	<![CDATA[			
 			 INSERT INTO HETB_CK_ITEM ( ITEM_ID,ITEM_NAME,MASTER_CD,EXCEPT_NUM,REG_DATE,YEAR_CD )
 			 VALUES ( #itemId#,#itemName#,#masterCd#,#exceptNum#,SYSDATE,#yearCd#  )
     	]]>
-    </insert>
-    	
-    <delete id="FreecheckAdminDAO.delItem" parameterClass="int">
+	</insert>
+
+	<delete id="FreecheckAdminDAO.delItem" parameterClass="int">
     	<![CDATA[			
 			 DELETE HETB_CK_ITEM WHERE ITEM_ID = #itemId#
     	]]>
-    </delete>
-    	
+	</delete>
+
 </sqlMap>
