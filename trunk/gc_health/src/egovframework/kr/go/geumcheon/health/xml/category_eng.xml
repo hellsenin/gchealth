@@ -1,0 +1,2112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+
+
+
+<categories>
+	<siteId>15</siteId>
+	
+		<category>
+			<categoryId>3000</categoryId>
+			<parentId>0</parentId>
+			<name>Application of Training</name>
+			<fullPath>Application of Training</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3007</categoryId>
+			<parentId>3000</parentId>
+			<name>Health Training Calendar</name>
+			<fullPath>Application of Training/Health Training Calendar</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3008</categoryId>
+			<parentId>3000</parentId>
+			<name>Health Class</name>
+			<fullPath>Application of Training/Health Class</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3001</categoryId>
+			<parentId>0</parentId>
+			<name>Treatment/Examination</name>
+			<fullPath>Treatment/Examination</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3009</categoryId>
+			<parentId>3001</parentId>
+			<name>Treatment information</name>
+			<fullPath>Treatment/Examination/Treatment information</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3036</categoryId>
+			<parentId>3009</parentId>
+			<name>Office of primary examination</name>
+			<fullPath>Treatment/Examination/Treatment information/Office of primary examination</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3037</categoryId>
+			<parentId>3009</parentId>
+			<name>Dental treatment</name>
+			<fullPath>Treatment/Examination/Treatment information/Dental treatment</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3038</categoryId>
+			<parentId>3009</parentId>
+			<name>Treatment of oriental medicine</name>
+			<fullPath>Treatment/Examination/Treatment information/Treatment of oriental medicine</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3039</categoryId>
+			<parentId>3009</parentId>
+			<name>Physical treatment</name>
+			<fullPath>Treatment/Examination/Treatment information/Physical treatment</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3040</categoryId>
+			<parentId>3009</parentId>
+			<name>Holiday/Evening treatment</name>
+			<fullPath>Treatment/Examination/Treatment information/Holiday/Evening treatment</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+				
+		<category>
+			<categoryId>3010</categoryId>
+			<parentId>3001</parentId>
+			<name>Treatment examination</name>
+			<fullPath>Treatment/Examination/Treatment examination</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3041</categoryId>
+			<parentId>3010</parentId>
+			<name>Saturday treatment for working expectant mothers</name>
+			<fullPath>Treatment/Examination/Treatment examination/Saturday treatment for working expectant mothers</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3042</categoryId>
+			<parentId>3010</parentId>
+			<name>Examination of malformed fetus</name>
+			<fullPath>Treatment/Examination/Treatment examination/Examination of malformed fetus</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3043</categoryId>
+			<parentId>3010</parentId>
+			<name>Examination of arteriosclerosis</name>
+			<fullPath>Treatment/Examination/Treatment examination/Examination of arteriosclerosis</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3044</categoryId>
+			<parentId>3010</parentId>
+			<name>Examination of bone density</name>
+			<fullPath>Treatment/Examination/Treatment examination/Examination of bone density</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3045</categoryId>
+			<parentId>3010</parentId>
+			<name>Pathological examination</name>
+			<fullPath>Treatment/Examination/Treatment examination/Pathological examination</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3046</categoryId>
+			<parentId>3010</parentId>
+			<name>Examination of tuberculosis</name>
+			<fullPath>Treatment/Examination/Treatment examination/Examination of tuberculosis</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3047</categoryId>
+			<parentId>3010</parentId>
+			<name>Examination of STD</name>
+			<fullPath>Treatment/Examination/Treatment examination/Examination of STD</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+			
+		<category>
+			<categoryId>3011</categoryId>
+			<parentId>3001</parentId>
+			<name>Physical examination</name>
+			<fullPath>Treatment/Examination/Physical examination</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3048</categoryId>
+			<parentId>3011</parentId>
+			<name>Prior notice of examination</name>
+			<fullPath>Treatment/Examination/Physical examination/Prior notice of examination</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3049</categoryId>
+			<parentId>3011</parentId>
+			<name>Physical strength examination</name>
+			<fullPath>Treatment/Examination/Physical examination/Physical strength examination</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3050</categoryId>
+			<parentId>3011</parentId>
+			<name>Physical examination for foreigners</name>
+			<fullPath>Treatment/Examination/Physical examination/Physical examination for foreigners</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3051</categoryId>
+			<parentId>3011</parentId>
+			<name>Physical examination of national health insurance</name>
+			<fullPath>Treatment/Examination/Physical examination/Physical examination of national health insurance</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3052</categoryId>
+			<parentId>3011</parentId>
+			<name>Physical examination of transition period</name>
+			<fullPath>Treatment/Examination/Physical examination/Physical examination of transition period</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3012</categoryId>
+			<parentId>3001</parentId>
+			<name>E-health service</name>
+			<fullPath>Treatment/Examination/E-health service</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3053</categoryId>
+			<parentId>3012</parentId>
+			<name>Reissuance of certification</name>
+			<fullPath>Treatment/Examination/E-health service/Reissuance of certification</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3054</categoryId>
+			<parentId>3012</parentId>
+			<name>Inquiry on detailed statement of treatment</name>
+			<fullPath>Treatment/Examination/E-health service/Inquiry on detailed statement of treatment</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3055</categoryId>
+			<parentId>3012</parentId>
+			<name>Appointment of health training</name>
+			<fullPath>Treatment/Examination/E-health service/Appointment of health training</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3056</categoryId>
+			<parentId>3012</parentId>
+			<name>Appointment service</name>
+			<fullPath>Treatment/Examination/E-health service/Appointment service</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3013</categoryId>
+			<parentId>3001</parentId>
+			<name>Hypothetical estimated value of examination fee</name>
+			<fullPath>Treatment/Examination/Hypothetical estimated value of examination fee</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3014</categoryId>
+			<parentId>3001</parentId>
+			<name>Health video</name>
+			<fullPath>Treatment/Examination/Health video</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3002</categoryId>
+			<parentId>0</parentId>
+			<name>Vaccination</name>
+			<fullPath>Vaccination</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3015</categoryId>
+			<parentId>3002</parentId>
+			<name>Regular vaccination</name>
+			<fullPath>Vaccination/Regular vaccination</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3016</categoryId>
+			<parentId>3002</parentId>
+			<name>Temporary vaccination</name>
+			<fullPath>Vaccination/Temporary vaccination</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3057</categoryId>
+			<parentId>3016</parentId>
+			<name>Vaccination information</name>
+			<fullPath>Vaccination/Temporary vaccination/Vaccination information</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3058</categoryId>
+			<parentId>3016</parentId>
+			<name>Notice of Vaccination</name>
+			<fullPath>Vaccination/Temporary vaccination/Notice of Vaccination</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3017</categoryId>
+			<parentId>3002</parentId>
+			<name>Baby and child vaccination</name>
+			<fullPath>Vaccination/Baby and child vaccination</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3059</categoryId>
+			<parentId>3017</parentId>
+			<name>Vaccination information</name>
+			<fullPath>Vaccination/Baby and child vaccination/Vaccination information</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3060</categoryId>
+			<parentId>3017</parentId>
+			<name>Notice of Vaccination</name>
+			<fullPath>Vaccination/Baby and child vaccination/Notice of Vaccination</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3061</categoryId>
+			<parentId>3017</parentId>
+			<name>Confirmation of vaccination date</name>
+			<fullPath>Vaccination/Baby and child vaccination/Confirmation of vaccination date</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3018</categoryId>
+			<parentId>3002</parentId>
+			<name>Vertical infection of hepatitis B</name>
+			<fullPath>Vaccination/Vertical infection of hepatitis B</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3062</categoryId>
+			<parentId>3018</parentId>
+			<name>What is a vertical infection of hepatitis B?</name>
+			<fullPath>Vaccination/Vertical infection of hepatitis B/What is a vertical infection of hepatitis B?</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3063</categoryId>
+			<parentId>3018</parentId>
+			<name>Vaccination information</name>
+			<fullPath>Vaccination/Vertical infection of hepatitis B/Vaccination information</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3019</categoryId>
+			<parentId>3002</parentId>
+			<name>Mandatory vaccination of the country</name>
+			<fullPath>Vaccination/Mandatory vaccination of the country</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3064</categoryId>
+			<parentId>3019</parentId>
+			<name>Business information</name>
+			<fullPath>Vaccination/Mandatory vaccination of the country/Business information</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3065</categoryId>
+			<parentId>3019</parentId>
+			<name>Fostering medical centers</name>
+			<fullPath>Vaccination/Mandatory vaccination of the country/Fostering medical centers</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3003</categoryId>
+			<parentId>0</parentId>
+			<name>Drug Administration</name>
+			<fullPath>Drug Administration</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3020</categoryId>
+			<parentId>3003</parentId>
+			<name>Medical center</name>
+			<fullPath>Drug Administration/Medical center</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3066</categoryId>
+			<parentId>3020</parentId>
+			<name>Family medicine clinic</name>
+			<fullPath>Drug Administration/Medical center/Family medicine clinic</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3067</categoryId>
+			<parentId>3020</parentId>
+			<name>Other clinic</name>
+			<fullPath>Drug Administration/Medical center/Other clinic</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3068</categoryId>
+			<parentId>3020</parentId>
+			<name>Hospital</name>
+			<fullPath>Drug Administration/Medical center/Hospital</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3069</categoryId>
+			<parentId>3020</parentId>
+			<name>Gynecology</name>
+			<fullPath>Drug Administration/Medical center/Gynecology</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3070</categoryId>
+			<parentId>3020</parentId>
+			<name>Plastic surgery clinic</name>
+			<fullPath>Drug Administration/Medical center/Plastic surgery clinic</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3071</categoryId>
+			<parentId>3020</parentId>
+			<name>Child and youth clinic</name>
+			<fullPath>Drug Administration/Medical center/Child and youth clinic</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3072</categoryId>
+			<parentId>3020</parentId>
+			<name>Neuropsychiatry clinic</name>
+			<fullPath>Drug Administration/Medical center/Neuropsychiatry clinic</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3073</categoryId>
+			<parentId>3020</parentId>
+			<name>Ophthalmology clinic</name>
+			<fullPath>Drug Administration/Medical center/Ophthalmology clinic</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3074</categoryId>
+			<parentId>3020</parentId>
+			<name>Surgery clinic</name>
+			<fullPath>Drug Administration/Medical center/Surgery clinic</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3075</categoryId>
+			<parentId>3020</parentId>
+			<name>Otolaryngology clinic</name>
+			<fullPath>Drug Administration/Medical center/Otolaryngology clinic</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3076</categoryId>
+			<parentId>3020</parentId>
+			<name>Orthopedics clinic</name>
+			<fullPath>Drug Administration/Medical center/Orthopedics clinic</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3077</categoryId>
+			<parentId>3020</parentId>
+			<name>General hospital</name>
+			<fullPath>Drug Administration/Medical center/General hospital</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3078</categoryId>
+			<parentId>3020</parentId>
+			<name>Dental clinic</name>
+			<fullPath>Drug Administration/Medical center/Dental clinic</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3079</categoryId>
+			<parentId>3020</parentId>
+			<name>Dermatology clinic</name>
+			<fullPath>Drug Administration/Medical center/Dermatology clinic</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3080</categoryId>
+			<parentId>3020</parentId>
+			<name>Oriental medicine clinic</name>
+			<fullPath>Drug Administration/Medical center/Oriental medicine clinic</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3021</categoryId>
+			<parentId>3003</parentId>
+			<name>Medical centers for foreigners</name>
+			<fullPath>Drug Administration/Medical centers for foreigners</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3022</categoryId>
+			<parentId>3003</parentId>
+			<name>Medical centers on holidays/Evening medical centers</name>
+			<fullPath>Drug Administration/Medical centers on holidays/Evening medical centers</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3023</categoryId>
+			<parentId>3003</parentId>
+			<name>Pharmacy</name>
+			<fullPath>Drug Administration/Pharmacy</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3081</categoryId>
+			<parentId>3023</parentId>
+			<name>Pharmacy</name>
+			<fullPath>Drug Administration/Pharmacy/Pharmacy</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3082</categoryId>
+			<parentId>3023</parentId>
+			<name>Night shift pharmacy</name>
+			<fullPath>Drug Administration/Pharmacy/Night shift pharmacy</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3004</categoryId>
+			<parentId>0</parentId>
+			<name>Food Safety</name>
+			<fullPath>Food Safety</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3024</categoryId>
+			<parentId>3004</parentId>
+			<name>What is food poisoning?</name>
+			<fullPath>Food Safety/What is food poisoning?</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3025</categoryId>
+			<parentId>3004</parentId>
+			<name>Know-how of preventing food poisoning</name>
+			<fullPath>Food Safety/Know-how of preventing food poisoning</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3026</categoryId>
+			<parentId>3004</parentId>
+			<name>PR documents for preventing food poisoning</name>
+			<fullPath>Food Safety/PR documents for preventing food poisoning</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3027</categoryId>
+			<parentId>3004</parentId>
+			<name>Letter index of food poisoning</name>
+			<fullPath>Food Safety/Letter index of food poisoning</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3005</categoryId>
+			<parentId>0</parentId>
+			<name>Health Programs</name>
+			<fullPath>Health Programs</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3028</categoryId>
+			<parentId>3005</parentId>
+			<name>Non-smoking clinic</name>
+			<fullPath>Health Programs/Non-smoking clinic</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3029</categoryId>
+			<parentId>3005</parentId>
+			<name>Health of mother and child</name>
+			<fullPath>Health Programs/Health of mother and child</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3083</categoryId>
+			<parentId>3029</parentId>
+			<name>Health administration of expectant mothers</name>
+			<fullPath>Health Programs/Health of mother and child/Health administration of expectant mothers</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3084</categoryId>
+			<parentId>3029</parentId>
+			<name>Support of childbirth</name>
+			<fullPath>Health Programs/Health of mother and child/Support of childbirth</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3085</categoryId>
+			<parentId>3029</parentId>
+			<name>Health administration of baby and child</name>
+			<fullPath>Health Programs/Health of mother and child/Health administration of baby and child</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3086</categoryId>
+			<parentId>3029</parentId>
+			<name>Business of nutrient+</name>
+			<fullPath>Health Programs/Health of mother and child/Business of nutrient+</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3030</categoryId>
+			<parentId>3005</parentId>
+			<name>Administration of AIDS</name>
+			<fullPath>Health Programs/Administration of AIDS</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3031</categoryId>
+			<parentId>3005</parentId>
+			<name>Support of medical fee</name>
+			<fullPath>Health Programs/Support of medical fee</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3087</categoryId>
+			<parentId>3031</parentId>
+			<name>Premature baby and congenital abnormality in child</name>
+			<fullPath>Health Programs/Support of medical fee/Premature baby and congenital abnormality in child</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3088</categoryId>
+			<parentId>3031</parentId>
+			<name>Hearing examination for newborn baby</name>
+			<fullPath>Health Programs/Support of medical fee/Hearing examination for newborn baby</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3089</categoryId>
+			<parentId>3031</parentId>
+			<name>Patient of rare/incurable disease</name>
+			<fullPath>Health Programs/Support of medical fee/Patient of rare/incurable disease</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3090</categoryId>
+			<parentId>3031</parentId>
+			<name>Treatment fee for cancer patient</name>
+			<fullPath>Health Programs/Support of medical fee/Treatment fee for cancer patient</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3091</categoryId>
+			<parentId>3031</parentId>
+			<name>Examination of child on congenital abnormality in metabolism</name>
+			<fullPath>Health Programs/Support of medical fee/Examination of child on congenital abnormality in metabolism</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3092</categoryId>
+			<parentId>3031</parentId>
+			<name>Patient of attending home nurse</name>
+			<fullPath>Health Programs/Support of medical fee/Patient of attending home nurse</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3093</categoryId>
+			<parentId>3031</parentId>
+			<name>Fee of sterilization operation for couples</name>
+			<fullPath>Health Programs/Support of medical fee/Fee of sterilization operation for couples</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3094</categoryId>
+			<parentId>3031</parentId>
+			<name>Treatment fee for patients of tuberculosis</name>
+			<fullPath>Health Programs/Support of medical fee/Treatment fee for patients of tuberculosis</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3095</categoryId>
+			<parentId>3031</parentId>
+			<name>Atopic dermatitis. Asthma examination</name>
+			<fullPath>Health Programs/Support of medical fee/Atopic dermatitis. Asthma examination</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3096</categoryId>
+			<parentId>3031</parentId>
+			<name>Prevention fee of hepatitis B. Vertical infection</name>
+			<fullPath>Health Programs/Support of medical fee/Prevention fee of hepatitis B. Vertical infection</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3097</categoryId>
+			<parentId>3031</parentId>
+			<name>Mandatory vaccination of the country</name>
+			<fullPath>Health Programs/Support of medical fee/Mandatory vaccination of the country</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3098</categoryId>
+			<parentId>3031</parentId>
+			<name>Medical fee of dementia for the lower-income group</name>
+			<fullPath>Health Programs/Support of medical fee/Medical fee of dementia for the lower-income group</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3032</categoryId>
+			<parentId>3005</parentId>
+			<name>Dental health</name>
+			<fullPath>Health Programs/Dental health</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3006</categoryId>
+			<parentId>0</parentId>
+			<name>Introduction of Public Health Centers</name>
+			<fullPath>Introduction of Public Health Centers</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3033</categoryId>
+			<parentId>3006</parentId>
+			<name>Health news</name>
+			<fullPath>Introduction of Public Health Centers/Health news</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3099</categoryId>
+			<parentId>3033</parentId>
+			<name>What's new</name>
+			<fullPath>Introduction of Public Health Centers/Health news/What's new</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3100</categoryId>
+			<parentId>3033</parentId>
+			<name>Health news magazine</name>
+			<fullPath>Introduction of Public Health Centers/Health news/Health news magazine</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3101</categoryId>
+			<parentId>3033</parentId>
+			<name>Health calendar</name>
+			<fullPath>Introduction of Public Health Centers/Health news/Health calendar</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3034</categoryId>
+			<parentId>3006</parentId>
+			<name>Department information</name>
+			<fullPath>Introduction of Public Health Centers/Department information</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3102</categoryId>
+			<parentId>3034</parentId>
+			<name>Organization chart</name>
+			<fullPath>Introduction of Public Health Centers/Department information/Organization chart</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3103</categoryId>
+			<parentId>3034</parentId>
+			<name>Work information</name>
+			<fullPath>Introduction of Public Health Centers/Department information/Work information</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3104</categoryId>
+			<parentId>3034</parentId>
+			<name>Information of each floor</name>
+			<fullPath>Introduction of Public Health Centers/Department information/Information of each floor</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+		<category>
+			<categoryId>3035</categoryId>
+			<parentId>3006</parentId>
+			<name>Directions</name>
+			<fullPath>Introduction of Public Health Centers/Directions</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+</categories>

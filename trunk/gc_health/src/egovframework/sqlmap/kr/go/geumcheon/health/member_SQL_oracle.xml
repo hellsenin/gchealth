@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="member">
+
+	<typeAlias  alias="zvl" type="egovframework.kr.go.geumcheon.health.util.ZValue"/>
+	<typeAlias  alias="users" type="egovframework.kr.go.geumcheon.health.vo.UsersVO"/>
+		
+	<select id="memberDAO.selectMember" parameterClass="zvl" resultClass="users">
+		<![CDATA[ 				
+			SELECT 
+				U_KEY,A.WEB_MEM_ID, MEM_NM, BIRTHDAY, SEX, OTHER_EMAIL,USE_GCMAIL, 
+				ALLOW_MAILING, ZIPCODE, ADDRESS1, ADDRESS2, ADDRESS3, PHONE, PIN,
+				B.AUTH_CODE, B.AUTH_NAME
+     		FROM gcweb.USERS A
+     		LEFT OUTER JOIN USERS_AUTH B ON B.WEB_MEM_ID = A.WEB_MEM_ID 
+     		WHERE WEB_MEM_ID = #webMemId#
+     		AND PASSWD = #passwd#
+		]]> 	
+	</select>
+	
+	<select id="memberDAO.selectMemberList" parameterClass="zvl" resultClass="zvl">
+		<![CDATA[ 	
+			SELECT * FROM ( SELECT rownum rn, TB.* FROM (
+			SELECT 
+				U_KEY,A.WEB_MEM_ID, MEM_NM, BIRTHDAY, SEX, 
+				OTHER_EMAIL,USE_GCMAIL, ALLOW_MAILING, ZIPCODE, 
+				ADDRESS1, ADDRESS2, ADDRESS3, PHONE, PIN,
+				B.AUTH_CODE, B.AUTH_NAME
+     		FROM gcweb.USERS A
+     		LEFT OUTER JOIN USERS_AUTH B ON B.WEB_MEM_ID = A.WEB_MEM_ID 
+     		WHERE 1=1 
+		 ]]>
+		<isEqual property="searchType" compareValue="1">
+			<isNotEmpty prepend="AND" property="searchTxt">
+				<![CDATA[	A.WEB_MEM_ID '%' || #searchTxt# || '%'	]]>
+			</isNotEmpty>
+		</isEqual>	
+		<isEqual property="searchType" compareValue="2">
+			<isNotEmpty prepend="AND" property="searchTxt">
+				<![CDATA[	MEM_NM LIKE '%' || #searchTxt# || '%'	]]>
+			</isNotEmpty>
+		</isEqual>		
+		<![CDATA[ 
+			ORDER BY MEM_NM
+		       ) TB )  WHERE rn BETWEEN #firstIndex# + 1 AND #firstIndex# + #recordCountPerPage#
+		]]> 	
+	</select>
+	
+	<select id="memberDAO.selectMemberListCnt" parameterClass="zvl" resultClass="int">
+		<![CDATA[ 
+			SELECT 
+				COUNT(*) AS CNT
+     		FROM gcweb.USERS
+     		WHERE 1=1 
+		 ]]>
+		<isEqual property="searchType" compareValue="1">
+			<isNotEmpty prepend="AND" property="searchTxt">
+				<![CDATA[	WEB_MEM_ID '%' || #searchTxt# || '%'	]]>
+			</isNotEmpty>
+		</isEqual>	
+		<isEqual property="searchType" compareValue="2">
+			<isNotEmpty prepend="AND" property="searchTxt">
+				<![CDATA[	MEM_NM LIKE '%' || #searchTxt# || '%'	]]>
+			</isNotEmpty>
+		</isEqual>	
+	</select>
+	
+	<select id="memberDAO.selectStaffList2" parameterClass="zvl" resultClass="zvl">
+		<![CDATA[ 	
+			SELECT * FROM ( SELECT rownum rn, TB.* FROM (
+			SELECT 
+				NAME
+				,EMAIL
+				,PHONE
+				,MOBILE
+				,DEPARTMENT
+				,ORGAN
+				,ROLE
+				,OFFICETELNO
+				,INTRDT
+     		FROM gcweb.WCM_USER
+     		WHERE DEPARTMENT IN ('보건위생과','건강증진과','의약과')
+		 ]]>
+		<isEqual property="searchType" compareValue="1">
+			<isNotEmpty prepend="AND" property="searchTxt">
+				<![CDATA[	NAME LIKE '%' || #searchTxt# || '%'	]]>
+			</isNotEmpty>
+		</isEqual>	
+		<isEqual property="searchType" compareValue="2">
+			<isNotEmpty prepend="AND" property="searchTxt">
+				<![CDATA[	INTRDT LIKE '%' || #searchTxt# || '%'	]]>
+			</isNotEmpty>
+		</isEqual>	
+		<isNotEmpty prepend="AND" property="department">
+			<![CDATA[	DEPARTMENT = #department#	]]>
+		</isNotEmpty>	
+		<isNotEmpty prepend="AND" property="organ">
+			<![CDATA[	ORGAN = #organ#	]]>
+		</isNotEmpty>	
+		<![CDATA[ 
+			ORDER BY DEPARTMENT_CODE, ORGAN_CODE, ROLE_CODE DESC, NAME
+		       ) TB )  WHERE rn BETWEEN #firstIndex# + 1 AND #firstIndex# + #recordCountPerPage#
+		]]> 	
+	</select>
+	
+	<select id="memberDAO.selectStaffListCnt2" parameterClass="zvl" resultClass="int">
+		<![CDATA[ 
+			SELECT 
+				COUNT(*) AS CNT
+     		FROM gcweb.WCM_USER
+     		WHERE DEPARTMENT IN ('보건위생과','건강증진과','의약과')
+		 ]]>
+		<isEqual property="searchType" compareValue="1">
+			<isNotEmpty prepend="AND" property="searchTxt">
+				<![CDATA[	NAME LIKE '%' || #searchTxt# || '%'	]]>
+			</isNotEmpty>
+		</isEqual>	
+		<isEqual property="searchType" compareValue="2">
+			<isNotEmpty prepend="AND" property="searchTxt">
+				<![CDATA[	INTRDT LIKE '%' || #searchTxt# || '%'	]]>
+			</isNotEmpty>
+		</isEqual>	
+		<isNotEmpty prepend="AND" property="department">
+			<![CDATA[	DEPARTMENT = #department#	]]>
+		</isNotEmpty>
+		<isNotEmpty prepend="AND" property="organ">
+			<![CDATA[	ORGAN = #organ#	]]>
+		</isNotEmpty>	
+	</select>
+	
+	<select id="memberDAO.findId" parameterClass="zvl"  resultClass="zvl">
+		<![CDATA[ 				
+			SELECT SUBSTR(WEB_MEM_ID,0,3) AS WEB_MEM_ID, LENGTH(WEB_MEM_ID) AS W_LENGTH
+     		FROM USERS 
+     		WHERE MEM_NM = #memNm# AND BIRTHDAY = #birthday# AND OTHER_EMAIL = #otherEmail#
+		]]> 
+	</select>
+	
+	<select id="memberDAO.findPassword" parameterClass="zvl"  resultClass="zvl">
+		<![CDATA[	
+			SELECT WEB_MEM_ID, PASSWD, HANDPHONE,OTHER_EMAIL
+     		FROM USERS 
+     		WHERE WEB_MEM_ID = #webMemId# AND MEM_NM = #memNm# AND BIRTHDAY = #birthday#
+		]]> 
+	</select>
+	
+	<select id="memberDAO.selectStaffList" parameterClass="zvl" resultClass="zvl">
+		<![CDATA[ 	
+			SELECT USER_ID, DEPARTMENT, NAME, INTRDT, EMAIL, OFFICETELNO
+		      FROM gcweb.WCM_USER 
+		    WHERE DEPARTMENT_CODE IN ('2142', '2548', '2153' )
+		]]> 	
+		<isEqual property="searchType" compareValue="1">
+			<isNotEmpty prepend="AND" property="searchTxt">
+				<![CDATA[	DEPARTMENT LIKE '%' || #searchTxt# || '%'	]]>
+			</isNotEmpty>
+		</isEqual>	
+		<isEqual property="searchType" compareValue="2">
+			<isNotEmpty prepend="AND" property="searchTxt">
+				<![CDATA[	NAME LIKE '%' || #searchTxt# || '%'	]]>
+			</isNotEmpty>
+		</isEqual>		
+		<isEqual property="searchType" compareValue="3">
+			<isNotEmpty prepend="AND" property="searchTxt">
+				<![CDATA[	INTRDT LIKE '%' || #searchTxt# || '%'	]]>
+			</isNotEmpty>
+		</isEqual>						
+	</select>
+	
+	<select id="memberDAO.selectAuthCodeCntByWebMemId" parameterClass="string"  resultClass="int">
+		<![CDATA[	
+			SELECT COUNT(*) AS CNT
+     		FROM USERS_AUTH 
+     		WHERE WEB_MEM_ID = #webMemId#
+		]]> 
+	</select>
+	
+	<select id="memberDAO.selectAuthCodeByWebMemId" parameterClass="string"  resultClass="string">
+		<![CDATA[	
+			SELECT AUTH_CODE
+     		FROM USERS_AUTH 
+     		WHERE WEB_MEM_ID = #webMemId#
+		]]> 
+	</select>
+	
+	<insert id="memberDAO.addUsersAuth" parameterClass="zvl" >
+		<![CDATA[
+			INSERT INTO USERS_AUTH
+			(
+				WEB_MEM_ID, AUTH_CODE, AUTH_NAME
+			)
+			VALUES
+			(
+				#webMemId#, #authCode#, #authName#
+			)
+		]]>
+	</insert>
+	
+	<update id="memberDAO.updateUsersAuth" parameterClass="zvl" >
+	<![CDATA[
+				UPDATE USERS_AUTH
+				SET  
+					AUTH_CODE = #authCode#
+					,AUTH_NAME = #authName#
+				WHERE WEB_MEM_ID = #webMemId#
+			]]>
+	</update>
+	
+	
+</sqlMap>                            

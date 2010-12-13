@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-2.5.xsd">
+	
+	<!-- JEUS -->   
+	<bean name="propertiesService" class="egovframework.rte.fdl.property.impl.EgovPropertyServiceImpl" destroy-method="destroy">
+      <property name="properties">
+         <map>
+            <entry key="pageUnit" value="10"/>
+            <entry key="pageSize" value="10"/>
+            
+                        
+            <entry key="Globals.fileStorePath" value="c:/temp/"/>
+            
+            <!-- 민원파일 다운로드 경로 -->
+            <entry key="apply.fileStorePath" value="c:/temp/apply/"/>
+                        
+            <!-- 컨텐츠 다운로드 경로 -->
+            <entry key="Contents.fileStorePath" value="c:/temp/contents/"/>
+            
+            <entry key="Bannser.fileStorePath" value="S:/workspace-jongno/workspace/gc_health/WebContent/health/open_content/images/banner/"/>
+            
+            <entry key="alert.fileStorePath" value="S:/workspace-jongno/workspace/gc_health/WebContent/health/open_content/images/alert/"/>
+            
+            <entry key="freecheck.fileStorePath" value="c:/temp/freecheck/"/>
+            
+            <entry key="medicalTeam.fileStorePath" value="S:/workspace-jongno/workspace/gc_health/WebContent/health/open_content/images/medicalTeam/"/>
+            
+            <entry key="poll.fileStorePath" value="c:/Temp/"/>
+            
+            <entry key="WEB_ROOT" value="C:/workspace/gc_health/WebContent/"/>
+                                                
+         </map>
+      </property>
+	</bean>
+	
+	<!-- JBOSS, WEBLOGIC --> 
+	<!-- 
+	<bean name="propertiesService" class="egovframework.rte.fdl.property.impl.EgovPropertyServiceImpl" destroy-method="destroy">
+      <property name="properties">
+         <map>
+            <entry key="pageUnit" value="10"/>
+            <entry key="pageSize" value="10"/>
+            <entry key="Globals.fileStorePath" value="/user/com/egovProps/upload/"/>
+         </map>
+      </property>
+	</bean>
+	-->
+</beans>	

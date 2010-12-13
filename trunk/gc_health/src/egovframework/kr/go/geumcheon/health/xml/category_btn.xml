@@ -1,0 +1,1432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+
+
+
+
+
+<categories>
+	<siteId>18</siteId>
+	
+		<category>
+			<categoryId>3600</categoryId>
+			<parentId>0</parentId>
+			<name>Chữa bệnh Khám bệnh</name>
+			<fullPath>Chữa bệnh Khám bệnh</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+			
+			<category>
+				<categoryId>3605</categoryId>
+				<parentId>3600</parentId>
+				<name>Khám sức khỏe</name>
+				<fullPath>Chữa bệnh Khám bệnh/Khám sức khỏe</fullPath>
+				<menuLink></menuLink>
+				<updateDate>2010-08-11-18-17-28</updateDate>
+				<position></position>
+				<fullMenuLink></fullMenuLink>
+				<userName></userName>
+				<email></email>
+				<phone></phone>
+				<mobile></mobile>
+				<department></department>
+				<departmentCode></departmentCode>
+				<officetelno></officetelno>
+				<contentsPath></contentsPath>
+				<menuPopupYn>N</menuPopupYn>
+			</category>
+		
+				<category>
+					<categoryId>3607</categoryId>
+					<parentId>3605</parentId>
+					<name>Những điều cần lưu ý trước khi khám bệnh</name>
+					<fullPath>Chữa bệnh Khám bệnh/Khám sức khỏe/Những điều cần lưu ý trước khi khám bệnh</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3608</categoryId>
+					<parentId>3605</parentId>
+					<name>Khám thể lực</name>
+					<fullPath>Chữa bệnh Khám bệnh/Khám sức khỏe/Khám thể lực</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3609</categoryId>
+					<parentId>3605</parentId>
+					<name>Khám sức khỏe cho người nước ngoài</name>
+					<fullPath>Chữa bệnh Khám bệnh/Khám sức khỏe/Khám sức khỏe cho người nước ngoài</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3610</categoryId>
+					<parentId>3605</parentId>
+					<name>Khám sức khỏe theo bảo hiểm</name>
+					<fullPath>Chữa bệnh Khám bệnh/Khám sức khỏe/Khám sức khỏe theo bảo hiểm</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3611</categoryId>
+					<parentId>3605</parentId>
+					<name>Khám sức khỏe thời kì chuyển giai đoạn sinh lý</name>
+					<fullPath>Chữa bệnh Khám bệnh/Khám sức khỏe/Khám sức khỏe thời kì chuyển giai đoạn sinh lý</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3612</categoryId>
+					<parentId>3605</parentId>
+					<name>Chương trình quốc gia về chẩn đoán bệnh ung thư giai đoạn đầu</name>
+					<fullPath>Chữa bệnh Khám bệnh/Khám sức khỏe/Chương trình quốc gia về chẩn đoán bệnh ung thư giai đoạn đầu</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+			<category>
+				<categoryId>3606</categoryId>
+				<parentId>3600</parentId>
+				<name>Dich vụ y tế điện tử</name>
+				<fullPath>Chữa bệnh Khám bệnh/Dich vụ y tế điện tử</fullPath>
+				<menuLink></menuLink>
+				<updateDate>2010-08-11-18-17-28</updateDate>
+				<position></position>
+				<fullMenuLink></fullMenuLink>
+				<userName></userName>
+				<email></email>
+				<phone></phone>
+				<mobile></mobile>
+				<department></department>
+				<departmentCode></departmentCode>
+				<officetelno></officetelno>
+				<contentsPath></contentsPath>
+				<menuPopupYn>N</menuPopupYn>
+			</category>
+		
+				<category>
+					<categoryId>3613</categoryId>
+					<parentId>3606</parentId>
+					<name>Cấp tất cả các loại giấy chứng minh</name>
+					<fullPath>Chữa bệnh Khám bệnh/Dich vụ y tế điện tử/Cấp tất cả các loại giấy chứng minh</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3614</categoryId>
+					<parentId>3606</parentId>
+					<name>Kiểm tra chi tiết khám bệnh</name>
+					<fullPath>Chữa bệnh Khám bệnh/Dich vụ y tế điện tử/Kiểm tra chi tiết khám bệnh</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3615</categoryId>
+					<parentId>3606</parentId>
+					<name>Đặt trước việc đào tạo y tế</name>
+					<fullPath>Chữa bệnh Khám bệnh/Dich vụ y tế điện tử/Đặt trước việc đào tạo y tế</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3616</categoryId>
+					<parentId>3606</parentId>
+					<name>Dịch vụ đặt trước</name>
+					<fullPath>Chữa bệnh Khám bệnh/Dich vụ y tế điện tử/Dịch vụ đặt trước</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+		<category>
+			<categoryId>3601</categoryId>
+			<parentId>0</parentId>
+			<name>Tiêm phòng</name>
+			<fullPath>Tiêm phòng</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+			<category>
+				<categoryId>4617</categoryId>
+				<parentId>3601</parentId>
+				<name>Tiêm phòng định kì</name>
+				<fullPath>Tiêm phòng/Tiêm phòng định kì</fullPath>
+				<menuLink></menuLink>
+				<updateDate>2010-08-11-18-17-28</updateDate>
+				<position></position>
+				<fullMenuLink></fullMenuLink>
+				<userName></userName>
+				<email></email>
+				<phone></phone>
+				<mobile></mobile>
+				<department></department>
+				<departmentCode></departmentCode>
+				<officetelno></officetelno>
+				<contentsPath></contentsPath>
+				<menuPopupYn>N</menuPopupYn>
+			</category>
+		
+			<category>
+				<categoryId>4618</categoryId>
+				<parentId>3601</parentId>
+				<name>Tiêm phòng tạm thời</name>
+				<fullPath>Tiêm phòng/Tiêm phòng tạm thời</fullPath>
+				<menuLink></menuLink>
+				<updateDate>2010-08-11-18-17-28</updateDate>
+				<position></position>
+				<fullMenuLink></fullMenuLink>
+				<userName></userName>
+				<email></email>
+				<phone></phone>
+				<mobile></mobile>
+				<department></department>
+				<departmentCode></departmentCode>
+				<officetelno></officetelno>
+				<contentsPath></contentsPath>
+				<menuPopupYn>N</menuPopupYn>
+			</category>
+		
+				<category>
+					<categoryId>4622</categoryId>
+					<parentId>4618</parentId>
+					<name>Hướng dẫn tiêm chủng</name>
+					<fullPath>Tiêm phòng/Tiêm phòng tạm thời/Hướng dẫn tiêm chủng</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>4623</categoryId>
+					<parentId>4618</parentId>
+					<name>Những điều cần chú ý khi  tiêm phòng</name>
+					<fullPath>Tiêm phòng/Tiêm phòng tạm thời/Những điều cần chú ý khi  tiêm phòng</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+			<category>
+				<categoryId>4619</categoryId>
+				<parentId>3601</parentId>
+				<name>Tiêm phòng cho trẻ em</name>
+				<fullPath>Tiêm phòng/Tiêm phòng cho trẻ em</fullPath>
+				<menuLink></menuLink>
+				<updateDate>2010-08-11-18-17-28</updateDate>
+				<position></position>
+				<fullMenuLink></fullMenuLink>
+				<userName></userName>
+				<email></email>
+				<phone></phone>
+				<mobile></mobile>
+				<department></department>
+				<departmentCode></departmentCode>
+				<officetelno></officetelno>
+				<contentsPath></contentsPath>
+				<menuPopupYn>N</menuPopupYn>
+			</category>
+		
+				<category>
+					<categoryId>4624</categoryId>
+					<parentId>4619</parentId>
+					<name>Hướng dẫn tiêm chủng</name>
+					<fullPath>Tiêm phòng/Tiêm phòng cho trẻ em/Hướng dẫn tiêm chủng</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>4625</categoryId>
+					<parentId>4619</parentId>
+					<name>Những điều cần chú ý khi tiêm phòng</name>
+					<fullPath>Tiêm phòng/Tiêm phòng cho trẻ em/Những điều cần chú ý khi tiêm phòng</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+			<category>
+				<categoryId>4620</categoryId>
+				<parentId>3601</parentId>
+				<name>Lây truyền viêm gan B theo chiều thẳng đứng</name>
+				<fullPath>Tiêm phòng/Lây truyền viêm gan B theo chiều thẳng đứng</fullPath>
+				<menuLink></menuLink>
+				<updateDate>2010-08-11-18-17-28</updateDate>
+				<position></position>
+				<fullMenuLink></fullMenuLink>
+				<userName></userName>
+				<email></email>
+				<phone></phone>
+				<mobile></mobile>
+				<department></department>
+				<departmentCode></departmentCode>
+				<officetelno></officetelno>
+				<contentsPath></contentsPath>
+				<menuPopupYn>N</menuPopupYn>
+			</category>
+		
+				<category>
+					<categoryId>4626</categoryId>
+					<parentId>4620</parentId>
+					<name>Lây truyền viêm gan B theo chiều thẳng đứng là gì?</name>
+					<fullPath>Tiêm phòng/Lây truyền viêm gan B theo chiều thẳng đứng/Lây truyền viêm gan B theo chiều thẳng đứng là gì?</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+			
+				<category>
+					<categoryId>4627</categoryId>
+					<parentId>4620</parentId>
+					<name>Hướng dẫn tiêm chủng</name>
+					<fullPath>Tiêm phòng/Lây truyền viêm gan B theo chiều thẳng đứng/Hướng dẫn tiêm chủng</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+			
+			<category>
+				<categoryId>4621</categoryId>
+				<parentId>3601</parentId>
+				<name>Tiêm phòng do sự cần thiết cho toàn quốc gia</name>
+				<fullPath>Tiêm phòng/Tiêm phòng do sự cần thiết cho toàn quốc gia</fullPath>
+				<menuLink></menuLink>
+				<updateDate>2010-08-11-18-17-28</updateDate>
+				<position></position>
+				<fullMenuLink></fullMenuLink>
+				<userName></userName>
+				<email></email>
+				<phone></phone>
+				<mobile></mobile>
+				<department></department>
+				<departmentCode></departmentCode>
+				<officetelno></officetelno>
+				<contentsPath></contentsPath>
+				<menuPopupYn>N</menuPopupYn>
+			</category>
+		
+		<category>
+			<categoryId>3602</categoryId>
+			<parentId>0</parentId>
+			<name>Dự án y tế</name>
+			<fullPath>Dự án y tế</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+			<category>
+				<categoryId>3622</categoryId>
+				<parentId>3602</parentId>
+				<name>Sức khỏe mẹ và bé</name>
+				<fullPath>Dự án y tế/Sức khỏe mẹ và bé</fullPath>
+				<menuLink></menuLink>
+				<updateDate>2010-08-11-18-17-28</updateDate>
+				<position></position>
+				<fullMenuLink></fullMenuLink>
+				<userName></userName>
+				<email></email>
+				<phone></phone>
+				<mobile></mobile>
+				<department></department>
+				<departmentCode></departmentCode>
+				<officetelno></officetelno>
+				<contentsPath></contentsPath>
+				<menuPopupYn>N</menuPopupYn>
+			</category>
+		
+				<category>
+					<categoryId>3630</categoryId>
+					<parentId>3622</parentId>
+					<name>Quản lý sức khỏe phụ nữ mang thai và đang nuôi con</name>
+					<fullPath>Dự án y tế/Dự án y tế/Sức khỏe mẹ và bé/Quản lý sức khỏe phụ nữ mang thai và đang nuôi con</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3631</categoryId>
+					<parentId>3622</parentId>
+					<name>Khuyến khích sinh sản</name>
+					<fullPath>Dự án y tế/Dự án y tế/Sức khỏe mẹ và bé/Khuyến khích sinh sản</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+					<category>
+						<categoryId>3635</categoryId>
+						<parentId>3631</parentId>
+						<name>Cho mượn máy hút sữa</name>
+						<fullPath>Dự án y tế/Dự án y tế/Sức khỏe mẹ và bé/Khuyến khích sinh sản/Cho mượn máy hút sữa </fullPath>
+						<menuLink></menuLink>
+						<updateDate>2010-08-11-18-17-28</updateDate>
+						<position></position>
+						<fullMenuLink></fullMenuLink>
+						<userName></userName>
+						<email></email>
+						<phone></phone>
+						<mobile></mobile>
+						<department></department>
+						<departmentCode></departmentCode>
+						<officetelno></officetelno>
+						<contentsPath></contentsPath>
+						<menuPopupYn>N</menuPopupYn>
+					</category>
+		
+					<category>
+						<categoryId>3636</categoryId>
+						<parentId>3631</parentId>
+						<name>Dự án hỗ trợ cho vợ chồng hiếm muộn</name>
+						<fullPath>Dự án y tế/Dự án y tế/Sức khỏe mẹ và bé/Khuyến khích sinh sản/Dự án hỗ trợ cho vợ chồng hiếm muộn</fullPath>
+						<menuLink></menuLink>
+						<updateDate>2010-08-11-18-17-28</updateDate>
+						<position></position>
+						<fullMenuLink></fullMenuLink>
+						<userName></userName>
+						<email></email>
+						<phone></phone>
+						<mobile></mobile>
+						<department></department>
+						<departmentCode></departmentCode>
+						<officetelno></officetelno>
+						<contentsPath></contentsPath>
+						<menuPopupYn>N</menuPopupYn>
+					</category>
+		
+					<category>
+						<categoryId>3637</categoryId>
+						<parentId>3631</parentId>
+						<name>Hỗ trợ giúp đỡ trẻ sơ sinh cho phụ nữ đang ở cữ</name>
+						<fullPath>Dự án y tế/Dự án y tế/Sức khỏe mẹ và bé/Khuyến khích sinh sản/Hỗ trợ giúp đỡ trẻ sơ sinh cho phụ nữ đang ở cữ</fullPath>
+						<menuLink></menuLink>
+						<updateDate>2010-08-11-18-17-28</updateDate>
+						<position></position>
+						<fullMenuLink></fullMenuLink>
+						<userName></userName>
+						<email></email>
+						<phone></phone>
+						<mobile></mobile>
+						<department></department>
+						<departmentCode></departmentCode>
+						<officetelno></officetelno>
+						<contentsPath></contentsPath>
+						<menuPopupYn>N</menuPopupYn>
+					</category>
+		
+				<category>
+					<categoryId>3633</categoryId>
+					<parentId>3622</parentId>
+					<name>Quản lý sức khỏe trẻ em</name>
+					<fullPath>Dự án y tế/Dự án y tế/Sức khỏe mẹ và bé/Quản lý sức khỏe trẻ em</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+					<category>
+						<categoryId>3638</categoryId>
+						<parentId>3633</parentId>
+						<name>Khám thị lực thời kì đầu cho trẻ</name>
+						<fullPath>Dự án y tế/Dự án y tế/Sức khỏe mẹ và bé/Quản lý sức khỏe trẻ em/Khám thị lực thời kì đầu cho trẻ</fullPath>
+						<menuLink></menuLink>
+						<updateDate>2010-08-11-18-17-28</updateDate>
+						<position></position>
+						<fullMenuLink></fullMenuLink>
+						<userName></userName>
+						<email></email>
+						<phone></phone>
+						<mobile></mobile>
+						<department></department>
+						<departmentCode></departmentCode>
+						<officetelno></officetelno>
+						<contentsPath></contentsPath>
+						<menuPopupYn>N</menuPopupYn>
+					</category>
+		
+					<category>
+						<categoryId>3639</categoryId>
+						<parentId>3633</parentId>
+						<name>Khám sức khỏe trẻ em</name>
+						<fullPath>Dự án y tế/Dự án y tế/Sức khỏe mẹ và bé/Quản lý sức khỏe trẻ em/Khám sức khỏe trẻ em</fullPath>
+						<menuLink></menuLink>
+						<updateDate>2010-08-11-18-17-28</updateDate>
+						<position></position>
+						<fullMenuLink></fullMenuLink>
+						<userName></userName>
+						<email></email>
+						<phone></phone>
+						<mobile></mobile>
+						<department></department>
+						<departmentCode></departmentCode>
+						<officetelno></officetelno>
+						<contentsPath></contentsPath>
+						<menuPopupYn>N</menuPopupYn>
+					</category>
+		
+				<category>
+					<categoryId>3634</categoryId>
+					<parentId>3622</parentId>
+					<name>Dự án tăng cường chất dinh dưỡng</name>
+					<fullPath>Dự án y tế/Dự án y tế/Sức khỏe mẹ và bé/Dự án tăng cường chất dinh dưỡng</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+			<category>
+				<categoryId>3623</categoryId>
+				<parentId>3602</parentId>
+				<name>Quản lý AIDS</name>
+				<fullPath>Dự án y tế/Quản lý AIDS</fullPath>
+				<menuLink></menuLink>
+				<updateDate>2010-08-11-18-17-28</updateDate>
+				<position></position>
+				<fullMenuLink></fullMenuLink>
+				<userName></userName>
+				<email></email>
+				<phone></phone>
+				<mobile></mobile>
+				<department></department>
+				<departmentCode></departmentCode>
+				<officetelno></officetelno>
+				<contentsPath></contentsPath>
+				<menuPopupYn>N</menuPopupYn>
+			</category>
+		
+			<category>
+				<categoryId>3624</categoryId>
+				<parentId>3602</parentId>
+				<name>Hỗ trợ chi phí y tế</name>
+				<fullPath>Dự án y tế/Hỗ trợ chi phí y tế</fullPath>
+				<menuLink></menuLink>
+				<updateDate>2010-08-11-18-17-28</updateDate>
+				<position></position>
+				<fullMenuLink></fullMenuLink>
+				<userName></userName>
+				<email></email>
+				<phone></phone>
+				<mobile></mobile>
+				<department></department>
+				<departmentCode></departmentCode>
+				<officetelno></officetelno>
+				<contentsPath></contentsPath>
+				<menuPopupYn>N</menuPopupYn>
+			</category>
+		
+				<category>
+					<categoryId>3640</categoryId>
+					<parentId>3624</parentId>
+					<name>Trẻ đẻ non và trẻ  bẩm sinh không bình thường</name>
+					<fullPath>Dự án y tế/Hỗ trợ chi phí y tế/Trẻ đẻ non và trẻ  bẩm sinh không bình thường</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3641</categoryId>
+					<parentId>3624</parentId>
+					<name>Kiểm tra để lọc ra các trẻ bẩm sinh bị bệnh nan y</name>
+					<fullPath>Dự án y tế/Hỗ trợ chi phí y tế/Kiểm tra để lọc ra các trẻ bẩm sinh bị bệnh nan y</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3642</categoryId>
+					<parentId>3624</parentId>
+					<name>Người bị bệnh nan y hiếm có</name>
+					<fullPath>Dự án y tế/Hỗ trợ chi phí y tế/Người bị bệnh nan y hiếm có</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3643</categoryId>
+					<parentId>3624</parentId>
+					<name>Chi phí chữa trị cho các bệnh nhân bị ung thư</name>
+					<fullPath>Dự án y tế/Hỗ trợ chi phí y tế/Chi phí chữa trị cho các bệnh nhân bị ung thư</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3644</categoryId>
+					<parentId>3624</parentId>
+					<name>Kiểm tra lỗi bẩm sinh trong quá trình trao đổi chất</name>
+					<fullPath>Dự án y tế/Hỗ trợ chi phí y tế/Kiểm tra lỗi bẩm sinh trong quá trình trao đổi chất</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3645</categoryId>
+					<parentId>3624</parentId>
+					<name>Bệnh nhân được chăm sóc tại nhà</name>
+					<fullPath>Dự án y tế/Hỗ trợ chi phí y tế/Bệnh nhân được chăm sóc tại nhà</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3646</categoryId>
+					<parentId>3624</parentId>
+					<name>Chi phí phẫu thuật cho các cặp vợ chồng hiếm muộn</name>
+					<fullPath>Dự án y tế/Hỗ trợ chi phí y tế/Chi phí phẫu thuật cho các cặp vợ chồng hiếm muộn</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3647</categoryId>
+					<parentId>3624</parentId>
+					<name>Chi phí chữa trị của các bệnh nhân bị lao</name>
+					<fullPath>Dự án y tế/Hỗ trợ chi phí y tế/Chi phí chữa trị của các bệnh nhân bị lao</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3648</categoryId>
+					<parentId>3624</parentId>
+					<name>Kiểm tra dị ứng, suyễn</name>
+					<fullPath>Dự án y tế/Hỗ trợ chi phí y tế/Kiểm tra dị ứng, suyễn</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3649</categoryId>
+					<parentId>3624</parentId>
+					<name>Chi phí y tế cho bệnh mất trí nhớ đối với người có thu nhập thấp</name>
+					<fullPath>Dự án y tế/Hỗ trợ chi phí y tế/Chi phí y tế cho bệnh mất trí nhớ đối với người có thu nhập thấp</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+			<category>
+				<categoryId>3625</categoryId>
+				<parentId>3602</parentId>
+				<name>Vệ sinh răng miệng</name>
+				<fullPath>Dự án y tế/Vệ sinh răng miệng</fullPath>
+				<menuLink></menuLink>
+				<updateDate>2010-08-11-18-17-28</updateDate>
+				<position></position>
+				<fullMenuLink></fullMenuLink>
+				<userName></userName>
+				<email></email>
+				<phone></phone>
+				<mobile></mobile>
+				<department></department>
+				<departmentCode></departmentCode>
+				<officetelno></officetelno>
+				<contentsPath></contentsPath>
+				<menuPopupYn>N</menuPopupYn>
+			</category>
+		
+		<category>
+			<categoryId>3603</categoryId>
+			<parentId>0</parentId>
+			<name>Với mẹ và với bé</name>
+			<fullPath>Với mẹ và với bé</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+			<category>
+				<categoryId>3650</categoryId>
+				<parentId>3603</parentId>
+				<name>Chăm sóc trước khi sinh</name>
+				<fullPath>Với mẹ và với bé/Chăm sóc trước khi sinh</fullPath>
+				<menuLink></menuLink>
+				<updateDate>2010-08-11-18-17-28</updateDate>
+				<position></position>
+				<fullMenuLink></fullMenuLink>
+				<userName></userName>
+				<email></email>
+				<phone></phone>
+				<mobile></mobile>
+				<department></department>
+				<departmentCode></departmentCode>
+				<officetelno></officetelno>
+				<contentsPath></contentsPath>
+				<menuPopupYn>N</menuPopupYn>
+			</category>
+		
+				<category>
+					<categoryId>3652</categoryId>
+					<parentId>3650</parentId>
+					<name>Câu chuyện chăm sóctrước khi sinh bằng cách trò chuyện với thai nhi</name>
+					<fullPath>Với mẹ và với bé/Chăm sóc trước khi sinh/Câu chuyện chăm sóctrước khi sinh bằng cách trò chuyện với thai nhi</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3653</categoryId>
+					<parentId>3650</parentId>
+					<name>Tập luyện theo từng giai đoạn mang thai</name>
+					<fullPath>Với mẹ và với bé/Chăm sóc trước khi sinh/Tập luyện theo từng giai đoạn mang thai</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3654</categoryId>
+					<parentId>3650</parentId>
+					<name>Chăm sóc trước khi sinh về mỹ thuật</name>
+					<fullPath>Với mẹ và với bé/Chăm sóc trước khi sinh/Chăm sóc trước khi sinh về mỹ thuật</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3655</categoryId>
+					<parentId>3650</parentId>
+					<name>Chăm sóc trước khi sinh về âm nhạc </name>
+					<fullPath>Với mẹ và với bé/Chăm sóc trước khi sinh/Chăm sóc trước khi sinh về âm nhạc </fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+			<category>
+				<categoryId>3651</categoryId>
+				<parentId>3603</parentId>
+				<name>Mang thai</name>
+				<fullPath>Với mẹ và với bé/Mang thai</fullPath>
+				<menuLink></menuLink>
+				<updateDate>2010-08-11-18-17-28</updateDate>
+				<position></position>
+				<fullMenuLink></fullMenuLink>
+				<userName></userName>
+				<email></email>
+				<phone></phone>
+				<mobile></mobile>
+				<department></department>
+				<departmentCode></departmentCode>
+				<officetelno></officetelno>
+				<contentsPath></contentsPath>
+				<menuPopupYn>N</menuPopupYn>
+			</category>
+		
+				<category>
+					<categoryId>3656</categoryId>
+					<parentId>3651</parentId>
+					<name>Mang thai và sự chuẩn bị</name>
+					<fullPath>Với mẹ và với bé/Mang thai/Mang thai và sự chuẩn bị</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+					<category>
+						<categoryId>3660</categoryId>
+						<parentId>3656</parentId>
+						<name>Kế hoạch mang thai, sinh con</name>
+						<fullPath>Với mẹ và với bé/Mang thai/Kế hoạch mang thai, sinh con</fullPath>
+						<menuLink></menuLink>
+						<updateDate>2010-08-11-18-17-28</updateDate>
+						<position></position>
+						<fullMenuLink></fullMenuLink>
+						<userName></userName>
+						<email></email>
+						<phone></phone>
+						<mobile></mobile>
+						<department></department>
+						<departmentCode></departmentCode>
+						<officetelno></officetelno>
+						<contentsPath></contentsPath>
+						<menuPopupYn>N</menuPopupYn>
+					</category>
+			
+					<category>
+						<categoryId>3657</categoryId>
+						<parentId>3656</parentId>
+						<name>Xác nhận việc mang thai</name>
+						<fullPath>Với mẹ và với bé/Mang thai/Xác nhận việc mang thai</fullPath>
+						<menuLink></menuLink>
+						<updateDate>2010-08-11-18-17-28</updateDate>
+						<position></position>
+						<fullMenuLink></fullMenuLink>
+						<userName></userName>
+						<email></email>
+						<phone></phone>
+						<mobile></mobile>
+						<department></department>
+						<departmentCode></departmentCode>
+						<officetelno></officetelno>
+						<contentsPath></contentsPath>
+						<menuPopupYn>N</menuPopupYn>
+					</category>
+			
+					<category>
+						<categoryId>3658</categoryId>
+						<parentId>3656</parentId>
+						<name>Mang thai và việc dùng thuốc</name>
+						<fullPath>Với mẹ và với bé/Mang thai/Mang thai và việc dùng thuốc</fullPath>
+						<menuLink></menuLink>
+						<updateDate>2010-08-11-18-17-28</updateDate>
+						<position></position>
+						<fullMenuLink></fullMenuLink>
+						<userName></userName>
+						<email></email>
+						<phone></phone>
+						<mobile></mobile>
+						<department></department>
+						<departmentCode></departmentCode>
+						<officetelno></officetelno>
+						<contentsPath></contentsPath>
+						<menuPopupYn>N</menuPopupYn>
+					</category>
+			
+					<category>
+						<categoryId>3659</categoryId>
+						<parentId>3656</parentId>
+						<name>Những hạng mục chú ý khi mang thai</name>
+						<fullPath>Với mẹ và với bé/Mang thai/Những hạng mục chú ý khi mang thai</fullPath>
+						<menuLink></menuLink>
+						<updateDate>2010-08-11-18-17-28</updateDate>
+						<position></position>
+						<fullMenuLink></fullMenuLink>
+						<userName></userName>
+						<email></email>
+						<phone></phone>
+						<mobile></mobile>
+						<department></department>
+						<departmentCode></departmentCode>
+						<officetelno></officetelno>
+						<contentsPath></contentsPath>
+						<menuPopupYn>N</menuPopupYn>
+					</category>
+		
+				<category>
+					<categoryId>3661</categoryId>
+					<parentId>3651</parentId>
+					<name>Kiểm tra trước khi sinh</name>
+					<fullPath>Với mẹ và với bé/Mang thai/Kiểm tra trước khi sinh</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3662</categoryId>
+					<parentId>3651</parentId>
+					<name>Chữa trị tại bệnh viện</name>
+					<fullPath>Với mẹ và với bé/Mang thai/Chữa trị tại bệnh viện</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3663</categoryId>
+					<parentId>3651</parentId>
+					<name>Phá thai</name>
+					<fullPath>Với mẹ và với bé/Mang thai/Phá thai</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3664</categoryId>
+					<parentId>3651</parentId>
+					<name>Mang thai có độ nguy hiểm cao</name>
+					<fullPath>Với mẹ và với bé/Mang thai có độ nguy hiểm cao</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+		<category>
+			<categoryId>3604</categoryId>
+			<parentId>0</parentId>
+			<name>Giới thiệu về trung tâm y tế</name>
+			<fullPath>Giới thiệu về trung tâm y tế</fullPath>
+			<menuLink></menuLink>
+			<updateDate>2010-08-11-18-17-28</updateDate>
+			<position></position>
+			<fullMenuLink></fullMenuLink>
+			<userName></userName>
+			<email></email>
+			<phone></phone>
+			<mobile></mobile>
+			<department></department>
+			<departmentCode></departmentCode>
+			<officetelno></officetelno>
+			<contentsPath></contentsPath>
+			<menuPopupYn>N</menuPopupYn>
+		</category>
+		
+			<category>
+				<categoryId>3665</categoryId>
+				<parentId>3604</parentId>
+				<name>Lời chào của giám đốc</name>
+				<fullPath>Giới thiệu về trung tâm y tế/Lời chào của giám đốc</fullPath>
+				<menuLink></menuLink>
+				<updateDate>2010-08-11-18-17-28</updateDate>
+				<position></position>
+				<fullMenuLink></fullMenuLink>
+				<userName></userName>
+				<email></email>
+				<phone></phone>
+				<mobile></mobile>
+				<department></department>
+				<departmentCode></departmentCode>
+				<officetelno></officetelno>
+				<contentsPath></contentsPath>
+				<menuPopupYn>N</menuPopupYn>
+			</category>
+		
+			<category>
+				<categoryId>3666</categoryId>
+				<parentId>3604</parentId>
+				<name>Giới thiệu về các bộ phận</name>
+				<fullPath>Giới thiệu về trung tâm y tế/Giới thiệu về các bộ phận</fullPath>
+				<menuLink></menuLink>
+				<updateDate>2010-08-11-18-17-28</updateDate>
+				<position></position>
+				<fullMenuLink></fullMenuLink>
+				<userName></userName>
+				<email></email>
+				<phone></phone>
+				<mobile></mobile>
+				<department></department>
+				<departmentCode></departmentCode>
+				<officetelno></officetelno>
+				<contentsPath></contentsPath>
+				<menuPopupYn>N</menuPopupYn>
+			</category>
+		
+				<category>
+					<categoryId>3668</categoryId>
+					<parentId>3666</parentId>
+					<name>Sơ đồ tổ chức</name>
+					<fullPath>Giới thiệu về trung tâm y tế/Sơ đồ tổ chức</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+				<category>
+					<categoryId>3669</categoryId>
+					<parentId>3666</parentId>
+					<name>Giới thiệu về các tầng</name>
+					<fullPath>Giới thiệu về các tầng</fullPath>
+					<menuLink></menuLink>
+					<updateDate>2010-08-11-18-17-28</updateDate>
+					<position></position>
+					<fullMenuLink></fullMenuLink>
+					<userName></userName>
+					<email></email>
+					<phone></phone>
+					<mobile></mobile>
+					<department></department>
+					<departmentCode></departmentCode>
+					<officetelno></officetelno>
+					<contentsPath></contentsPath>
+					<menuPopupYn>N</menuPopupYn>
+				</category>
+		
+			<category>
+				<categoryId>3667</categoryId>
+				<parentId>3604</parentId>
+				<name>Đường đến</name>
+				<fullPath>Giới thiệu về trung tâm y tế/Đường đến</fullPath>
+				<menuLink></menuLink>
+				<updateDate>2010-08-11-18-17-28</updateDate>
+				<position></position>
+				<fullMenuLink></fullMenuLink>
+				<userName></userName>
+				<email></email>
+				<phone></phone>
+				<mobile></mobile>
+				<department></department>
+				<departmentCode></departmentCode>
+				<officetelno></officetelno>
+				<contentsPath></contentsPath>
+				<menuPopupYn>N</menuPopupYn>
+			</category>
+		
+</categories>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="discussion">
+
+	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
+	<typeAlias  alias="discussion" type="egovframework.kr.go.geumcheon.health.vo.Discussion"/>
+	<typeAlias  alias="division" type="egovframework.kr.go.geumcheon.health.vo.Division"/>
+    
+	<resultMap id="discussionM" class="egovMap">
+		<result property="disseq" 		column="DISSEQ"/>
+		<result property="distitle" 		column="DISTITLE"/>
+		<result property="discont" 	column="DISCONT" jdbcType="CLOB" javaType="java.lang.String" />		
+		<result property="dissdate" 	column="DISSDATE" />		
+		<result property="disedate" column="DISEDATE" />
+		<result property="dept" 	column="DEPT" />
+		<result property="name" 		column="NAME" />
+		<result property="pinno" 	column="PINNO" />
+		<result property="gubun" 	column="GUBUN" />
+		<result property="rdate" 		column="RDATE" />
+		<result property="delcode" 		column="DELCODE" />
+		<result property="hit" 		column="HIT" />
+		<result property="memberId" 		column="MEMBER_ID" />
+	</resultMap>
+				
+    			
+	<select id="discussionDAO.selectProgressiveDiscussionList" resultClass="egovMap">
+		SELECT 
+	   		DISSEQ
+	   		,DISTITLE
+	   		,TO_CHAR(DISSDATE, 'YYYY-MM-DD') AS DISSDATE
+	   		,TO_CHAR(DISEDATE, 'YYYY-MM-DD') AS DISEDATE
+	   		,NAME
+	   		,PINNO
+	   		,GUBUN
+	   		,TO_CHAR(RDATE, 'YYYY-MM-DD') AS RDATE
+	   		,DELCODE
+	   		,HIT
+		FROM PRTLTDISCUSSION A
+		WHERE TO_CHAR(SYSDATE, 'YYYYMMDD') BETWEEN TO_CHAR(DISSDATE, 'YYYYMMDD') AND TO_CHAR(DISEDATE, 'YYYYMMDD')
+		ORDER BY DISSEQ DESC
+	</select>	
+	<!-- 
+	<select id="discussionDAO.completedDiscussion" parameterClass="zvl" resultClass="int">			
+		<![CDATA[ 	
+		SELECT 
+	   		DISSEQ,DISTITLE,TO_CHAR(DISSDATE, 'YYYY-MM-DD') AS DISSDATE,
+	   		TO_CHAR(DISEDATE, 'YYYY-MM-DD') AS DISEDATE,B.DEPT_NAME,NAME,
+	   		IPADDRESS,GUBUN,RDATE,DELCODE, HIT,
+	   		CASE  
+	     	     WHEN TO_CHAR(SYSDATE, 'YYYYMMDD') >= TO_CHAR(DISSDATE, 'YYYYMMDD')
+	     		   AND TO_CHAR(SYSDATE, 'YYYYMMDD') <= TO_CHAR(DISEDATE, 'YYYYMMDD') THEN '2' 
+	     	     WHEN TO_CHAR(SYSDATE, 'YYYYMMDD') > TO_CHAR(DISEDATE, 'YYYYMMDD') THEN '3' 
+	     	     WHEN TO_CHAR(SYSDATE, 'YYYYMMDD') < TO_CHAR(DISSDATE, 'YYYYMMDD') THEN '1' 
+	     	END AS STATUS,
+		FROM PRTLTDISCUSSION A, SSOV_DEPT B
+		WHERE SYSDATE BETWEEN DISSDATE AND DISEDATE
+		AND A.DEPT = B.DEPT_ID
+		ORDER BY DISSEQ DESC
+		]]> 
+	</select>	
+	 -->	
+	<select id="discussionDAO.selectCompletedDiscussionList" parameterClass="discussion" resultClass="egovMap">			
+		<![CDATA[ 	
+		SELECT * FROM ( SELECT rownum rn, TB.* FROM (
+	  	SELECT 
+	   		DISSEQ
+	   		,DISTITLE
+	   		,TO_CHAR(DISSDATE, 'YYYY-MM-DD') AS DISSDATE
+	   		,TO_CHAR(DISEDATE, 'YYYY-MM-DD') AS DISEDATE
+	   		,NAME
+	   		,PINNO
+	   		,GUBUN
+	   		,TO_CHAR(RDATE, 'YYYY-MM-DD') AS RDATE
+	   		,DELCODE
+	   		,HIT
+		FROM PRTLTDISCUSSION A
+		WHERE TO_CHAR(SYSDATE, 'YYYYMMDD') > TO_CHAR(DISEDATE, 'YYYYMMDD')
+		ORDER BY DISSEQ DESC
+		) TB )  WHERE rn BETWEEN #firstIndex# + 1 AND #firstIndex# + #recordCountPerPage#
+		]]> 
+	</select>
+	
+	<select id="discussionDAO.selectCompletedDiscussionCnt" resultClass="int">
+		SELECT COUNT(*)
+		FROM PRTLTDISCUSSION
+		WHERE TO_CHAR(SYSDATE, 'YYYYMMDD') > TO_CHAR(DISEDATE, 'YYYYMMDD')
+	</select>	
+		
+	<select id="discussionDAO.selectDiscussionListA" parameterClass="discussion" resultClass="egovMap">			
+		<![CDATA[ 	
+		SELECT * FROM ( SELECT rownum rn, TB.* FROM (
+	  	SELECT 
+	   		DISSEQ
+	   		,DISTITLE
+	   		,NAME
+	   		,PINNO
+	   		,MEMBER_ID
+	   		,GUBUN
+	   		,TO_CHAR(RDATE, 'YYYY-MM-DD') AS RDATE
+	   		,DELCODE
+	   		,HIT
+		FROM PRTLTDISCUSSION A
+		WHERE NVL(DELCODE,0) = 0
+		ORDER BY DISSEQ DESC
+		) TB )  WHERE rn BETWEEN #firstIndex# + 1 AND #firstIndex# + #recordCountPerPage#
+		]]> 
+	</select>
+	
+	<select id="discussionDAO.selectDiscussionCntA" resultClass="int">
+		SELECT COUNT(*)
+		FROM PRTLTDISCUSSION
+		WHERE NVL(DELCODE,0) = 0
+	</select>	
+	
+	<select id="discussionDAO.selectDivisionList" parameterClass="discussion" resultClass="egovMap">			
+		<![CDATA[ 	
+		SELECT * FROM ( SELECT rownum rn, TB.* FROM (
+	  	SELECT 
+	   		DIVSEQ,DISSEQ,DIVTITLE,DIVCONT,NAME,PINNO,TO_CHAR(RDATE, 'YYYY-MM-DD') AS RDATE,DELCODE,MEMBER_ID
+		FROM PRTLTDIVISION
+		WHERE DISSEQ = #disseq#
+		ORDER BY DIVSEQ DESC
+		) TB )  WHERE rn BETWEEN #firstIndex# + 1 AND #firstIndex# + #recordCountPerPage#
+		]]> 
+	</select>	
+		
+	<select id="discussionDAO.selectDivisionCnt" parameterClass="int" resultClass="int">
+		SELECT COUNT(*)
+		FROM PRTLTDIVISION
+		WHERE DISSEQ = #disseq#
+	</select>	
+	
+	<select id="discussionDAO.selectDivisionByDivseq" parameterClass="int" resultClass="egovMap">			
+		<![CDATA[ 	
+	  	SELECT 
+	   		DIVSEQ,DISSEQ,DIVTITLE,DIVCONT,NAME,PINNO,TO_CHAR(RDATE, 'YYYY-MM-DD') AS RDATE,DELCODE,MEMBER_ID
+		FROM PRTLTDIVISION
+		WHERE DIVSEQ = #divseq#
+		]]> 
+	</select>	
+	
+	<select id="discussionDAO.selectDiscussionByDisseq" parameterClass="int" resultMap="discussionM">		
+		<![CDATA[ 		
+		SELECT A.DISSEQ,
+		       A.DISTITLE,
+		       A.DISCONT,
+		       A.DISSDATE,
+		       A.DISEDATE,
+		       A.DEPT,
+		       A.NAME,
+		       A.PINNO,
+		       A.GUBUN,
+		       TO_CHAR(RDATE, 'YYYY-MM-DD') AS RDATE,
+		       A.DELCODE,
+		       A.HIT,
+		       A.MEMBER_ID
+		  FROM PRTLTDISCUSSION A
+		WHERE A.DISSEQ = #disseq#
+		]]> 
+	</select>
+	
+	<insert id="discussionDAO.insertDiscussion" parameterClass="discussion">
+		<selectKey resultClass="java.lang.Integer" keyProperty="disseq">
+			SELECT SEQ_PRTLTDISCUSSION.NEXTVAL FROM DUAL
+		</selectKey>			
+		<![CDATA[ 			
+		    INSERT INTO PRTLTDISCUSSION (
+		     	DISSEQ,DISTITLE,DISCONT,DISSDATE,DISEDATE,DEPT,NAME,PINNO,GUBUN,RDATE,DELCODE,HIT,MEMBER_ID
+		    )
+			VALUES 
+			( #disseq#,#distitle#,#discont:CLOB#,#dissdate#,#disedate#,#dept#,#name#,#pinno#,#gubun#,SYSDATE,'0',0,#memberId# )
+		]]> 
+	</insert>
+	
+	<update id="discussionDAO.modifyDiscussion" parameterClass="discussion">
+		<![CDATA[ 			
+		    UPDATE PRTLTDISCUSSION 
+		    SET
+		     	DISTITLE = #distitle#,
+		     	DISCONT = #discont:CLOB#
+		    WHERE DISSEQ = #disseq#
+		]]> 
+	</update>
+	
+	<insert id="discussionDAO.insertDivision" parameterClass="division">
+		<selectKey resultClass="java.lang.Integer" keyProperty="divseq">
+			SELECT SEQ_PRTLTDIVISION.NEXTVAL FROM DUAL
+		</selectKey>			
+		<![CDATA[ 			
+		    INSERT INTO PRTLTDIVISION (
+		     	DIVSEQ,DISSEQ,DIVTITLE,DIVCONT,NAME,RDATE,DELCODE,PINNO,MEMBER_ID
+		    )
+			VALUES 
+			( #divseq#,#disseq#,#divtitle#,#divcont#,#name#,SYSDATE,'0',#pinno#,#memberId# )
+		]]> 
+	</insert>
+	
+	<update id="discussionDAO.modifyDivision" parameterClass="division">
+		<![CDATA[ 			
+		    UPDATE PRTLTDIVISION 
+		    SET
+		     	DIVCONT = #divcont#
+		    WHERE DIVSEQ = #divseq#	
+		]]> 
+	</update>
+	
+	<update id="discussionDAO.addHit" parameterClass="int">
+		<![CDATA[ 			
+		    UPDATE PRTLTDISCUSSION 
+		    SET
+		     	HIT = HIT + 1
+		    WHERE DISSEQ = #disseq#	
+		]]> 
+	</update>
+	
+	<delete id="discussionDAO.delDiscussion" parameterClass="int">
+		<![CDATA[ 			
+		    DELETE FROM PRTLTDISCUSSION
+		    WHERE DISSEQ = #disseq#	
+		]]> 
+	</delete>
+	
+	<delete id="discussionDAO.delDivision" parameterClass="int">
+		<![CDATA[ 			
+		    DELETE FROM PRTLTDIVISION
+		    WHERE DIVSEQ = #divseq#	
+		]]> 
+	</delete>
+</sqlMap>                            

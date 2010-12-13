@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="search">
+
+	<typeAlias  alias="zvl" type="egovframework.kr.go.geumcheon.health.util.ZValue"/>
+	
+	<resultMap id="bbsResult" class="zvl">
+		<result property="nttId" column="NTT_ID" columnIndex="1"/>
+		<result property="nttSj" column="NTT_SJ" columnIndex="2"/>
+		<result property="nttCn" column="NTT_CN" columnIndex="3" jdbcType="CLOB" javaType="java.lang.String"/>
+		<result property="bbsId" column="BBS_ID" columnIndex="4"/>
+		<result property="categoryId" column="CATEGORY_ID" columnIndex="5"/>
+		<result property="fullMenuLink" column="FULL_MENU_LINK" columnIndex="6"/>
+		<result property="fullPath" column="FULL_PATH" columnIndex="7"/>
+	</resultMap>
+    			
+	<select id="searchDAO.selectCategoryListByName" resultClass="zvl" parameterClass="string">
+		<![CDATA[
+			SELECT 
+				A.NAME
+				,A.FULL_PATH
+				,B.FULL_MENU_LINK
+			FROM GCWEB.WCM_CATEGORY A
+			INNER JOIN CATEGORY_ADDITION B ON B.CATEGORY_ID = A.CATEGORY_ID
+			WHERE A.NAME LIKE '%' || #searchTxt# || '%'
+			AND A.SITE_ID = 14
+			AND ROWNUM <= 5
+		]]>
+	</select>
+		
+	<select id="searchDAO.selectCategoryListByNameCnt" resultClass="int" parameterClass="string">
+		<![CDATA[
+			SELECT 
+				COUNT(*) AS CNT
+			FROM GCWEB.WCM_CATEGORY A
+			INNER JOIN CATEGORY_ADDITION B ON B.CATEGORY_ID = A.CATEGORY_ID
+			WHERE A.NAME LIKE '%' || #searchTxt# || '%'
+			AND A.SITE_ID = 14
+		]]>
+	</select>
+		
+	<select id="searchDAO.selectStaffList" resultClass="zvl" parameterClass="string">
+		<![CDATA[
+			SELECT 
+				A.DEPARTMENT
+				,A.ORGAN
+				,A.NAME
+				,A.INTRDT
+				,A.EMAIL
+				,A.OFFICETELNO
+			FROM GCWEB.WCM_USER A
+			WHERE A.INTRDT LIKE '%' || #searchTxt# || '%' OR A.NAME LIKE '%' || #searchTxt# || '%'
+			AND DEPARTMENT IN ('보건위생과','건강증진과','의약과')
+			AND ROWNUM <= 5
+		]]>
+	</select>
+		
+	<select id="searchDAO.selectStaffListCnt" resultClass="int" parameterClass="string">
+		<![CDATA[
+			SELECT 
+				COUNT(*) AS CNT
+			FROM GCWEB.WCM_USER A
+			WHERE A.INTRDT LIKE '%' || #searchTxt# || '%' OR A.NAME LIKE '%' || #searchTxt# || '%'
+			AND DEPARTMENT IN ('보건위생과','건강증진과','의약과')
+		]]>
+	</select>
+		
+	<select id="searchDAO.selectCategoryListByNameA" resultClass="zvl" parameterClass="zvl">
+		<![CDATA[
+			SELECT * FROM ( SELECT rownum rn, TB.* FROM (
+			SELECT 
+				A.NAME
+				,A.FULL_PATH
+				,B.FULL_MENU_LINK
+			FROM GCWEB.WCM_CATEGORY A
+			INNER JOIN CATEGORY_ADDITION B ON B.CATEGORY_ID = A.CATEGORY_ID
+			WHERE A.NAME LIKE '%' || #searchTxt# || '%'
+			AND A.SITE_ID = 14
+			ORDER BY NAME
+		       ) TB )  WHERE rn BETWEEN #firstIndex# + 1 AND #firstIndex# + #recordCountPerPage#
+		]]>
+	</select>
+		
+	<select id="searchDAO.selectStaffListA" resultClass="zvl" parameterClass="zvl">
+		<![CDATA[
+			SELECT * FROM ( SELECT rownum rn, TB.* FROM (
+			SELECT 
+				A.DEPARTMENT
+				,A.ORGAN
+				,A.NAME
+				,A.INTRDT
+				,A.EMAIL
+				,A.OFFICETELNO
+			FROM GCWEB.WCM_USER A
+			WHERE A.INTRDT LIKE '%' || #searchTxt# || '%' OR A.NAME LIKE '%' || #searchTxt# || '%'
+			AND DEPARTMENT IN ('보건위생과','건강증진과','의약과')
+		       ) TB )  WHERE rn BETWEEN #firstIndex# + 1 AND #firstIndex# + #recordCountPerPage#
+		]]>
+	</select>
+	
+	<select id="searchDAO.selectBBSListCnt" resultClass="int" parameterClass="string">
+		<![CDATA[
+			SELECT
+				COUNT(a.NTT_ID)
+			FROM
+				COMTNBBS A
+			WHERE
+				A.DELCODE = '0'
+				AND A.NTT_SJ LIKE '%' || #searchTxt# || '%' OR A.NTT_CN LIKE '%' || #searchTxt# || '%'
+		]]>
+	</select>
+	
+	<select id="searchDAO.selectBBSListByContent" resultMap="bbsResult" parameterClass="zvl">
+		<![CDATA[
+			SELECT 
+				A.NTT_ID, 
+				A.NTT_SJ, 
+				A.NTT_CN, 
+				A.BBS_ID,
+				(SELECT CATEGORY_ID 
+				FROM CATEGORY_ADDITION B
+				WHERE B.FULL_MENU_LINK LIKE '%' || A.BBS_ID || '%'
+				AND ROWNUM = 1) as CATEGORY_ID,
+				(SELECT FULL_MENU_LINK 
+				FROM CATEGORY_ADDITION B
+				WHERE B.FULL_MENU_LINK LIKE '%' || A.BBS_ID || '%'
+				AND ROWNUM = 1) as FULL_MENU_LINK,
+                (SELECT FULL_PATH 
+				FROM GCWEB.WCM_CATEGORY C
+				WHERE C.CATEGORY_ID = CATEGORY_ID
+				AND ROWNUM = 1) as FULL_PATH
+			FROM COMTNBBS A
+			WHERE 
+				A.DELCODE = '0'
+			AND 
+				A.NTT_SJ LIKE '%' || #searchTxt# || '%' OR A.NTT_CN LIKE '%' || #searchTxt# || '%'
+		    AND ROWNUM <= 5
+		]]>
+	</select>
+	
+	<select id="searchDAO.selectBBSListByContentA" resultMap="bbsResult" parameterClass="zvl">
+		<![CDATA[
+			SELECT * FROM ( SELECT rownum rn, TB.* FROM (
+			SELECT 
+				A.NTT_ID, 
+				A.NTT_SJ, 
+				A.NTT_CN, 
+				A.BBS_ID,
+				(SELECT CATEGORY_ID 
+				FROM CATEGORY_ADDITION B
+				WHERE B.FULL_MENU_LINK LIKE '%' || A.BBS_ID || '%'
+				AND ROWNUM = 1) as CATEGORY_ID,
+				(SELECT FULL_MENU_LINK 
+				FROM CATEGORY_ADDITION B
+				WHERE B.FULL_MENU_LINK LIKE '%' || A.BBS_ID || '%'
+				AND ROWNUM = 1) as FULL_MENU_LINK,
+                (SELECT FULL_PATH 
+				FROM GCWEB.WCM_CATEGORY C
+				WHERE C.CATEGORY_ID = CATEGORY_ID
+				AND ROWNUM = 1) as FULL_PATH
+			FROM COMTNBBS A
+			WHERE 
+				A.DELCODE = '0'
+			AND 
+				A.NTT_SJ LIKE '%' || #searchTxt# || '%' OR A.NTT_CN LIKE '%' || #searchTxt# || '%'
+		    ) TB )  WHERE rn BETWEEN #firstIndex# + 1 AND #firstIndex# + #recordCountPerPage#
+		]]>
+	</select>
+		
+</sqlMap>                            
