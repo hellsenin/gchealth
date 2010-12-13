@@ -1,0 +1,361 @@
+@charset "utf-8";
+/* CSS Document */
+
+#lnb{ background:url(/health/open_content/images/sub_blue/lnb_bg_bottom.gif) 0 100% no-repeat; padding:0 0 43px 0; width:190px;}
+#lnb h2{ background:url(/health/open_content/images/sub_blue/lnb_bg_top.gif) 0 0 no-repeat; padding:37px 35px 0 35px; width:120px; text-align:center;}
+.menu_all_view{ text-align:center; margin:11px 6px 0 6px; background:#9fd5ea url(/health/open_content/images/common/menu_view_vline.gif) center center no-repeat; }
+.menu_toggle_on,
+.menu_toggle_off{ border:none; font-size:0.917em; color:#006d99; background-color:#9fd5ea; padding:2px 16px 0 1px; background-position:right center; background-repeat:no-repeat; cursor:pointer; width:69px; vertical-align:top}
+.menu_toggle_on{ background-image:url(/health/open_content/images/sub_blue/menu_view_toggle_on.gif); margin-right:10px;}
+.menu_toggle_off{background-image:url(/health/open_content/images/sub_blue/menu_view_toggle_off.gif)}
+
+#left_lnb{ background:url(/health/open_content/images/sub_blue/lnb_bg.gif) 0 0 repeat-y; margin-top:22px; float:left; width:220px}
+#lnb ul{margin:0 auto;width:168px;}
+#lnb ul li{ list-style:none; }
+#lnb ul li a{ background:url(/health/open_content/images/sub_blue/lnb_menu_off.gif) 0 center no-repeat; padding:0 0 0 21px; line-height:2.500em; display:block;}
+#lnb ul li a:hover,
+#lnb ul li a:active,
+#lnb ul li a:focus,
+#lnb ul li a.current{ background-image:url(/health/open_content/images/sub_blue/lnb_menu_on.gif); font-weight:bold; color:#fff; text-decoration:none;}
+#lnb ul li ul{ width:154px; margin:1px auto; border-bottom:1px solid #c3c3c3;padding-bottom:1px; background-color:#eee}
+#lnb ul li ul li{}
+#lnb ul li ul li a{ background:#9b9b9b url(/health/open_content/images/sub_blue/lnb_alink_bg.gif) 0 -20px no-repeat; line-height:1.417em;  color:#555555;}
+#lnb ul li ul li a:hover,
+#lnb ul li ul li a:active,
+#lnb ul li ul li a:focus,
+#lnb ul li ul li a.current{ background-color:#31acbc; color:#2180ad; background-image:url(/health/open_content/images/sub_blue/lnb_alink_bg.gif); text-decoration:underline}
+
+
+    .navigator li .current{ color:#289bbd;}
+
+/* ======== 블릿스타일 ========*/
+
+    h4{ background:url(/health/open_content/images/sub_blue/btl_h4.gif) 0 3px no-repeat; padding:1px 0 0 20px; position:relative; font-size:1.200em; color:#006d99; margin:0 0 10px 0}
+    h5{ background:url(/health/open_content/images/sub_blue/blt_h5.gif) 0 3px no-repeat; padding: 0 0 0 18px; position:relative; font-size:1.120em; color:#1ea1b5; margin: 0 0 10px 0}
+    
+.list_tyle_1{ line-height:1.500em}
+
+/* ======== background left top 수정(0825)========*/
+.list_tyle_1 li{ background: url(/health/open_content/images/sub_blue/blt_li.gif) 13px 4px no-repeat; padding:0 0 0 23px; position:relative; list-style:none; }
+/* ========↑========*/
+
+.list_tyle_1 li li{ background:url(/health/open_content/images/sub_green/blt_li2.gif) 0 7px no-repeat; padding:0 0 0 7px; position:relative;}
+.list_tyle_1 li li li{ background:url(/health/open_content/images/sub_green/blt_li3.gif) 0 8px no-repeat; padding:0 0 0 7px; position:relative;}
+
+.list_tyle_1 li.no{ background-image:none;}
+.list_tyle_1 li.num{ background-image:none; text-indent:-16px; padding-left:0px;}
+.list_tyle_1 li.num2{ background-image:none; text-indent:-22px; padding-left:20px;}
+.list_tyle_1 li.num3{ background-image:none;  padding-left:20px;}
+.list_tyle_1 li.num3 ul{ background-image:none;  padding-left:10px;}
+
+.list_tyle_1 li.point{ color:#c75d10; }
+.list_tyle_1 li.point_red{ color:#d11919; }
+.list_tyle_1 li.point_black{ color:#000; }
+.list_tyle_1 li.point_green{ color:#24ab6c; }
+.list_tyle_1 li.point_blue{ color:#0c9cb8; }
+.list_tyle_1 li.point_orange{ color:#f13c05; }
+.list_tyle_1 li.point_perple{ color:#b130ba; }
+
+.list_tyle_1 span.point{ color:#c75d10; }
+.list_tyle_1 span.point_red{ color:#d11919; }
+.list_tyle_1 span.point_black{ color:#000; }
+.list_tyle_1 span.point_green{ color:#24ab6c; }
+.list_tyle_1 span.point_blue{ color:#0c9cb8; }
+.list_tyle_1 span.point_orange{ color:#f13c05; }
+.list_tyle_1 span.point_perple{ color:#b130ba; }
+
+.list_tyle_2{ }
+.list_tyle_2 li{ list-style:none; }
+.list_tyle_2 li.img{ float:left; display:inline; padding-right:40px; }
+.list_tyle_2 li.list { float:left; display:inline; line-height:1.7em;  }
+
+.list_tyle_2{  }
+.list_tyle_2 li.img2{ float:left; display:inline; padding-right:30px;  }
+.list_tyle_2 li.icon { line-height:1.6em; background: url(/health/open_content/images/sub_blue/blt_li.gif) 223px  7px no-repeat; padding:0 0 0 23px; position:relative;}
+.list_tyle_2 li.icon li{ background:url(/health/open_content/images/sub_blue/blt_li2.gif) 203px 7px no-repeat; padding:0 0 0 27px; position:relative; }
+.list_tyle_2 li.icon_btn { float:left; display:inline; padding:10px 0 0 0px; }
+
+.list_img { float:left; padding:0 20px 0 0px;}
+.list_txt {float:left;}
+.list_btn_clear { clear:both; padding: 10px 0 0 15px;}
+
+/* ======== 탭스타일 ========*/
+
+.tab_tyle_green{ border-bottom:1px solid #4583ae; width:650px; width:100%; height:1.917em; margin-bottom:20px;}
+.tab_tyle_green li{  display:block; float:left; height:1.917em; list-style:none;}
+.tab_tyle_green li.on{ background-color:#4583ae; border-color:#4583ae}
+.tab_tyle_green li a{ border-width:1px 1px 0 1px; border-style:solid; border-color:#bbb; display:block; float:left; padding:0 30px; font-weight:bold;height:1.917em}
+.tab_tyle_green li.on a{ color:#fff ;border-color:#4583ae; }
+
+/* ======== 풋터 ========*/
+
+#footer{ background:url(/health/open_content/images/sub_blue/footer_bg.gif) 0 0 repeat-x; }
+
+/* ======== 탭메뉴 ========*/
+
+.tab_type1 { background-image:url(/health/open_content/images/sub_blue/bg_tabtype_btm.gif) }
+.tab_type1 ul { background-image:url(/health/open_content/images/sub_blue/bg_tabtype.gif) }
+.tab_type1 ul li { background-image:url(/health/open_content/images/sub_blue/blt_tabtype.gif); padding:8px 0px 0px 15px; list-style:none; }
+.tab_type1 ul li.current a,
+.tab_type1 ul li a:hover,
+.tab_type1 ul li a:active,
+.tab_type1 ul li a:focus{ color:#1ea1b5; }
+
+/* ======== 퀵메뉴 타이틀 ========*/
+
+#quick_menu{ position:absolute; left:900px; top:155px; background:url(/health/open_content/images/common/quickmenu_bg_blue.gif) 0 0 no-repeat; width:100px; padding:5px 10px;}
+
+/* ======== 건강 생활 ========*/
+	/* ====== 운동 ====*/
+		/* == 운동지침 ==*/
+
+.list_tyle_1{
+	padding:0px 0px 20px 0px;
+}
+.p_pad{
+	padding:0px 0px 20px 23px;
+}
+		/* == 체력진단 ==*/
+.blue_cont{
+	width:650px;
+	height:172px;
+	clear:both;
+	padding:0px 0px 20px 0px;
+}
+.blue_left{
+	float:left;
+	padding:15px 0px 0px 0px;
+	width:340px;
+}
+
+.blue_cont img{
+	float:right;
+	padding:0px 150px 0px 0px;
+}
+.pr100{
+	padding:0px 100px 0px 0px!important;
+}
+.text_box{
+	border: 1px solid #5fc9d5;
+	padding:5px;
+	margin:0px 0px 15px 0px;
+}
+.mttac{
+	text-align:center;
+}
+.blue_table{
+	width:630px;
+	height:279px;
+}
+.float_left{
+	width:310px;
+}
+.float_right{
+	width:310px;
+
+}
+.mt05tac{
+	margin-top:5px;
+	text-align:center;
+}
+.blue_left2{
+	float:left;
+	padding:15px 0px 0px 0px;
+	width:400px;
+}
+.blue_left2 .blt_li2 li{
+	padding-bottom:5px;
+}
+.img_float{
+	float:right;
+	padding:60px 100px 0px 0px!important;
+
+}
+
+/* == 기구를 이용한 운동==*/
+	/* == 고정식 자전거 운동 ==*/
+
+.blue_div{
+	position:relative;
+}
+.img_float2{
+	position:absolute;
+	right:0px;
+	top:-50px;
+}
+
+/* == 유연성 운동 ==*/
+	/* == 늘이기 체조 ==*/
+.bg_sub14{
+	background:url("/health/open_content/images/sub_blue/bg_blue14.gif") no-repeat left top;
+	width:582px;
+	height:302px;
+	margin:0px 0px 15px 0px;
+}
+.bg_sub15{
+	background:url("/health/open_content/images/sub_blue/bg_blue15.gif") no-repeat left top;
+	width:582px;
+	height:302px;
+	margin:0px 0px 15px 0px;
+}
+.bg_sub16{
+	background:url("/health/open_content/images/sub_blue/bg_blue16.gif") no-repeat left top;
+	width:582px;
+	height:302px;
+	margin:0px 0px 15px 0px;
+}
+
+	/* == 이미디대체 ==*/
+
+.ir_text{
+	visibility:hidden;
+	position:absolute;
+	width:0;
+	height:0;
+	font-size:0;
+	overflow:hidden;
+	text-indent:-9999px;
+	line-height:0px;
+}
+
+	/* == 동그라미 체조 ==*/
+
+	.bg_sub17{
+	background:url("/health/open_content/images/sub_blue/bg_blue17.gif") no-repeat left top;
+	width:582px;
+	height:302px;
+	margin:0px 0px 15px 0px;
+}
+	.bg_sub18{
+	background:url("/health/open_content/images/sub_blue/bg_blue18.gif") no-repeat left top;
+	width:582px;
+	height:302px;
+	margin:0px 0px 15px 0px;
+}
+
+/* == 올바른영향 ==*/
+	/* == 식생활정보 ==*/
+		/* == 올바른 식습관의 형성 ==*/
+.cont_h4 h4{
+	background:none;
+	border:1px solid #5FC9D5;
+	padding:5px 5px;
+}
+		/* == 여성의 올바른 식생활 ==*/
+.bor_cont{
+	border:1px solid #5FC9D5;
+	padding:5px 5px;
+	margin:0px 0px 15px 18px;
+}
+
+.list_tyle_4 li{ background:url(/health/open_content/images/sub_green/blt_li2.gif) 0 13px no-repeat; padding:0 0 0 24px; position:relative;}
+
+.bg_sub19{
+	background:url("/health/open_content/images/sub_blue/0302010303_1.gif") no-repeat left top;
+	width:582px;
+	height:402px;
+	margin:0px 0px 15px 0px;
+}
+
+.unlist li { background:url(/health/open_content/images/common/blt_s_2.gif) 0 7px no-repeat !important; padding:0 0 0 7px; position:relative;}
+.unlist{list-style-type:none;}
+
+.bg_sub20{
+	background:url("/health/open_content/images/sub_blue/0302020101_1.png") no-repeat left top;
+	width:586px;
+	height:585px;
+	text-align:center;
+	margin:0px 0px 15px 0px;
+}
+
+.bg_sub21{
+	background:url("/health/open_content/images/sub_blue/0302020101_2.png") no-repeat left top;
+	width:587px;
+	height:206px;
+	text-align:center;
+}
+		/* == 음주 운전 사고 ==*/
+.bg_sub22{
+	background:url("/health/open_content/images/sub_blue/0303010401.png") no-repeat left top;
+	width:584px;
+	height:224px;
+	text-align:center;
+}
+
+		/* == 알코올과 태아 ==*/
+.float_FAS{
+	width:627px;
+	position:relative;
+}
+.wid_FAS{
+	width:440px;
+	float:left;
+}
+		/* == 알코올 중독 ==*/
+.bor_cont2{
+	border:1px solid #5FC9D5;
+	padding:5px 5px;
+	margin:10px 0px 15px -5px;
+}
+		/* == 식중독 예방 요령 ==*/
+
+.bg_sub23{
+	background:url("/health/open_content/images/sub_blue/0304020201_1.png") no-repeat left top;
+	width:642px;
+	height:110px;
+	text-align:center;
+}
+.bg_sub24{
+	background:url("/health/open_content/images/sub_blue/0304020201_2.png") no-repeat left top;
+	width:645px;
+	height:433px;
+	text-align:center;
+}
+.bg_sub25{
+	background:url("/health/open_content/images/sub_blue/0304020201_3.png") no-repeat left top;
+	width:407px;
+	height:199px;
+	text-align:center;
+	margin:15px 0px 10px 100px;
+}
+
+		/* ==유용한정보 ==*/
+.bg_sub26{
+	background:url("/health/open_content/images/sub_blue/sub_ct_bg_03.gif") no-repeat right bottom;
+	width:650px;
+	height:109px;
+	position:relative;
+}
+.bg_sub26 .h4_sub{
+	position:relative;
+	left:0px;
+	top:50px;
+	background:none;
+}
+.bg_sub26 p{
+	position:relative;
+	left:10px;
+	top:50px;
+	background:none;
+}
+.site_info{
+	background:url("/health/open_content/images/sub_blue/site_bg.gif") no-repeat left top;
+	width:671px;
+	height:384px;
+	position:relative;
+}
+
+.site_info ul{
+	width:671px;
+	position:relative;
+	left:10px;
+	top:40px;
+}
+.site_info ul li{
+	list-style-type:none;
+	width:191px;
+	float:left;
+	padding:5px 0px 5px 15px;
+
+}
+.site_width{width:224px !important;}

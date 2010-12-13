@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* CSS Document */
+.board_top { width:100%; margin:0 0 6px 0}
+.board_top span{ background:url(/health/open_content/images/borad/ico_list_total_number.gif) 0 center no-repeat; display:block; padding:0 0 0 19px}
+.board_top input.text{ border-width:1px; width:170px; border-color:#8e8e8e #d4d4d4 #d4d4d4 #8e8e8e; border-style:solid;}
+
+.default_list{ width:100%; clear:both; border-collapse:collapse}
+.default_list .number{ width:60px}
+.default_list .title{ width:348px;}
+.default_list .name{ width:70px;}
+.default_list .date{ width:98px;}
+.default_list .count{}
+.default_list th{ background:url(/health/open_content/images/borad/th_bg.gif) 0 bottom repeat-x; line-height:2.333em; height:2.333em; border-top:2px solid #c460c5}
+/*.default_list td{ border-bottom:1px solid #dcdcdc; padding: 0.40em 0; text-align:center; word-break:break-all; }*/
+.default_list td{ border-bottom:1px solid #dcdcdc; padding: 0.40em 0; text-align:center;}
+.default_list td.title{ text-align:left; padding:0 0 0 17px;}
+.default_list a.new{ background: url(/health/open_content/images/borad/ico_new.gif) right 0 no-repeat; padding:0 15px 0 0 }
+.default_list a.re{ background: url(/health/open_content/images/borad/ico_re.gif) 0 center no-repeat; padding:0 0 0 26px}
+.default_list .tal { text-align:left; }
+.default_list .tar { text-align:right; }
+.default_list .tac { text-align:center; }
+
+.paging{ text-align:center; width:100%; margin:22px 0 0 0}
+.paging li{ display:inline}
+.paging img{ vertical-align:middle;}
+.paging span{ font-weight:bold; color:#ed1c24}
+.paging li.nopd a{ padding:0; }
+.paging a{ padding:0 4px ;}
+
+.board_btn_set{position:relative;text-align:right; font-size:0.917em}
+.board_btn_set.send_mg{margin:-29px 0 0;}
+.board_btn_set input,
+.board_btn_set a{ color:#fff; font-weight:bold; padding:3px 21px 2px 12px ;}
+.board_btn_set a:hover,
+.board_btn_set a:active{ color:#fff}
+.board_btn_set span,
+.board_btn_set a{ display:inline-block; vertical-align:top}
+.board_btn_set .register{ background:url(/health/open_content/images/borad/perple_skin/btn_send.gif) 0 0 no-repeat; padding:0}
+.board_btn_set input,
+.board_btn_set .btn_edit,
+.board_btn_set .btn_del,
+.board_btn_set .btn_list{ background:url(/health/open_content/images/borad/perple_skin/btn_link_bg.gif) 0 0 no-repeat; }
+.board_btn_set input{ border:none; font-size:1em; width:82px; height:25px;}
+
+.default_view{ border-top:2px solid #c460c5; width:100%; border-collapse:collapse}
+.default_view .title{ width:72px;}
+.default_view .title_data{ width:177px}
+.default_view .date{ width:72px;}
+.default_view .date_data{ width:154px;}
+.default_view .tel{ width:72px;}
+.default_view .tel_data{}
+.default_view th.title_1{ background-color:#f4f4f4; color:#a84aaf; background-image:none; padding: 0.400em 0;}
+.default_view .title_td{ color:#666; font-weight:bold;}
+.default_view th.title_1,
+.default_view .title_td{ border-bottom:1px solid #c460c5}
+.default_view th{ background:url(/health/open_content/images/borad/sel_vline.gif) right center no-repeat; color:#a58d54}
+.default_view td{ padding:8px 0 8px 8px; }
+.default_view th,
+.default_view td{border-bottom:1px solid #cfd6db}
+#db_data_area{ padding:18px;}
+
+.list_preview{ width:100%; border-collapse:collapse; border-width:1px  0; border-style:solid; border-color:#c460c5; margin-top:43px;}
+.list_preview th{ width:57px; padding:8px 0 7px 30px; color:#a58d54; font-weight:bold; text-align:left}
+.list_preview .pre_ico{ background:url(/health/open_content/images/borad/pre_ico.gif) 10px center no-repeat;}
+.list_preview .next_ico{ background:url(/health/open_content/images/borad/next_ico.gif) 10px center no-repeat;}
+.list_preview .fir th,
+.list_preview .fir td{ border-bottom:1px solid #dcdcdc}
+
+.answer_view{ width:100%; border-collapse:collapse; border-width:1px  0; border-style:solid; border-color:#c460c5; margin-top:43px;}
+.answer_view th{ background:url(/health/open_content/images/borad/sel_vline.gif) right center no-repeat; width:63px; padding:8px 0 8px 8px; color:#a58d54; font-weight:bold; text-align:left}
+.answer_view td{ padding:8px 0 8px 8px; }
+.answer_view .fir th,
+.answer_view .fir td{ border-bottom:1px solid #dcdcdc}
+
+.default_write{ border-top:2px solid #c460c5; width:100%; border-collapse:collapse}
+.default_write .title{ width:72px;}
+.default_write .title_data{ width:177px}
+.default_write .tel{ width:72px;}
+.default_write th.title_1{ background-color:#f4f4f4; color:#a84aaf; background-image:none}
+.default_write .title_td{ color:#666; font-weight:bold;}
+.default_write th.title_1,
+.default_write .title_td{ border-bottom:1px solid #c460c5}
+.default_write th{ background:url(/health/open_content/images/borad/sel_vline.gif) right center no-repeat; color:#a58d54}
+.default_write td{ padding:5px 5px 5px 5px; }
+.default_write th,
+.default_write td{border-bottom:1px solid #cfd6db}
+.default_write input#sr_title,
+.default_write textarea{ width:99%}
+.default_write input#sr_name{ width:260px}
+.default_write input#sr_tel{ width:221px}
+.default_write input#sr_title,
+.default_write input#sr_name,
+.default_write input#sr_tel,
+.default_write textarea{ border:1px solid #bbbbbb}
+
+/* ======== 테이블 스타일 ========*/
+
+.data_table{ border-top:2px solid #c460c5; border-bottom:1px solid #c460c5; width:100%; border-collapse:collapse}
+.data_table th{ background:#ebd9f3; color:#a84aaf; padding:5px 0 5px 5px; border-bottom:1px solid #c460c5; border-right:1px solid #c460c5; }
+.data_table td{ border-bottom:1px solid #b8b8b8; border-right:1px solid #b8b8b8; padding:5px 0 5px 5px; }
+.data_table td.title{ border-bottom:1px solid #b8b8b8; background:#f4f4f4; padding:5px 0 5px 5px; text-align:center; }
+.data_table textarea{ width:99%}
+.data_table input,
+.data_table textarea{ border:1px solid #bbbbbb}
+.data_table th.no_br,
+.data_table td.no_br { border-right:none; }
+.data_table th.no_bb,
+.data_table th.no_bb { border-bottom:none; }
+.data_table .tal { text-align:left; }
+.data_table .tar { text-align:right; }
+.data_table .tac { text-align:center; }
+
+.btn_line{ padding-bottom:3px; border-bottom:1px dotted #c460c5; }
+
+/* ======== 동영상 게시판 ========*/
+
+.movie_list { border-top:2px solid #c460c5; border-bottom:1px solid #c460c5; width:100%; border-collapse:collapse}
+.movie_list th{ background:url(/health/open_content/images/borad/sel_vline.gif) right center no-repeat; color:#a58d54; }
+.movie_list td{ padding:10px 10px 10px 10px; vertical-align:top; }
+.movie_list th,
+.movie_list td{border-bottom:1px solid #cfd6db}
+
+.movie_list p.tit{ font-weight:bold; padding:0px 0 5px 0;}
+.movie_list p.btn{ font-weight:bold; padding:0px 0 0 0;}
+
+.movie_list {height:1.333em;}
+.movie_list dt img { border:1px solid #ccc; float:left; margin-right:25px; }
+.movie_list dd.tit { font-weight:bold; }
+.movie_list dd.btn { padding-top:5px; }
+
+/* ======== 갤러리 게시판 ========*/
+
+.gallery_list{ border-top:2px solid #c460c5; border-bottom:1px solid #c460c5; width:100%; }
+.gallery_list td{ border-bottom:1px solid #cfd6db; padding:15px 10px 10px 15px; vertical-align:top; text-align:center; width:20%; }
+.gallery_list th {border-bottom:1px solid #cfd6db}
+
+.gallery_list {height:1.333em;}
+.gallery_list dt img { border:1px solid #ccc;}
+.gallery_list dd.tit {font-weight:bold;}
+.gallery_list dd.date {color:#666;}

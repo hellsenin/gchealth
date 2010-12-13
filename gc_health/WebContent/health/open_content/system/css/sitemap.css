@@ -1,0 +1,25 @@
+@charset "UTF-8";
+
+
+.clear_both {clear:both;}
+.mt20 {margin-top:20px;}
+.mt10 {margin-top:10px;}
+
+h4{ background:url(http://bogunso.geumcheon.go.kr/health/open_content/images/sub_blue/btl_h4.gif) 0 3px no-repeat; padding:1px 0 0 20px; position:relative; font-size:1.200em; color:#006d99; margin:0 0 0px 0}
+h5{ background:url(http://bogunso.geumcheon.go.kr/health/open_content/images/sub_blue/blt_h5.gif) 0 3px no-repeat; padding: 0 0 0 18px; position:relative; font-size:1.120em; color:#1ea1b5; margin: 0 0 10px 0}
+
+
+/*추가해주세요*/
+.site_01{ overflow:hidden; width:650px; border-bottom:1px solid #dedede; margin-bottom:10px;}
+
+.sitemap_box{margin-right:5px; float:left; width:150px;}
+
+.sitemap_list {margin-left:10px; font-family:'돋움'; font-size:12px; width:130px;  line-height:20px; padding:5px; background-color:#f3f3f3; }
+.sitemap_list dt {color:#006d99; font-weight:bold; margin:0 0 5px 0 ; border-bottom:1px solid #dedede; background: url(http://bogunso.geumcheon.go.kr/health/open_content/images/sub_blue/blt_li.gif) 0px 7px no-repeat; padding:0 0 0px 10px;}
+.sitemap_list dd {font-weight:normal; margin:0;  background: url(http://bogunso.geumcheon.go.kr/health/open_content/images/sub_green/blt_li2.gif) 10px  7px no-repeat; padding:0 0 0 20px;}
+
+
+
+/*추가해주세요 End */
+
+/*절대경로 변경해주세요*/

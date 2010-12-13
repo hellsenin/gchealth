@@ -1,0 +1,18 @@
+@charset "utf-8";
+/* CSS Document */
+.board_top { width:650px; margin:0 0 6px 0}
+.board_top span{ background:url(/health/open_content/images/borad/ico_list_total_number.gif) 0 center no-repeat; display:block; padding:0 0 0 19px}
+.board_top input.text{ border-width:1px; width:170px}
+
+.default_list{ width:650px; clear:both; border-collapse:separate}
+.default_list .number{ width:60px}
+.default_list .title{ width:348px;}
+.default_list .name{ width:70px;}
+.default_list .date{ width:98px;}
+.default_list .count{}
+.default_list th{ background:url(/health/open_content/images/th_bg.gif) 0 bottom repeat-x; line-height:2.333em; height:2.333em; border-top:2px solid #5fc9d5}
+.default_list td{ border-bottom:1px solid #dcdcdc; padding: 0.750em 0; text-align:center}
+.default_list td.title{ text-align:left; padding:0 0 0 17px;}
+.default_list a.new{ background: url/health/open_content/images/borad/ico_new.gif) right 0 no-repeat; padding:0 15px 0 0 }
+.default_list a.re{ background: url(/health/open_content/images/borad/ico_re.gif) 0 center no-repeat; padding:0 0 0 26px}
+

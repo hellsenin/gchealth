@@ -1,0 +1,68 @@
+@charset "utf-8";
+/* Web Publisher : Kang Tae Hee */
+/* LastUpdate : */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+dl,
+dd,
+ul,
+li,
+form,
+fieldset,
+blockquote,
+table,
+thead,
+tbody,
+tfoot,
+tr,
+td,
+th,
+caption { margin:0; padding:0; }
+fieldset { border:none; }
+legend { font-size:0; line-height:0; visibility:hidden; position: absolute; }
+table { border-spacing:0; border:0; }
+caption{ padding:0; margin:0; left:-999em; width:0; font-size:0; visibility:hidden; overflow:hidden; height:0; line-height:1.5em; position:absolute }
+select,
+input { vertical-align:middle; }
+	input.txt,
+	textarea.txt {
+		background:#fff;
+		border:1px solid #aaa;
+	}
+	input.border_no {
+		background:#fff;
+		border:0px solid #aaa;
+	}
+
+/* li { list-style:none; } */
+.clear { clear:both; }
+.clearfix:after { content: ""; display: block; height: 0; clear: both; }
+/*2010-09-15
+.blind { display:none; }
+*/
+.blind {position:absolute; visibility:hidden; font-size:0; width:0; height:0; overflow:hidden;}
+.novisible { visibility:hidden; position:absolute; }
+.irtext { position:relative; z-index:-1; font-size: 40%; }/*Image Replacement*/
+.fl_l { float:left; }
+.fl_r { float:right; }
+.whiteNomal { white-space:nowrap; }
+.TL { text-align:left; }
+.TC { text-align:center; }
+.TR { text-align:right; }
+.letterSpacing-1 { letter-spacing:-1px; }
+em { font-style:normal; }
+img { border:none; }
+body { font-family: Dotum, Tahoma, sans-serif; font-size:75%; font-style: normal; line-height: 1.6em; font-weight: normal; font-variant: normal; color: #000000; }
+a:active,
+a { color:#666666; text-decoration:none; }
+a:hover { color:#ff7301; text-decoration:underline; }
+address { font-style:normal }
+body { color:#555555 }
+.mt13 { margin-top:13px; }
+.blindtext { font-size:0; height:0; line-height:0; overflow:hidden; position:absolute; text-indent:-3000em; visibility:visible; width:0; }

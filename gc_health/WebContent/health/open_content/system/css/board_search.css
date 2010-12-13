@@ -1,0 +1,29 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+/* ======== 테이블 스타일 ========*/
+
+.data_table{ border-top:2px solid #81baf9; border-bottom:1px solid #81baf9; width:100%; border-collapse:collapse}
+.data_table th{ background:#e3effd; color:#4d7eb4; padding:5px 5px 5px 5px; border-bottom:1px solid #81baf9; border-right:1px solid #81baf9; }
+.data_table td{ border-bottom:1px solid #b8b8b8; border-right:1px solid #b8b8b8; padding:5px 5px 5px 5px; }
+.data_table td.title{ border-bottom:1px solid #b8b8b8; background:#f4f4f4; padding:5px 5px 5px 5px; text-align:center; }
+.data_table textarea{ width:99% }
+.data_table input,
+.data_table textarea{ border:1px solid #bbbbbb}
+.data_table th.no_br,
+.data_table td.no_br, { border-right:none; }
+.data_table th.no_bb,
+.data_table th.no_bb { border-bottom:none; }
+.data_table .tal { text-align:left; }
+.data_table .tar { text-align:right; }
+.data_table .tac { text-align:center; }
+
+.data_list{ border-top:1px solid #81baf9; border-bottom:1px solid #81baf9; width:100%; border-collapse:collapse; font-size:11px; }
+.data_list th{ background:#e3effd; color:#4d7eb4; padding:5px 5px 5px 5px; border-bottom:1px solid #81baf9; }
+.data_list td{ border-bottom:1px solid #b8b8b8;padding:5px 5px 5px 5px; }
+.data_list .tal { text-align:left; }
+.data_list .tar { text-align:right; }
+.data_list .tac { text-align:center; }
+

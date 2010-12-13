@@ -1,0 +1,128 @@
+@charset "utf-8";
+/* CSS Document */
+
+#lnb{ background:url(/health/open_content/images/sub_green/lnb_bg_bottom.gif) 0 100% no-repeat; padding:0 0 43px 0; width:190px;}
+#lnb h2{ background:url(/health/open_content/images/sub_green/lnb_bg_top.gif) 0 0 no-repeat; padding:37px 35px 0 35px; width:120px; text-align:center;}
+.menu_all_view{ text-align:center; margin:11px 6px 0 6px; background:#dbea9f url(/health/open_content/images/common/menu_view_vline.gif) center center no-repeat; }
+.menu_toggle_on,
+.menu_toggle_off{ border:none; font-size:0.917em; color:#436a43; background-color:#dbea9f; padding:2px 16px 0 1px; background-position:right center; background-repeat:no-repeat; cursor:pointer; width:69px; vertical-align:top}
+.menu_toggle_on{ background-image:url(/health/open_content/images/sub_green/menu_view_toggle_on.gif); margin-right:10px;}
+.menu_toggle_off{background-image:url(/health/open_content/images/sub_green/menu_view_toggle_off.gif)}
+
+#left_lnb{ background:url(/health/open_content/images/sub_green/lnb_bg.gif) 0 0 repeat-y; margin-top:22px; float:left; width:220px}
+#lnb ul{margin:0 auto;width:168px;}
+#lnb ul li{ list-style:none; }
+#lnb ul li a{ background:url(/health/open_content/images/sub_green/lnb_menu_off.gif) 0 center no-repeat; padding:0 0 0 21px; line-height:2.500em; display:block;}
+#lnb ul li a:hover,
+#lnb ul li a:active,
+#lnb ul li a:focus,
+#lnb ul li a.current{ background-image:url(/health/open_content/images/sub_green/lnb_menu_on.gif); font-weight:bold; color:#fff; text-decoration:none;}
+#lnb ul li ul{ width:154px; margin:1px auto; border-bottom:1px solid #c3c3c3;padding-bottom:1px; background-color:#eee}
+#lnb ul li ul li{}
+#lnb ul li ul li a{ background:#9b9b9b url(/health/open_content/images/sub_green/lnb_alink_bg.gif) 0 -20px no-repeat; line-height:1.417em;  color:#555555;}
+#lnb ul li ul li a:hover,
+#lnb ul li ul li a:active,
+#lnb ul li ul li a:focus,
+#lnb ul li ul li a.current{ background-color:#7dbd31; color:#099260; background-image:url(/health/open_content/images/sub_green/lnb_alink_bg.gif); text-decoration:underline}
+
+    .navigator li .current{ color:#489e5e; }
+
+/* ======== 블릿스타일 ========*/
+
+    h4{ background:url(/health/open_content/images/sub_green/btl_h4.gif) 0 3px no-repeat; padding:1px 0 0 20px; position:relative; font-size:1.200em; color:#007015; margin:0 0 10px 0}
+    h5{ background:url(/health/open_content/images/sub_green/blt_h5.gif) 0 3px no-repeat; padding: 0 0 0 18px; position:relative; font-size:1.120em; color:#109c01; margin: 0 0 8px 2px;}
+
+.list_tyle_1 li.num3{ background-image:none; text-indent:-21px; padding-left:20px;}
+.list_tyle_1{ line-height:1.600em}
+.list_tyle_1 li{ background: url(/health/open_content/images/sub_green/blt_li.gif) 13px  7px no-repeat; padding:0 0 0 23px; position:relative; list-style:none; }
+.list_tyle_1 li li{ background:url(/health/open_content/images/sub_green/blt_li2.gif) 0 7px no-repeat; padding:0 0 0 7px; position:relative;}
+.list_tyle_1 li li li{ background:url(/health/open_content/images/sub_green/blt_li3.gif) 0 8px no-repeat; padding:0 0 0 7px; position:relative;}
+
+.list_tyle_1 li.no{ background-image:none; }
+.list_tyle_1 li.num{ background-image:none; text-indent:-16px; padding-left:0px;}
+.list_tyle_1 li.num2{ background-image:none; text-indent:-21px; padding-left:20px;}
+
+.list_tyle_1 li.point{ color:#c75d10; }
+.list_tyle_1 li.point_red{ color:#d11919; }
+.list_tyle_1 li.point_black{ color:#000; }
+.list_tyle_1 li.point_green{ color:#24ab6c; }
+.list_tyle_1 li.point_blue{ color:#0c9cb8; }
+.list_tyle_1 li.point_orange{ color:#f13c05; }
+.list_tyle_1 li.point_perple{ color:#b130ba; }
+
+.list_tyle_1 span.point{ color:#c75d10; }
+.list_tyle_1 span.point_red{ color:#d11919; }
+.list_tyle_1 span.point_black{ color:#000; }
+.list_tyle_1 span.point_green{ color:#24ab6c; }
+.list_tyle_1 span.point_blue{ color:#0c9cb8; }
+.list_tyle_1 span.point_orange{ color:#f13c05; }
+.list_tyle_1 span.point_perple{ color:#b130ba; }
+
+.list_tyle_2{ }
+.list_tyle_2 li{ list-style:none; }
+.list_tyle_2 li.img{ float:left; display:inline; padding-right:40px; }
+.list_tyle_2 li.list { float:left; display:inline; line-height:1.7em;  }
+
+.list_tyle_2{  }
+.list_tyle_2 li.img2{ float:left; display:inline; padding-right:30px;  }
+.list_tyle_2 li.icon { line-height:1.6em; background: url(/health/open_content/images/sub_green/blt_li.gif) 223px  7px no-repeat; padding:0 0 0 23px; position:relative;}
+.list_tyle_2 li.icon li{ background:url(/health/open_content/images/sub_green/blt_li2.gif) 203px 7px no-repeat; padding:0 0 0 27px; position:relative; }
+.list_tyle_2 li.icon_btn { float:left; display:inline; padding:10px 0 0 0px; }
+
+.list_img { float:left; padding:0 20px 0 0px;}
+.list_txt {float:left;}
+.list_btn_clear { clear:both; padding: 10px 0 0 15px;}
+
+/* ======== 탭스타일 ========*/
+
+.tab_tyle_green{ border-bottom:1px solid #099260; width:650px; width:100%; height:1.917em; margin-bottom:20px;}
+.tab_tyle_green li{  display:block; float:left; height:1.917em; list-style:none; }
+.tab_tyle_green li.on{ background-color:#099260; border-color:#099260}
+.tab_tyle_green li a{ border-width:1px 1px 0 1px; border-style:solid; border-color:#bbb; display:block; float:left; padding:0 30px; font-weight:bold;height:1.917em}
+.tab_tyle_green li.on a{ color:#fff ;border-color:#bbb; }
+
+/* ======== 풋터 ========*/
+
+#footer{ background:url(/health/open_content/images/sub_green/footer_bg.gif) 0 0 repeat-x; }
+
+/* ======== 탭메뉴 ========*/
+
+.tab_type1 { background-image:url(/health/open_content/images/sub_green/bg_tabtype_btm.gif) }
+.tab_type1 ul { background-image:url(/health/open_content/images/sub_green/bg_tabtype.gif) }
+.tab_type1 ul li { background-image:url(/health/open_content/images/sub_green/blt_tabtype.gif); padding:8px 0px 0px 15px; list-style:none; }
+.tab_type1 ul li.current a,
+.tab_type1 ul li a:hover,
+.tab_type1 ul li a:active,
+.tab_type1 ul li a:focus{ color:#109c01; }
+
+/* ======== 퀵메뉴 타이틀 ========*/
+
+#quick_menu{ position:absolute; left:900px; top:155px; background:url(/health/open_content/images/common/quickmenu_bg_green.gif) 0 0 no-repeat; width:100px; padding:5px 10px;}
+
+/* ======== 보건민원 > 보건상담 > 건강상담 ========*/
+
+.consult_s_box { width:320px; margin-bottom:10px; background-color:#f1f7de; background:url(/health/open_content/images/comment/consult_s_box_bg.gif) left top repeat-y;}
+.consult_s_box_top { background:url(/health/open_content/images/comment/consult_s_box_top.gif) left top no-repeat; height:5px; }
+.consult_s_box_in { padding:10px 20px 10px 20px; margin:0; border-left:2px solid #cee2bb;border-right:2px solid #cee2bb;  }
+
+	.consult_s_box_in .list{ line-height:1.700em; float:left; }
+	.consult_s_box_in .list li{ background: url(/health/open_content/images/sub_green/blt_li.gif) 0px  7px no-repeat; padding:0 0 0 7px; position:relative;}
+	.consult_s_box_in .list li.tit { background-image:none;  position:relative; padding:2px 0 5px 0; }
+	.consult_s_box div.photo { width:80px; float:left; }
+		.consult_s_box div.photo img { padding:0 5px 3px 0; }
+	
+.consult_s_box_bottom { background:url(/health/open_content/images/comment/consult_s_box_bottom.gif) left bottom no-repeat; height:5px; clear:both; }
+
+
+.consult_box { width:100%; margin-bottom:25px; background:url(/health/open_content/images/comment/consult_box_bg.gif) left top repeat-y; background-color:#f1f7de; }
+.consult_box_img { width:100%; background:url(/health/open_content/images/comment/consult_box_img.gif) 2px bottom no-repeat;}
+.consult_box_top { background:url(/health/open_content/images/comment/consult_box_top.gif) left top no-repeat; height:5px; }
+.consult_box_in { padding:10px 20px 10px 20px; margin:0; border-left:2px solid #cee2bb;border-right:2px solid #cee2bb;  }
+	.consult_box_in .list{ line-height:1.700em; float:left; }
+	.consult_box_in .list li{ background: url(/health/open_content/images/sub_green/blt_li.gif) 0px  7px no-repeat; padding:0 0 0 7px; position:relative; list-style:none; }
+	.consult_box_in .list li.tit { background-image:none;  position:relative; padding:2px 0 5px 0; }
+	.consult_box div.photo { width:80px; float:left; }
+		.consult_box div.photo img { padding:0 5px 3px 0; }
+	
+.consult_box_bottom { background:url(/health/open_content/images/comment/consult_box_bottom.gif) left bottom no-repeat; height:5px; clear:both; }
+

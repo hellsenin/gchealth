@@ -1,0 +1,501 @@
+@charset "utf-8";
+/* CSS Document */
+/*#skipnavi{ visibility:hidden; position:absolute;}*/
+#warp{ width:1000px; margin:0 auto; position:relative}
+body{ background:url(/health/open_content/images/common/sub_body_bg.gif) center 0 no-repeat;}
+#warp{ background:url(/health/open_content/images/common/sub_body_bg.gif) center 0 no-repeat;}
+
+/* 컨텐츠 바로가기 */
+#skipNavi {list-style:none; font-size:1.15em;}
+#skipNavi a:active,
+#skipNavi a:focus{text-align:center;}
+#skipNavi a:active,
+#skipNavi a:focus{color:#000; background:#fff; border:1px solid #475470; outline:0;}
+#skipNavi {position:absolute; top:-10em; left:0; margin:0 auto; width:18em; z-index:20;}
+#skipNavi a:active,
+#skipNavi a:focus{position:absolute; top:10.5em; left:0; width:18em;}
+
+#header{ position:relative;height:133px}
+#header h1 { position:absolute;  left:8px; top:22px; }
+	#global{ position:absolute; top:7px; left:415px; padding:4px 0 0 0; line-height:0em; width:505px;}
+    #global li{ float:left; list-style:none; }
+    #global li dl{ background:url(/health/open_content/images/common/global/font_bg.gif) 9px 0 no-repeat; position:relative; top:-4px; height:17px; padding:4px 12px 0 16px; line-height:0em; float:left; }
+    #global li dl dt{ float:left;}
+    #global li dl dd{ float:left;}    
+    .btn_font_plus,
+    .btn_font_minus{ width:11px; height:11px; font-size:0; border:none; cursor:pointer;text-indent:-99em; display:block; overflow:hidden; line-height:0; padding:0; margin:0}
+    .btn_font_reset{ width:27px; height:11px;font-size:0; border:none;cursor:pointer;text-indent:-99em; display:block}
+    .btn_font_plus{ background:url(/health/open_content/images/main/global/font_plus.gif) 0 0 no-repeat;}
+    .btn_font_minus{ background:url(/health/open_content/images/main/global/font_minus.gif) 0 0 no-repeat;}
+    .btn_font_reset{ background:url(/health/open_content/images/main/global/font_default.gif) 0 0 no-repeat;}
+    
+    #gnb{ position:relative; height:88px; width:870px; top:45px;}
+    #gnb ul{ position:relative;left:369px;  height:15px; width:501px;}
+    #gnb ul li{ float:left; list-style:none; }
+    #gnb ul li ul{ display:none; position:absolute; left:-369px; width:870px; top:26px;  height:62px; background-repeat:no-repeat}
+    #gnb ul li ul#gnb_01{ background-image:url(/health/open_content/images/sub_green/gnb_bg_sub.gif);padding:5px 0 0 19px;}
+    #gnb ul li ul#gnb_02{ background-image:url(/health/open_content/images/sub_purple/gnb_bg_sub.gif);padding:5px 0 0 22px;}
+    #gnb ul li ul#gnb_03{ background-image:url(/health/open_content/images/sub_blue/gnb_bg_sub.gif);padding:5px 0 0 29px;}
+    #gnb ul li ul#gnb_04{ background-image:url(/health/open_content/images/sub_orange/gnb_bg_sub.gif);padding:5px 0 0 32px;}
+    
+    #gnb ul li ul.current{ display:block;}
+    #gnb ul li ul li{ float:left; }
+    #gnb ul li ul li ul{ display:none; position:absolute;  top:35px;height:20px;}
+    #gnb ul li ul li ul.current{ display:block;}
+    #gnb ul li ul li ul li{ float:left;padding:5px 0 3px 22px; background:url(/health/open_content/images/common/sub_menubar_bg_02.png) repeat-x}
+    #gnb ul li ul li ul li.fir{ background:url(/health/open_content/images/common/sub_menubar_bg_01.png) 0 0 no-repeat; padding:0 0 0 10px}
+    #gnb ul li ul li ul li.end{ background:url(/health/open_content/images/common/sub_menubar_bg_03.png) right 0 no-repeat}
+    #gnb ul li ul li ul li a{ font-weight:bold; text-decoration:none; color:#666666; line-height:1.7em}
+    #gnb ul li ul.current li.current{ background:url(/health/open_content/images/common/sub_menubar_arrow.gif) no-repeat center 27px; height:34px}
+    
+    #gnb ul li ul#gnb_01 li ul li,
+	#gnb ul li ul#gnb_02 li ul li,
+	#gnb ul li ul#gnb_03 li ul li,
+	#gnb ul li ul#gnb_04 li ul li{ padding: 3px 8px 3px 8px}
+    #gnb ul li ul#gnb_01 li ul li.fir,
+	#gnb ul li ul#gnb_02 li ul li.fir,
+	#gnb ul li ul#gnb_03 li ul li.fir,
+	#gnb ul li ul#gnb_04 li ul li.fir{ padding-left:20px}
+    #gnb ul li ul#gnb_01 li ul li.end,
+	#gnb ul li ul#gnb_02 li ul li.end,
+	#gnb ul li ul#gnb_03 li ul li.end,
+    #gnb ul li ul#gnb_04 li ul li.end{ padding-right:20px}
+
+    /* green */
+    #gnb ul li ul li{ padding:0 47px; }
+    #gnb ul li ul li ul#smenu_1_1{  left:63px;}
+    #gnb ul li ul li ul#smenu_1_2{  left:120px;}
+    #gnb ul li ul li ul#smenu_1_3{  left:270px;}
+    #gnb ul li ul li ul#smenu_1_4{  left:125px;}
+    #gnb ul li ul li ul li a	  { color:#666666}
+    #gnb ul li ul li ul li a:hover,
+	#gnb ul li ul li ul li a:active,
+	#gnb ul li ul li ul li a:focus,
+	#gnb ul li ul li ul li a.current{ color:#36a852}
+
+
+    /* perple */
+    #gnb ul li ul#gnb_02 li{ padding:0 25px;}
+    #gnb ul li ul li ul#smenu_2_1{ left:45px;}
+    #gnb ul li ul li ul#smenu_2_2{ left:100px;}
+    #gnb ul li ul li ul#smenu_2_3{ left:200px;}
+    #gnb ul li ul li ul#smenu_2_4{ left:530px;}
+    #gnb ul li ul li ul#smenu_2_5{ left:535px;}
+    #gnb ul li ul#gnb_02 a:hover,
+	#gnb ul li ul#gnb_02 a:active,
+    #gnb ul li ul#gnb_02 a:focus,
+    #gnb ul li ul#gnb_02 a.current{ color:#844fb9}
+    /* blue */
+    #gnb ul li ul#gnb_03 li{ padding:0 27px;}
+    #gnb ul li ul li ul#smenu_3_1{ left:52px;}
+    #gnb ul li ul li ul#smenu_3_2{ left:110px;}
+    #gnb ul li ul li ul#smenu_3_3{ left:280px;}
+    #gnb ul li ul li ul#smenu_3_4{ left:280px;}
+    #gnb ul li ul li ul#smenu_3_5{ left:690px;}
+    #gnb ul li ul#gnb_03 a:hover,
+	#gnb ul li ul#gnb_03 a:active,
+    #gnb ul li ul#gnb_03 a:focus,
+    #gnb ul li ul#gnb_03 a.current{ color:#2180ad}    
+
+    /* orange */
+    #gnb ul li ul#gnb_04 li{ padding: 0 50px;}
+	#gnb ul li ul li ul#smenu_4_1{  left:80px;}
+    #gnb ul li ul li ul#smenu_4_2{  left:120px;}
+    #gnb ul li ul li ul#smenu_4_3{  left:330px;}
+    #gnb ul li ul li ul#smenu_4_4{  left:465px;}
+    #gnb ul li ul#gnb_04 a:hover,
+	#gnb ul li ul#gnb_04 a:active,
+    #gnb ul li ul#gnb_04 a:focus,
+	#gnb ul li ul#gnb_04 a.current{ color:#e05500}    
+
+/* ======== 검색영역 ========*/
+    
+	.main_search{background:url('/health/open_content/images/common/search_sub_bg.gif') 0 0 no-repeat; 
+		height:28px; 
+		padding:6px 0 8px 15px; 
+		position:relative;
+		clear:both;}
+	.idx_search{width:280px; float:left;}
+	.idx_gis_search{
+		margin:0px 0px 0px 25px;
+	}
+	.idx_gis_search img {vertical-align:middle;}
+	.idx_gis_search select{font-size:1em;}
+
+/*  .main_search fieldset{display:inline;}
+	.main_total_search{ }    
+	.main_total_search select{ width:83px; border: 1px solid #7f9db9;}
+	.gis_search{ width:325px; padding:0px 0px 0px 20px; position:absolute; top:6px; left:280px;}
+	.gis_search fieldset{padding:0 0 0 126px;}
+	.gis_search select{font-size:1em;}
+	.gis_search .hidden{padding:0; margin:0; left:-999em; width:0; font-size:0; visibility:hidden; overflow:hidden; height:0; line-height:1.5em; position:absolute }
+/*	.gis_search legend{ left:340px;position:absolute;top:13px;visibility:visible; }
+	.gis_search legend img{}*/
+
+.search_word{ width:142px;border:1px solid #c0c0c0;}
+ .search_word2{ width:140px;border:1px solid #c0c0c0;}
+ #branchId { width:135px;border:1px solid #c0c0c0;}
+
+
+/* ======== 풋터 ========*/
+
+#footer{ background:url(/health/open_content/images/common/footer_bg.gif) 0 0 repeat-x; top:14px; height:14.083em; position:relative; z-index:10; clear:both; }
+#footer .area{ width:1000px; margin:0 auto; position:relative;}
+#footer .footer_menu{ background:url(/health/open_content/images/common/footer_menu_bg.gif) 0 22px no-repeat; width:530px; height:20px; padding:24px 0 0 20px; }
+#footer .footer_menu li{ margin-right:10px; background:url(/health/open_content/images/common/footer_vline.gif) 100% 0 no-repeat; padding-right:10px; float:left; list-style:none; }
+#footer .footer_menu li.end{ margin:0; padding:0;}
+#footer .footer_menu li a{ padding:4px 0}
+address{ color:#555555; line-height:1.500em; margin:8px 0 0 10px}
+.copyright_text{ color:#888888; line-height:1.250em ; margin:0 0 0 10px}
+.footer_mark{ position:absolute; left:682px; top:35px;}
+.footer_logo{ position:absolute; left:760px; top:26px;}
+#footer .count_view{ background:url(/health/open_content/images/common/footer_count_bg.gif) 0 0 no-repeat; width:150px; height:1.417em; position:absolute; left:750px; top:69px; padding:4px 0 0 10px; font-size:0.917em; line-height:0.817em}
+#footer .count_view img{ vertical-align: top}
+#footer .count_view dt{ float:left; height:0.917em; overflow:hidden}
+#footer .count_view dd{ float:left; padding:0 0 0 5px}
+#footer .count_view .today{ width:32px;}
+
+/* ======== 컨텐츠 영역 ========*/
+
+#contents{ float:left; width:650px; position:relative; margin-top:22px;}
+    .navigator{ width:100%; text-align:right; font-size:0.917em;}
+    .navigator li{ display:inline; list-style:none; }
+    .navigator li .home{ background:url(/health/open_content/images/common/blt_navi_home.gif) 0 50% no-repeat; padding:0 0 0 8px; }
+
+#contents h3{ margin:0 0 4px 0;}
+#contents h3 img{background:url(/health/open_content/images/sub_green/h3_bg.gif) 100% 0 no-repeat; padding:0 30px 0 0}
+#contents .title_deco{ border-bottom:1px solid #d4d4d4; padding:3px 0 5px 0; margin-bottom:25px; font-size:0.917em; color:#777; }
+#contents .body{ padding-bottom:40px;}
+#contents .body_in{ padding-bottom:20px;}
+
+/* ======== comment_box ========*/
+
+.comment_box { width:100%; margin-bottom:20px; background:url(/health/open_content/images/comment/comment_bg.gif) left top repeat-y; }
+.comment_box_top { background:url(/health/open_content/images/comment/comment_top.gif) left top no-repeat; height:10px; }
+.comment_box_in { padding:10px 20px 10px 20px; margin:0; color:#777; }
+
+	.comment_box_in .dl { float:left; width:450px; }
+	.comment_box_in .dl dt { font-weight:bold; }
+	.comment_box_in .dl dd { }
+	.comment_box span.btn { padding-top:20px; float:right; }
+	
+	.comment_box_in .inline{ margin:0; padding:0;}
+	.comment_box_in .inline li { float:left; display:inline; line-height:1.7em; list-style:none; }
+	.comment_box_in .inline li.img { float:left; display:inline; line-height:1.7em; padding-right:8px; }
+	.comment_box_in .inline li strong { font-weight:normal; color:#c14806; }
+	.comment_box span.btn2 { float:right; }
+
+	.comment_box_in .list{ line-height:1.600em; }
+	.comment_box_in .list li{ background: url(/health/open_content/images/comment/blt_comment_list.gif) 0px  7px no-repeat; padding:0 0 0 7px; position:relative; list-style:none;}
+	.comment_box_in .list li.tit { background-image:none;  position:relative; padding:2px 0 5px 0; }
+	.comment_box_in .list li.no { background-image:none;  position:relative; padding:2px 0 0 0;}
+
+	.comment_box_in strong { color:#ff6101; font-weight:normal; }	
+.comment_box_bottom { background:url(/health/open_content/images/comment/comment_bottom.gif) left bottom no-repeat; height:10px; clear:both; }
+
+/* ======== 의약업소 자율점검 로긴박스 ========*/
+
+.comment_box .list_area { float:left; width:300px; height:60px; background:url(/health/open_content/images/comment/comment_img_freecheck_login.gif) right top no-repeat; padding:8px 0 10px 5px;}
+
+	.comment_box_in .login_list{ line-height:1.400em; }
+	.comment_box_in .login_list li{ background: url(/health/open_content/images/comment/blt_comment_list.gif) 0px  5px no-repeat; padding:0 0 0 7px; position:relative; list-style:none; font-size:0.917em;}
+	.comment_box_in .login_list li.tit { background-image:none;  position:relative; padding:0px 0 3px 0; }
+	.comment_box_in .login_list li.no { background-image:none;  position:relative; padding:2px 0 0 0;}
+
+.comment_box .login_area { float:left; padding:10px 0 0 15px; }
+	.comment_box .login { float:left; padding:0px 10px 0 0px;}
+	.comment_box .login_area .login ul { line-height:2.00em; }
+	.comment_box .login_area .login li { list-style:none; }
+	.comment_box .login_btn { float:left; }
+
+/* ======== 정보책임자 ========*/
+
+#officer_set{ clear:both; text-align:right; margin-bottom:2px}
+.officer{ background-image:none; margin:0; padding:2px 0 0 0; display:inline; vertical-align:middle}
+.officer_list{ display:inline; font-size:0.917em; }
+.officer_list li{background:url(/health/open_content/images/common/vline_9pix.gif) right center no-repeat; padding:0 4px 0 4px; line-height:1.583em; display:inline; list-style:none; }
+.officer_list li.end{ background-image:none; padding:0 0 0 2px}
+.officer_list li.end2{ background-image:none; padding:0 0 0 0px}
+.officer_list li dd.name{ font-weight:bold; padding:0 0 0 0px;}
+.officer_list dl{ display:inline }
+.officer_list dt,
+.officer_list dd{ display:inline; padding:0 0 0 2px; }
+.officer_list a img{ vertical-align:middle; }
+
+.satisfaction{ border:2px solid #e0e0e0;padding:12px 0 12px 19px; font-size:0.917em; color:#666; clear:both;line-height:1.333em;}
+.satisfaction legend{ position:absolute; font-size:0; height:0; width:0; }
+.satisfaction dl{ height:1.333em; margin-bottom:8px}
+.satisfaction dt{ background:url(/health/open_content/images/common/ico_homepage.gif) 0 center no-repeat; padding:0 18px 0 22px;  height:1.555em; line-height:1.455em; display:block}
+.satisfaction dt{ }
+.satisfaction dt,
+.satisfaction dd{ float:left }
+.satisfaction dd{ margin:0 8px 0 0 }
+.satisfaction dd input{ margin:0; padding:0}
+
+.satisfaction .text{ width:520px ; border:1px solid #c8c8c8; margin:0 3px 0 0}
+
+/* ======== 서브비쥬얼, 퀵메뉴 ========*/
+
+#sub_visual{ background:url(/health/open_content/images/common/sub_visual.jpg) 50% 100% no-repeat; height:127px; clear:both; }
+
+#quick_menu h3{ padding:0 0 2px 0; display:none; }
+#quick_menu ul { margin-top:20px; }
+#quick_menu li{ background:url(/health/open_content/images/common/quick_menu_li_bg.gif) repeat-x scroll 0 100% transparent;height:18px;line-height:13px;padding-top:3px;width:80px; list-style:none; padding-left:0px;}
+#quick_menu li img{ vertical-align:top}
+#quick_menu li.end{ background-image:none}
+#quick_menu li.top{ background-image:none; text-align:center; margin-top:10px}
+
+/* ======== 탭메뉴 스타일 ========*/
+
+.tab_type1 { background:url(/health/open_content/images/common/box_model/bg_tabtype1_btm.gif) no-repeat scroll left bottom transparent; margin-bottom:19px; padding:0 0 10px; }
+.tab_type1 ul { background:url(/health/open_content/images/common/box_model/bg_tabtype1.gif) no-repeat scroll left top transparent; overflow:hidden; padding:7px 0 2px 20px; width:675px; }
+.tab_type1 ul li { background:url(/health/open_content/images/common/blt/bl_well_05.gif) no-repeat scroll left 13px transparent; display:inline; float:left; padding:8px 6px 0 10px; width:139px; list-style:none;}
+.tab_type1 ul li.current{background-position: 0 14px}
+.tab_type1 ul li.current a,
+.tab_type1 ul li a:hover,
+.tab_type1 ul li a:active,
+.tab_type1 ul li a:focus{ font-weight:bold; text-decoration:underline; }
+.tab_type1 ul li.fir{ clear:both}
+
+/* ======== 순서표 ========*/
+
+.order_01{ display:inline;}
+.order_01 li{background:url(/health/open_content/images/sub_green/03/order_arrow_01.gif) right center no-repeat; padding:0 14px 0 6px; display:inline}
+.order_01 li.first {background:url(/health/open_content/images/sub_green/03/order_arrow_01.gif) right center no-repeat; padding:0 14px 0 0px; display:inline}
+.order_01 li.end{ background-image:none; padding:0 0 0 6px}
+
+/* ======== 순서표 ========*/
+
+.order_02{ display:inline;}
+.order_02 li{background:url(/health/open_content/images/sub_green/03/order_arrow_01.gif) right center no-repeat; padding:0 14px 0 6px; display:inline}
+.order_02 li.list{background:url(/health/open_content/images/sub_green/03/order_arrow_01.gif) right center no-repeat; padding:0 14px 0 6px; display:inline}
+.order_02 li.first {background:url(/health/open_content/images/sub_green/03/order_arrow_01.gif) right center no-repeat; padding:0 14px 0 0px; display:inline}
+.order_02 li.end{ background-image:none; padding:0 0 0 6px}
+
+/* ======== padding, margin, text-align ========*/
+
+.pt05 { padding-top:5px; }
+.pt06 { padding-top:6px; }
+.pt07 { padding-top:7px; }
+.pt10 { padding-top:10px; }
+.pt15 { padding-top:15px; }
+.pt20 { padding-top:20px; }
+.pt25 { padding-top:25px; }
+.pt30 { padding-top:30px; }
+.pt35 { padding-top:35px; }
+.pt40 { padding-top:40px; }
+.pt45 { padding-top:45px; }
+.pt50 { padding-top:50px; }
+
+.pr05 { padding-right:5px; }
+.pr06 { padding-right:6px; }
+.pr07 { padding-right:7px; }
+.pr10 { padding-right:10px; }
+.pr15 { padding-right:15px; }
+.pr20 { padding-right:20px; }
+.pr25 { padding-right:25px; }
+.pr30 { padding-right:30px; }
+.pr35 { padding-right:35px; }
+.pr40 { padding-right:40px; }
+.pr45 { padding-right:45px; }
+.pr50 { padding-right:50px; }
+
+.pb05 { padding-bottom:5px; }
+.pb06 { padding-bottom:6px; }
+.pb07 { padding-bottom:7px; }
+.pb10 { padding-bottom:10px; }
+.pb15 { padding-bottom:15px; }
+.pb20 { padding-bottom:20px; }
+.pb25 { padding-bottom:25px; }
+.pb30 { padding-bottom:30px; }
+.pb35 { padding-bottom:35px; }
+.pb40 { padding-bottom:40px; }
+.pb45 { padding-bottom:45px; }
+.pb50 { padding-bottom:50px; }
+
+.pl05 { padding-left:5px; }
+.pl06 { padding-left:6px; }
+.pl07 { padding-left:7px; }
+.pl10 { padding-left:10px; }
+.pl15 { padding-left:15px; }
+.pl20 { padding-left:20px; }
+.pl25 { padding-left:25px; }
+.pl30 { padding-left:30px; }
+.pl35 { padding-left:35px; }
+.pl40 { padding-left:40px; }
+.pl45 { padding-left:45px; }
+.pl50 { padding-left:50px; }
+
+.mt05 {margin-top:05px;}
+.mt10 {margin-top:10px;}
+.mt15 {margin-top:15px;}
+.mt20 {margin-top:20px;}
+.mt25 {margin-top:25px;}
+.mt30 {margin-top:30px;}
+.mt35 {margin-top:35px;}
+.mt40 {margin-top:40px;}
+.mt50 {margin-top:50px;}
+
+.mr05 {margin-right:05px;}
+.mr10 {margin-right:10px;}
+.mr15 {margin-right:15px;}
+.mr20 {margin-right:20px;}
+.mr25 {margin-right:25px;}
+.mr30 {margin-right:30px;}
+.mr35 {margin-right:35px;}
+.mr40 {margin-right:40px;}
+.mr45 {margin-right:45px;}
+.mr50 {margin-right:50px;}
+
+.mb05 {margin-bottom:05px;}
+.mb10 {margin-bottom:10px;}
+.mb15 {margin-bottom:15px;}
+.mb20 {margin-bottom:20px;}
+.mb25 {margin-bottom:25px;}
+.mb30 {margin-bottom:30px;}
+.mb35 {margin-bottom:35px;}
+.mb40 {margin-bottom:40px;}
+.mb45 {margin-bottom:45px;}
+.mb50 {margin-bottom:50px;}
+
+.ml05 {margin-left:05px;}
+.ml10 {margin-left:10px;}
+.ml15 {margin-left:15px;}
+.ml20 {margin-left:20px;}
+.ml25 {margin-left:25px;}
+.ml30 {margin-left:30px;}
+.ml35 {margin-left:35px;}
+.ml40 {margin-left:40px;}
+.ml45 {margin-left:45px;}
+.ml50 {margin-left:50px;}
+
+.tal { text-align:left; }
+.tar { text-align:right; }
+.tac { text-align:center; }
+.taj { text-align:justify; }
+
+.vat { vertical-align:top; }
+.vab { vertical-align:bottom; }
+* html #contents .body_in {
+/*word-break: break-all;*/
+}
+
+.vam { vertical-align:middle; }
+
+.float_left { float:left; }
+.float_right { float:right; }
+.clear_both { clear:both; }
+
+/*2010-09-13
+.no_pdt { padding-top:none; }
+.no_pdr { padding-right:none; }
+.no_pdb { padding-bottom:none; }
+.no_pdl { padding-left:none; }
+*/
+.no_pdt { padding-top:0; }
+.no_pdr { padding-right:0; }
+.no_pdb { padding-bottom:0; }
+.no_pdl { padding-left:0; }
+
+.p01 {padding:0 0 15px 20px;}
+
+/* ======== font ========*/
+ 
+.font_s_1{ line-height:1.600em}
+.font_s_1 li{ background: url(/health/open_content/images/common/blt_s_1.gif) left  7px no-repeat; padding:0 0 0 7px; position:relative; color:#df6725; font-size:0.917em; list-style:none; }
+
+.num { margin:0px 0px 0px 25px; padding:0px; }
+.num li {  }
+.num li ul li { list-style:none; }
+.num li ul.unlist li { background:url(/health/open_content/images/common/blt_s_2.gif) 0 7px no-repeat; padding:0 0 0 7px; position:relative;}
+
+.unlist li { background:url(/health/open_content/images/common/blt_s_2.gif) 0 7px no-repeat; padding:0 0 0 7px; position:relative;}
+
+.point{ color:#c75d10; }
+.point_red{ color:#d11919; }
+.point_black{ color:#000; }
+.point_green{ color:#24ab6c; }
+.point_blue{ color:#0c9cb8; }
+.point_orange{ color:#f13c05; }
+.point_perple{ color:#b130ba; }
+
+/* ======== 캘린더 ========*/
+
+.calender_index_box { text-align:center; font-size:1.35em; margin:0 auto; width:225px; height:35px; }
+.calender_index { display:inline; }
+.calender_index li { float:left; list-style:none; font-weight:bold; color:#333; }
+.calender_index li.cal_pre { float:left; list-style:none; padding-right:10px; }
+.calender_index li.cal_next { float:left; list-style:none; padding-left:10px; }
+.calender_index li.cal_pre2 { float:left; list-style:none; padding-right:10px; padding-left:5px; }
+.calender_index li.cal_next2 { float:left; list-style:none; padding-left:10px; }
+
+.calender_view{ border:1px solid #bcbcbc; width:100%; border-collapse:collapse; }
+.calender_view th{ color:#555; padding:5px 5px 5px 5px; font-size:0.917em; }
+.calender_view th.sun { color:#ff000b; padding:5px 5px 5px 5px; font-size:0.917em; }
+.calender_view td{ border:1px solid #dadada; padding:5px 5px 5px 5px; height:70px; vertical-align:top; }
+.calender_view td.today { padding:5px 5px 5px 5px; vertical-align:top; background-color:#e3edff; }
+.calender_view td.none { padding:5px 5px 5px 5px; vertical-align:top; background-color:#f1f1f1; }
+
+/*2010-09-13
+.calender_view .day { size:0.917em; }
+.calender_view .day_sun { color:#ff000b; size:0.917em; }
+.calender_view .day_sat { color:#0066ff; size:0.917em; }
+*/
+.calender_view .day { font-size:0.917em; }
+.calender_view .day_sun { color:#ff000b; font-size:0.917em; }
+.calender_view .day_sat { color:#0066ff; font-size:0.917em; }
+
+.calender_view a:active,
+.calender_view a { color:#000; text-decoration:none; }
+.calender_view a:hover,
+.calender_view a:active,
+.calender_view a:focus{ color:#005eb5; text-decoration:underline; }
+
+/* ======== 예방접종 스타일 ========*/
+
+.h5 {background:url(/health/open_content/images/sub_green/blt_h5.gif) 0 0px no-repeat; padding: 0 0 1px 18px; position:relative; font-size:1.120em; color:#109c01; }
+
+.vaccine_tbl { width:100%; border-collapse:collapse; font-size:0.917em; letter-spacing:-0.05em; line-height:1.5em; }
+.vaccine_tbl th { background:#87939b; color:#fff; padding:5px 3px 5px 3px; border-left:1px solid #e6e6e6; }
+.vaccine_tbl th.t { border-bottom:1px solid #46f1bf; background:#5a5a5a; color:#fff; padding:5px 3px 5px 3px; }
+
+.vaccine_tbl td { padding:2px 2px 2px 2px; background:#e6e6e6; text-align:center; }
+.vaccine_tbl td.title { border-bottom:1px solid #46f1bf; border-right:1px solid #e6e6e6; background:#14a086; padding:5px 3px 5px 3px; text-align:center; font-weight:bold; color:#fff; }
+.vaccine_tbl td.cell { border:1px solid #e6e6e6; background:#f57d25; padding:5px 3px 5px 3px; text-align:center; font-weight:bold; color:#fff; }
+
+.vaccine_tbl th.no_bl { border-left:none; }
+.vaccine_tbl td.no_bl { border-left:none; }
+.vaccine_tbl th.no_br { border-right:none; }
+.vaccine_tbl td.no_br { border-right:none; }
+.vaccine_tbl th.no_bb { border-bottom:none; }
+.vaccine_tbl th.no_bb { border-bottom:none; }
+
+
+
+
+
+/* ======== common css추가부분 0915 ========*/
+/* ======== 통합검색 ========*/
+
+#contents_sc{ float:left; width:870px; position:relative; margin-top:22px; }
+    .navigator{ width:100%; text-align:right; font-size:0.917em;}
+    .navigator li{ display:inline; list-style:none; }
+    .navigator li .home{ background:url(/health/open_content/images/common/blt_navi_home.gif) 0 50% no-repeat; padding:0 0 0 8px; }
+
+#result	{ background-color:#f4f4f4; text-align:center; padding:5px; margin:10px 0 20px 0; }
+#search_tab	{ border-bottom:1px solid #b7b7b7; height:29px; }
+#search_tab li	{ list-style:none; display:inline; float:left; margin-right:2px; }
+
+#search_con	{ margin-top:40px; }
+#search_con li	{ list-style:none; }
+#search_con	h5	{ color:#25406c; font-weight:bold; background:url(/health/open_content/images/common/bl_search.gif) 0% 50% no-repeat; float:left; }
+#search_con .more	{ float:right; }
+#search_con .t_line	{ border-bottom:1px solid #c6c6c6; padding-top:20px; }
+
+#search_con .root	{ font-size:11px; border-bottom:1px dashed #b7b7b7; width:870px; float:left; }
+#search_con .con	{ padding:35px 0 10px 0; }
+#search_con .url	{ font-size:11px; background-color:#f4f4f4; text-align:right; padding:3px 10px; }
+
+#search_con .board	{ border-bottom:1px dotted #d7d7d7; margin-top:10px; padding-bottom:5px; }
+
+#search_tab li	{ list-style:none; }
