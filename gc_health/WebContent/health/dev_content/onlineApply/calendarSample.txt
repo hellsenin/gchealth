@@ -1,0 +1,199 @@
+<ul class=\"calendar_info\">
+	<li class=\"calendar_index\">
+		<div class=\"tac\">
+			<span>
+				<a href=\"/portal/calender/CalenderList.do?menuId=0501030101&amp;cal_type=0&amp;year=2009&amp;month=7\">
+				&lt;</a>
+				<strong>2010년</strong>
+				<a href=\"/portal/calender/CalenderList.do?menuId=0501030101&amp;cal_type=0&amp;year=2011&amp;month=7\">
+				&gt;</a>
+			</span>
+			<span class=\"mgl20\">
+				<a href=\"/portal/calender/CalenderList.do?menuId=0501030101&amp;cal_type=0&amp;year=2009&amp;month=7\">
+				&lt;</a>
+				<strong>8</strong>
+				<a href=\"/portal/calender/CalenderList.do?menuId=0501030101&amp;cal_type=0&amp;year=2011&amp;month=7\">
+				&gt;</a>
+			</span>
+		</div>
+	</li>
+</ul>
+<table class=\"default_view\" summary=\"우리구의 월간 주요 구정일정을 한 눈에 보실수 있습니다.\">
+	<caption>구정일정</caption>
+	<colgroup span=\"7\" width=\"14.28%\" />
+	<thead>
+		<tr>
+			<th scope=\"col\" class=\"sun\">일</th>
+			<th scope=\"col\">월</th>
+			<th scope=\"col\">화</th>
+			<th scope=\"col\">수</th>
+			<th scope=\"col\">목</th>
+			<th scope=\"col\">금</th>
+			<th scope=\"col\" class=\"sat\">토</th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td></td>
+			<td style=\"height: 90\">
+			<p class=\"day\">1</p>
+			<p><a
+				href=\"/portal/calender/CalenderRead.do?sel_idx=1867&amp;menuId=0501030101&amp;year=2010&amp;month=7\">제33대
+			종로...</a></p>
+			</td>
+			<td style=\"height: 90\">
+			<p class=\"day\">2</p>
+			</td>
+			<td class=\"bgSS\" style=\"height: 90\">
+			<p class=\"day\">3</p>
+			</td>
+		</tr>
+		<tr>
+			<td class=\"bgSS\" style=\"height: 90\">
+			<p class=\"day\">4</p>
+			</td>
+			<td style=\"height: 90\">
+			<p class=\"day\">5</p>
+			</td>
+			<td style=\"height: 90\">
+			<p class=\"day\">6</p>
+			<p><a
+				href=\"/portal/calender/CalenderRead.do?sel_idx=1868&amp;menuId=0501030101&amp;year=2010&amp;month=7\">제15회
+			여성...</a></p>
+			<p><a
+				href=\"/portal/calender/CalenderRead.do?sel_idx=1869&amp;menuId=0501030101&amp;year=2010&amp;month=7\">제15회
+			여성...</a></p>
+			</td>
+			<td style=\"height: 90\">
+			<p class=\"day\">7</p>
+			<p><a
+				href=\"/portal/calender/CalenderRead.do?sel_idx=1870&amp;menuId=0501030101&amp;year=2010&amp;month=7\">종로리틀야구...</a></p>
+			</td>
+			<td style=\"height: 90\">
+			<p class=\"day\">8</p>
+			<p><a
+				href=\"/portal/calender/CalenderRead.do?sel_idx=1871&amp;menuId=0501030101&amp;year=2010&amp;month=7\">새마을부녀회...</a></p>
+			<p><a
+				href=\"/portal/calender/CalenderRead.do?sel_idx=1872&amp;menuId=0501030101&amp;year=2010&amp;month=7\">제12회
+			서울...</a></p>
+			</td>
+			<td style=\"height: 90\">
+			<p class=\"day\">9</p>
+			</td>
+			<td class=\"bgSS\" style=\"height: 90\">
+			<p class=\"day\">10</p>
+			<p><a
+				href=\"/portal/calender/CalenderRead.do?sel_idx=1873&amp;menuId=0501030101&amp;year=2010&amp;month=7\">초등학교
+			영...</a></p>
+			<p><a
+				href=\"/portal/calender/CalenderRead.do?sel_idx=1874&amp;menuId=0501030101&amp;year=2010&amp;month=7\">종로여성축구...</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td class=\"bgSS\" style=\"height: 90\">
+			<p class=\"day\">11</p>
+			<p><a
+				href=\"/portal/calender/CalenderRead.do?sel_idx=1875&amp;menuId=0501030101&amp;year=2010&amp;month=7\">제7회
+			종로구...</a></p>
+			</td>
+			<td style=\"height: 90\">
+			<p class=\"day\">12</p>
+			</td>
+			<td style=\"height: 90\">
+			<p class=\"day\">13</p>
+			<p><a
+				href=\"/portal/calender/CalenderRead.do?sel_idx=1876&amp;menuId=0501030101&amp;year=2010&amp;month=7\">종로
+			관광상...</a></p>
+			</td>
+			<td style=\"height: 90\">
+			<p class=\"day\">14</p>
+			<p><a
+				href=\"/portal/calender/CalenderRead.do?sel_idx=1877&amp;menuId=0501030101&amp;year=2010&amp;month=7\">경희-종로
+			아...</a></p>
+			<p><a
+				href=\"/portal/calender/CalenderRead.do?sel_idx=1878&amp;menuId=0501030101&amp;year=2010&amp;month=7\">서울국제
+			청...</a></p>
+			</td>
+			<td style=\"height: 90\">
+			<p class=\"day\">15</p>
+			</td>
+			<td style=\"height: 90\">
+			<p class=\"day\">16</p>
+			</td>
+			<td class=\"bgSS\" style=\"height: 90\">
+			<p class=\"day\">17</p>
+			<p><a
+				href=\"/portal/calender/CalenderRead.do?sel_idx=1879&amp;menuId=0501030101&amp;year=2010&amp;month=7\">전통문화
+			체...</a></p>
+			<p><a
+				href=\"/portal/calender/CalenderRead.do?sel_idx=1880&amp;menuId=0501030101&amp;year=2010&amp;month=7\">2010
+			한국실...</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td class=\"bgSS\" style=\"height: 90\">
+			<p class=\"day\">18</p>
+			</td>
+			<td style=\"height: 90\">
+			<p class=\"day\">19</p>
+			<p><a
+				href=\"/portal/calender/CalenderRead.do?sel_idx=1881&amp;menuId=0501030101&amp;year=2010&amp;month=7\">종로
+			관광상...</a></p>
+			</td>
+			<td style=\"height: 90\">
+			<p class=\"day\">20</p>
+			<p><a
+				href=\"/portal/calender/CalenderRead.do?sel_idx=1882&amp;menuId=0501030101&amp;year=2010&amp;month=7\">2010년
+			3/4분...</a></p>
+			</td>
+			<td style=\"height: 90\">
+			<p class=\"day\">21</p>
+			</td>
+			<td style=\"height: 90\">
+			<p class=\"day\">22</p>
+			</td>
+			<td style=\"height: 90\">
+			<p class=\"day\">23</p>
+			<p><a
+				href=\"/portal/calender/CalenderRead.do?sel_idx=1883&amp;menuId=0501030101&amp;year=2010&amp;month=7\">‘아름다운
+			...</a></p>
+			<p><a
+				href=\"/portal/calender/CalenderRead.do?sel_idx=1884&amp;menuId=0501030101&amp;year=2010&amp;month=7\">제2회
+			아시아...</a></p>
+			</td>
+			<td class=\"bgSS\" style=\"height: 90\">
+			<p class=\"day\">24</p>
+			<p><a
+				href=\"/portal/calender/CalenderRead.do?sel_idx=1885&amp;menuId=0501030101&amp;year=2010&amp;month=7\">제18회
+			아시...</a></p>
+			</td>
+		</tr>
+		<tr>
+			<td class=\"bgSS\" style=\"height: 90\">
+			<p class=\"day\">25</p>
+			</td>
+			<td style=\"height: 90\">
+			<p class=\"day\">26</p>
+			</td>
+			<td style=\"height: 90\">
+			<p class=\"day\">27</p>
+			</td>
+			<td style=\"height: 90\">
+			<p class=\"day\">28</p>
+			</td>
+			<td style=\"height: 90\">
+			<p class=\"day\">29</p>
+			</td>
+			<td style=\"height: 90\">
+			<p class=\"day\">30</p>
+			</td>
+			<td class=\"bgSS\" style=\"height: 90\">
+			<p class=\"day\">31</p>
+			</td>
+		</tr>
+		<tr>
+	</tbody>
+</table>
