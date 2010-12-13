@@ -1,0 +1,798 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Board">
+
+	<typeAlias  alias="egovMap" type="egovframework.rte.psl.dataaccess.util.EgovMap"/>
+	<typeAlias  alias="Board" type="egovframework.com.cop.bbs.service.Board"/>
+	<typeAlias  alias="BoardVO" type="egovframework.com.cop.bbs.service.BoardVO"/>
+	<typeAlias  alias="BoardUser" type="egovframework.com.cop.bbs.service.BoardUser"/>
+	<typeAlias  alias="EBookVO" type="egovframework.com.cop.bbs.service.EBookVO"/>
+	<typeAlias  alias="EBookFileVO" type="egovframework.com.cop.bbs.service.EBookFileVO"/>
+
+	<resultMap id="boardList" class="egovframework.com.cop.bbs.service.BoardVO">
+		<result property="bbsId" column="BBS_ID" columnIndex="1"/>
+		<result property="nttId" column="NTT_ID" columnIndex="2"/>
+		<result property="nttSj" column="NTT_SJ" columnIndex="3"/>
+		<result property="nttCn" column="NTT_CN" columnIndex="4" jdbcType="CLOB"/>
+		<result property="frstRegisterId" column="FRST_REGISTER_ID" columnIndex="5"/>
+		<result property="frstRegisterNm" column="FRST_REGISTER_NM" columnIndex="6"/>
+		<result property="frstRegisterPnttm" column="FRST_REGISTER_PNTTM" columnIndex="7"/>
+		<result property="inqireCo" column="INQIRE_CO" columnIndex="8"/>
+		<result property="parnts" column="PARNTS" columnIndex="9"/>
+		<result property="replyAt" column="REPLY_AT" columnIndex="10"/>		
+		<result property="replyLc" column="REPLY_LC" columnIndex="11"/>
+		<result property="useAt" column="USE_AT" columnIndex="12"/>
+		<result property="atchFileId" column="ATCH_FILE_ID" columnIndex="13"/>
+		<result property="ntceBgnde" column="NTCE_BGNDE" columnIndex="14"/> 
+		<result property="ntceEndde" column="NTCE_ENDDE" columnIndex="15"/>
+		<result property="secret" column="SECRET" columnIndex="16"/>
+		<result property="option1" column="OPTION1" columnIndex="17"/>
+		<result property="option2" column="OPTION2" columnIndex="18"/>
+		<result property="option3" column="OPTION3" columnIndex="19"/>
+		<result property="option4" column="OPTION4" columnIndex="20"/>
+		<result property="option5" column="OPTION5" columnIndex="21"/>
+		<result property="option6" column="OPTION6" columnIndex="22"/>
+		<result property="option7" column="OPTION7" columnIndex="23"/>
+		<result property="option8" column="OPTION8" columnIndex="24"/>
+		<result property="option9" column="OPTION9" columnIndex="25"/>
+		<result property="option10" column="OPTION10" columnIndex="26"/>
+		<result property="option11" column="OPTION11" columnIndex="27"/>
+		<result property="option12" column="OPTION12" columnIndex="28"/>
+		<result property="option13" column="OPTION13" columnIndex="29"/>
+		<result property="option14" column="OPTION14" columnIndex="30"/>
+		<result property="option15" column="OPTION15" columnIndex="31"/>
+		<result property="option16" column="OPTION16" columnIndex="32"/>
+		<result property="option17" column="OPTION17" columnIndex="33"/>
+		<result property="option18" column="OPTION18" columnIndex="34"/>
+		<result property="option19" column="OPTION19" columnIndex="35"/>
+		<result property="option20" column="OPTION20" columnIndex="36"/>		
+		<result property="fileNm" column="FILENM" columnIndex="37"/>
+		<result property="fileSeq" column="FILESEQ" columnIndex="38"/>
+		<result property="dept" column="DEPT" columnIndex="39"/>
+		<result property="dong" column="DONG" columnIndex="40"/>
+		<result property="commentCnt" column="COMMENT_CNT" columnIndex="41"/>
+	</resultMap>
+
+	<resultMap id="newsList" class="egovframework.com.cop.bbs.service.BoardVO">
+		<result property="option2" column="OPTION2" columnIndex="1"/>
+	</resultMap>
+	
+	<resultMap id="boardDetail" class="egovframework.com.cop.bbs.service.BoardVO">
+		<result property="bbsId" column="BBS_ID" columnIndex="1"/>
+		<result property="nttId" column="NTT_ID" columnIndex="2"/>
+		<result property="nttSj" column="NTT_SJ" columnIndex="3"/>	
+		<result property="ntcrId" column="NTCR_ID" columnIndex="4"/>
+		<result property="ntcrNm" column="NTCR_NM" columnIndex="5"/>
+		<result property="nttNo" column="NTT_NO" columnIndex="6"/>
+		<result property="nttCn" column="NTT_CN" columnIndex="7" jdbcType="CLOB"/>
+		<result property="password" column="PASSWORD" columnIndex="8"/>
+		<result property="frstRegisterId" column="FRST_REGISTER_ID" columnIndex="9"/>
+		<result property="frstRegisterNm" column="FRST_REGISTER_NM" columnIndex="10"/>
+		<result property="frstRegisterPnttm" column="FRST_REGISTER_PNTTM" columnIndex="11"/>
+		<result property="ntceBgnde" column="NTCE_BGNDE" columnIndex="12"/>
+		<result property="ntceEndde" column="NTCE_ENDDE" columnIndex="13"/>
+		<result property="inqireCo" column="INQIRE_CO" columnIndex="14"/>
+		<result property="useAt" column="USE_AT" columnIndex="15"/>
+		<result property="atchFileId" column="ATCH_FILE_ID" columnIndex="16"/>
+		<result property="parnts" column="PARNTS" columnIndex="17"/>
+		<result property="replyAt" column="REPLY_AT" columnIndex="18"/>		
+		<result property="replyLc" column="REPLY_LC" columnIndex="19"/>
+		<result property="sortOrdr" column="SORT_ORDR" columnIndex="19"/>
+		<result property="bbsTyCode" column="BBS_TY_CODE" columnIndex="20"/>
+		<result property="bbsAttrbCode" column="BBS_ATTRB_CODE" columnIndex="21"/>
+		<result property="replyPosblAt" column="REPLY_POSBL_AT" columnIndex="22"/>
+		<result property="fileAtchPosblAt" column="FILE_ATCH_POSBL_AT" columnIndex="23"/>
+		<result property="posblAtchFileNumber" column="POSBL_ATCH_FILE_NUMBER" columnIndex="24"/>
+		<result property="bbsNm" column="BBS_NM" columnIndex="25"/>
+		<result property="secret" column="SECRET" columnIndex="26"/>
+		<result property="option1" column="OPTION1" columnIndex="27"/>
+		<result property="option2" column="OPTION2" columnIndex="28"/>
+		<result property="option3" column="OPTION3" columnIndex="29"/>
+		<result property="option4" column="OPTION4" columnIndex="30"/>
+		<result property="option5" column="OPTION5" columnIndex="31"/>
+		<result property="option6" column="OPTION6" columnIndex="32"/>
+		<result property="option7" column="OPTION7" columnIndex="33"/>
+		<result property="option8" column="OPTION8" columnIndex="34"/>
+		<result property="option9" column="OPTION9" columnIndex="35"/>
+		<result property="option10" column="OPTION10" columnIndex="36"/>	
+		<result property="option11" column="OPTION11" columnIndex="37"/>
+		<result property="option12" column="OPTION12" columnIndex="38"/>
+		<result property="option13" column="OPTION13" columnIndex="39"/>
+		<result property="option14" column="OPTION14" columnIndex="40"/>
+		<result property="option15" column="OPTION15" columnIndex="41"/>
+		<result property="option16" column="OPTION16" columnIndex="42"/>
+		<result property="option17" column="OPTION17" columnIndex="43"/>
+		<result property="option18" column="OPTION18" columnIndex="44"/>
+		<result property="option19" column="OPTION19" columnIndex="45"/>
+		<result property="option20" column="OPTION20" columnIndex="46"/>	
+		<result property="dept" column="DEPT" columnIndex="47"/>
+		<result property="dong" column="DONG" columnIndex="48"/>					
+	</resultMap>
+
+	<resultMap id="sortList" class="egovframework.com.cop.bbs.service.BoardVO">
+		<result property="bbsId" column="BBS_ID" columnIndex="1"/>
+		<result property="nttId" column="NTT_ID" columnIndex="2"/>
+		<result property="sortOrdr" column="SORT_ORDR" columnIndex="3"/>
+		<result property="parnts" column="PARNTS" columnIndex="4"/>
+		<result property="nttNo" column="NTT_NO" columnIndex="5"/>		
+		<result property="replyLc" column="REPLY_LC" columnIndex="6"/>
+	</resultMap>
+
+	<resultMap id="guestList" class="egovframework.com.cop.bbs.service.BoardVO">
+		<result property="bbsId" column="BBS_ID" columnIndex="1"/>
+		<result property="nttId" column="NTT_ID" columnIndex="2"/>
+		<result property="nttSj" column="NTT_SJ" columnIndex="3"/>
+		<result property="ntcrNm" column="NTCR_NM" columnIndex="4"/>
+		<result property="password" column="PASSWORD" columnIndex="5"/>
+		<result property="frstRegisterPnttm" column="FRST_REGISTER_PNTTM" columnIndex="6"/>
+		<result property="nttCn" column="NTT_CN" columnIndex="7" jdbcType="CLOB"/>
+		<result property="useAt" column="USE_AT" columnIndex="8"/>
+		<result property="frstRegisterNm" column="FRST_REGISTER_NM" columnIndex="9"/>
+		<result property="frstRegisterId" column="FRST_REGISTER_ID" columnIndex="10"/>
+	</resultMap>
+	
+	<resultMap id="boardUser" class="egovframework.com.cop.bbs.service.BoardUser">
+		<result property="seq" column="SEQ" columnIndex="1"/>
+		<result property="atchFileId" column="ATCH_FILE_ID" columnIndex="2"/>
+		<result property="fileSn" column="FILE_SN" columnIndex="3"/>
+		<result property="name" column="NAME" columnIndex="4"/>
+		<result property="cellPhone" column="CELLPHONE" columnIndex="5"/>
+		<result property="mailAddress" column="EMAIL" columnIndex="6"/>
+		<result property="type" column="TYPE" columnIndex="7"/>
+		<result property="rdate" column="RDATE" columnIndex="8"/>
+	</resultMap>
+
+ 	<select id="BBSManageDAO.selectMaxNttId" resultClass="java.lang.Long">
+ 		<![CDATA[
+			SELECT NVL(MAX(NTT_ID),0)+1 AS NTT_ID  FROM COMTNBBS
+ 		]]>
+ 	</select>
+ 	
+	<insert id="BBSManageDAO.insertBoardArticle" parameterClass="Board" >
+		<selectKey resultClass="java.lang.Long" keyProperty="nttNo">
+			SELECT NVL(MAX(SORT_ORDR),0)+1 AS NTT_NO  FROM COMTNBBS
+			WHERE BBS_ID = #bbsId#
+		</selectKey>
+		<![CDATA[
+			INSERT INTO COMTNBBS
+			(NTT_ID, BBS_ID, NTT_SJ, NTT_CN, SORT_ORDR, 
+			 NTCR_ID, NTCR_NM, PASSWORD, INQIRE_CO, 
+			 NTCE_BGNDE, NTCE_ENDDE, REPLY_AT,  			   
+			 PARNTS, NTT_NO, REPLY_LC, ATCH_FILE_ID,
+			 FRST_REGISTER_ID, FRST_REGISTER_PNTTM, USE_AT, 
+			 SECRET, DELCODE, OPTION1, OPTION2, OPTION3,
+			 OPTION4, OPTION5, OPTION6, OPTION7, OPTION8,
+			 OPTION9, OPTION10, OPTION11, OPTION12, OPTION13,
+			 OPTION14, OPTION15, OPTION16, OPTION17, OPTION18,
+			 OPTION19, OPTION20, DEPT, DONG
+			 )
+			VALUES
+			( #nttId#, #bbsId#, #nttSj#, #nttCn#, #nttNo#, 
+			  #ntcrId#, #ntcrNm#, #password#, #inqireCo#, 
+			  #ntceBgnde#, #ntceEndde#, #replyAt#, #parnts#, 1,
+			  #replyLc#, #atchFileId#, #frstRegisterId#, SYSDATE, 'Y',
+			  #secret#, '0', #option1#, #option2#, #option3#,
+			  #option4#, #option5#, #option6#, #option7#, #option8#,
+			  #option9#, #option10#, #option11#, #option12#, #option13#,
+			  #option14#, #option15#, #option16#, #option17#, #option18#,
+			  #option19#, #option20#, #dept#, #dong#			  
+			 )			
+		]]>
+	</insert>
+	
+	<insert id="BBSManageDAO.replyBoardArticle" parameterClass="Board" >
+		<selectKey resultClass="java.lang.Long" keyProperty="nttNo">
+			SELECT NVL(MAX(NTT_NO),0)+1 AS NTT_NO  FROM COMTNBBS
+			WHERE BBS_ID = #bbsId# AND SORT_ORDR = #sortOrdr#
+		</selectKey>			
+		<![CDATA[
+			INSERT INTO COMTNBBS
+			(NTT_ID, BBS_ID, NTT_SJ, NTT_CN, SORT_ORDR, 
+			 NTCR_ID, NTCR_NM, PASSWORD, INQIRE_CO, 
+			 NTCE_BGNDE, NTCE_ENDDE, REPLY_AT,  			   
+			 PARNTS, NTT_NO, REPLY_LC, ATCH_FILE_ID,
+			 FRST_REGISTER_ID, FRST_REGISTER_PNTTM, USE_AT, 
+			 SECRET, DELCODE, OPTION1, OPTION2, OPTION3,
+			 OPTION4, OPTION5, OPTION6, OPTION7, OPTION8,
+			 OPTION9, OPTION10, OPTION11, OPTION12, OPTION13,
+			 OPTION14, OPTION15, OPTION16, OPTION17, OPTION18,
+			 OPTION19, OPTION20, DEPT, DONG
+			 )
+			VALUES
+			( #nttId#, #bbsId#, #nttSj#, #nttCn#, #sortOrdr#, 
+			  #ntcrId#, #ntcrNm#, #password#, #inqireCo#, 
+			  #ntceBgnde#, #ntceEndde#, #replyAt#, 
+			  #parnts#, 1, #replyLc#, #atchFileId#,
+			  #frstRegisterId#, SYSDATE, 'Y', 
+			  #secret#, '0', #option1#, #option2#, #option3#, 
+			  #option4#, #option5#, #option6#, #option7#, #option8#, 
+			  #option9#, #option10#, #option11#, #option12#, #option13#,
+			  #option14#, #option15#, #option16#, #option17#, #option18#, 
+			  #option19#, #option20#, #dept#, #dong#			  			  
+			 )			
+		]]>
+	</insert>	
+	
+	<select id="BBSManageDAO.selectNoticeListForSort" parameterClass="Board" resultMap="sortList">
+		<![CDATA[			
+			SELECT
+				a.BBS_ID, a.NTT_ID, a.SORT_ORDR, a.PARNTS, a.NTT_NO, a.REPLY_LC
+			FROM
+				COMTNBBS a	
+			WHERE
+				a.BBS_ID = #bbsId#
+			AND
+				a.SORT_ORDR = #sortOrdr#
+			ORDER BY  a.SORT_ORDR DESC, a.NTT_NO ASC	
+		]]>						
+	</select>
+
+			
+	<select id="BBSManageDAO.selectBoardArticleList" parameterClass="BoardVO" resultMap="boardList" >
+		<![CDATA[
+		SELECT * FROM ( SELECT rownum rn, TB.* FROM (
+			SELECT
+				a.NTT_ID, a.NTT_SJ, a.NTT_CN, a.FRST_REGISTER_ID, a.NTCR_NM as FRST_REGISTER_NM,
+				TO_CHAR(a.FRST_REGISTER_PNTTM, 'YYYY-MM-DD') as FRST_REGISTER_PNTTM,
+				a.INQIRE_CO, a.PARNTS, a.REPLY_AT, a.REPLY_LC, a.USE_AT, a.ATCH_FILE_ID,
+				a.BBS_ID, a.NTCE_BGNDE, a.NTCE_ENDDE, a.SECRET, a.OPTION1, a.OPTION2, a.OPTION3,
+				a.OPTION4, a.OPTION5, a.OPTION6, a.OPTION7, a.OPTION8, a.OPTION9, a.OPTION10,
+				a.OPTION11, a.OPTION12, a.OPTION13,	a.OPTION14, a.OPTION15, 
+				a.OPTION16, a.OPTION17, a.OPTION18,	a.OPTION19, a.OPTION20,				
+				(SELECT	D.STRE_FILE_NM
+				FROM
+					COMTNFILE c, COMTNFILEDETAIL d
+				WHERE
+					c.ATCH_FILE_ID = a.ATCH_FILE_ID
+				AND 
+					c.ATCH_FILE_ID = d.ATCH_FILE_ID
+				AND 
+					c.USE_AT = 'Y' AND rownum = 1) as  FILENM,
+				NVL((SELECT	D.FILE_SN
+				FROM
+					COMTNFILE c, COMTNFILEDETAIL d
+				WHERE
+					c.ATCH_FILE_ID = a.ATCH_FILE_ID
+				AND
+					c.ATCH_FILE_ID = d.ATCH_FILE_ID
+				AND
+					c.USE_AT = 'Y' AND rownum = 1),0) as  FILESEQ,	
+				a.DEPT, a.DONG,
+				NVL(b.COMMENT_CNT,0) AS COMMENT_CNT
+			FROM
+				COMTNBBS a
+			LEFT OUTER JOIN (
+				SELECT BBS_ID, NTT_ID, COUNT(*) AS COMMENT_CNT
+				FROM BBSCOMMENTS
+				GROUP BY BBS_ID, NTT_ID
+			) b on a.BBS_ID = b.BBS_ID AND a.NTT_ID = b.NTT_ID 
+			WHERE
+				a.BBS_ID = #bbsId#
+				AND a.DELCODE = '0'
+		]]>
+			<isNotEmpty prepend="AND" property="optionWrd">
+				<![CDATA[	$optionCnd$ = #optionWrd# 		]]>
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="optionWrd2">
+				<![CDATA[	$optionCnd2$ = #optionWrd2# 		]]>
+			</isNotEmpty>			
+			<isNotEmpty prepend="AND" property="dept">
+				<![CDATA[	a.DEPT = #dept# 		]]>
+			</isNotEmpty>	
+			<isNotEmpty prepend="AND" property="dong">
+				<![CDATA[	a.DONG = #dong# 		]]>
+			</isNotEmpty>			
+			<isNotEmpty prepend="AND" property="optionCndLike">
+				<![CDATA[	$optionCndLike$ LIKE '%' || #optionWrdLike# || '%' 		]]>
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="searchWrd">
+				<![CDATA[	$searchCnd$ LIKE '%' || #searchWrd# || '%' 		]]>
+			</isNotEmpty>
+			<isEqual prepend="AND" property="health" compareValue="Y">
+				<![CDATA[	a.option1 in ('건강증진과', '보건위생과', '의약과')		]]>
+			</isEqual>			
+			<isEqual prepend="ORDER BY" property="type" compareValue="1">
+				<![CDATA[	a.OPTION2 desc, a.OPTION3 ASC		]]>
+			</isEqual>
+			<isEqual prepend="ORDER BY" property="type" compareValue="2">
+				<![CDATA[	a.PARNTS DESC, NTT_NO ASC		]]>
+			</isEqual>
+			<isEqual prepend="ORDER BY" property="type" compareValue="9">
+				<![CDATA[	a.FRST_REGISTER_PNTTM DESC		]]>
+			</isEqual>						
+		<![CDATA[
+						
+			) TB ) WHERE rn BETWEEN #firstIndex# + 1 AND #firstIndex# + #recordCountPerPage#
+		]]>				
+	</select>	
+	
+	<select id="BBSManageDAO.selectBoardArticleListCnt" parameterClass="BoardVO" resultClass="java.lang.Integer" >
+		<![CDATA[
+			SELECT
+				COUNT(a.NTT_ID)
+			FROM
+				COMTNBBS a
+			WHERE
+				a.BBS_ID = #bbsId#
+				AND a.DELCODE = '0'
+		]]>
+			<isNotEmpty prepend="AND" property="optionWrd">
+				<![CDATA[	$optionCnd$ = #optionWrd# 		]]>
+			</isNotEmpty>	
+			<isNotEmpty prepend="AND" property="optionWrd2">
+				<![CDATA[	$optionCnd2$ = #optionWrd2# 		]]>
+			</isNotEmpty>
+			<isNotEmpty prepend="AND" property="dept">
+				<![CDATA[	a.DEPT = #dept# 		]]>
+			</isNotEmpty>	
+			<isNotEmpty prepend="AND" property="dong">
+				<![CDATA[	a.DONG = #dong# 		]]>
+			</isNotEmpty>
+			<isEqual prepend="AND" property="health" compareValue="Y">
+				<![CDATA[	a.option1 in ('건강증진과', '보건위생과', '의약과')		]]>
+			</isEqual>																
+			<isNotEmpty prepend="AND" property="optionCndLike">
+				<![CDATA[	$optionCndLike$ LIKE '%' || #optionWrdLike# || '%' 		]]>
+			</isNotEmpty>	
+			<isNotEmpty prepend="AND" property="searchWrd">
+				<![CDATA[	$searchCnd$ LIKE '%' || #searchWrd# || '%' 		]]>
+			</isNotEmpty>						
+	</select>	
+
+	<select id="BBSManageDAO.selectBoardNewsArticle" parameterClass="BoardVO" resultMap="newsList" >
+		<![CDATA[
+			SELECT option2
+			FROM ( SELECT option2
+				   FROM COMTNBBS
+				   WHERE BBS_ID = #bbsId#
+					 AND DELCODE = '0'
+				   ORDER BY option2 DESC ) where rownum=1
+		]]>				
+	</select>	
+		
+	<select id="BBSManageDAO.selectBoardNewsArticleList" parameterClass="BoardVO" resultMap="newsList" >
+		<![CDATA[
+			SELECT option2
+			FROM ( SELECT option2 || '||' || option1 AS option2
+				   FROM COMTNBBS
+				   WHERE BBS_ID = #bbsId#
+					 AND DELCODE = '0')
+			GROUP BY option2
+			ORDER BY option2 desc
+		]]>		
+	</select>	
+ 
+	<select id="BBSManageDAO.selectBoardArticle" parameterClass="BoardVO" resultMap="boardDetail" >
+		<![CDATA[
+			SELECT
+				a.NTT_SJ, a.NTCR_ID, a.NTCR_NM, a.NTT_NO, a.NTT_CN,
+				a.PASSWORD, a.FRST_REGISTER_ID, 'admin' as FRST_REGISTER_NM,
+				TO_CHAR(a.FRST_REGISTER_PNTTM, 'YYYY-MM-DD') as FRST_REGISTER_PNTTM,
+				a.NTCE_BGNDE, a.NTCE_ENDDE, a.INQIRE_CO, 
+				a.USE_AT, a.ATCH_FILE_ID, a.BBS_ID, a.NTT_ID,
+				a.PARNTS, a.REPLY_AT, a.REPLY_LC, a.SORT_ORDR, a.SECRET,
+				a.OPTION1, a.OPTION2, a.OPTION3, a.OPTION4, a.OPTION5,
+				a.OPTION6, a.OPTION7, a.OPTION8, a.OPTION9, a.OPTION10,
+				a.OPTION11, a.OPTION12, a.OPTION13,	a.OPTION14, a.OPTION15, 
+				a.OPTION16, a.OPTION17, a.OPTION18,	a.OPTION19, a.OPTION20,	
+				a.DEPT, a.DONG,			 
+				c.BBS_TY_CODE, c.BBS_ATTRB_CODE, c.REPLY_POSBL_AT, 
+				c.FILE_ATCH_POSBL_AT, c.POSBL_ATCH_FILE_NUMBER, c.BBS_NM
+			FROM
+				COMTNBBS a 
+			LEFT OUTER JOIN 
+				COMTNBBSMASTER c	
+				ON a.BBS_ID = c.BBS_ID			
+			WHERE
+				a.BBS_ID = #bbsId#	
+			AND
+				a.NTT_ID = #nttId#	
+		]]>				
+	</select> 
+ 
+ 	<update id="BBSManageDAO.updateBoardArticle" parameterClass="Board">
+ 		<![CDATA[
+			UPDATE COMTNBBS SET 
+				NTT_SJ = #nttSj#,
+				NTT_CN = #nttCn#, 
+				NTCR_ID = #ntcrId#,
+				NTCR_NM = #ntcrNm#,
+				PASSWORD = #password#,
+				NTCE_BGNDE = #ntceBgnde#,		
+				NTCE_ENDDE = #ntceEndde#,
+				LAST_UPDUSR_ID = #lastUpdusrId#,
+				ATCH_FILE_ID = #atchFileId#,
+				SECRET = #secret#,
+				LAST_UPDUSR_PNTTM = SYSDATE,
+				OPTION1 = #option1#,
+				OPTION2 = #option2#,
+				OPTION3 = #option3#,
+				OPTION4 = #option4#,
+				OPTION5 = #option5#,
+				OPTION6 = #option6#,
+				OPTION7 = #option7#,
+				OPTION8 = #option8#,
+				OPTION9 = #option9#,
+				OPTION10 = #option10#,
+				OPTION11 = #option11#,
+				OPTION12 = #option12#,
+				OPTION13 = #option13#,
+				OPTION14 = #option14#,
+				OPTION15 = #option15#,
+				OPTION16 = #option16#,
+				OPTION17 = #option17#,
+				OPTION18 = #option18#,
+				OPTION19 = #option19#,
+				OPTION20 = #option20#			
+			WHERE BBS_ID = #bbsId#
+			AND NTT_ID = #nttId#
+ 		]]>
+ 	</update>
+
+ 	<update id="BBSManageDAO.deleteBoardArticle" parameterClass="Board">
+ 		<![CDATA[
+			UPDATE COMTNBBS SET 
+				USE_AT = 'N',
+				LAST_UPDUSR_ID = #lastUpdusrId#,
+				LAST_UPDUSR_PNTTM = SYSDATE,
+				DELCODE = '1'
+			WHERE BBS_ID = #bbsId#
+			AND NTT_ID = #nttId#
+ 		]]>
+ 	</update>
+
+ 	<select id="BBSManageDAO.selectMaxInqireCo" resultClass="java.lang.Integer" parameterClass="BoardVO">
+ 		<![CDATA[
+			SELECT NVL(MAX(INQIRE_CO),0)+1 AS INQIRE_CO FROM COMTNBBS
+			WHERE BBS_ID = #bbsId#
+			AND NTT_ID = #nttId#
+ 		]]>
+ 	</select>
+ 	
+ 	<select id="BBSManageDAO.selectNoticeItemForSort" resultClass="java.lang.Long" parameterClass="Board">
+ 		<![CDATA[
+			SELECT
+				NVL(MAX(NTT_NO),0)+1 AS NTT_NO
+			FROM
+				COMTNBBS	
+			WHERE
+				BBS_ID = #bbsId#
+			AND
+				SORT_ORDR = #sortOrdr#
+			AND 
+				NTT_ID = #nttId#	
+ 		]]>
+ 	</select> 	
+
+ 	<update id="BBSManageDAO.updateInqireCo" parameterClass="BoardVO">
+ 		<![CDATA[
+			UPDATE COMTNBBS SET 
+				INQIRE_CO = #inqireCo#,
+				LAST_UPDUSR_ID = #lastUpdusrId#,
+				LAST_UPDUSR_PNTTM = SYSDATE
+			WHERE BBS_ID = #bbsId#
+			AND NTT_ID = #nttId#
+ 		]]>
+ 	</update>
+
+	<update id="BBSManageDAO.updateSortOrder" parameterClass="BoardVO">
+ 		<![CDATA[
+			UPDATE COMTNBBS SET 
+				NTT_NO = #nttNo#
+			WHERE NTT_ID = #nttId#
+ 		]]>	
+	</update>
+
+	<select id="BBSManageDAO.selectGuestList" parameterClass="BoardVO" resultMap="guestList" >
+		<![CDATA[
+		SELECT * FROM ( SELECT rownum rn, TB.* FROM (
+			SELECT
+				a.NTT_ID, a.NTT_SJ, a.NTCR_NM, a.PASSWORD, 
+				TO_CHAR(a.FRST_REGISTER_PNTTM, 'YYYY-MM-DD HH:MI:SS')
+				as FRST_REGISTER_PNTTM,
+				a.NTT_CN, a.USE_AT, a.BBS_ID, a.NTCR_NM as FRST_REGISTER_NM, a.FRST_REGISTER_ID
+			FROM
+				COMTNBBS a
+			WHERE
+				a.BBS_ID = #bbsId#
+			AND
+				a.USE_AT = 'Y'
+			ORDER BY a.SORT_ORDR DESC, a.NTT_NO ASC
+			) TB ) WHERE rn BETWEEN #firstIndex# + 1 AND #firstIndex# + #recordCountPerPage#
+		]]>				
+	</select>	
+	
+	<select id="BBSManageDAO.selectGuestListCnt" parameterClass="BoardVO" resultClass="java.lang.Integer" >
+		<![CDATA[
+			SELECT
+				COUNT(NTT_ID)
+			FROM
+				COMTNBBS 
+			WHERE
+				BBS_ID = #bbsId#	
+			AND
+				USE_AT = 'Y'
+		]]>			
+	</select>	
+
+	<update id="BBSManageDAO.deleteGuestList" parameterClass="BoardVO">
+		<![CDATA[
+			UPDATE COMTNBBS
+			SET USE_AT = 'N',
+			DELCODE = '1'			
+			WHERE BBS_ID = #bbsId#
+			AND NTT_ID = #nttId#
+		]]>			
+	</update>	
+	
+	<select id="BBSManageDAO.getPasswordInf" parameterClass="Board" resultClass="java.lang.String">
+		<![CDATA[
+			SELECT
+				PASSWORD
+			FROM
+				COMTNBBS	
+			WHERE BBS_ID = #bbsId#
+			AND NTT_ID = #nttId#				
+		]]>
+	</select>
+
+	<select id="BBSManageDAO.getParentNttNo" parameterClass="Board" resultClass="java.lang.Long">
+		<![CDATA[
+			SELECT NTT_NO FROM COMTNBBS
+			WHERE BBS_ID = #bbsId# AND NTT_ID = #parnts#			
+		]]>
+	</select>
+	
+ 	<update id="BBSManageDAO.updateOtherNttNo" parameterClass="Board">
+ 		<![CDATA[
+			UPDATE COMTNBBS SET 
+				NTT_NO = NTT_NO + 1
+			WHERE BBS_ID = #bbsId# AND SORT_ORDR = #sortOrdr#
+			AND NTT_NO > #nttNo#
+ 		]]>
+ 	</update>
+ 	
+ 	 <update id="BBSManageDAO.updateNttNo" parameterClass="Board">
+ 		<![CDATA[
+			UPDATE COMTNBBS SET 
+				NTT_NO = #nttNo#
+			WHERE BBS_ID = #bbsId# 
+			AND NTT_ID = #nttId#
+ 		]]>
+ 	</update>
+ 	
+	<insert id="BBSManageDAO.insertBoardUserArticle" parameterClass="BoardUser" >
+		<selectKey resultClass="java.lang.Integer" keyProperty="seq">
+			<![CDATA[ SELECT NVL(MAX(SEQ),0)+1 AS SEQ  FROM COMTNFILEUSER  ]]>
+		</selectKey>			
+		<![CDATA[
+			INSERT INTO COMTNFILEUSER
+			(SEQ, ATCH_FILE_ID, FILE_SN, NAME, CELLPHONE,
+			 EMAIL, TYPE, RDATE )
+			VALUES
+			( #seq#, #atchFileId#, #fileSn#, #name#, #cellPhone#, 
+			  #mailAddress#, #type#, SYSDATE )			
+		]]>
+	</insert>	 	
+	
+	<select id="BBSManageDAO.selectBoardUserArticle" parameterClass="BoardUser" resultMap="boardUser" >
+		<![CDATA[
+			SELECT
+				SEQ
+				,ATCH_FILE_ID
+				,FILE_SN
+				,NAME
+				,CELLPHONE
+				,EMAIL
+				,TYPE
+				,TO_CHAR(RDATE, 'YYYY-MM-DD') as RDATE
+			FROM
+				COMTNFILEUSER	
+			WHERE
+				ATCH_FILE_ID = #atchFileId#		
+			AND 
+				TYPE = #type#
+		]]>				
+	</select> 
+	
+	<select id="BBSManageDAO.selectBBSTitleArticles" parameterClass="BoardVO" resultClass="BoardVO" >
+		SELECT B.NTT_ID as nttId, B.BBS_ID as bbsId, B.NTT_SJ as nttSj, B.DELCODE as delCode
+		FROM COMTNBBSMASTER A, COMTNBBS B
+		WHERE A.BBS_ID = B.BBS_ID
+		AND A.DELCODE = 0
+		AND B.DELCODE = 0
+		AND A.BBS_ATTRB_CODE = 'BBSA04'
+		ORDER BY B.BBS_ID ASC, B.NTT_ID ASC	
+	</select>
+	
+	<select id="BBSManageDAO.selectEBookArticles" parameterClass="EBookVO" resultClass="EBookVO" >
+			SELECT
+				PI_SEQ as piSeq
+				,PI_TITLE as piTitle
+				,PI_EBOOKLINK as piEbookLink
+				,TO_CHAR(PI_DATE, 'YYYY-MM-DD') as piDate
+				,PI_NTT_ID as piNttId
+			FROM
+				PRTLTEBOOK_INFO	
+			WHERE 
+				PI_NTT_ID = #piNttId#	
+			AND PI_DELCODE != 9
+			<isNotEmpty prepend="AND" property="searchWrd">
+				PI_TITLE LIKE '%' || #searchWrd# || '%'
+			</isNotEmpty>					
+	</select> 
+	
+	<select id="BBSManageDAO.selectEBookArticleListCnt" parameterClass="EBookVO" resultClass="java.lang.Integer" >
+			SELECT
+				COUNT(1)
+			FROM
+				PRTLTEBOOK_INFO
+			WHERE
+				PI_NTT_ID = #piNttId#
+			AND PI_DELCODE != 9
+			<isNotEmpty prepend="AND" property="searchWrd">
+				PI_TITLE LIKE '%' || #searchWrd# || '%'
+			</isNotEmpty>				
+	</select>	
+	
+	<select id="BBSManageDAO.selectEBookArticle" parameterClass="EBookVO" resultClass="EBookVO" >
+			SELECT
+				PI_SEQ as piSeq
+				,PI_TITLE as piTitle
+				,PI_EBOOKLINK as piEbookLink
+				,TO_CHAR(PI_DATE, 'YYYY-MM-DD') as piDate
+				,PI_NTT_ID as piNttId
+			FROM
+				PRTLTEBOOK_INFO	
+			WHERE
+				PI_SEQ = #piSeq#		
+	</select> 
+	
+	<insert id="BBSManageDAO.insertEBookArticle" parameterClass="EBookVO" >
+		<selectKey resultClass="java.lang.Integer" keyProperty="piSeq">
+			SELECT NVL(MAX(PI_SEQ),0)+1 AS piSeq  FROM PRTLTEBOOK_INFO
+		</selectKey>
+		INSERT INTO	PRTLTEBOOK_INFO (
+			PI_SEQ
+			,PI_NTT_ID
+			,PI_TITLE
+			,PI_EBOOKLINK
+			,PI_DATE
+			,PI_DELCODE
+		) VALUES (
+			#piSeq#
+			,#piNttId#
+			,#piTitle#
+			,#piEBookLink#
+			,SYSDATE
+			,'0'
+		)
+	</insert>
+	
+	<update id="BBSManageDAO.updateEBookArticle" parameterClass="EBookVO">
+		UPDATE PRTLTEBOOK_INFO SET
+		PI_TITLE = #piTitle#
+		,PI_EBOOKLINK = #piEBookLink#
+		WHERE PI_SEQ = #piSeq#
+	</update>
+	
+	<update id="BBSManageDAO.deleteEBookArticle" parameterClass="EBookVO">
+		UPDATE PRTLTEBOOK_INFO SET
+		PI_DELCODE = '9'
+		WHERE PI_SEQ = #piSeq#
+	</update>
+	
+	<select id="BBSManageDAO.selectEBookFileArticle" parameterClass="EBookFileVO" resultClass="EBookFileVO" >
+			SELECT
+				PF_SEQ as pfSeq
+				,PF_NTT_ID as pfNttId
+				,PF_PI_SEQ as pfPiSeq
+				,PF_PATH as pfPath
+				,PF_ORIGNL_NAME as pfOrignlName
+				,PF_STRE_NAME as pfStreName
+				,PF_SIZE as pfSize
+				,PF_EXTSN as pfExtsn
+				,to_char(PF_DATE, 'YYYY-MM-DD') as pfDate
+			FROM
+				PRTLTEBOOK_FILE	
+			WHERE
+				PF_PI_SEQ = #pfPiSeq#		
+	</select> 
+	
+	<insert id="BBSManageDAO.insertEBookFileArticle" parameterClass="EBookFileVO" >
+		<selectKey resultClass="java.lang.Integer" keyProperty="pfSeq">
+			SELECT NVL(MAX(PF_SEQ),0)+1 AS pfSeq  FROM PRTLTEBOOK_FILE
+		</selectKey>
+		INSERT INTO	PRTLTEBOOK_FILE (
+			PF_SEQ
+			,PF_NTT_ID
+			,PF_PI_SEQ
+			,PF_PATH
+			,PF_ORIGNL_NAME
+			,PF_STRE_NAME
+			,PF_SIZE
+			,PF_EXTSN
+			,PF_DATE
+		) VALUES (
+			#pfSeq#
+			,#pfNttId#
+			,#pfPiSeq#
+			,#pfPath#
+			,#pfOrignlName#
+			,#pfStreName#
+			,#pfSize#
+			,#pfExtsn#
+			,SYSDATE
+		)
+	</insert>
+	
+	<delete id="BBSManageDAO.deleteEBookFileArticle" parameterClass="EBookFileVO">
+		DELETE FROM PRTLTEBOOK_FILE
+		WHERE PF_SEQ = #pfSeq#
+	</delete>
+	
+	<select id="BBSManageDAO.selectMyBoardArticleList" parameterClass="BoardVO" resultMap="boardList" >
+		<![CDATA[
+		SELECT * FROM ( SELECT rownum rn, TB.* FROM (
+			SELECT
+				a.NTT_ID, a.NTT_SJ, a.NTT_CN, a.FRST_REGISTER_ID, NVL('admin', a.NTCR_NM) as FRST_REGISTER_NM,
+				TO_CHAR(a.FRST_REGISTER_PNTTM, 'YYYY-MM-DD') as FRST_REGISTER_PNTTM,
+				a.INQIRE_CO, a.PARNTS, a.REPLY_AT, a.REPLY_LC, a.USE_AT, a.ATCH_FILE_ID,
+				a.BBS_ID, a.NTCE_BGNDE, a.NTCE_ENDDE, a.SECRET, a.OPTION1, a.OPTION2, a.OPTION3,
+				a.OPTION4, a.OPTION5, a.OPTION6, a.OPTION7, a.OPTION8, a.OPTION9, a.OPTION10,
+				a.OPTION11, a.OPTION12, a.OPTION13,	a.OPTION14, a.OPTION15, 
+				a.OPTION16, a.OPTION17, a.OPTION18,	a.OPTION19, a.OPTION20,				
+				(SELECT	D.STRE_FILE_NM
+				FROM
+					COMTNFILE c, COMTNFILEDETAIL d
+				WHERE
+					c.ATCH_FILE_ID = a.ATCH_FILE_ID
+				AND 
+					c.ATCH_FILE_ID = d.ATCH_FILE_ID
+				AND 
+					c.USE_AT = 'Y' AND rownum = 1) as  FILENM,
+				NVL((SELECT	D.FILE_SN
+				FROM
+					COMTNFILE c, COMTNFILEDETAIL d
+				WHERE
+					c.ATCH_FILE_ID = a.ATCH_FILE_ID
+				AND
+					c.ATCH_FILE_ID = d.ATCH_FILE_ID
+				AND
+					c.USE_AT = 'Y' AND rownum = 1),0) as  FILESEQ,	
+				a.DEPT, a.DONG,
+				0 AS COMMENT_CNT
+			FROM
+				COMTNBBS a
+			WHERE
+				a.DELCODE = '0'
+				AND a.FRST_REGISTER_ID = #frstRegisterId#
+		]]>
+			<isNotEmpty prepend="AND" property="searchWrd">
+				<![CDATA[	$searchCnd$ LIKE '%' || #searchWrd# || '%' 		]]>
+			</isNotEmpty>
+		<![CDATA[			
+			) TB ) WHERE rn BETWEEN #firstIndex# + 1 AND #firstIndex# + #recordCountPerPage#
+		]]>				
+	</select>	
+	
+	<select id="BBSManageDAO.selectMyBoardArticleListCnt" parameterClass="BoardVO" resultClass="java.lang.Integer" >
+		<![CDATA[
+			SELECT
+				COUNT(a.NTT_ID)
+			FROM
+				COMTNBBS a
+			LEFT OUTER JOIN 
+				COMVNUSERMASTER b
+			ON a.FRST_REGISTER_ID = b.UNIQ_ID 
+			WHERE
+				a.DELCODE = '0'
+				AND a.FRST_REGISTER_ID = #frstRegisterId#
+		]]>
+			<isNotEmpty prepend="AND" property="searchWrd">
+				<![CDATA[	$searchCnd$ LIKE '%' || #searchWrd# || '%' 		]]>
+			</isNotEmpty>
+	</select>	
+	
+</sqlMap>

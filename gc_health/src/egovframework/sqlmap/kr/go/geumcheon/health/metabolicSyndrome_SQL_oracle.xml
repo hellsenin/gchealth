@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="metabolicSyndrome">
+
+	<typeAlias  alias="zvl" type="egovframework.kr.go.geumcheon.health.util.ZValue"/>
+    			
+	<select id="metabolicSyndromeDAO.read" parameterClass="string" resultClass="zvl">
+			SELECT 
+				APPLY_ID, APPLY_CODE, ONLINE_ID, NAME, EMAIL, CELL_PHONE, TEL, ZIPCODE, ADDR1, ADDR2, 
+				STATUS, TO_CHAR(APPLY_DATE, 'YYYY-MM-DD') AS APPLY_DATE, TITLE,OPEN_FLAG, HIT,
+				SMS_FLAG, PETI_GUBUN, TO_CHAR(DEADLINE, 'YYYY-MM-DD') AS DEADLINE, TO_CHAR(RECV_DATE, 'YYYY-MM-DD') AS RECV_DATE,
+				ETC_1,ETC_2,ETC_3,ETC_4,ETC_5,ETC_6,ETC_7,ETC_8,ETC_9,
+				ETC_10,ETC_11,ETC_12,ETC_13,ETC_14,ETC_15,ETC_16,ETC_17,ETC_18,ETC_19,
+				ETC_20,ETC_21,ETC_22,ETC_23,ETC_24,ETC_25,ETC_26,ETC_27,ETC_28,ETC_29,ETC_30,
+				DEL_FLAG, DEPT_ID
+			FROM PRTLTAPPLY
+			WHERE ETC_1 = #regno#
+			AND APPLY_CODE = 'APP000046'
+	</select>	
+		
+</sqlMap>                            

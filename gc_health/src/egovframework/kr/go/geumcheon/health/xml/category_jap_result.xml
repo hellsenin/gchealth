@@ -1,0 +1,2000 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<categories>
+  <siteId>16</siteId>
+  <category>
+    <categoryId>3200</categoryId>
+    <parentId>0</parentId>
+    <name>教育申込</name>
+    <fullPath>教育申込</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0101010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3200</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/01/01/01/0101010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3207</categoryId>
+    <parentId>3200</parentId>
+    <name>保健教育カレンダー</name>
+    <fullPath>教育申込/保健教育カレンダー</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0101010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3207</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/01/01/01/0101010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3208</categoryId>
+    <parentId>3200</parentId>
+    <name>健康教室</name>
+    <fullPath>教育申込/健康教室</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0102010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3208</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/01/02/01/0102010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3201</categoryId>
+    <parentId>0</parentId>
+    <name>診療/検診</name>
+    <fullPath>診療/検診</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0201010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3201</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/01/01/0201010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3209</categoryId>
+    <parentId>3201</parentId>
+    <name>診療案内</name>
+    <fullPath>診療/検診/診療案内</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0201010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3209</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/01/01/0201010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3236</categoryId>
+    <parentId>3209</parentId>
+    <name>１次診療室</name>
+    <fullPath>診療/検診/診療案内/１次診療室</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0201010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3236</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/01/01/0201010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3237</categoryId>
+    <parentId>3209</parentId>
+    <name>歯科治療</name>
+    <fullPath>診療/検診/診療案内/歯科治療</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0201020101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3237</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/01/02/0201020101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3238</categoryId>
+    <parentId>3209</parentId>
+    <name>韓方治療</name>
+    <fullPath>診療/検診/診療案内/韓方治療</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0201030101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3238</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/01/03/0201030101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3239</categoryId>
+    <parentId>3209</parentId>
+    <name>物理療法</name>
+    <fullPath>診療/検診/診療案内/物理療法</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0201040101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3239</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/01/04/0201040101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3240</categoryId>
+    <parentId>3209</parentId>
+    <name>休日/夜間診療</name>
+    <fullPath>診療/検診/診療案内/休日/夜間診療</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0201050101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3240</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/01/05/0201050101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3210</categoryId>
+    <parentId>3201</parentId>
+    <name>診療検査</name>
+    <fullPath>診療/検診/診療検査</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0202010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3210</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/02/01/0202010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3241</categoryId>
+    <parentId>3210</parentId>
+    <name>働く妊産婦のための土曜診療</name>
+    <fullPath>診療/検診/診療検査/働く妊産婦のための土曜診療</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0202010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3241</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/02/01/0202010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3242</categoryId>
+    <parentId>3210</parentId>
+    <name>先天異常の胎児診断</name>
+    <fullPath>診療/検診/診療検査/先天異常の胎児診断</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0202020101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3242</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/02/02/0202020101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3243</categoryId>
+    <parentId>3210</parentId>
+    <name>動脈硬化検査</name>
+    <fullPath>診療/検診/診療検査/動脈硬化検査</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0202030101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3243</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/02/03/0202030101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3244</categoryId>
+    <parentId>3210</parentId>
+    <name>骨密度検査</name>
+    <fullPath>診療/検診/診療検査/骨密度検査</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0202040101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3244</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/02/04/0202040101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3245</categoryId>
+    <parentId>3210</parentId>
+    <name>病理検査</name>
+    <fullPath>診療/検診/診療検査/病理検査</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0202050101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3245</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/02/05/0202050101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3246</categoryId>
+    <parentId>3210</parentId>
+    <name>結核検査</name>
+    <fullPath>診療/検診/診療検査/結核検査</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0202060101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3246</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/02/06/0202060101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3247</categoryId>
+    <parentId>3210</parentId>
+    <name>性病検査</name>
+    <fullPath>診療/検診/診療検査/性病検査</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0202070101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3247</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/02/07/0202070101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3211</categoryId>
+    <parentId>3201</parentId>
+    <name>健康診断</name>
+    <fullPath>診療/検診/健康診断</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0203010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3211</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/03/01/0203010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3248</categoryId>
+    <parentId>3211</parentId>
+    <name>診断前の注意事項</name>
+    <fullPath>診療/検診/健康診断/診断前の注意事項</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0203010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3248</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/03/01/0203010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3249</categoryId>
+    <parentId>3211</parentId>
+    <name>体力診断</name>
+    <fullPath>診療/検診/健康診断/体力診断</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0203020101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3249</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/03/02/0203020101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3250</categoryId>
+    <parentId>3211</parentId>
+    <name>外国人のための健康診断</name>
+    <fullPath>診療/検診/健康診断/外国人のための健康診断</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0203030101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3250</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/03/03/0203030101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3251</categoryId>
+    <parentId>3211</parentId>
+    <name>国民健康保険の健康診断</name>
+    <fullPath>診療/検診/健康診断/国民健康保険の健康診断</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0203040101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3251</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/03/04/0203040101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3252</categoryId>
+    <parentId>3211</parentId>
+    <name>生涯転換期の健康診断</name>
+    <fullPath>診療/検診/健康診断/生涯転換期の健康診断</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0203050101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3252</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/03/05/0203050101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3212</categoryId>
+    <parentId>3201</parentId>
+    <name>電子保健サービス</name>
+    <fullPath>診療/検診/電子保健サービス</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0204010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3212</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/04/01/0204010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3253</categoryId>
+    <parentId>3212</parentId>
+    <name>諸証明書発行</name>
+    <fullPath>診療/検診/電子保健サービス/諸証明書発行</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0204010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3253</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/04/01/0204010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3254</categoryId>
+    <parentId>3212</parentId>
+    <name>診療内訳照会</name>
+    <fullPath>診療/検診/電子保健サービス/診療内訳照会</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0204020101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3254</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/04/02/0204020101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3255</categoryId>
+    <parentId>3212</parentId>
+    <name>保健教育予約</name>
+    <fullPath>診療/検診/電子保健サービス/保健教育予約</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0204030101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3255</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/04/03/0204030101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3256</categoryId>
+    <parentId>3212</parentId>
+    <name>予約サービス</name>
+    <fullPath>診療/検診/電子保健サービス/予約サービス</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0204040101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3256</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/04/04/0204040101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3213</categoryId>
+    <parentId>3201</parentId>
+    <name>仮想の診療費算定</name>
+    <fullPath>診療/検診/仮想の診療費算定</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0205010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3213</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/05/01/0205010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3214</categoryId>
+    <parentId>3201</parentId>
+    <name>健康動画</name>
+    <fullPath>診療/検診/健康動画</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0206010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3214</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/02/06/01/0206010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3202</categoryId>
+    <parentId>0</parentId>
+    <name>予防接種</name>
+    <fullPath>予防接種</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0301010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3202</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/03/01/01/0301010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3215</categoryId>
+    <parentId>3202</parentId>
+    <name>定期予防接種</name>
+    <fullPath>予防接種/定期予防接種</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0301010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3215</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/03/01/01/0301010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3216</categoryId>
+    <parentId>3202</parentId>
+    <name>臨時予防接種</name>
+    <fullPath>予防接種/臨時予防接種</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0302010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3216</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/03/02/01/0302010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3257</categoryId>
+    <parentId>3216</parentId>
+    <name>接種案内</name>
+    <fullPath>予防接種/臨時予防接種/接種案内</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0302010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3257</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/03/02/01/0302010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3258</categoryId>
+    <parentId>3216</parentId>
+    <name>予防接種の注意事項</name>
+    <fullPath>予防接種/臨時予防接種/予防接種の注意事項</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0302020101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3258</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/03/02/02/0302020101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3217</categoryId>
+    <parentId>3202</parentId>
+    <name>乳幼児の予防接種</name>
+    <fullPath>予防接種/乳幼児の予防接種</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0303010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3217</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/03/03/01/0303010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3259</categoryId>
+    <parentId>3217</parentId>
+    <name>接種案内</name>
+    <fullPath>予防接種/乳幼児の予防接種/接種案内</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0303010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3259</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/03/03/01/0303010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3260</categoryId>
+    <parentId>3217</parentId>
+    <name>予防接種の注意事項</name>
+    <fullPath>予防接種/乳幼児の予防接種/予防接種の注意事項</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0303020101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3260</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/03/03/02/0303020101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3261</categoryId>
+    <parentId>3217</parentId>
+    <name>予防接種日の確認</name>
+    <fullPath>予防接種/乳幼児の予防接種/予防接種日の確認</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0303030101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3261</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/03/03/03/0303030101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3218</categoryId>
+    <parentId>3202</parentId>
+    <name>B型肝炎の垂直感染</name>
+    <fullPath>予防接種/B型肝炎の垂直感染</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0304010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3218</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/03/04/01/0304010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3262</categoryId>
+    <parentId>3218</parentId>
+    <name>B型感染の垂直感染とは</name>
+    <fullPath>予防接種/B型肝炎の垂直感染/B型感染の垂直感染とは</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0304010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3262</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/03/04/01/0304010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3263</categoryId>
+    <parentId>3218</parentId>
+    <name>接種案内</name>
+    <fullPath>予防接種/B型肝炎の垂直感染/接種案内</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0304020101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3263</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/03/04/02/0304020101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3219</categoryId>
+    <parentId>3202</parentId>
+    <name>必須予防接種</name>
+    <fullPath>予防接種/必須予防接種</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0305010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3219</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/03/05/01/0305010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3264</categoryId>
+    <parentId>3219</parentId>
+    <name>事業案内</name>
+    <fullPath>予防接種/必須予防接種/事業案内</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0305010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3264</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/03/05/01/0305010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3265</categoryId>
+    <parentId>3219</parentId>
+    <name>委託医療機関</name>
+    <fullPath>予防接種/必須予防接種/委託医療機関</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0305020101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3265</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/03/05/02/0305020101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3203</categoryId>
+    <parentId>0</parentId>
+    <name>医薬管理</name>
+    <fullPath>医薬管理</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0401010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3203</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/04/01/01/0401010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3220</categoryId>
+    <parentId>3203</parentId>
+    <name>医療機関</name>
+    <fullPath>医薬管理/医療機関</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0401010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3220</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/04/01/01/0401010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3266</categoryId>
+    <parentId>3220</parentId>
+    <name>家庭医学科医院</name>
+    <fullPath>医薬管理/医療機関/家庭医学科医院</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0401010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3266</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/04/01/01/0401010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3267</categoryId>
+    <parentId>3220</parentId>
+    <name>その他の医院</name>
+    <fullPath>医薬管理/医療機関/その他の医院</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0401020101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3267</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/04/01/02/0401020101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3268</categoryId>
+    <parentId>3220</parentId>
+    <name>病院</name>
+    <fullPath>医薬管理/医療機関/病院</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0401030101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3268</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/04/01/03/0401030101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3269</categoryId>
+    <parentId>3220</parentId>
+    <name>産婦人科</name>
+    <fullPath>医薬管理/医療機関/産婦人科</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0401040101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3269</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/04/01/04/0401040101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3270</categoryId>
+    <parentId>3220</parentId>
+    <name>美容整形外科医院</name>
+    <fullPath>医薬管理/医療機関/美容整形外科医院</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0401050101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3270</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/04/01/05/0401050101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3271</categoryId>
+    <parentId>3220</parentId>
+    <name>小児青少年科医院</name>
+    <fullPath>医薬管理/医療機関/小児青少年科医院</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0401060101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3271</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/04/01/06/0401060101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3272</categoryId>
+    <parentId>3220</parentId>
+    <name>神経精神科医院</name>
+    <fullPath>医薬管理/医療機関/神経精神科医院</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0401070101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3272</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/04/01/07/0401070101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3273</categoryId>
+    <parentId>3220</parentId>
+    <name>眼科医院</name>
+    <fullPath>医薬管理/医療機関/眼科医院</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0401080101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3273</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/04/01/08/0401080101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3274</categoryId>
+    <parentId>3220</parentId>
+    <name>外科医院</name>
+    <fullPath>医薬管理/医療機関/外科医院</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0401090101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3274</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/04/01/09/0401090101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3275</categoryId>
+    <parentId>3220</parentId>
+    <name>耳鼻咽喉科医院</name>
+    <fullPath>医薬管理/医療機関/耳鼻咽喉科医院</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0401100101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3275</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/04/01/10/0401100101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3276</categoryId>
+    <parentId>3220</parentId>
+    <name>整形外科医院</name>
+    <fullPath>医薬管理/医療機関/整形外科医院</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0401110101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3276</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/04/01/11/0401110101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3277</categoryId>
+    <parentId>3220</parentId>
+    <name>総合病院</name>
+    <fullPath>医薬管理/医療機関/総合病院</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0401120101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3277</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/04/01/12/0401120101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3278</categoryId>
+    <parentId>3220</parentId>
+    <name>歯科医院</name>
+    <fullPath>医薬管理/医療機関/歯科医院</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0401130101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3278</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/04/01/13/0401130101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3279</categoryId>
+    <parentId>3220</parentId>
+    <name>皮膚科医院</name>
+    <fullPath>医薬管理/医療機関/皮膚科医院</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0401140101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3279</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/04/01/14/0401140101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3280</categoryId>
+    <parentId>3220</parentId>
+    <name>韓医院</name>
+    <fullPath>医薬管理/医療機関/韓医院</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0401150101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3280</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/04/01/15/0401150101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3221</categoryId>
+    <parentId>3203</parentId>
+    <name>外国語対応診療機関</name>
+    <fullPath>医薬管理/外国語対応診療機関</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0402010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3221</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/04/02/01/0402010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3222</categoryId>
+    <parentId>3203</parentId>
+    <name>休日診療機関/夜間診療機関</name>
+    <fullPath>医薬管理/休日診療機関/夜間診療機関</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0403010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3222</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/04/03/01/0403010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3223</categoryId>
+    <parentId>3203</parentId>
+    <name>薬局</name>
+    <fullPath>医薬管理/薬局</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0404010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3223</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/04/04/01/0404010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3281</categoryId>
+    <parentId>3223</parentId>
+    <name>薬局</name>
+    <fullPath>医薬管理/薬局/薬局</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0404010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3281</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/04/04/01/0404010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3282</categoryId>
+    <parentId>3223</parentId>
+    <name>当番薬局</name>
+    <fullPath>医薬管理/薬局/当番薬局</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0404020101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3282</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/04/04/02/0404020101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3204</categoryId>
+    <parentId>0</parentId>
+    <name>食の安全</name>
+    <fullPath>食の安全</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0501010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3204</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/05/01/01/0501010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3224</categoryId>
+    <parentId>3204</parentId>
+    <name>食中毒とは</name>
+    <fullPath>食の安全/食中毒とは</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0501010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3224</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/05/01/01/0501010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3225</categoryId>
+    <parentId>3204</parentId>
+    <name>食中毒予防要領</name>
+    <fullPath>食の安全/食中毒予防要領</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0502010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3225</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/05/02/01/0502010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3226</categoryId>
+    <parentId>3204</parentId>
+    <name>食中毒予防広報資料</name>
+    <fullPath>食の安全/食中毒予防広報資料</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0503010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3226</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/05/03/01/0503010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3227</categoryId>
+    <parentId>3204</parentId>
+    <name>食中毒文字指数</name>
+    <fullPath>食の安全/食中毒文字指数</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0504010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3227</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/05/04/01/0504010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3205</categoryId>
+    <parentId>0</parentId>
+    <name>保健事業</name>
+    <fullPath>保健事業</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0601010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3205</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/06/01/01/0601010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3228</categoryId>
+    <parentId>3205</parentId>
+    <name>禁煙クリニック</name>
+    <fullPath>保健事業/禁煙クリニック</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0601010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3228</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/06/01/01/0601010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3229</categoryId>
+    <parentId>3205</parentId>
+    <name>母子保健</name>
+    <fullPath>保健事業/母子保健</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0602010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3229</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/06/02/01/0602010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3283</categoryId>
+    <parentId>3229</parentId>
+    <name>妊産婦の健康管理</name>
+    <fullPath>保健事業/母子保健/妊産婦の健康管理</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0602010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3283</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/06/02/01/0602010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3284</categoryId>
+    <parentId>3229</parentId>
+    <name>出産奨励</name>
+    <fullPath>保健事業/母子保健/出産奨励</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0602020101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3284</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/06/02/02/0602020101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3285</categoryId>
+    <parentId>3229</parentId>
+    <name>乳幼児の健康管理</name>
+    <fullPath>保健事業/母子保健/乳幼児の健康管理</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0602030101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3285</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/06/02/03/0602030101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3286</categoryId>
+    <parentId>3229</parentId>
+    <name>栄養プラス事業</name>
+    <fullPath>保健事業/母子保健/栄養プラス事業</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0602040101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3286</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/06/02/04/0602040101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3230</categoryId>
+    <parentId>3205</parentId>
+    <name>エイズ管理</name>
+    <fullPath>保健事業/エイズ管理</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0603010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3230</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/06/03/01/0603010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3231</categoryId>
+    <parentId>3205</parentId>
+    <name>医療費支援</name>
+    <fullPath>保健事業/医療費支援</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0604010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3231</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/06/04/01/0604010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3287</categoryId>
+    <parentId>3231</parentId>
+    <name>未熟児と先天異常児</name>
+    <fullPath>保健事業/医療費支援/未熟児と先天異常児</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0604010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3287</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/06/04/01/0604010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3288</categoryId>
+    <parentId>3231</parentId>
+    <name>新生児の難聴選別検査</name>
+    <fullPath>保健事業/医療費支援/新生児の難聴選別検査</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0604020101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3288</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/06/04/02/0604020101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3289</categoryId>
+    <parentId>3231</parentId>
+    <name>希少性/難治性疾患患者</name>
+    <fullPath>保健事業/医療費支援/希少性/難治性疾患患者</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0604030101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3289</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/06/04/03/0604030101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3290</categoryId>
+    <parentId>3231</parentId>
+    <name>ガン治療費</name>
+    <fullPath>保健事業/医療費支援/ガン治療費</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0604040101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3290</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/06/04/04/0604040101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3291</categoryId>
+    <parentId>3231</parentId>
+    <name>先天性代謝異常検査</name>
+    <fullPath>保健事業/医療費支援/先天性代謝異常検査</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0604050101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3291</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/06/04/05/0604050101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3292</categoryId>
+    <parentId>3231</parentId>
+    <name>在宅医療の対象者</name>
+    <fullPath>保健事業/医療費支援/在宅医療の対象者</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0604060101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3292</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/06/04/06/0604060101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3293</categoryId>
+    <parentId>3231</parentId>
+    <name>不妊夫婦の施術費</name>
+    <fullPath>保健事業/医療費支援/不妊夫婦の施術費</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0604070101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3293</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/06/04/07/0604070101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3294</categoryId>
+    <parentId>3231</parentId>
+    <name>結核患者の医療費</name>
+    <fullPath>保健事業/医療費支援/結核患者の医療費</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0604080101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3294</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/06/04/08/0604080101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3295</categoryId>
+    <parentId>3231</parentId>
+    <name>アトピー∙喘息検査</name>
+    <fullPath>保健事業/医療費支援/アトピー∙喘息検査</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0604090101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3295</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/06/04/09/0604090101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3296</categoryId>
+    <parentId>3231</parentId>
+    <name>B型肝炎(垂直感染)の予防処置費</name>
+    <fullPath>保健事業/医療費支援/B型肝炎(垂直感染)の予防処置費</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0604100101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3296</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/06/04/10/0604100101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3297</categoryId>
+    <parentId>3231</parentId>
+    <name>必須予防接種</name>
+    <fullPath>保健事業/医療費支援/必須予防接種</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0604110101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3297</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/06/04/11/0604110101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3298</categoryId>
+    <parentId>3231</parentId>
+    <name>低所得層の認知症医療費</name>
+    <fullPath>保健事業/医療費支援/低所得層の認知症医療費</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0604120101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3298</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/06/04/12/0604120101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3232</categoryId>
+    <parentId>3205</parentId>
+    <name>口腔保健</name>
+    <fullPath>保健事業/口腔保健</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0605010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3232</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/06/05/01/0605010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3206</categoryId>
+    <parentId>0</parentId>
+    <name>保健所のご紹介</name>
+    <fullPath>保健所のご紹介</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0701010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3206</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/07/01/01/0701010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3233</categoryId>
+    <parentId>3206</parentId>
+    <name>保健便り</name>
+    <fullPath>保健所のご紹介/保健便り</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0701010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3233</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/07/01/01/0701010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3299</categoryId>
+    <parentId>3233</parentId>
+    <name>新着情報</name>
+    <fullPath>保健所のご紹介/保健便り/新着情報</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0701010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3299</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/07/01/01/0701010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3300</categoryId>
+    <parentId>3233</parentId>
+    <name>保健情報誌</name>
+    <fullPath>保健所のご紹介/保健便り/保健情報誌</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0701020101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3300</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/07/01/02/0701020101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3301</categoryId>
+    <parentId>3233</parentId>
+    <name>保健カレンダー</name>
+    <fullPath>保健所のご紹介/保健便り/保健カレンダー</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0701030101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3301</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/07/01/03/0701030101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3234</categoryId>
+    <parentId>3206</parentId>
+    <name>部署案内</name>
+    <fullPath>保健所のご紹介/部署案内</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0702010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3234</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/07/02/01/0702010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3302</categoryId>
+    <parentId>3234</parentId>
+    <name>組織図</name>
+    <fullPath>保健所のご紹介/部署案内/組織図</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0702010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3302</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/07/02/01/0702010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3303</categoryId>
+    <parentId>3234</parentId>
+    <name>業務案内</name>
+    <fullPath>保健所のご紹介/部署案内/業務案内</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0702020101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3303</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/07/02/02/0702020101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3304</categoryId>
+    <parentId>3234</parentId>
+    <name>館内案内</name>
+    <fullPath>保健所のご紹介/部署案内/館内案内</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0702030101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3304</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/07/02/03/0702030101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+  <category>
+    <categoryId>3235</categoryId>
+    <parentId>3206</parentId>
+    <name>交通アクセス</name>
+    <fullPath>保健所のご紹介/交通アクセス</fullPath>
+    <menuLink />
+    <updateDate>2010-08-11-18-17-28</updateDate>
+    <position>0703010101</position>
+    <fullMenuLink>/japanese/main/contents.do?categoryId=3235</fullMenuLink>
+    <userName />
+    <email />
+    <phone />
+    <mobile />
+    <department />
+    <departmentCode />
+    <officetelno />
+    <contentsPath>/japanese/open_content/07/03/01/0703010101.jsp</contentsPath>
+    <menuPopupYn>N</menuPopupYn>
+  </category>
+</categories>
+

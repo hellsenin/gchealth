@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans" 
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:p="http://www.springframework.org/schema/p" 
+	   xmlns:context="http://www.springframework.org/schema/context"
+	   xmlns:util="http://www.springframework.org/schema/util"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans 
+	        http://www.springframework.org/schema/beans/spring-beans-2.5.xsd
+	        http://www.springframework.org/schema/util
+	        http://www.springframework.org/schema/util/spring-util-2.5.xsd
+			http://www.springframework.org/schema/context 
+			http://www.springframework.org/schema/context/spring-context-2.5.xsd">
+	
+	<util:map id="applicationBeanName" map-class="java.util.HashMap">
+            <entry key="default" value="applicationService"/>
+   			 <!-- 모범업소지정신청 -->
+            <entry key="H001" value="H001ApplicationService"/>
+   			 <!-- 대사증후군 -->
+            <entry key="APP000046" value="APP000046ApplicationService"/>
+	</util:map>
+	
+    <!-- 민원 코드별 쓰기,수정페이지 -->
+	<util:map id="applicationWritePage" map-class="java.util.HashMap">
+            <entry key="default" value="/health/dev_content/application/:applyCode/:applyCodeWrite.jsp"/>
+	</util:map>
+	
+    <!-- 민원 코드별 리스트페이지 -->
+	<util:map id="applicationListPage" map-class="java.util.HashMap">
+            <entry key="default" value="/health/dev_content/application/:applyCode/:applyCodeList.jsp"/>
+	</util:map>
+	
+    <!-- 민원 코드별 뷰페이지 -->
+	<util:map id="applicationViewPage" map-class="java.util.HashMap">
+            <entry key="default" value="/health/dev_content/application/:applyCode/:applyCodeView.jsp"/>
+	</util:map>
+	
+	<util:map id="applicationListForward" map-class="java.util.HashMap">
+            <!-- 민원 코드별 리스트URL -->
+            <entry key="default" value="/health/application/selectMyApplyList.do?applyCode=:applyCode&amp;petiGubun=:petiGubun&amp;categoryId=:categoryId"/>
+            <entry key="EDU0001" value="/health/application/selectMyApplyList.do?applyCode=:applyCode&amp;categoryId=:categoryId"/>
+   			<entry key="RELY0001" value="/health/medicalTeam/selectApplyList.do?applyCode=:applyCode&amp;petiGubun=:petiGubun&amp;categoryId=:categoryId"/>
+   			<entry key="APP000037" value="/health/application/selectApplyList.do?applyCode=:applyCode&amp;petiGubun=:petiGubun&amp;categoryId=:categoryId"/>
+   			<entry key="H003" value="/health/application/selectMyApplyList.do?applyCode=H003&amp;categoryId=2430"/>
+   			<entry key="H002" value="/health/application/selectMyApplyList.do?applyCode=H002&amp;categoryId=2934"/>
+	</util:map>
+    	
+    <!-- 관리자 민원 코드별 쓰기,수정페이지 -->
+	<util:map id="adminApplicationWritePage" map-class="java.util.HashMap">
+            <entry key="default" value="admin/health/application/:applyCode/:applyCodeWrite"/>
+	</util:map>
+	
+    <!-- 관리자 민원 코드별 리스트페이지 -->
+	<util:map id="adminApplicationListPage" map-class="java.util.HashMap">
+            <entry key="default" value="admin/health/application/:applyCode/:applyCodeList"/>
+	</util:map>
+	
+	<util:map id="adminApplicationListForward" map-class="java.util.HashMap">
+            <!-- 민원 코드별 리스트URL -->
+            <entry key="default" value="/admin/health/application/selectApplicationList.do?applyCode=:applyCode&amp;petiGubun=:petiGubun"/>
+            <entry key="EDU0001" value="/admin/health/onlineApply/selectApplicantList.do?applyCode=:applyCode&amp;onlineId=:onlineId"/>
+            <entry key="APP000029" value="/admin/health/onlineApply/selectApplicantList.do?applyCode=:applyCode&amp;onlineId=:onlineId"/>
+            <entry key="APP000030" value="/admin/health/onlineApply/selectApplicantList.do?applyCode=:applyCode&amp;onlineId=:onlineId"/>
+            <entry key="APP000031" value="/admin/health/onlineApply/selectApplicantList.do?applyCode=:applyCode&amp;onlineId=:onlineId"/>
+            <entry key="APP000032" value="/admin/health/onlineApply/selectApplicantList.do?applyCode=:applyCode&amp;onlineId=:onlineId"/>
+            <entry key="APP000033" value="/admin/health/onlineApply/selectApplicantList.do?applyCode=:applyCode&amp;onlineId=:onlineId"/>
+            <entry key="APP000034" value="/admin/health/onlineApply/selectApplicantList.do?applyCode=:applyCode&amp;onlineId=:onlineId"/>
+            <entry key="APP000035" value="/admin/health/onlineApply/selectApplicantList.do?applyCode=:applyCode&amp;onlineId=:onlineId"/>
+            <entry key="APP000036" value="/admin/health/onlineApply/selectApplicantList.do?applyCode=:applyCode&amp;onlineId=:onlineId"/>
+	</util:map>
+    	
+</beans>

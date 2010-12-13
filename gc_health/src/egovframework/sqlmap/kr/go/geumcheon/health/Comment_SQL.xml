@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="Comment">
+ 
+	<typeAlias  alias="zvl" type="egovframework.kr.go.geumcheon.health.util.ZValue"/>
+
+	<select id="CommentDAO.selectCommentListCnt" parameterClass="zvl" resultClass="java.lang.Integer" >
+		<![CDATA[
+			SELECT
+				COUNT(*)
+			FROM
+				BBSCOMMENTS
+			WHERE
+				BBS_ID = #bbsId#
+			AND NTT_ID = #nttId#
+		]]>
+	</select>	
+	
+	<select id="CommentDAO.selectCommentList" parameterClass="zvl" resultClass="zvl" >
+		<![CDATA[
+		SELECT A.SEQ,
+		       A.BBS_ID,
+		       A.NTT_ID,
+		       A.ID,
+		       A.PIN,
+		       A.PASSWORD,
+		       A.CONTENT,
+		       A.REG_DATE,
+		       A.NAME
+		  FROM BBSCOMMENTS A
+			WHERE
+				BBS_ID = #bbsId#
+			AND NTT_ID = #nttId#
+		]]>
+	</select>	
+	
+	<insert id="CommentDAO.insertCommentArticle" parameterClass="zvl" >
+		<selectKey resultClass="java.lang.Integer" keyProperty="seq">
+			<![CDATA[ SELECT To_Number('0' || Max(SEQ))+1 FROM BBSCOMMENTS  ]]>
+		</selectKey>			
+		<![CDATA[
+			INSERT INTO BBSCOMMENTS ( SEQ,BBS_ID,NTT_ID,ID,PIN,PASSWORD,CONTENT,REG_DATE, NAME )
+			VALUES ( #seq#,#bbsId#,#nttId#,#id#,#pin#,#password#,#content#,SYSDATE,#name#  )
+			
+		]]>
+	</insert>
+	
+	<update id="CommentDAO.updateCommentState" parameterClass="zvl">
+ 		<![CDATA[
+			UPDATE BBSCOMMENTS
+			SET CONTENT = #content# 
+			WHERE SEQ = #seq#
+ 		]]>
+ 	</update>
+	
+	<delete id="CommentDAO.deleteCommentArticle" parameterClass="zvl">
+	<![CDATA[
+				DELETE BBSCOMMENTS
+				WHERE SEQ = #seq#
+	 		]]>
+	</delete>
+	
+</sqlMap>

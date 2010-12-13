@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="category">
+
+	<typeAlias  alias="zvl" type="egovframework.kr.go.geumcheon.health.util.ZValue"/>
+    			
+	<select id="categoryDAO.selectCategoryListBySiteId" parameterClass="string" resultClass="zvl">
+		SELECT 
+			 A.CATEGORY_ID 
+			,A.PARENT_ID 
+			,A.NAME 
+			,A.FULL_PATH 
+			,A.MENU_LINK 
+			,A.UPDATE_DATE 
+			,B.POSITION 
+			,B.FULL_MENU_LINK 
+			,B.FULL_LINK_PATH 
+			,C.TARGET_PATH AS CONTENTS_PATH 
+          ,A.SITE_ID 
+          ,A.MENU_POPUP_YN 
+          ,D.NAME AS USER_NAME 
+          ,D.EMAIL 
+          ,D.PHONE 
+          ,D.MOBILE 
+          ,D.DEPARTMENT 
+          ,D.DEPARTMENT_CODE 
+          ,D.OFFICETELNO 
+		FROM gcweb.WCM_CATEGORY A 
+		LEFT OUTER JOIN CATEGORY_ADDITION B ON B.CATEGORY_ID = A.CATEGORY_ID 
+		LEFT OUTER JOIN gcweb.WCM_FOLDER_MAP C ON C.CATEGORY_ID = A.CATEGORY_ID 
+		LEFT OUTER JOIN gcweb.WCM_USER D ON D.USER_ID = A.ADMIN_ID 
+		WHERE A.SITE_ID = #siteId# AND A.STATUS = 'A' AND NVL(A.MENU_USE_YN,'N') = 'Y'
+		ORDER BY A.PARENT_ID ASC, A.SEQUENCE ASC 
+	</select>	
+		
+	<insert id="categoryDAO.addCategoryAddition" parameterClass="zvl">
+		<![CDATA[
+			INSERT INTO CATEGORY_ADDITION ( CATEGORY_ID,POSITION,FULL_MENU_LINK,FULL_LINK_PATH,CONTENTS_PATH )
+			VALUES ( #categoryId#, #position#, #fullMenuLink#, #path#, #contentsPath# )
+		]]>
+	</insert>
+		
+	<delete id="categoryDAO.delCategoryAdditionBySiteId" parameterClass="string" >
+		<![CDATA[
+			DELETE CATEGORY_ADDITION
+			WHERE CATEGORY_ID IN (SELECT CATEGORY_ID FROM GCWEB.WCM_CATEGORY WHERE SITE_ID = #siteId#)
+		]]>
+	</delete>
+	
+	<insert id="categoryDAO.addFolderMap" parameterClass="zvl">
+		<selectKey resultClass="java.lang.Long" keyProperty="foldeMapId">
+			SELECT NVL(MAX(FOLDER_MAP_ID),0)+1 AS FOLDER_MAP_ID  FROM gcweb.WCM_FOLDER_MAP
+		</selectKey>			
+		<![CDATA[
+			INSERT INTO gcweb.WCM_FOLDER_MAP ( 
+				FOLDER_MAP_ID
+				,CATEGORY_ID
+				,ENTRY_TEMPLATE_ID
+				,SERVER_ID
+				,TARGET_PATH
+				,SECONDARY_TARGET_PATH
+				,APPLY_TYPE 
+			)
+			VALUES ( #foldeMapId#, #categoryId#, 6, 12, #targetPath#, #secondaryTargetPath#, #applyType# )
+		]]>
+	</insert>
+		
+	<insert id="categoryDAO.addCategoryEntry" parameterClass="zvl">
+		<selectKey resultClass="java.lang.Long" keyProperty="categoryEntryId">
+			SELECT MAX(category_entry_id)+1 FROM gcweb.WCM_CATEGORY_ENTRY
+		</selectKey>			
+		<![CDATA[
+			INSERT INTO WCM_CATEGORY_ENTRY
+			(CATEGORY_ENTRY_ID, CATEGORY_ID, ENTRY_TEMPLATE_ID)
+			VALUES ( #categoryEntryId#, #categoryId#, 6 )
+		]]>
+	</insert>
+		
+	<select id="categoryDAO.selectNonEntry" resultClass="string">
+		<![CDATA[
+			select 
+			    category_id
+			FROM gcweb.WCM_CATEGORY
+			WHERE site_id = 11
+			AND CATEGORY_id NOT IN ( SELECT category_id FROM gcweb.WCM_CATEGORY_ENTRY WHERE entry_template_id = 6 )
+		]]>
+	</select>
+		
+	<select id="categoryDAO.selectProgramList" resultClass="zvl" parameterClass="string">
+		<![CDATA[
+			SELECT 
+				A.FULL_PATH,
+				CASE WHEN B.PROGRAM_FILE_NM IS NULL THEN C.TARGET_PATH
+				     ELSE B.PROGRAM_FILE_NM
+				END AS CONTENTS_PATH,
+				D.FULL_MENU_LINK
+			FROM gcweb.WCM_CATEGORY A
+			LEFT OUTER JOIN PROGRAM_LIST B ON B.CATEGORY_ID = A.CATEGORY_ID
+			LEFT OUTER JOIN gcweb.WCM_FOLDER_MAP C ON C.CATEGORY_ID = A.CATEGORY_ID 
+			LEFT OUTER JOIN CATEGORY_ADDITION D ON D.CATEGORY_ID = A.CATEGORY_ID 
+			WHERE A.SITE_ID = #siteId# AND NVL(A.MENU_USE_YN, 'N') = 'Y'
+			START WITH A.PARENT_ID = 0
+			CONNECT BY PRIOR A.CATEGORY_ID = A.PARENT_ID
+		]]>
+	</select>
+
+	<insert id="categoryDAO.insertProgramList" parameterClass="zvl">
+		<![CDATA[
+			INSERT INTO PROGRAM_LIST ( CATEGORY_ID, PROGRAM_FILE_NM)
+			VALUES (  #categoryId#, #progrmFileNm# )
+		]]>
+	</insert>
+
+	<select id="categoryDAO.existCategoryIdInProgramList" resultClass="int" parameterClass="string">
+		<![CDATA[
+			SELECT 
+				COUNT(*)
+			FROM PROGRAM_LIST
+			WHERE CATEGORY_ID = #categoryId#
+		]]>
+	</select>
+
+	<update id="categoryDAO.updateProgramList" parameterClass="zvl">
+		<![CDATA[
+			UPDATE PROGRAM_LIST
+			SET PROGRAM_FILE_NM = #progrmFileNm#
+			WHERE CATEGORY_ID = #categoryId#
+		]]>
+	</update>
+		
+	<select id="categoryDAO.selectContentsPath" resultClass="string" parameterClass="string">
+		<![CDATA[
+			SELECT TARGET_PATH
+			FROM GCWEB.WCM_FOLDER_MAP
+			WHERE CATEGORY_ID = #categoryId#
+		]]>
+	</select>
+		
+	<select id="categoryDAO.selectCategoryByName" resultClass="zvl" parameterClass="string">
+		<![CDATA[
+			SELECT 
+				A.NAME
+				,A.FULL_PATH
+				,B.FULL_MENU_LINK
+			WHERE GCWEB.WCM_CATEGORY A
+			INNER JOIN CATEGORY_ADDITION B ON B.CATEGORY_ID = A.CATEGORY_ID
+			WHERE A.NAME LIKE '%' || #searchTxt# || '%'
+			AND A.SITE_ID = 14
+		]]>
+	</select>
+		
+</sqlMap>                            

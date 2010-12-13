@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE sqlMap PUBLIC "-//iBATIS.com//DTD SQL Map 2.0//EN" "http://www.ibatis.com/dtd/sql-map-2.dtd">
+
+<sqlMap namespace="visitorLog">
+
+	<typeAlias  alias="zvl" type="egovframework.kr.go.geumcheon.health.util.ZValue"/>
+    			
+	<select id="visitorLogDAO.selectLogCount" parameterClass="zvl" resultClass="zvl">		
+		SELECT
+			  NVL((SELECT LOG_COUNT FROM VISITOR_LOG WHERE LOG_DATE = #logDate# AND SITE_ID = #siteId#),0) AS DAY_COUNT,
+			  NVL((SELECT SUM(LOG_COUNT) FROM VISITOR_LOG WHERE SITE_ID = #siteId#),0) AS TOTAL_COUNT
+		FROM DUAL
+	</select>	
+		
+	<insert id="visitorLogDAO.insertVisitorLog" parameterClass="zvl">
+		<selectKey resultClass="java.lang.Integer" keyProperty="logId">
+			SELECT SEQ_VISITOR_LOG.NEXTVAL FROM DUAL
+		</selectKey>			
+		<![CDATA[ 			
+		    INSERT INTO VISITOR_LOG 
+		    (
+		    	LOG_ID,USER_IP,LOG_COUNT,LOG_DATE,SITE_ID
+		    )
+			VALUES 
+			( 
+				#logId#, #userIp#, 1, #logDate#, #siteId#
+			)
+		]]> 
+	</insert>
+	
+	<update id="visitorLogDAO.addLogCount" parameterClass="zvl">
+		<![CDATA[ 			
+		    UPDATE VISITOR_LOG SET LOG_COUNT = LOG_COUNT + 1 WHERE LOG_DATE = #logDate# AND SITE_ID = #siteId#
+		]]> 
+	</update>
+	
+</sqlMap>                            
