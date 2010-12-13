@@ -1,0 +1,393 @@
+@charset "utf-8";
+/* CSS Document */
+li{list-style-type:none;}
+body{width:100%;}
+#warp{height:100%; position:relative;/* background:url(/health/open_content/images/main/body_bg.jpg) 50% 0 no-repeat;*/}
+
+	#gnb ul li ul#gnb_01{ background-image:url(/health/open_content/images/sub_green/gnb_bg_sub.gif); display:block !important}
+	#gnb ul li ul#gnb_02{ background-image:url(/health/open_content/images/sub_blue/gnb_bg_main.gif)}
+	#gnb ul li ul#gnb_03{ background-image:url(/health/open_content/images/sub_orange/gnb_bg_main.gif)}
+	#gnb ul li ul#gnb_04{ background-image:url(/health/open_content/images/sub_purple/gnb_bg_main.gif)}
+
+#global li dl{ background:url(/health/open_content/images/main/global/font_bg.gif) 9px 0 no-repeat; position:relative; top:-4px; height:17px; padding:4px 12px 0 16px; line-height:0em; float:left; }
+
+
+#maincontent{width:870px; margin:22px 0 0 0; position:relative;}
+	#main_top{height:180px; padding:0 0 10px; position: relative;}
+	.container_left_top{
+		background:url('/health/open_content/images/main/left_top_con_bg_02.gif') right bottom no-repeat;
+		width:369px;
+		height:67px;
+	}
+	.container_left_top h2{width:296px; border-bottom:1px solid #e0e0e0; padding:1px 0px 4px 2px;}
+
+	.text_titme{margin:9px 0px 0px 0px; height:42px;}
+	.container_left_top_ares{
+		background:url('/health/open_content/images/main/left_top_con_bg_03.gif') 0.0 no-repeat;	
+		width:360px;
+		height:76px;
+		position:relative;
+	}
+	.container_left_top_ares .deco_text2{position:absolute; right:39px; top:16px;}
+	.container_left_top_ares .btn_ares{position:absolute; right:16px; top:48px;}
+	.container_left_top_ares .btn_ares li{float:left;}
+	.left_con .clear{width:369px; padding:8px 0px 0px 0px; clear:both;}
+	.left_con .clear li{float:left;}
+	.left_con{
+		float:left;
+	}
+
+	#popupzone{
+		position: relative; left: 20px;
+		width: 475px; height: 146px;
+		float: left;
+	}
+
+	#popuplist{
+		border:1px solid #dddddd; position: relative;
+		width: 475px; height: 146px;
+		overflow: hidden;
+	}
+	#popuplist li{
+		width: 475px; height: 146px;
+	}
+
+	#zonePannel {
+		position: absolute; left: 0px;top: 160px;
+		width: 479px; height: 20px;
+	}
+	#zonePannel #bannerPaging{
+		margin:0px; padding:0px; width: 160px; height:11px;
+		float: left;
+	}
+	#popupzone #bannerPaging li{float:left; padding-right:2px;}
+	#popupzone #controll{float:right;}
+	#popupzone #controll li{float:left; padding-right:2px;}
+	#main_center{
+		background:url('/health/open_content/images/main/search_bg0906.gif') 0 0 no-repeat; 
+		width:870px; 
+		height:28px; 
+		padding:8px 0px 20px 0px; 
+		position:relative;
+		clear:both;
+	}
+	#main_center .main_center_search{margin-left:15px;}
+	#main_center select, #search_word_id, #search_word2 {font-size: 12px;}
+	#main_center select { height: 20px;}
+	#search_word_id, #search_word2 { padding: 2px 0px}
+	#main_center label{ padding:0; margin:0; left:-999em; width:0; font-size:0; visibility:hidden; overflow:hidden; height:0; line-height:1.5em; position:absolute }
+		.main_total_search{
+			width:280px;
+			float:left;
+		}
+		.search_link{
+			padding:2px 0px 0px 0px;
+			margin:0px 12px 0px 0px;
+			width:200px;
+			float:left;
+			font-size:11px;
+			height:20px;
+			background:url('/health/open_content/images/main/search_bar.gif') no-repeat right top;
+		}
+			.search_link h2{
+				float:left;
+				font-size:11px;
+				font-weight:normal;
+			}
+			.text_font li{
+				float:left;
+				color:#1a9711;
+			}
+		.main_gis_search{
+			margin:0px 0px 0px 12px;
+		}
+		.main_gis_search img {vertical-align:middle;}
+	#main_bottom{
+		clear:both;
+		height:100%;
+	}
+
+/*
+	
+	.main_search fieldset{display:inline;}
+	.main_total_search{ }    
+	.main_total_search select{ width:83px; border: 1px solid #7f9db9;}
+	.gis_search{ width:300px;  padding:0 0 0 104px}
+	.gis_search fieldset{padding:0 0 0 126px;}
+	.gis_search legend{ left:300px;position:absolute;top:13px;visibility:visible; }
+	.gis_search legend img{}
+		.search_word{ width:148px;border:1px solid #c0c0c0;}
+		.search_word2{ width:123px;border:1px solid #c0c0c0;}
+
+	.container_left_top { background:url(/health/open_content/images/main/left_top_con_bg.gif) 0 0 no-repeat; width:360px; height:147px; margin:20px 0 0 0; line-height:0.5em; position:relative;}
+	.container_left_top h2 { margin-bottom:14px;}
+	.container_left_top	.deco_text{ margin-bottom:16px; height:26px; overflow:hidden}
+	.container_left_top	.deco_text2{ margin:0 0 7px 125px; }
+	.container_left_top .btn_ares li{float:left;}
+		.popup_area{ position:absolute; left:268px; top:45px;}
+		#popup_zone{position:absolute;top:-102px;left:-268px;z-index:30;}
+		#popup_area{ background:url("/health/open_content/images/main/popup_bg.png") no-repeat scroll 0 0 transparent;display:none;height:240px;padding:29px 0 0 26px;width:360px;}
+		#popup_area h3{ margin-bottom:8px;}
+		#popup_area li{ margin:146px 2px 0 0; list-style:none; }
+		#popup_area li span.img{ display:none; position:absolute; left:0; top:0}
+		#popup_area li span.img.current{ display:block}
+		#popup_area li span.number{ float:left}
+		.pop_controll{ position:absolute; left:304px; top:194px;}
+		.pop_controll button{ background-color:#FFFFFF;border:0 none;width:12px; padding:0; cursor:pointer}
+		.pop_controll button.close{position:absolute;top:-185px;left:32px; background:url(/health/open_content/images/main/btn_pop_close.gif) 0 0 no-repeat; width:18px; height:16px; overflow:hidden}
+		.pop_controll button.close span{ visibility:hidden}
+		
+		.infor_set{ height:11px; position:relative; overflow:hidden}
+	.container_left_top .title_bo{ margin:0 10px 0 16px; float:left;position:relative; display:inline}
+
+
+	.container_left_top ul{ float:left; position:relative;}
+	.container_left_top ul li{ float:left; margin:0 16px 0 0; list-style:none; }
+	.container_left_top ul li a img{ vertical-align:top;}
+	.container_left_top p.clear{ height:27px; margin:16px 0 0 0}
+	*/
+	#main_bottom{width:870px; height: 310px; padding:0; position: relative; }
+	.notice{float:left; width:360px;}
+	.text-indent{
+		padding:0; margin:0; left:-999em; 
+		width:0; font-size:0; visibility:hidden; overflow:hidden; height:0; 
+		line-height:1.5em; position:absolute 
+	}
+	#notice_wrap{ 
+		position:relative; 
+		left:0px; top:0px; 
+		background-image:url(/health/open_content/images/main/notice_bg.gif);
+		background-repeat: no-repeat;
+		width:360px; height:145px;
+		clear: left;
+		float: left;
+	}
+
+	div.notice .t01{background-position:0px 0px}
+	div.notice .t02{background-position:-360px 0px}
+	div.notice .t03{background-position:-720px 0px}
+	div.notice .t04{background-position:-1080px 0px}
+	div.notice .t05{background-position:-1440px 0px}
+
+	#notice_wrap div {
+		position: absolute;
+		width: 360px;
+		padding: 0px; left: 0px ; top: 30px;
+	}
+
+	#notice_wrap div h3{
+		position:absolute; top: -25px;
+	}
+
+	#notice_wrap div p.more{
+		position:absolute;
+		right:3px;
+		top:-20px;
+		width: 30px;
+		height: 20px;
+	}
+/*
+	#notice_wrap div p.more a{
+		display: block;
+		width: 30px; height: 12px;
+	}
+*/
+	#tab_noticewapper01 h3{left:7px;}
+	#tab_noticewapper02 h3{left:60px;}
+	#tab_noticewapper03 h3{left:125px;}
+	#tab_noticewapper04 h3{left:189px;}
+	#tab_noticewapper05 h3{left:256px;}
+
+	/*#notice_wrap h3{ float:left; margin:0 16px 0  0}*/
+	#notice_wrap ul{ position:absolute; top:0px; left:0px; display:none;}
+	#notice_wrap ul .more{clear:both; position:absolute; top:-27px; left:320px; background:none !important}
+	#notice_wrap .open{ display:block !important}
+	#notice_wrap div ul li {clear:both; position:relative; background:url(/health/open_content/images/main/blt_notice_li.gif) 0 50% no-repeat; 
+		padding:0 0 0 8px; width:352px; height: 18px;
+	}
+
+	#notice_wrap div ul li a {display: inline; }
+	#notice_wrap div ul li a:hover{color:#d66000; text-decoration:underline !important}
+	#notice_wrap div ul li a span.text{ 
+		display:block; float:left;
+		background:url(/health/open_content/images/main/ico_new.gif) 100% 50% no-repeat; 
+		padding-right:10px; 
+		cursor:pointer; 
+	}
+	#notice_wrap div ul li a span.date{ width:65px; float:right; display:block;position:relative}
+
+	/*
+	.quickmenu_1{ padding:8px 12px 8px  18px; background:url(/health/open_content/images/main/btnset_left_con_bg.gif) 0 0 no-repeat;}
+	.quickmenu_1 li{ float:left; list-style:none;}
+	.quickmenu_1 li a img{ vertical-align:top}
+	*/
+	#quick_menu{
+		background:url("/health/open_content/images/common/quickmenu_bg_green.gif") no-repeat scroll 0 0 transparent;
+		left:900px;
+		padding:5px 10px;
+		position:absolute;
+		top:155px;
+		width:100px;
+	}
+	#quick_menu h2{
+		position:absolute;
+		top:0; 
+		left:0; 
+		width:0; 
+		height:0; 
+		overflow:hidden; 
+		visibility:hidden; 
+		font-size:0; 
+		line-height:0;
+	}
+	
+.middle_con{ width:230px; position:relative; float:left; }
+	.quickmenu_2{ padding:30px 0 14px 0; height:110px; }
+	.quickmenu_2 li{ float:left; height:22px; line-height:22px; list-style:none;}
+	.quickmenu_2 li a{ }
+	.quickmenu_2 li.mr35{ margin-right:35px; }
+	.quickmenu_2 li.mr15{ margin-right:15px;}
+	
+.calendar_link{width:360px; height:160px; clear: left;}
+.calendar_link table {margin: 3px 0 0;}
+#calendar_area{ clear:both; position:relative; width:224px; height:140px; height: auto; float:left; }
+#calendar_area h2{position:absolute; left:60px; top:0px;}
+/*.calendar_area h3{ float:left; margin:0 14px 4px 0}
+.calendar_area .current{ display:block;}*/
+#calendar_area {position:relative; width:224px;}
+.cal_eve h3{width:30px; position:absolute; left:0px; top:0px;background:url(/health/open_content/images/main/calender_ul_bg.gif) no-repeat right center;}
+.cal_edu h3{position:absolute; left:36px; top:0px;}
+#calendar_area table{ display:none; position:absolute; top:19px; left:0; border-collapse:collapse;}
+#calendar_area .open{ display:block;}
+#calendar_area .controll{
+	width:110px; 
+	clear:both;
+	position:absolute;
+	right:0;
+	top:0px;
+}
+#cal_eve,#cal_edu{height:110px;}
+#calendar_area .red{color:#d04b4b;}
+#calendar_area .blue{color:#0069cd;}
+#calender_area .cal_point{padding:3px 7px; color:#0069cd;}
+.btn_calendar_pre,
+.btn_calendar_nex{ height:19px; width:18px; display:block; overflow:hidden; font-size:0; text-indent:-99em; border:none; cursor:pointer; float:left; vertical-align:middle}
+.btn_calendar_pre{ background:url(/health/open_content/images/main/btn_date_pre.gif) 50% 50% no-repeat;}
+.btn_calendar_nex{ background:url(/health/open_content/images/main/btn_date_next.gif) 50% 50% no-repeat;}
+.now_date{ color:#f87f02; font-weight:bold; float:left;}
+.calendar{ text-align:center; width:100%; border:none; border-collapse:separate; border-width:2px 0 1px 1px; border-style:solid; border-color:#509500 #ceddc6}
+.calendar th{ background-color:#76c01a; width:32px; height:1.667em}
+.calendar td{ border-width:1px 1px 0 0; border-color: #fff #ceddc6 #fff #fff; border-style:solid;}
+.calendar a{ display:block; width:22px; height:14px; margin:0 auto;background-color:#d1e9f3; color:#0069cd}
+.cont_link{float:right; width:124px; height:126px; padding:10px 0 0;}
+.cont_link li{padding:0px 0px 2px 0px;}
+.business{
+	width:480px; 
+	height:269px; 
+	float:left;
+	position: relative;
+	left: 30px;
+}
+.business h2{display:inline; position:relative;}
+.busi_cont{
+	width:475px; 
+	height:63px; 
+	padding:0px 0px 15px 0px;
+}
+.busi_cont .h2_float{float:left; width:70px;}
+.busi_cont .busi_list{float:right; width:370px; height:60px;}
+.busi_list li{
+	float:left;
+	width:65px;
+	height:15px;
+	padding:0px 0px 5px 6px;
+	background:url(/health/open_content/images/common/blt_s_1.gif) 0 4px no-repeat;
+}
+#busi_id{width:475px; height:81px; overflow:hidden; position:relative; 
+	padding-bottom:5px;
+	/*border-top:1px solid #d9d9d9; border-bottom:1px solid #d9d9d9;*/
+	background:url(/health/open_content/images/main/busi_link_line_bg.gif) repeat-x left top;
+}
+
+#busi_id div h3 {position: absolute; top: 5px;}
+#busi_tabwrapper01 h3{left:0px;}
+#busi_tabwrapper02 h3{left:128px;}
+#busi_tabwrapper03 h3{left:245px;}
+#busi_tabwrapper04 h3{left:362px;}
+
+#busi_id div {
+}
+
+#busi_id div ul {
+	display: none;
+}
+
+#busi_id div ul.open {display: block !important}
+
+#busi_id div ul{
+	width:472px; 
+	height:48px;
+	position:absolute; 
+	left:0px; 
+	top:31px;
+	/*border-top:1px solid #d9d9d9;
+	border-bottom:1px solid #d9d9d9;*/
+}
+#busi_id div ul li{
+	float:left;
+	width:157px;
+	height:24px;	
+}
+#busi_id div ul li a{
+	display:block;
+	padding:3px 0px 0px 15px;
+	background:url(/health/open_content/images/main/tab_cont_blt.gif) no-repeat 8px center;
+}
+#busi_id div ul li a:hover{
+	text-decoration:none;
+}
+#busi_id div ul .back-none{
+	background:none !important
+}
+
+#main_qm {
+ width: 475px; height: 66px; padding: 10px 0 0;
+ position: relative;
+}
+
+#main_qm li {
+	float:left;
+	width: 66px; height: 66px;
+	padding-right: 2px;
+}
+
+.nopadding{
+	padding: 0px !important;
+}
+
+	.ad_area{ clear:both; position:relative; width:480px; height:64px; padding:0px 0px 10px 0px;}
+	.ad_area h2{padding:0; margin:0; left:-999em; width:0; font-size:0; visibility:hidden; overflow:hidden; height:0; line-height:1.5em; position:absolute }
+	.ad_area .controll li{ float:left; list-style:none; padding-right:2px; }
+	.ad_area .btn_set{width:480px; height:12px; padding-bottom:5px;}
+	.ad_area .btn_set .controll{float:right; height:12px;}
+	.ad_area .btn_set p{float:right; padding:5px 0px 0px 0px;}
+	.ad_area .btn_set p img{vertical-align:middle;}
+	.ad_area .visible_area{margin:11px 10px;overflow:hidden;width:430px; clear:both;}
+	.ad_area .ad_zone{ background:url(/health/open_content/images/main/ad_bg02.gif) 0 0 no-repeat;
+						clear:both; width:480px!important; overflow:hidden; height:50px; position:relative;}
+	.ad_area .ad_list{ height:31px; display:block; overflow:hidden; width:999em; }
+	.ad_area .ad_list li{ float:left; margin-right:9px; list-style:none;}
+	
+	.main_visual{ position:absolute; left:630px; top:29px;}
+	.main_visual .text_slogan{ margin:0 0 0 28px;}
+	
+#footer{ width: 100%; height: 130px; padding: 0 0 20px;}
+#footer #relatesite{
+	width: 180px; height: 25px;
+	position: absolute; left : 550px; top : 22px;
+}
+
+#relatesite select {
+	font-size: 12px;
+	width: 120px;
+}

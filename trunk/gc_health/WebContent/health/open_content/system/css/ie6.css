@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* CSS Document */
+
+.clearfix { zoom:1 }
+.gis_search legend { left:282px; }
+.ie6pop_bug { left:0; position:absolute; top:0px; width:100px; border:none; z-index:-1 }
+#notice_warp ul li a { width:100% } /* ie6 link 잔상 버그 해결*/
+/*  #maincontent{  position:static;} */
+.bug_position { position:absolute; left:-15px; top:36px; height:380px; }
+.quickmenu_2 { padding:15px 0 14px 0; }
+.main_visual { left:615px; top:28px; }
+.gis_search legend.iebug { left:320px; }
+
+.satisfaction legend { display:none }
+#footer { MARGIN: 0px 0px 0px 0px }
+
+#lnb ul li a{ line-height:2.500em; height:2.500em; }
+
+#lnb ul li ul li a{  line-height:1.417em; height:1.417em; }
+
+.satisfaction dl input{  width:12px; }
+.satisfaction dl label{ }	
+
+.gallery_list{ border-collapse:collapse; }
+
+.list_tyle_2{ }
+.list_tyle_2 li{ list-style:none; }
+.list_tyle_2 li.img{ float:left; display:inline; padding-right:40px; }
+.list_tyle_2 li.list { float:left; display:inline; line-height:1.7em;  }
+
+.list_tyle_2 li.img2{ float:left; display:inline; padding-right:10px;  }
+.list_tyle_2 li.icon { width:400px; float:left; display:inline; line-height:1.7em; background: url(/health/open_content/images/sub_green/blt_li.gif) 13px  7px no-repeat; padding:0 0 0 23px; position:relative; }
+.list_tyle_2 li.icon li{ background:url(/health/open_content/images/sub_green/blt_li2.gif) 0 7px no-repeat; padding:0 0 0 7px; position:relative;}
+.list_tyle_2 li.icon li li{ background:url(/health/open_content/images/sub_green/blt_li3.gif) 0 8px no-repeat; padding:0 0 0 7px; position:relative;}
+.list_tyle_2 li.icon_btn { float:left; display:inline; padding:10px 0 0 20px; }
+
+/* ======== 순서표 ========*/
+
+.order_01{ display:inline;}
+.order_01 li{background:url(/health/open_content/images/sub_green/03/order_arrow_01.gif) right center no-repeat; padding:0 14px 0 6px; }
+.order_01 li.first {background:url(/health/open_content/images/sub_green/03/order_arrow_01.gif) right center no-repeat; padding:0 14px 0 0px; }
+.order_01 li.end{ background-image:none; padding:0 0 0 6px}

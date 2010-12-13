@@ -1,0 +1,60 @@
+@charset "utf-8";
+/* CSS Document */
+.clearfix {zoom:1}
+
+.infor_set{ z-index:-1}
+
+.gis_search legend.iebug { left:335px; }
+#maincontent.gis_search legend.iebug { left:335px; }
+
+.satisfaction{ border:2px solid #e0e0e0;padding:12x 0 12px 19px; font-size:0.917em; color:#666; clear:both;line-height:1.333em;}
+.satisfaction dt{ padding:0 10px 0 20px;  }
+.satisfaction label{ letter-spacing:-1px}
+.satisfaction dd input{ height:1.333em}
+.satisfaction dd{ margin:0 5px 0 0}
+.satisfaction legend { display:none }
+
+#footer { MARGIN: 0px 0px 0px 0px }
+
+.gallery_list{ border-collapse:collapse; }
+
+
+.list_tyle_2{ }
+.list_tyle_2 li{ list-style:none; }
+.list_tyle_2 li.img{ float:left; display:inline; padding-right:40px; }
+.list_tyle_2 li.list { float:left; display:inline; line-height:1.7em;  }
+
+.list_tyle_2 li.img2{ float:left; display:inline; padding-right:10px;  }
+.list_tyle_2 li.icon { width:400px; float:left; display:inline; line-height:1.7em; background: url(/health/open_content/images/sub_green/blt_li.gif) 13px  7px no-repeat; padding:0 0 0 23px; position:relative; }
+.list_tyle_2 li.icon li{ background:url(/health/open_content/images/sub_green/blt_li2.gif) 0 7px no-repeat; padding:0 0 0 7px; position:relative;}
+.list_tyle_2 li.icon li li{ background:url(/health/open_content/images/sub_green/blt_li3.gif) 0 8px no-repeat; padding:0 0 0 7px; position:relative;}
+.list_tyle_2 li.icon_btn { float:left; display:inline; padding:10px 0 0 20px; }
+
+/* ======== 순서표 ========*/
+
+.order_01{ display:inline;}
+.order_01 li{background:url(/health/open_content/images/sub_green/03/order_arrow_01.gif) right center no-repeat; padding:0 14px 0 6px; }
+.order_01 li.first {background:url(/health/open_content/images/sub_green/03/order_arrow_01.gif) right center no-repeat; padding:0 14px 0 0px; }
+.order_01 li.end{ background-image:none; padding:0 0 0 6px}
+
+/*
+	#notice_wrap div {
+		position: absolute;
+		width: 360px;
+		padding: 0px; left: 0px ; top: 30px;
+	}
+
+	#notice_wrap div h3{
+		position:absolute; top: -25px;
+	}
+
+
+	#notice_wrap div p.more{
+		position:absolute;
+		right:3px;
+		top:-80px;
+		width: 30px;
+		height: 20px;
+		clear:both;
+	}
+*/

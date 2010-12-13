@@ -1,0 +1,106 @@
+@charset "utf-8";
+/* CSS Document */
+
+#lnb{ background:url(/health/open_content/images/sub_orange/lnb_bg_bottom.gif) 0 100% no-repeat; padding:0 0 43px 0; width:190px;}
+#lnb h2{ background:url(/health/open_content/images/sub_orange/lnb_bg_top.gif) 0 0 no-repeat; padding:37px 35px 0 35px; width:120px; text-align:center;}
+.menu_all_view{ text-align:center; margin:11px 6px 0 6px; background:#f4dd94 url(/health/open_content/images/common/menu_view_vline.gif) center center no-repeat; }
+.menu_toggle_on,
+.menu_toggle_off{ border:none; font-size:0.917em; color:#d96307; background-color:#f4dd94; padding:2px 16px 0 1px; background-position:right center; background-repeat:no-repeat; cursor:pointer; width:69px; vertical-align:top}
+.menu_toggle_on{ background-image:url(/health/open_content/images/sub_orange/menu_view_toggle_on.gif); margin-right:10px;}
+.menu_toggle_off{background-image:url(/health/open_content/images/sub_orange/menu_view_toggle_off.gif)}
+
+#left_lnb{ background:url(/health/open_content/images/sub_orange/lnb_bg.gif) 0 0 repeat-y; margin-top:22px; float:left; width:220px}
+#lnb ul{margin:0 auto;width:168px; }
+#lnb ul li{ list-style:none; }
+#lnb ul li a{ background:url(/health/open_content/images/sub_orange/lnb_menu_off.gif) 0 center no-repeat; padding:0 0 0 21px; line-height:2.500em; display:block;}
+#lnb ul li a:hover,
+#lnb ul li a:active,
+#lnb ul li a:focus,
+#lnb ul li a.current{ background-image:url(/health/open_content/images/sub_orange/lnb_menu_on.gif); font-weight:bold; color:#fff; text-decoration:none;}
+#lnb ul li ul{ width:154px; margin:1px auto; border-bottom:1px solid #c3c3c3;padding-bottom:1px; background-color:#eee}
+#lnb ul li ul li{}
+#lnb ul li ul li a{ background:#9b9b9b url(/health/open_content/images/sub_orange/lnb_alink_bg.gif) 0 -20px no-repeat; line-height:1.417em;  color:#555555;}
+#lnb ul li ul li a:hover,
+#lnb ul li ul li a:active,
+#lnb ul li ul li a:focus,
+#lnb ul li ul li a.current{ background-color:#f59417; color:#d96307; background-image:url(/health/open_content/images/sub_orange/lnb_alink_bg.gif); text-decoration:underline}
+
+    .navigator li .current{ color:#f5830b;}
+
+/* ======== 블릿스타일 ========*/
+
+    h4{ background:url(/health/open_content/images/sub_orange/btl_h4.gif) 0 3px no-repeat; padding:1px 0 0 20px; position:relative; font-size:1.200em; color:#cf3917; margin:0 0 10px 0}
+    h5{ background:url(/health/open_content/images/sub_orange/blt_h5.gif) 0 3px no-repeat; padding: 0 0 0 18px; position:relative; font-size:1.120em; color:#de6012; margin: 0 0 10px 0}
+    
+.list_tyle_1{ line-height:1.500em}
+.list_tyle_1 li{ background: url(/health/open_content/images/sub_orange/blt_li.gif) 13px  7px no-repeat; padding:0 0 0 23px; position:relative; list-style:none; }
+.list_tyle_1 li li{ background:url(/health/open_content/images/sub_green/blt_li2.gif) 0 7px no-repeat; padding:0 0 0 7px; position:relative;}
+.list_tyle_1 li li li{ background:url(/health/open_content/images/sub_green/blt_li3.gif) 0 8px no-repeat; padding:0 0 0 7px; position:relative;}
+
+.list_tyle_1 li.no{ background-image:none;}
+.list_tyle_1 li.num{ background-image:none; text-indent:-16px; padding-left:0px;}
+.list_tyle_1 li.num2{ background-image:none; text-indent:-22px; padding-left:20px;}
+
+.list_tyle_1 li.point{ color:#c75d10; }
+.list_tyle_1 li.point_red{ color:#d11919; }
+.list_tyle_1 li.point_black{ color:#000; }
+.list_tyle_1 li.point_green{ color:#24ab6c; }
+.list_tyle_1 li.point_blue{ color:#0c9cb8; }
+.list_tyle_1 li.point_orange{ color:#f13c05; }
+.list_tyle_1 li.point_perple{ color:#b130ba; }
+
+.list_tyle_1 span.point{ color:#c75d10; }
+.list_tyle_1 span.point_red{ color:#d11919; }
+.list_tyle_1 span.point_black{ color:#000; }
+.list_tyle_1 span.point_green{ color:#24ab6c; }
+.list_tyle_1 span.point_blue{ color:#0c9cb8; }
+.list_tyle_1 span.point_orange{ color:#f13c05; }
+.list_tyle_1 span.point_perple{ color:#b130ba; }
+
+.list_tyle_2{ }
+.list_tyle_2 li{ list-style:none; }
+.list_tyle_2 li.img{ float:left; display:inline; padding-right:40px; }
+.list_tyle_2 li.list { float:left; display:inline; line-height:1.7em;  }
+
+.list_tyle_2{  }
+.list_tyle_2 li.img2{ float:left; display:inline; padding-right:30px;  }
+.list_tyle_2 li.icon { line-height:1.6em; background: url(/health/open_content/images/sub_orange/blt_li.gif) 223px  7px no-repeat; padding:0 0 0 23px; position:relative;}
+.list_tyle_2 li.icon li{ background:url(/health/open_content/images/sub_orange/blt_li2.gif) 203px 7px no-repeat; padding:0 0 0 27px; position:relative; }
+.list_tyle_2 li.icon_btn { float:left; display:inline; padding:10px 0 0 0px; }
+
+.list_img { float:left; padding:0 20px 0 0px;}
+.list_txt {float:left;}
+.list_btn_clear { clear:both; padding: 10px 0 0 15px;}
+
+/* ======== 탭스타일 ========*/
+
+.tab_tyle_green{ border-bottom:1px solid #d96307; width:650px; width:100%; height:1.917em; margin-bottom:20px;}
+.tab_tyle_green li{  display:block; float:left; height:1.917em; list-style:none; }
+.tab_tyle_green li.on{ background-color:#d96307; border-color:#d96307}
+.tab_tyle_green li a{ border-width:1px 1px 0 1px; border-style:solid; border-color:#bbb; display:block; float:left; padding:0 30px; font-weight:bold;height:1.917em}
+.tab_tyle_green li.on a{ color:#fff ;border-color:#bbb; }
+
+.tab_type1 ul li.current a,
+.tab_type1 ul li a:hover,
+.tab_type1 ul li a:active,
+.tab_type1 ul li a:focus{ color:#1B79B4; }
+
+/* ======== 풋터 ========*/
+
+#footer{ background:url(/health/open_content/images/sub_orange/footer_bg.gif) 0 0 repeat-x; }
+
+/* ======== 탭메뉴 ========*/
+
+.tab_type1 { background-image:url(/health/open_content/images/sub_orange/bg_tabtype_btm.gif) }
+.tab_type1 ul { background-image:url(/health/open_content/images/sub_orange/bg_tabtype.gif) }
+.tab_type1 ul li { background-image:url(/health/open_content/images/sub_orange/blt_tabtype.gif); padding:8px 0px 0px 15px; list-style:none; }
+.tab_type1 ul li.current a,
+.tab_type1 ul li a:hover,
+.tab_type1 ul li a:active,
+.tab_type1 ul li a:focus{ color:#de6012; }
+
+
+/* ======== 퀵메뉴 타이틀 ========*/
+
+#quick_menu{ position:absolute; left:900px; top:155px; background:url(/health/open_content/images/common/quickmenu_bg_orange.gif) 0 0 no-repeat; width:100px; padding:5px 10px;}
+
