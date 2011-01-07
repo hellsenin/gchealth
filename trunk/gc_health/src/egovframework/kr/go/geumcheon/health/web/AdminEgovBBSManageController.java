@@ -414,7 +414,7 @@ public class AdminEgovBBSManageController {
     
     @SuppressWarnings("unchecked")
     @RequestMapping("/admin/bbs/insertBoardArticle2.do")
-    public String insertBoardArticle2(
+    public void insertBoardArticle2(
     		final MultipartHttpServletRequest multiRequest,
     		HttpServletResponse response,
     		ModelMap model) throws Exception {
@@ -464,16 +464,18 @@ public class AdminEgovBBSManageController {
     board.setNttCn(unscript(board.getNttCn()));	// XSS 방지
     
     String event = "success.insert.msg";
+    String msg = "성공적으로 등록되었습니다.";
     try
     {
     	bbsMngService.insertBoardArticle(board);
     }catch(Exception e)
     {
     	event = "error.insert.msg";
+    	msg = "등록에 실패하였습니다.";
     }
 
 	model.addAttribute("event", event);
-	return "http://admin.geumcheon.go.kr:9081/common/procEvent.jsp";
+	WebFactory.printHtml(response, msg, "javascript:history.back()");
     } 
 
     /**
