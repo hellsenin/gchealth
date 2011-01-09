@@ -1,6 +1,7 @@
 package egovframework.kr.go.geumcheon.health.web;
 
 import java.net.URLEncoder;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -107,11 +108,27 @@ public class HealthMainController implements ServletContextAware {
 				//의약공람
 				boardVO.setBbsId("BBSMSTR_000000001148"); 
 				Map<String, Object> map3 = bbsMngService.selectBoardArticles(boardVO, "");
-				model.addAttribute("resultList3", map3.get("resultList"));
+				
+				List<BoardVO> resultList3 = (List<BoardVO>)map3.get("resultList");
 
 				boardVO.setBbsId("BBSMSTR_000000001149"); 
 				Map<String, Object> map3_2 = bbsMngService.selectBoardArticles(boardVO, "");
-				model.addAttribute("resultList3_2", map3_2.get("resultList"));
+				List<BoardVO> resultList3_2 = (List<BoardVO>)map3_2.get("resultList");
+				
+				List<BoardVO> _resultList3 = new ArrayList<BoardVO>();
+				try {
+					_resultList3.add(resultList3.get(0));
+					_resultList3.add(resultList3_2.get(0));
+					_resultList3.add(resultList3.get(1));
+					_resultList3.add(resultList3_2.get(1));
+					_resultList3.add(resultList3.get(2));
+				} catch (Exception e) {
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
+
+				model.addAttribute("resultList3", _resultList3);
+				
 			} else if(i == 3){
 				//식약청 정보
 				boardVO.setBbsId("BBSMSTR_000000001163");
