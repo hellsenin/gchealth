@@ -31,15 +31,6 @@
 				alert("\제목을 입력하세요.");
 				return false;
 		} 
-		// editor 내용 필수입력검사
-   		var oEditor = FCKeditorAPI.GetInstance('nttCn') ;
-	   	var div = document.createElement("DIV");
-   		div.innerHTML = oEditor.GetXHTML();
-	   	if(trim(div.innerText) == ""){
-	    	alert('내용을 입력해주십시오');
-	      	oEditor.Focus();
-	      	return false;
-	   	}
 		if (confirm('등록하시겠습니까?')) {
 			return true;
 		}

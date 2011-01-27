@@ -81,7 +81,7 @@
     </tr>
     <tr>
         <th scope="row"><label for="sr_contents">내용</label> </th>
-        <td colspan="3"><textarea rows="5" cols="50" id="sr_contents" name="nttCn">${result.nttCn}</textarea></td>
+        <td colspan="3"><FCK:editor id="nttCn"  basePath="/fckeditor/" height="350">${result.nttCn}</FCK:editor></td>
     </tr>
     <tr>
         <th scope="row">첨부파일 목록</th>
