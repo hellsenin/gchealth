@@ -5,6 +5,7 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
 <%@ taglib prefix="spring" uri="http://www.springframework.org/tags"%>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<%@ taglib uri="http://fckeditor.net/tags-fckeditor" prefix="FCK" %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -30,11 +31,6 @@
 				alert("\제목을 입력하세요.");
 				return false;
 		} 
-		if (document.board.nttCn.value==""){
-				alert("\내용을 입력하세요.");
-				return false;
-		} 
-		
 		if (confirm('등록하시겠습니까?')) {
 			return true;
 		}
@@ -83,7 +79,7 @@
     </tr>
     <tr>
         <th scope="row"><label for="sr_contents">내용</label> </th>
-        <td colspan="3"><textarea rows="5" cols="50" id="sr_contents" name="nttCn"></textarea></td>
+        <td colspan="3"><FCK:editor id="nttCn"  basePath="/fckeditor/" height="350">${result.nttCn}</FCK:editor></td>
     </tr>
 </table>
 

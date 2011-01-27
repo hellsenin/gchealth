@@ -76,7 +76,7 @@
     <tr>
         <th scope="row"><label for="sr_contents">내용</label> </th>
         <td colspan="3">
-			<FCK:editor id="nttCn"  basePath="/fckeditor/" height="350">${result.applyDesc}</FCK:editor></td>
+			<FCK:editor id="nttCn"  basePath="/fckeditor/" height="350">${result.nttCn}</FCK:editor></td>
     </tr>
     <tr>
         <th scope="row"><label for="file_1">첨부파일 </label></th>
