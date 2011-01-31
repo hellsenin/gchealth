@@ -106,28 +106,11 @@ public class HealthMainController implements ServletContextAware {
 				model.addAttribute("resultList2", map2.get("resultList"));
 			} else if(i == 2){
 				//의약공람
-				boardVO.setBbsId("BBSMSTR_000000001148"); 
-				Map<String, Object> map3 = bbsMngService.selectBoardArticles(boardVO, "");
+				Map<String, Object> map3 = bbsMngService.selectMainBoardArticleList3(boardVO, "");
 				
 				List<BoardVO> resultList3 = (List<BoardVO>)map3.get("resultList");
 
-				boardVO.setBbsId("BBSMSTR_000000001149"); 
-				Map<String, Object> map3_2 = bbsMngService.selectBoardArticles(boardVO, "");
-				List<BoardVO> resultList3_2 = (List<BoardVO>)map3_2.get("resultList");
-				
-				List<BoardVO> _resultList3 = new ArrayList<BoardVO>();
-				try {
-					_resultList3.add(resultList3.get(0));
-					_resultList3.add(resultList3_2.get(0));
-					_resultList3.add(resultList3.get(1));
-					_resultList3.add(resultList3_2.get(1));
-					_resultList3.add(resultList3.get(2));
-				} catch (Exception e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
-				}
-
-				model.addAttribute("resultList3", _resultList3);
+				model.addAttribute("resultList3", resultList3);
 				
 			} else if(i == 3){
 				//식약청 정보
