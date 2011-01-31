@@ -57,6 +57,8 @@ public interface EgovBBSManageService {
      * @throws Exception
      */
     public Map<String, Object> selectBoardArticles(BoardVO boardVO, String attrbFlag) throws Exception;
+
+    public Map<String, Object> selectMainBoardArticleList3(BoardVO boardVO, String attrbFlag) throws Exception;
     
     /**
      * 조건에 맞는 뉴스레터 최근글의 날짜를 조회 한다.
