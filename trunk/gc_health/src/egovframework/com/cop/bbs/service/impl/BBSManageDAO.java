@@ -102,6 +102,11 @@ public class BBSManageDAO extends EgovAbstractDAO {
 	return list("BBSManageDAO.selectBoardArticleList", boardVO);
     }
 
+    @SuppressWarnings("unchecked")
+    public List<BoardVO> selectMainBoardArticleList3(BoardVO boardVO) throws Exception {
+	return list("BBSManageDAO.selectMainBoardArticleList3", boardVO);
+    }
+
     /**
      * 조건에 맞는 게시물 목록에 대한 전체 건수를 조회 한다.
      * 
@@ -111,6 +116,10 @@ public class BBSManageDAO extends EgovAbstractDAO {
      */
     public int selectBoardArticleListCnt(BoardVO boardVO) throws Exception {
 	return (Integer)getSqlMapClientTemplate().queryForObject("BBSManageDAO.selectBoardArticleListCnt", boardVO);
+    }
+
+    public int selectMainBoardArticleList3Cnt(BoardVO boardVO) throws Exception {
+	return (Integer)getSqlMapClientTemplate().queryForObject("BBSManageDAO.selectMainBoardArticleList3Cnt", boardVO);
     }
     
     /**

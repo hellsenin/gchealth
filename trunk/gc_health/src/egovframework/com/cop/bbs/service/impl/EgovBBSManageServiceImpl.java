@@ -170,6 +170,41 @@ public class EgovBBSManageServiceImpl extends AbstractServiceImpl implements Ego
 
 	return map;
     }
+
+    public Map<String, Object> selectMainBoardArticleList3(BoardVO boardVO, String attrbFlag) throws Exception {
+	List<BoardVO> list = bbsMngDAO.selectMainBoardArticleList3(boardVO);
+	List<BoardVO> result = new ArrayList<BoardVO>();
+
+	if ("BBSA01".equals(attrbFlag)) {
+	    // 유효게시판 임
+	    String today = EgovDateUtil.getToday();
+
+	    BoardVO vo;
+	    Iterator<BoardVO> iter = list.iterator();
+	    while (iter.hasNext()) {
+		vo = (BoardVO)iter.next();
+		
+		if (!"".equals(vo.getNtceBgnde()) || !"".equals(vo.getNtceEndde())) {
+		    if (EgovDateUtil.getDaysDiff(today, vo.getNtceBgnde()) > 0 || EgovDateUtil.getDaysDiff(today, vo.getNtceEndde()) < 0) {
+			// 시작일이 오늘날짜보다 크거나, 종료일이 오늘 날짜보다 작은 경우
+			vo.setIsExpired("Y");
+		    }
+		}
+		result.add(vo);
+	    }
+	} else {
+	    result = list;
+	}
+
+	int cnt = bbsMngDAO.selectMainBoardArticleList3Cnt(boardVO);
+
+	Map<String, Object> map = new HashMap<String, Object>();
+	
+	map.put("resultList", result);
+	map.put("resultCnt", Integer.toString(cnt));
+
+	return map;
+    }
     
 	/**
      * 조건에 맞는 뉴스레터 최근글의 날짜를 조회 한다.
