@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<div class="body_in">
+  <h4>Hướng dẫn kiểm tra</h4>
+  <ul class="list_tyle_1">
+	<li><strong>Chữa bệnh với những bác sĩ chuyên môn</strong>
+	  <ul>
+		<li class="mb05 mt05"><strong>Chữa trị miễn phí buổi tối các ngày thường</strong>
+		  <ul>
+			<li>Thời gian tiến hành: Ngày 1 tháng 4 năm 2010 ~ tháng 10 năm 2010</li>
+			<li>Ngày giờ làm việc: Từ 18 giờ đến 21 giờ các  ngày thứ 3, thứ 5 mỗi tuần</li>
+			<li>Địa điểm làm việc: Phòng chữa trị lần 1 tầng 2 trạm y tế(trung tâm chữa trị chuyên dành cho người nước ngoài)</li>
+		  </ul>
+		</li>
+		<li><strong>Nội dung làm việc</strong>
+		  <ul>
+			<li>Chữa trị và tư vấn thông thường</li>
+			<li>Chụp tia bức xạ phần ngực, kiểm tra chứng loãng xương</li>
+			<li>Phát thuốc miễn phí theo đơn và hướng dẫn dùng thuốc bằng nhiều ngôn ngữ </li>
+		  </ul>
+		</li>
+	  </ul>
+	</li>
+  </ul>
+</div>
+</div>

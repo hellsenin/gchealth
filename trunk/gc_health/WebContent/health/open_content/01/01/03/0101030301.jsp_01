@@ -1,0 +1,37 @@
+<%@ page language="java" contentType="text/html; charset=utf-8" pageEncoding="utf-8"%>
+<div class="comment_box">
+<div class="comment_box_top"></div>
+<div class="comment_box_in" style="background:url(/health/open_content/images/comment/comment_img_s_002.gif) 540px top no-repeat;">
+	<ul class="list">
+		<li>집단 설사 환자들의 신속한 신고체계 유지로 질병의 지역사회 전파를 사전하여 <strong>구민 건강 증진에 <br />기여하기 위한
+전용 신고 코너</strong>입니다.</li>
+		<li>신고대상이 아닌 사항은 게시하지 마시기 바랍니다.</li>
+	</ul>
+</div>
+<div class="comment_box_bottom"></div>
+</div>
+
+<div class="body_in">
+<h4>신고 대상</h4>
+<ul class="list_tyle_1">
+	<li>집단 급식시설, 경조사 방문, 기타 식당 등 이에 준하는 장소에서 음식물을 취식한 후, 역학적 연관성에 의해
+      2인 이상의 설사 환자가 발생한 경우</li>
+</ul>
+</div>
+
+
+<div class="body_in">
+<h4>신고 방법</h4>
+<ul class="list_tyle_1">
+    <li>신고인의 성명, 주소, 연락처와 함께 6하 원칙(누가, 언제,어디서, 무엇을, 어떻게 발생하였는지 등)에 따라
+     자세히 신고 바랍니다.</li>
+    <li>전화 (☎ 02-2627-2717)로 신고하시면 신속히 처리되고 편리합니다.</li>
+</ul>
+</div>
+
+
+
+<div class="btn_line">
+    <div class="board_btn_set send_mg"><span class="register"><a href="/health/application/writePage.do?categoryId=2429&amp;applyCode=H002">신고하기</a></span> </div>
+</div>
+
