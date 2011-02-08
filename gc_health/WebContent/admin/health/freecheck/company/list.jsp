@@ -16,6 +16,8 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	
 	<title>금천시 보건소</title>
+<script type="text/javascript" src="/health/open_content/system/js/prototype.js"></script>
+<script type="text/javascript" src="/health/open_content/system/js/miya_validator.js"></script>
 <link href="/health/open_content/system/css/default.css" rel="stylesheet" type="text/css" />
 <link href="/health/open_content/system/css/common.css" rel="stylesheet" type="text/css" />
 <link href="/health/open_content/system/css/blue.css" rel="stylesheet" type="text/css" />
@@ -61,6 +63,34 @@ function switch_search_keyword(val) {
 		document.getElementById('grade_cd').style.display = "block";
 	} 
 };
+
+function checkForm2(form)
+{			
+	var v = new MiyaValidator(form);
+    v.add("toYearCd", {
+        required: true,
+        message: "기준년도를 선택하세요"
+    });
+	v.add("fromYearCd", {
+        required: true,
+        message: "전년도를 선택하세요"
+    });
+	result = v.validate();
+	if (!result) {
+		alert(v.getErrorMessage());
+		v.getErrorElement().focus();
+		return false;
+	} 
+	else
+	{
+		var fromYear = form.fromYearCd.value;
+		var toYear = form.toYearCd.value;
+		if(confirm(toYear + "년도에 해당하는 데이터삭제후 등록됩니다. 등록하시겠습니까?"))
+			return true;
+		else
+			return false;
+	}
+}
 </script>
 
 </head>
@@ -231,6 +261,49 @@ switch_search_keyword('${Bean.searchCondition}');
 			
 <ol class="paging">${pagingInfoString}</ol>
 
+<br/>
+<br/>
+<h3 style="padding:15px 0 15px 0;">	
+이전자료 가져오기
+</h3>
+	<form id="f" name="f"  method="post" action="/admin/freecheck/addCompanyForMigration.do" onsubmit="return checkForm2(this);">
+		<table class="default_write" cellspacing="1" cellpadding="0" width="500">
+	<thead>
+		<tr>
+			<th scope="col">기준년도</th>
+			<th scope="col">이전년도</th>
+			<th scope="col">등록</th>
+		</tr>
+	</thead>
+			<tbody>
+				<tr>
+					<td headers="board_num">
+		<select id="toYearCd" name="toYearCd" style="width: 100px; float: right; margin-right: 20px;">
+			<option value='' >기준년도선택</option>
+			<option value='${year}' <c:if test="${Bean.year_cd == year}">selected="selected"</c:if>>${year} 년도</option>
+			<option value='${year-1}' <c:if test="${Bean.year_cd == year-2}">selected="selected"</c:if>>${year-1} 년도</option>
+		</select>
+		
+					</td>
+					<td headers="board_num">
+		<select id="fromYearCd" name="fromYearCd" style="width: 100px; float: right; margin-right: 20px;">
+			<option value='' >전년도선택</option>
+			<option value='${year-1}' <c:if test="${Bean.year_cd == year-1}">selected="selected"</c:if>>${year-1} 년도</option>
+			<option value='${year-2}' <c:if test="${Bean.year_cd == year-2}">selected="selected"</c:if>>${year-2} 년도</option>
+		</select>
+		
+					</td>
+					<td headers="board_memid">
+			<div class="board_btn_set mt13">
+	<span class="btn_del"><input type="submit" value="등록하기" /></span>
+			</div>
+					</td>
+				</tr>
+	        </tbody>
+      </table>
+
+	</form>
 </div>
+
 </body>
 </html>
