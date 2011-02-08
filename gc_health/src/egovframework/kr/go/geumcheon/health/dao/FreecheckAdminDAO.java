@@ -287,4 +287,12 @@ public class FreecheckAdminDAO extends EgovAbstractDAO {
 		delete("FreecheckAdminDAO.delItem", itemId);
 	}
 
+	public void deleteCompanyForMigration(ZValue zvl) {
+		delete("FreecheckAdminDAO.deleteCompanyForMigration", zvl);
+	}
+
+	public void addCompanyForMigration(ZValue zvl) {
+		insert("FreecheckAdminDAO.addCompanyForMigration", zvl);
+	}
+
 }
