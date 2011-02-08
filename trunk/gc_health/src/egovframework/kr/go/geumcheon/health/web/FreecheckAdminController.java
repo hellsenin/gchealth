@@ -1767,4 +1767,18 @@ public class FreecheckAdminController {
 		
 		return list;
 	}
+
+	@RequestMapping("/admin/freecheck/addCompanyForMigration.do")
+	public void addCompanyForMigration(
+			HttpServletRequest request,
+			HttpServletResponse response,	
+			ModelMap model) throws Exception
+	{
+    	ZValue zvl = WebFactory.getAttributes(request);   
+    	
+    	service.addCompanyForMigration(zvl);
+
+    	WebFactory.printHtml(response, "성공적으로 등록되었습니다.", "/admin/freecheck/company/list.do?yearCd="+zvl.getString("yearCd"));
+	}
+
 }
