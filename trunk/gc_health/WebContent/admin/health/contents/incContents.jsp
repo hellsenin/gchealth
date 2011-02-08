@@ -1,6 +1,7 @@
 <%@ page contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn" %>
+<%@ taglib uri="http://fckeditor.net/tags-fckeditor" prefix="FCK" %>
 <c:set var="topCategories" value="${menuCategoryMap['menu_0']}" />
 		
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -57,8 +58,8 @@
 						<tbody>
 						<tr>
 							<th scope="row"><label for="writecontents">내용</label></th>
-							<td colspan="3" class="output">								
-								<textarea name="content" id="writecontents" cols="50" rows="50" style="width:90%;">${result.content}</textarea>
+							<td colspan="3" class="output">		
+							<FCK:editor id="content"  basePath="/fckeditor/" height="350">${result.content}</FCK:editor>			
 							</td>
 						</tr>
 						</tbody>
