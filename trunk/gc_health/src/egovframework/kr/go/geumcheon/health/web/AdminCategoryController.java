@@ -265,7 +265,8 @@ public class AdminCategoryController implements ServletContextAware
     {
     	ZValue zvl = WebFactory.getAttributes(request);
     	String categoryId = zvl.getString("categoryId");
-    	if(masterMenuManagerService.saveContent(zvl.getString("contentsPath"), zvl.getString("content"))){
+    	String content = "<%@page contentType=\"text/html;charset=utf-8\" %>" + zvl.getString("content");
+    	if(masterMenuManagerService.saveContent(zvl.getString("contentsPath"), content)){
     		WebFactory.printHtml(response, "성공적으로 저장되었습니다.", "/admin/main/selectContent.do?categoryId="+categoryId);
     	}
     	else
