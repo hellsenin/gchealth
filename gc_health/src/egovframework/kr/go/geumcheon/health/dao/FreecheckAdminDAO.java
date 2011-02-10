@@ -287,12 +287,56 @@ public class FreecheckAdminDAO extends EgovAbstractDAO {
 		delete("FreecheckAdminDAO.delItem", itemId);
 	}
 
-	public void deleteCompanyForMigration(ZValue zvl) {
-		delete("FreecheckAdminDAO.deleteCompanyForMigration", zvl);
+	public void deleteMasterForMigration(ZValue zvl) {
+		delete("FreecheckAdminDAO.deleteMasterForMigration", zvl);
+	}
+
+	public void deleteQuestionForMigration(ZValue zvl) {
+		delete("FreecheckAdminDAO.deleteQuestionForMigration", zvl);
+	}
+
+	public void deleteQuestion2ForMigration(ZValue zvl) {
+		delete("FreecheckAdminDAO.deleteQuestion2ForMigration", zvl);
 	}
 
 	public void addCompanyForMigration(ZValue zvl) {
 		insert("FreecheckAdminDAO.addCompanyForMigration", zvl);
+	}
+
+	public void deleteCompanyForMigration(ZValue zvl) {
+		insert("FreecheckAdminDAO.deleteCompanyForMigration", zvl);
+	}
+
+	public List<Integer> selectAFMasterCdForMigration(ZValue zvl) {
+		return (List<Integer>) list("FreecheckAdminDAO.selectAFMasterCdForMigration", zvl);
+	}
+	
+	public List<Integer> selectMasterCdForMigration(ZValue zvl) {
+		return (List<Integer>) list("FreecheckAdminDAO.selectMasterCdForMigration", zvl);
+	}
+
+	public List<Integer> selectQuestionCdForMigration(ZValue zvl) {
+		return (List<Integer>) list("FreecheckAdminDAO.selectQuestionCdForMigration", zvl);
+	}
+	
+	public int selectMasterCdPKForMigration() {
+		return (Integer) selectByPk("FreecheckAdminDAO.selectMasterCdPKForMigration", null);
+	}
+
+	public int selectQuestionCdPKForMigration() {
+		return (Integer) selectByPk("FreecheckAdminDAO.selectQuestionCdPKForMigration", null);
+	}
+	
+	public void addMasterForMigration(ZValue zvl) {
+		insert("FreecheckAdminDAO.addMasterForMigration", zvl);
+	}
+
+	public void addQuestionForMigration(ZValue zvl) {
+		insert("FreecheckAdminDAO.addQuestionForMigration", zvl);
+	}
+
+	public void addQuestion2ForMigration(ZValue zvl) {
+		insert("FreecheckAdminDAO.addQuestion2ForMigration", zvl);
 	}
 
 }

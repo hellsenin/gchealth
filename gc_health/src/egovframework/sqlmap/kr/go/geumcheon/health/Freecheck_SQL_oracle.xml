@@ -962,7 +962,7 @@
 					, YEAR_CD
 		        ) 
 		    VALUES  
-		        (	(SELECT NVL(MAX(MASTER_CD), 0)+1 FROM HETB_CK_MASTER)
+		        (	SEQ_HETB_CK_MASTER.NEXTVAL
 					, '$type_cd$'
 					, '$title$'
 					, #start_dt#
@@ -1330,7 +1330,7 @@
 					, INSERT_DT
 					, UPDATE_DT)
 				VALUES	
-					((SELECT NVL(MAX(QUESTION_CD),0)+1 FROM HETB_CK_QUESTION)
+					(SEQ_HETB_CK_QUESTION.NEXTVAL
 					, $master_cd$
 					, '$question$'
 					, '$quest_type_cd$'
@@ -1407,7 +1407,7 @@
 					, ORDERBY
 					, VALIDATION) 
 				VALUES
-					((SELECT NVL(MAX(QUESTION2_CD), 0)+1 FROM HETB_CK_QUESTION2)
+					(SEQ_HETB_CK_QUESTION2.NEXTVAL
 					,  $master_cd$
 					,  $question1_cd$
 					, '$question2$'
@@ -1810,16 +1810,178 @@
 				, TYPE_CD_11_YN
 				, GRADE_CD
 				, STATUS
-				, INSERT_DT
+				, SYSDATE
 				, INSERT_IP
 				, INSERT_ID
-				, UPDATE_DT
+				, SYSDATE
 				, UPDATE_IP
 				, UPDATE_ID
 				, #toYearCd#
 				, BLOG_URL
 		    FROM HETB_CK_COMPANY
 		    WHERE YEAR_CD = #fromYearCd#
+		    AND  STATUS = 'N'
+		]]>
+    </insert>
+    	
+	<select id="FreecheckAdminDAO.selectAFMasterCdForMigration" resultClass="int">
+		<![CDATA[
+			SELECT	MASTER_CD 
+			FROM HETB_CK_MASTER
+			WHERE STATUS = 'N'
+			AND YEAR_CD = #toYearCd#
+		]]>
+	</select>
+	
+	<select id="FreecheckAdminDAO.selectMasterCdForMigration" resultClass="int">
+		<![CDATA[
+			SELECT	MASTER_CD 
+			FROM HETB_CK_MASTER
+			WHERE STATUS = 'N'
+			AND YEAR_CD = #fromYearCd#
+		]]>
+	</select>
+	
+	<select id="FreecheckAdminDAO.selectQuestionCdForMigration" resultClass="int">
+		<![CDATA[
+			SELECT	QUESTION_CD 
+			FROM HETB_CK_QUESTION
+			WHERE STATUS = 'N'
+			AND MASTER_CD = #fromMasterCd#
+		]]>
+	</select>
+	
+    <update id="FreecheckAdminDAO.deleteMasterForMigration" parameterClass="zvl">
+    	<![CDATA[			
+			 UPDATE HETB_CK_MASTER
+			 SET STATUS = 'Y' 
+			 WHERE YEAR_CD = #toYearCd#
+    	]]>
+    </update>
+    	
+    <update id="FreecheckAdminDAO.deleteQuestionForMigration" parameterClass="zvl">
+    	<![CDATA[			
+			 UPDATE HETB_CK_QUESTION
+			 SET STATUS = 'Y' 
+			 WHERE MASTER_CD = #toMasterCd#
+    	]]>
+    </update>
+    	
+    <update id="FreecheckAdminDAO.deleteQuestion2ForMigration" parameterClass="zvl">
+    	<![CDATA[					
+			 UPDATE HETB_CK_QUESTION2
+			 SET STATUS = 'Y' 
+			 WHERE MASTER_CD = #toMasterCd#
+    	]]>
+    </update>
+    	
+	<select id="FreecheckAdminDAO.selectMasterCdPKForMigration" resultClass="int">
+		<![CDATA[
+			SELECT	SEQ_HETB_CK_MASTER.NEXTVAL FROM DUAL
+		]]>
+	</select>
+	
+	<select id="FreecheckAdminDAO.selectQuestionCdPKForMigration" resultClass="int">
+		<![CDATA[
+			SELECT	SEQ_HETB_CK_QUESTION.NEXTVAL FROM DUAL
+		]]>
+	</select>
+	
+    <insert id="FreecheckAdminDAO.addMasterForMigration" parameterClass="zvl">
+		<![CDATA[
+		    INSERT 
+		      INTO  HETB_CK_MASTER
+		        (	MASTER_CD		
+					, TYPE_CD
+					, TITLE
+					, START_DT
+					, END_DT
+					, ATTACHFILE1
+					, INSERT_DT
+					, INSERT_ID
+			 		, UPDATE_DT
+					, UPDATE_ID
+					, CONTENTS
+					, STATUS
+					, YEAR_CD
+		        ) 
+		    SELECT	/*(SELECT NVL(MAX(MASTER_CD), 0)+1 FROM HETB_CK_MASTER) */
+		        	#toMasterCd#	
+					, TYPE_CD
+					, TITLE
+					, START_DT
+					, END_DT
+					, ATTACHFILE1
+					, SYSDATE
+					, INSERT_ID
+			 		, SYSDATE
+					, UPDATE_ID
+					, CONTENTS
+					, STATUS
+					, #toYearCd#
+		    FROM HETB_CK_MASTER     
+		    WHERE YEAR_CD = #fromYearCd#
+		    AND MASTER_CD = #fromMasterCd#
+		    AND  STATUS = 'N'
+		]]>
+    </insert>
+    	
+    <insert id="FreecheckAdminDAO.addQuestionForMigration" parameterClass="zvl">
+		<![CDATA[
+			INSERT INTO	
+				HETB_CK_QUESTION	
+					(QUESTION_CD
+					, MASTER_CD
+					, QUESTION
+					, QUEST_TYPE_CD
+					, MULTI_CHECK_YN
+					, OTHER_YN
+					, ORDERBY
+					, INSERT_ID
+					, UPDATE_ID
+					, INSERT_DT
+					, UPDATE_DT)
+				SELECT	
+					/* (SELECT NVL(MAX(QUESTION_CD),0)+1 FROM HETB_CK_QUESTION */
+					#toQuestionCd#
+					, #toMasterCd#
+					, QUESTION
+					, QUEST_TYPE_CD
+					, MULTI_CHECK_YN
+					, OTHER_YN
+					, ORDERBY
+					, INSERT_ID
+					, UPDATE_ID
+					, SYSDATE
+					, SYSDATE
+		    FROM HETB_CK_QUESTION     
+		    WHERE MASTER_CD = #fromMasterCd#
+		    AND QUESTION_CD = #fromQuestionCd#
+		    AND  STATUS = 'N'
+		]]>
+    </insert>
+    	
+    <insert id="FreecheckAdminDAO.addQuestion2ForMigration" parameterClass="zvl">
+		<![CDATA[
+			INSERT INTO 
+				HETB_CK_QUESTION2
+					(QUESTION2_CD
+					, MASTER_CD
+					, QUESTION1_CD
+					, QUESTION2
+					, ORDERBY
+					, VALIDATION) 
+				SELECT	
+					/* (SELECT NVL(MAX(QUESTION_CD),0)+1 FROM HETB_CK_QUESTION */
+					SEQ_HETB_CK_QUESTION2.NEXTVAL
+					, #toMasterCd#
+					, #toQuestionCd#
+					, QUESTION2
+					, ORDERBY
+					, VALIDATION
+		    FROM HETB_CK_QUESTION2     
+		    WHERE MASTER_CD = #fromMasterCd#
+		    AND QUESTION1_CD = #fromQuestionCd#
 		    AND  STATUS = 'N'
 		]]>
     </insert>
