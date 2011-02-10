@@ -1781,4 +1781,17 @@ public class FreecheckAdminController {
     	WebFactory.printHtml(response, "성공적으로 등록되었습니다.", "/admin/freecheck/company/list.do?yearCd="+zvl.getString("yearCd"));
 	}
 
+	@RequestMapping("/admin/freecheck/addCheckFormForMigration.do")
+	public void addCheckFormForMigration(
+			HttpServletRequest request,
+			HttpServletResponse response,	
+			ModelMap model) throws Exception
+	{
+    	ZValue zvl = WebFactory.getAttributes(request);   
+    	
+    	service.addCheckFormForMigration(zvl);
+
+    	WebFactory.printHtml(response, "성공적으로 등록되었습니다.", "/admin/freecheck/checkform/list.do?yearCd="+zvl.getString("yearCd"));
+	}
+
 }

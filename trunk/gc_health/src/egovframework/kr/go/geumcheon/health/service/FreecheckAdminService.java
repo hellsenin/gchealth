@@ -1281,6 +1281,34 @@ public class FreecheckAdminService {
 		dao.addCompanyForMigration(zvl);
 	}
 
+	public void addCheckFormForMigration(ZValue zvl) throws Exception {
+		List<Integer> aFCdList = dao.selectAFMasterCdForMigration(zvl);
+		for(int i : aFCdList)
+		{
+			zvl.put("toMasterCd", i);
+			dao.deleteMasterForMigration(zvl);
+			dao.deleteQuestionForMigration(zvl);
+			dao.deleteQuestion2ForMigration(zvl);
+		}
+		List<Integer> cdList = dao.selectMasterCdForMigration(zvl);
+		for(int i : cdList)
+		{
+			int masterCd = dao.selectMasterCdPKForMigration();
+			zvl.put("fromMasterCd", i);
+			zvl.put("toMasterCd", masterCd);
+			dao.addMasterForMigration(zvl);
+			List<Integer> qList = dao.selectQuestionCdForMigration(zvl);
+			for(int j : qList)
+			{
+				int qCd = dao.selectQuestionCdPKForMigration();
+				zvl.put("fromQuestionCd", j);
+				zvl.put("toQuestionCd", qCd);
+				dao.addQuestionForMigration(zvl);
+				dao.addQuestion2ForMigration(zvl);
+			}
+		}
+	}
+
 //	public static void main(String[] args) {
 //		String[] aa = new String[]{"2010310001","2010310002","2010310003","2010310004","2010310005","2010310006","2010310007","2010310008","2010310009","2010310010","2010310011","2010310012","2010310013","2010310014","2010310015","2010310016","2010310017","2010310018","2010310019","2010310020","2010310021","2010310022","2010310023","2010310024","2010310025","2010310026","2010310027","2010310028","2010310029","2010310030","2010310031","2010310032","2010310033","2010310034","2010310035","2010310036","2010310037","2010310038","2010310039","2010310040"};
 //		int i = 1;
