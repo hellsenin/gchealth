@@ -197,8 +197,9 @@ public class FreecheckUserController {
 		String includePage = "";
 		System.out.println(">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>company : "+company);
 		if("writable".equals(bean.getView_state()) || "update".equals(bean.getView_state())) {
-			
-			if(other5.trim().indexOf("향정신성의약품") != -1)
+			String divideCd = company.getDivide_cd();
+			//if("k10".equals(divideCd) || "k01".equals(divideCd) || "k02".equals(divideCd))
+			if(true)
 			{
 				List<ZValue> handleItemList = service.selectHandleitemListU(company);
 				model.addAttribute("handleItemList", handleItemList);
