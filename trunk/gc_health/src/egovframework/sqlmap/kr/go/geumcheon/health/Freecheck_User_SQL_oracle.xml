@@ -174,7 +174,10 @@
 	
     <select id="FreecheckUserDAO.selectCompanyInfo" parameterClass="Company" resultClass="java.util.HashMap">
     	<![CDATA[
-    		SELECT	A.COMPANY_CD
+  		SELECT	AA.* 
+		FROM  	(
+    		SELECT	ROWNUM RNUM
+    				, A.COMPANY_CD
 					, A.ID			as COMPANY_ID
 					, A.COMPANY		as SANGHO_NAME
 					, A.SA_NO		as NUMBER1
@@ -191,7 +194,9 @@
 			INNER JOIN HETB_CK_INDUSTRY B ON B.INDUSTRY_CD = A.INDUSTRY_CD
 			WHERE	A.STATUS = 'N'
 					AND A.ID = '$id$' 
-					AND A.STATUS ='N'
+	    		ORDER BY COMPANY_CD DESC
+        		) AA
+		WHERE AA.RNUM = 1
     	]]>
     </select>
     
