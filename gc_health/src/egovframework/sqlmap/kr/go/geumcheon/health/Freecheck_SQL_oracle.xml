@@ -777,7 +777,6 @@
 					, UPDATE_DT		= SYSDATE
 					, UPDATE_IP		= '$update_ip$'
 					, UPDATE_ID		= '$update_id$'
-					, YEAR_CD		= '$year_cd$'
 					, BLOG_URL		= '$blog_url$'
              WHERE	COMPANY_CD = $company_cd$
 		]]>
