@@ -154,7 +154,7 @@
     </select>
     
     <!-- 자율점검 사용자 로그인 -->
-    <select id="FreecheckUserDAO.selectMasterCdDataByCompany" parameterClass="string" resultClass="zvl">
+    <select id="FreecheckUserDAO.selectMasterCdDataByCompany" parameterClass="zvl" resultClass="zvl">
     	<![CDATA[
     		SELECT	A.COMPANY_CD
 					, A.ID
@@ -168,6 +168,7 @@
 					AND A.INDUSTRY_CD = C.INDUSTRY_CD
 					AND A.ID = #id#
 					AND A.STATUS ='N'
+					AND A.YEAR_CD = #yearCd#
     	]]>
     </select>
     
@@ -825,6 +826,7 @@
 			    AND A.ID = B.COMPANY_ID(+)
 			    AND A.ID = C.COMPANY_ID(+)
 			    AND C.MASTER_CD = B.MASTER_CD
+			    AND A.YEAR_CD = #year_cd#
 			) a, 
 		    (
 		      SELECT z.MASTER_CD, y.TYPE_CD, y.TITLE, COUNT(z.QUESTION_CD) AS CNT, y.START_DT, y.END_DT
