@@ -27,8 +27,8 @@ public class FreecheckUserDAO extends EgovAbstractDAO {
 		return (Company) selectByPk("FreecheckUserDAO.loginFreecheck", bean);
 	}
 
-	public List selectMasterCdDataByCompany(String id) {
-		return list("FreecheckUserDAO.selectMasterCdDataByCompany", id);
+	public List selectMasterCdDataByCompany(ZValue zvl) {
+		return list("FreecheckUserDAO.selectMasterCdDataByCompany", zvl);
 	}
 	
 	public String selectCompanyTypeInfo(Company bean) {
