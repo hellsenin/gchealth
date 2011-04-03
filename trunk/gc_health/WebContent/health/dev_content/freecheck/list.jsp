@@ -84,7 +84,7 @@
 							<c:when test="${item.ANSWER_CNT == 0}">
 								미점검
 							</c:when>
-							<c:when test="${item.ANSWER2_CNT == item.QUESTION_CNT or (item.ARTICLE9_YN == 'N' and item.TYPE_CD == '11') or (item.ARTICLE9_YN == 'n' and item.TYPE_CD == '11')}">
+							<c:when test="${item.ANSWER2_CNT >= item.QUESTION_CNT or (item.ARTICLE9_YN == 'N' and item.TYPE_CD == '11') or (item.ARTICLE9_YN == 'n' and item.TYPE_CD == '11')}">
 								점검완료
 							</c:when>
 							<c:when test="${item.ANSWER_CNT == 1 and item.ANSWER2_CNT < item.QUESTION_CNT}">
