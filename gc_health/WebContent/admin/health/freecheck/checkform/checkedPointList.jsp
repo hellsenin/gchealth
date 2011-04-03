@@ -6,6 +6,11 @@
 <%@ taglib prefix="validator" uri="http://www.springmodules.org/tags/commons-validator" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
+<%
+	java.util.Calendar cal1 = java.util.Calendar.getInstance();
+	int year = cal1.get(java.util.Calendar.YEAR);
+	pageContext.setAttribute("year", year);
+%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -126,6 +131,12 @@ function viewAnswer(master_cd, company_cd, divide_cd) {
 			</c:forEach>
 		</select>
 			
+		<select id="select_year_cd" name="year_cd" style="width: 100px; float: right; margin-right: 20px;">
+			<option value='${year}' <c:if test="${Bean.year_cd == year}">selected="selected"</c:if>>${year} 년도</option>
+			<option value='${year-1}' <c:if test="${Bean.year_cd == year-1}">selected="selected"</c:if>>${year-1} 년도</option>
+			<option value='${year-2}' <c:if test="${Bean.year_cd == year-2}">selected="selected"</c:if>>${year-2} 년도</option>
+		</select>
+		
 		</span>
 	</form>
 </fieldset>
