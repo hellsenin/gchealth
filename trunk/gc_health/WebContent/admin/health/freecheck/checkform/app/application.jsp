@@ -3,7 +3,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
-<c:if test="${answer.DIVIDE_CD == 'k01'}">
+<c:choose>
+<c:when test="${company.divide_cd == 'k01'}">
 <!-- 약국 -->
 
 <h4>허가정보</h4>
@@ -105,9 +106,9 @@
 		</c:if>
 		</tbody>
 	</table>
-</c:if>
+</c:when>
 
-<c:if test="${answer.DIVIDE_CD == 'k02'}">
+<c:when test="${company.divide_cd == 'k02'}">
 
 <!-- (종합, 치과, 한방, 요양) 병원 자율점검표 -->
 
@@ -197,9 +198,9 @@
 		</tbody>
 	</table>
 
-</c:if>
+</c:when>
 
-<c:if test="${answer.DIVIDE_CD == 'k03'}">
+<c:when test="${company.divide_cd == 'k03'}">
 
 <!-- (의원,한의원,치과의원) 의료기관 -->
 
@@ -285,9 +286,9 @@
 		</c:if>
 		</tbody>
 	</table>
-</c:if>
+</c:when>
 
-<c:if test="${answer.DIVIDE_CD == 'k04'}">
+<c:when test="${company.divide_cd == 'k04'}">
 
 <!-- 의약품도매상 -->
 
@@ -407,9 +408,9 @@
 		</c:if>
 		</tbody>
 	</table>
-</c:if>
+</c:when>
 
-<c:if test="${answer.DIVIDE_CD == 'k05'}">
+<c:when test="${company.divide_cd == 'k05'}">
 
 <!-- 의료기기판매업소 -->
 
@@ -490,28 +491,10 @@
 			</tr>
 			<tr>
 				<th scope="row">
-					<label for="other1">취급품목</label>
-				</th>
-				<td class="output" style="vertical-align: middle;">
-					<div>
-					<input id="other1" type="text" style="width:500px" class="t_text vam" name="other1" value="${answer.OTHER1}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>
-					</div>
-				</td>
-				<th scope="row">
-					<label for="other1">의료기기외 취급품목 <br/>( 예: 화장품, 식품, 전자제품 등 )</label>
-				</th>
-				<td class="output" style="vertical-align: middle;">
-					<div>
-					<input id="other2" type="text" style="width:500px" class="t_text vam" name="other2" value="${answer.OTHER2}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>
-					</div>
-				</td>
-			</tr>
-			<tr>
-				<th scope="row">
 					<label for="other3">의료기기판매업외 허가사항</label>
 				</th>
 				<td class="output" colspan="3">
-					<input id="other3" type="text" style="width:500px" class="t_text vam" name="other3" value="${answer.OTHER3}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>
+					<input id="other3" type="text" style="width:100px" class="t_text vam" name="other3" value="${answer.OTHER3}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>
 				</td>
 			</tr>
 		<c:if test="${fn:length(itemList) > 0}">
@@ -528,4 +511,93 @@
 		</c:if>
 		</tbody>
 	</table>
-</c:if>
+</c:when>
+<c:otherwise>
+<h4>허가정보</h4>
+
+	<table summary="허가정보 테이블로 허가내용을 알 수 있습니다" class="default_view">
+		<caption>허가정보</caption>
+		<colgroup>
+			<col width="23%" />
+			<col width="7%" />
+			<col width="20%" />
+			<col width="20%" />
+			<col width="30%" />
+		</colgroup>
+		<tbody>
+			<tr>
+				<th scope="row">
+					<label for="sangho_name">상호</label>
+				</th>
+				<td class="output" colspan="2">
+					<input id="sangho_name" name="sangho_name" type="text" maxlength="14" style="width:150px;" value="${answer.SANGHO_NAME}" class="t_text vam" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>
+				</td>
+				<th scope="row">
+					<label for="number1">허가번호</label>
+				</th>
+				<td class="output">
+					제 <input id="number1" name="number1" type="text" style="width:43px; text-align: center; padding-left: 0px;padding-left: 0px;" maxlength="5" class="t_text vam" value="${answer.NUMBER1}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 호
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">대표자</th>
+				<th class="output depth2_th"><label for="name1">성명</label></th>
+				<td class="output gubun">
+					<input type="text" id="name1" name="name1" style="width:100px" maxlength="10" class="t_text vam" value="${answer.NAME1}" readonly="readonly" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>
+				</td>
+				<th scope="row">
+					<label for="tel">전화번호</label>
+				</th>
+				<td class="output">
+					<input type="text" id="tel" name="tel" style="width:100px" class="t_text vam" title="전화번호" maxlength="14" value="${answer.TEL}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row" rowspan="3">담당자<br/>(작성자)</th>
+				<th class="output depth2_th"><label for="name2">성명</label></th>
+				<td class="output gubun">
+					<input type="text" id="name2" name="name2" style="width:100px" maxlength="10" class="t_text vam" value="${answer.NAME2}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>
+				</td>
+				<th scope="row">
+					<label for="fax">팩스번호</label>
+				</th>
+				<td class="output">
+					<input type="text" id="fax" name="fax" style="width:100px" class="t_text vam" title="팩스번호" maxlength="14" value="${answer.FAX}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>
+				</td>
+			</tr>
+			<tr>
+				<th class="output depth2_th"><label for="hp">H.P.</label></th>
+				<td class="output gubun" colspan="4">
+					<input type="text" id="hp" name="hp" value="${answer.HP}" style="width:100px" class="t_text vam" maxlength="14" title="휴대전화번호" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>				
+				</td>
+			</tr>
+			<tr>
+				<th class="output depth2_th"><label for="email">e메일</label></th>
+				<td class="output gubun" colspan="4"><input type="text" id="email" name="email" value="${answer.EMAIL}" style="width:120px" class="t_text" title="이메일" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/></td>
+			</tr>
+			<tr>
+				<th scope="row"><label for="addr1">소재지</label></th>
+				<td class="output" colspan="2"><input type="text" id="addr1" name="addr1" value="${answer.ADDR1}" style="width:210px;" class="t_text" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/></td>
+				<th scope="row"><label for="cnt1">병상수</label><font color="red">*</font></th>
+				<td class="output">
+					<input id="cnt1" type="text" name="cnt1" style="text-align: center; padding-left: 0px; width:25px;" class="t_text vam" maxlength="3" value="${answer.CNT1 == null ? 0 : answer.CNT1}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 실,  
+					<input id="cnt2" type="text" name="cnt2" style="text-align: center; padding-left: 0px; width:25px;" class="t_text vam" maxlength="3" value="${answer.CNT2 == null ? 0 : answer.CNT2}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 병상
+				</td>
+			</tr>
+		<c:if test="${fn:length(itemList) > 0}">
+			<tr>
+				<th scope="row">
+					<label for="etc24">취급품목</label><font color="red">*</font>
+				</th>
+				<td class="output" colspan="3">
+					<c:forEach items="${itemList}" var="item" varStatus="qStatus">	
+						<label for="etc${qStatus.count}"><input id="etc${qStatus.count}" title="취급품목" type="checkbox" class="vam" name="item" value="${item.itemName}" <c:if test="${fn:contains(answer.OTHER5, item.itemName)}">checked="checked"</c:if> <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>${item.itemName}</label> 
+					</c:forEach>
+				</td>
+			</tr>
+		</c:if>
+		</tbody>
+	</table>
+
+</c:otherwise>
+</c:choose>
