@@ -1687,7 +1687,8 @@
 			<isNotEmpty prepend="AND" property="searchTxt">
 				<![CDATA[	A.CEO_NAME LIKE '%' || #searchTxt# || '%'	]]>
 			</isNotEmpty>
-		</isEqual>			
+		</isEqual>
+		ORDER BY COMPANY			
     </select>
     	
     <select id="FreecheckAdminDAO.selectMasterListForItem" parameterClass="string" resultClass="zvl">
