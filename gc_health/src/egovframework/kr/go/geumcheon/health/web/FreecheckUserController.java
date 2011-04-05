@@ -200,7 +200,7 @@ public class FreecheckUserController {
 			//String divideCd = company.getDivide_cd();
 			//if("k10".equals(divideCd) || "k01".equals(divideCd) || "k02".equals(divideCd))
 			String typeCd = bean.getType_cd();
-			if("01".equals(typeCd) || (!"".equals(other5) && other5.indexOf("취급안함") == -1) )
+			if((!"".equals(other5) && other5.indexOf("취급안함") == -1) )
 			{
 				List<ZValue> handleItemList = service.selectHandleitemListU(company);
 				model.addAttribute("handleItemList", handleItemList);
