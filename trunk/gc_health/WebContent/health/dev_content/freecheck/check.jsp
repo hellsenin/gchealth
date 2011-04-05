@@ -84,10 +84,7 @@ function checkAndSubmit(f) {
 	
 	<form name="fm" action="/health/freecheck/check.do?categoryId=${param.categoryId}" method="post" onsubmit="return checkAndSubmit(this);">
 		<input type="hidden" name="answer_cd" value="${answer.ANSWER_CD == null ? 0 : answer.ANSWER_CD}" />
-		
-		<c:if test="${result.type_cd == '02'}">
-			<jsp:include page="/health/dev_content/freecheck/app/application.jsp"></jsp:include>
-		</c:if>
+		<jsp:include page="/health/dev_content/freecheck/app/application.jsp"></jsp:include>
 		
 		<br/>
 		

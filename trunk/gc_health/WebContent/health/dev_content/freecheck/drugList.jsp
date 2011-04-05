@@ -21,7 +21,7 @@ function checkNumber(wcntObj, i)
 	else
 	{
 		$("#field5_"+i)[0].value =
-			parseInt($("#field1_"+i)[0].value) + parseInt($("#field2_"+i)[0].value)
+			parseFloat($("#field1_"+i)[0].value) + parseFloat($("#field2_"+i)[0].value)
 			 - $("#field3_"+i)[0].value - $("#field4_"+i)[0].value;
 	}
 }
@@ -34,11 +34,11 @@ function jaddRow()
 			"<td>"+(rows)+"</td>" +
 			"<td><input type=\"text\" id=\"itemName"+(rows)+"\" name=\"itemName_A\" value=\"\" class=\"txt\" style=\"width:50px\" /></td>" +
 			"<td><input type=\"text\" id=\"unit"+(rows)+"\" name=\"unit_A\" value=\"\" class=\"txt\" style=\"width:50px\" /></td>" +
-			"<td><input type=\"text\" id=\"field1_"+(rows)+"\" name=\"field1_A\" value=\"0\" onblur=\"checkNumber(this, "+(rows)+")\" class=\"txt\" style=\"width:30px\" /></td>" +
-			"<td><input type=\"text\" id=\"field2_"+(rows)+"\" name=\"field2_A\" value=\"0\" onblur=\"checkNumber(this, "+(rows)+")\" class=\"txt\" style=\"width:30px\" /></td>" +
-			"<td><input type=\"text\" id=\"field3_"+(rows)+"\" name=\"field3_A\" value=\"0\" onblur=\"checkNumber(this, "+(rows)+")\" class=\"txt\" style=\"width:30px\" /></td>" +
-			"<td><input type=\"text\" id=\"field4_"+(rows)+"\" name=\"field4_A\" value=\"0\" onblur=\"checkNumber(this, "+(rows)+")\" class=\"txt\" style=\"width:30px\" /></td>" +
-			"<td><input type=\"text\" id=\"field5_"+(rows)+"\" name=\"field5_A\" value=\"0\" readonly=\"readonly\" class=\"txt\" style=\"width:30px\" /></td>" +
+			"<td><input type=\"text\" id=\"field1_"+(rows)+"\" name=\"field1_A\" value=\"0\" onblur=\"checkNumber(this, "+(rows)+")\" class=\"txt\" style=\"width:60px\" /></td>" +
+			"<td><input type=\"text\" id=\"field2_"+(rows)+"\" name=\"field2_A\" value=\"0\" onblur=\"checkNumber(this, "+(rows)+")\" class=\"txt\" style=\"width:60px\" /></td>" +
+			"<td><input type=\"text\" id=\"field3_"+(rows)+"\" name=\"field3_A\" value=\"0\" onblur=\"checkNumber(this, "+(rows)+")\" class=\"txt\" style=\"width:60px\" /></td>" +
+			"<td><input type=\"text\" id=\"field4_"+(rows)+"\" name=\"field4_A\" value=\"0\" onblur=\"checkNumber(this, "+(rows)+")\" class=\"txt\" style=\"width:60px\" /></td>" +
+			"<td><input type=\"text\" id=\"field5_"+(rows)+"\" name=\"field5_A\" value=\"0\" readonly=\"readonly\" class=\"txt\" style=\"width:70px\" /></td>" +
 		"</tr>"
 	);
 }
@@ -134,11 +134,11 @@ function checkForm(form)
             <td>${x+1}</td>
             <td><input type="text" id="itemName${x+1}" name="itemName_A" value="${handleItemList[x].itemName}" style="width:50px" class="txt" /></td>
             <td><input type="text" id="unit${x+1}" name="unit_A" value="${handleItemList[x].unit}" style="width:50px" class="txt" /></td>
-            <td><input type="text" id="field1_${x+1}" name="field1_A" value="${handleItemList[x].field1}" style="width:30px" onblur="checkNumber(this, ${x+1})" class="txt" /></td>
-            <td><input type="text" id="field2_${x+1}" name="field2_A" value="${handleItemList[x].field2}" style="width:30px" onblur="checkNumber(this, ${x+1})" class="txt" /></td>
-            <td><input type="text" id="field3_${x+1}" name="field3_A" value="${handleItemList[x].field3}" style="width:30px" onblur="checkNumber(this, ${x+1})" class="txt" /></td>
-            <td><input type="text" id="field4_${x+1}" name="field4_A" value="${handleItemList[x].field4}" style="width:30px" onblur="checkNumber(this, ${x+1})" class="txt" /></td>
-            <td><input type="text" id="field5_${x+1}" name="field5_A" value="${handleItemList[x].field5}" style="width:30px" readonly="readonly" class="txt" /></td>
+            <td><input type="text" id="field1_${x+1}" name="field1_A" value="${handleItemList[x].field1}" style="width:60px" onblur="checkNumber(this, ${x+1})" class="txt" /></td>
+            <td><input type="text" id="field2_${x+1}" name="field2_A" value="${handleItemList[x].field2}" style="width:60px" onblur="checkNumber(this, ${x+1})" class="txt" /></td>
+            <td><input type="text" id="field3_${x+1}" name="field3_A" value="${handleItemList[x].field3}" style="width:60px" onblur="checkNumber(this, ${x+1})" class="txt" /></td>
+            <td><input type="text" id="field4_${x+1}" name="field4_A" value="${handleItemList[x].field4}" style="width:60px" onblur="checkNumber(this, ${x+1})" class="txt" /></td>
+            <td><input type="text" id="field5_${x+1}" name="field5_A" value="${handleItemList[x].field5}" style="width:70px" readonly="readonly" class="txt" /></td>
         </tr>
      </c:forEach>
      </c:if>
