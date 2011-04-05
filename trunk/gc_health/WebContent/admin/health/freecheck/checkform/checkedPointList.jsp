@@ -105,13 +105,6 @@ function viewAnswer(master_cd, company_cd, divide_cd) {
 			<option value='3' <c:if test="${param.searchCondition == '3'}">selected="selected"</c:if>>대표자</option>
 		</select>
 		
-		<select name="gradeCd" id="gradeCd" style="float: right; width: 150px;">
-			<option value=''>승인여부</option>
-			<option value='01' <c:if test="${param.gradeCd == '01'}">selected="selected"</c:if>>접수</option>
-			<option value='02' <c:if test="${param.gradeCd == '02'}">selected="selected"</c:if>>승인</option>
-			<option value='03' <c:if test="${param.gradeCd == '03'}">selected="selected"</c:if>>폐업</option>
-		</select>
-		
 		<select name="masterCd" id="masterCd" style="float: right;">
 		<c:choose>
 		<c:when test="${empty param.masterCd}">
