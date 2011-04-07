@@ -39,6 +39,12 @@ function viewAnswer(master_cd, company_cd, divide_cd) {
 };
 
 
+function excelDown()
+{
+	var f = document.sfm;
+	f.action = "/admin/freecheck/selectMasterCompanyPointListForExcel.do";
+	f.submit();
+}
 </script>
 
 </head>
@@ -94,8 +100,9 @@ function viewAnswer(master_cd, company_cd, divide_cd) {
 		</table>
 	
 <div class="board_btn_set mt13">
-	<c:url var="list_action" value="/admin/freecheck/checkform/saveExcel.do">
-		<c:param name="master_cd" value="${Bean.master_cd}"/>
+	<c:url var="list_action" value="/admin/freecheck/selectMasterCompanyListForExcel.do">
+		<c:param name="masterCd" value="${Bean.master_cd}"/>
+		<c:param name="yearCd" value="${Bean.year_cd}"/>
 	</c:url>
 	<span class="btn_list"><a href="${list_action}">엑셀저장</a></span>
 </div>
