@@ -266,9 +266,17 @@ public class FreecheckAdminDAO extends EgovAbstractDAO {
 	public void delLinkedMaster(ZValue zvl) {
 		insert("FreecheckAdminDAO.delLinkedMaster", zvl);
 	}
-
+	
 	public List<ZValue> selectMasterCompanyPointList(ZValue zvl) {
 		return list("FreecheckAdminDAO.selectMasterCompanyPointList", zvl);
+	}
+
+	public List<ZValue> selectMasterCompanyList(ZValue zvl) {
+		return list("FreecheckAdminDAO.selectMasterCompanyList", zvl);
+	}
+	
+	public List<ZValue> selectMasterCompanyFalseQuestionList(ZValue zvl) {
+		return list("FreecheckAdminDAO.selectMasterCompanyFalseQuestionList", zvl);
 	}
 
 	public List<ZValue> selectMasterListForItem(String yearCd) {
