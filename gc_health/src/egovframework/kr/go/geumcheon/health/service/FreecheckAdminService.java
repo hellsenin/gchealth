@@ -1255,9 +1255,36 @@ public class FreecheckAdminService {
 	public void delLinkedMaster(ZValue zvl) throws Exception {
 		dao.delLinkedMaster(zvl);
 	}
-
+	
 	public List<ZValue> selectMasterCompanyPointList(ZValue zvl) throws Exception {
 		return dao.selectMasterCompanyPointList(zvl);
+	}
+
+	public List<ZValue> selectMasterCompanyList(ZValue zvl) throws Exception {
+		return dao.selectMasterCompanyList(zvl);
+	}
+	
+	public HashMap<String, ArrayList<ZValue>> selectMasterCompanyFalseQuestionList(ZValue zvl) throws Exception {
+		HashMap<String, ArrayList<ZValue>> result = new HashMap<String, ArrayList<ZValue>>();
+		List<ZValue> list = dao.selectMasterCompanyFalseQuestionList(zvl);
+		String key = null;
+		ArrayList<ZValue> container = null;
+		for(ZValue val : list)
+		{
+			key = val.getString("companyId");
+			container = result.get(key);
+			if(container == null)
+			{
+				container = new ArrayList<ZValue>();
+				container.add(val);
+				result.put(key, container);
+			}
+			else
+			{
+				container.add(val);
+			}
+		}
+		return result;
 	}
 
 	public List<ZValue> selectMasterListForItem(String yearCd) throws Exception {

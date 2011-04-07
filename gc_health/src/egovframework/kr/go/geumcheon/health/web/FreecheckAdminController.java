@@ -1637,12 +1637,66 @@ public class FreecheckAdminController {
     	}
     	
     	List<ZValue> resultList = service.selectMasterCompanyPointList(zvl);
+    	HashMap<String, ArrayList<ZValue>> falseMap = service.selectMasterCompanyFalseQuestionList(zvl);
 		model.addAttribute("resultList", resultList);
+		model.addAttribute("falseMap", falseMap);
 
     	List<ZValue> industryAttrList = service.selectIndustryAttrList();
 		model.addAttribute("industryAttrList", industryAttrList);
 		
 		return "admin/health/freecheck/checkform/checkedPointList";
+	}
+
+	@RequestMapping("/admin/freecheck/selectMasterCompanyPointListForExcel.do")
+	public String selectMasterCompanyPointListForExcel(
+			HttpServletRequest request,
+			HttpServletResponse response,	
+			ModelMap model) throws Exception
+	{
+    	ZValue zvl = WebFactory.getAttributes(request);
+    	String yearCd = zvl.getString("yearCd");
+    	if("".equals(yearCd))
+    	{
+			SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy");
+    		yearCd = dateFormat.format(new Date());
+    		zvl.put("yearCd", yearCd);
+    	}
+    	
+    	List<ZValue> resultList = service.selectMasterCompanyPointList(zvl);
+    	HashMap<String, ArrayList<ZValue>> falseMap = service.selectMasterCompanyFalseQuestionList(zvl);
+		model.addAttribute("resultList", resultList);
+		model.addAttribute("falseMap", falseMap);
+
+    	List<ZValue> industryAttrList = service.selectIndustryAttrList();
+		model.addAttribute("industryAttrList", industryAttrList);
+		
+		return "admin/health/freecheck/checkform/checkedPointListExcel";
+	}
+
+	@RequestMapping("/admin/freecheck/selectMasterCompanyListForExcel.do")
+	public String selectMasterCompanyListForExcel(
+			HttpServletRequest request,
+			HttpServletResponse response,	
+			ModelMap model) throws Exception
+	{
+    	ZValue zvl = WebFactory.getAttributes(request);
+    	String yearCd = zvl.getString("yearCd");
+    	if("".equals(yearCd))
+    	{
+			SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy");
+    		yearCd = dateFormat.format(new Date());
+    		zvl.put("yearCd", yearCd);
+    	}
+    	
+    	List<ZValue> resultList = service.selectMasterCompanyList(zvl);
+    	HashMap<String, ArrayList<ZValue>> falseMap = service.selectMasterCompanyFalseQuestionList(zvl);
+		model.addAttribute("resultList", resultList);
+		model.addAttribute("falseMap", falseMap);
+
+    	List<ZValue> industryAttrList = service.selectIndustryAttrList();
+		model.addAttribute("industryAttrList", industryAttrList);
+		
+		return "admin/health/freecheck/checkform/checkedPointListExcel";
 	}
 
 	@RequestMapping("/admin/freecheck/selectItemList.do")

@@ -1619,7 +1619,7 @@
     	<![CDATA[
     	SELECT 
 			A.COMPANY, NVL(B.QUESTION_CNT,0) AS QUESTION_CNT, NVL(C.CORRECT_ANSWER_CNT,0) AS CORRECT_ANSWER_CNT,
-			NVL(D.WRONG_ANSWER_CNT,0) AS WRONG_ANSWER_CNT,
+			NVL(D.WRONG_ANSWER_CNT,0) AS WRONG_ANSWER_CNT, A.ID,
 			A.MASTER_CD, A.COMPANY_CD, A.DIVIDE_CD
 		FROM (
 			SELECT A1.ID, A1.COMPANY, A1.INDUSTRY_CD, A3.MASTER_CD, A1.CEO_NAME, A1.GRADE_CD,
@@ -1689,6 +1689,96 @@
 			</isNotEmpty>
 		</isEqual>
 		ORDER BY COMPANY			
+    </select>
+    	
+    <select id="FreecheckAdminDAO.selectMasterCompanyList" parameterClass="zvl" resultClass="zvl">
+    	<![CDATA[
+    	SELECT 
+			A.COMPANY, NVL(B.QUESTION_CNT,0) AS QUESTION_CNT, NVL(C.CORRECT_ANSWER_CNT,0) AS CORRECT_ANSWER_CNT,
+			NVL(D.WRONG_ANSWER_CNT,0) AS WRONG_ANSWER_CNT, A.ID, 
+			A.MASTER_CD, A.COMPANY_CD
+		FROM (
+			SELECT A1.ID, A1.COMPANY, A1.INDUSTRY_CD, A1.CEO_NAME, A1.GRADE_CD,
+				A1.COMPANY_CD, #masterCd# as MASTER_CD
+			FROM HETB_CK_COMPANY A1
+			WHERE YEAR_CD = #yearCd#
+		) A 
+		INNER JOIN(
+			SELECT C1.COMPANY_ID, COUNT(*) AS CORRECT_ANSWER_CNT
+		    FROM HETB_CK_ANSWER2 C1
+		    INNER JOIN HETB_CK_QUESTION2 C2
+		    	ON C1.MASTER_CD = C2.MASTER_CD
+		        AND C1.QUESTION_CD = C2.QUESTION1_CD
+		        AND C1.QUESTION2_CD = C2.QUESTION2_CD
+		    WHERE C2.VALIDATION = 'Y'
+			  AND C1.STATUS = 'N' AND C2.STATUS = 'N'
+			  AND C1.MASTER_CD = #masterCd#
+		    GROUP BY C1.COMPANY_ID
+		) C ON C.COMPANY_ID = A.ID
+		LEFT OUTER JOIN(
+			SELECT COUNT(*) AS QUESTION_CNT
+		    FROM HETB_CK_QUESTION
+		    WHERE STATUS = 'N'
+		    AND MASTER_CD = #masterCd#
+		) B ON 1=1
+		LEFT OUTER JOIN(
+			SELECT C1.COMPANY_ID, COUNT(*) AS WRONG_ANSWER_CNT
+		    FROM HETB_CK_ANSWER2 C1
+		    INNER JOIN HETB_CK_QUESTION2 C2
+		    	ON C1.MASTER_CD = C2.MASTER_CD
+		        AND C1.QUESTION_CD = C2.QUESTION1_CD
+		        AND C1.QUESTION2_CD = C2.QUESTION2_CD
+		    WHERE C2.VALIDATION = 'N'
+		      AND C1.STATUS = 'N'
+		      AND C2.STATUS = 'N'
+		      AND C1.MASTER_CD = #masterCd#
+		    GROUP BY C1.COMPANY_ID
+		) D ON D.COMPANY_ID = A.ID
+		WHERE 1=1
+		ORDER BY COMPANY
+		]]> 			
+    </select>
+    	
+    <select id="FreecheckAdminDAO.selectMasterCompanyFalseQuestionList" parameterClass="zvl" resultClass="zvl">
+    	<![CDATA[
+    	SELECT C1.MASTER_CD, C1.COMPANY_ID, C2.VALIDATION AS VALIDATION, C2.QUESTION1_CD, A.ID, C3.QNUM
+	    FROM HETB_CK_ANSWER2 C1
+	    INNER JOIN HETB_CK_QUESTION2 C2
+	    	ON C1.MASTER_CD = C2.MASTER_CD
+	        AND C1.QUESTION_CD = C2.QUESTION1_CD
+	        AND C1.QUESTION2_CD = C2.QUESTION2_CD
+	    INNER JOIN HETB_CK_COMPANY A ON A.ID = C1.COMPANY_ID AND A.YEAR_CD = #yearCd#
+        INNER JOIN (
+        	SELECT ROWNUM QNUM, Q1.*
+            FROM HETB_CK_QUESTION Q1
+            WHERE MASTER_CD = #masterCd#
+            ORDER BY QUESTION_CD
+        ) C3 
+	    	ON C3.MASTER_CD = C1.MASTER_CD
+	        AND C3.QUESTION_CD = C1.QUESTION_CD
+	    WHERE C2.VALIDATION = 'N'
+	      AND C1.STATUS = 'N'
+	      AND C2.STATUS = 'N'
+			AND	C1.MASTER_CD = #masterCd#
+		]]> 		
+		<isNotEmpty prepend="AND" property="gradeCd">
+			<![CDATA[	A.GRADE_CD = #gradeCd#	]]>
+		</isNotEmpty>
+		<isEqual property="searchType" compareValue="1">
+			<isNotEmpty prepend="AND" property="searchTxt">
+				<![CDATA[	A.COMPANY LIKE '%' || #searchTxt# || '%'	]]>
+			</isNotEmpty>
+		</isEqual>		
+		<isEqual property="searchType" compareValue="2">
+			<isNotEmpty prepend="AND" property="searchTxt">
+				<![CDATA[	A.ID LIKE '%' || #searchTxt# || '%'	]]>
+			</isNotEmpty>
+		</isEqual>		
+		<isEqual property="searchType" compareValue="3">
+			<isNotEmpty prepend="AND" property="searchTxt">
+				<![CDATA[	A.CEO_NAME LIKE '%' || #searchTxt# || '%'	]]>
+			</isNotEmpty>
+		</isEqual>	
     </select>
     	
     <select id="FreecheckAdminDAO.selectMasterListForItem" parameterClass="string" resultClass="zvl">
