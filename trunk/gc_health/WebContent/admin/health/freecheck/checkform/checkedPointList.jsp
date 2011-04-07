@@ -61,6 +61,7 @@ function callbackSelectLinkedMaster(oj)
 function checkForm(f)
 {
 	f.masterTitle.value = $("masterCd").options[$("masterCd").selectedIndex].text;
+	f.action = "/admin/freecheck/selectMasterCompanyPointList.do";
 	return true;
 }
 
@@ -75,6 +76,12 @@ function viewAnswer(master_cd, company_cd, divide_cd) {
 	return false;
 };
 
+function excelDown()
+{
+	var f = document.sfm;
+	f.action = "/admin/freecheck/selectMasterCompanyPointListForExcel.do";
+	f.submit();
+}
 </script>
 
 </head>
@@ -134,6 +141,11 @@ function viewAnswer(master_cd, company_cd, divide_cd) {
 	</form>
 </fieldset>
 
+<div class="board_btn_set mt13">
+	
+	<span class="btn_list"><a href="javascript:excelDown();">엑셀저장</a></span>
+</div>
+
 <div style="float: right; height: 30px; margin-right: 10px;">
 	<strong>리스트 : ${fn:length(resultList)} 건 / 전체 : ${resultListSize} 건</strong>
 </div>
@@ -159,12 +171,13 @@ function viewAnswer(master_cd, company_cd, divide_cd) {
 			<th scope="col">업소명</th>
 			<th scope="col">문제수</th>
 			<th scope="col">맞은문제수</th>
-			<th scope="col">틀린문제수</th>
+			<th scope="col">틀린문제수[틀린문항]</th>
 		</tr>
 	</thead>
 	<tbody>
 		<c:if test="${fn:length(resultList) != 0}">
 			<c:forEach items="${resultList}" var="item" varStatus="status">
+				<c:set var="falseList" value="${falseMap[item.id]}" />
 				<tr>
 					<!-- 번호 -->
 					<td>
@@ -188,7 +201,11 @@ function viewAnswer(master_cd, company_cd, divide_cd) {
 					
 					<!-- 틀린문제수 -->
 					<td>
-						${item.wrongAnswerCnt}
+						${item.wrongAnswerCnt}[
+					<c:forEach items="${falseList}" var="f" varStatus="status">
+						${f.qnum},
+					</c:forEach>
+						]
 					</td>					
 				</tr>
 			</c:forEach>
