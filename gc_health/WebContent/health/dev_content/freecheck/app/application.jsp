@@ -76,11 +76,19 @@
 			</tr>
 			<tr>
 				<th scope="row">
-					<label for="cnt1">종업원수</label>
+					<label for="cnt1">근무인원</label>
 				</th>
 				<td class="output" colspan="3">
 					<label for="cnt1">근무약사 <input id="cnt1" type="text" name="cnt1" maxlength="3" style="width:28px; text-align: center; padding-left: 0px;" class="t_text vam" value="${answer.CNT1 == null ? 0 : answer.CNT1}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 명</label>
-					<label for="cnt2">종업원 <input id="cnt2" type="text" name="cnt2" maxlength="3" style="width:28px; text-align: center; padding-left: 0px;" class="t_text vam" value="${answer.CNT2 == null ? 0 : answer.CNT2}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 명</label>
+					<label for="cnt2">그외직원 <input id="cnt2" type="text" name="cnt2" maxlength="3" style="width:28px; text-align: center; padding-left: 0px;" class="t_text vam" value="${answer.CNT2 == null ? 0 : answer.CNT2}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 명</label>
+				</td>
+			</tr>
+			<tr>
+				<th scope="row">
+					<label for="homepage">홈페이지 주소</label>
+				</th>
+				<td class="output" colspan="3">
+					<input type="text" id="homepage" name="homepage" style="width: 150px;" class="t_text vam" title="홈페이지 주소" value="${answer.HOMEPAGE}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>
 				</td>
 			</tr>
 			<tr>
@@ -176,12 +184,8 @@
 			</tr>
 			<tr>
 				<th scope="row"><label for="addr1">소재지</label></th>
-				<td class="output" colspan="2"><input type="text" id="addr1" name="addr1" value="${answer.ADDR1}" style="width:210px;" class="t_text" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/></td>
-				<th scope="row"><label for="cnt1">병상수</label><font color="red">*</font></th>
-				<td class="output">
-					<input id="cnt1" type="text" name="cnt1" style="text-align: center; padding-left: 0px; width:25px;" class="t_text vam" maxlength="3" value="${answer.CNT1 == null ? 0 : answer.CNT1}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 실,  
-					<input id="cnt2" type="text" name="cnt2" style="text-align: center; padding-left: 0px; width:25px;" class="t_text vam" maxlength="3" value="${answer.CNT2 == null ? 0 : answer.CNT2}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 병상
-				</td>
+				<td class="output" colspan="4"><input type="text" id="addr1" name="addr1" value="${answer.ADDR1}" style="width:210px;" class="t_text" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/></td>
+				
 			</tr>
 		<c:if test="${fn:length(itemList) > 0}">
 			<tr>
@@ -264,13 +268,9 @@
 				</td>
 			</tr>
 			<tr>
-				<th scope="row"><label for="addr1">소재지</label> <font color="red">*</font></th>
-				<td class="output" colspan="2"><input type="text" id="addr1" name="addr1" value="${fn:replace(answer.ADDR1 == null ? Bean.addr2 : answer.ADDR2, '서울특별시 종로구 ', '')}" style="width:210px;" class="t_text" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/></td>
-				<th scope="row"><label for="etc14">병상수</label><font color="red">*</font></th>
-				<td class="output">
-					<input id="cnt1" type="text" name="cnt1" style="text-align: center; padding-left: 0px; width:25px;" class="t_text vam" maxlength="3" value="${answer.CNT1 == null ? 0 : answer.CNT1}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 실,  
-					<input id="cnt2" type="text" name="cnt2" style="text-align: center; padding-left: 0px; width:25px;" class="t_text vam" maxlength="3" value="${answer.CNT2 == null ? 0 : answer.CNT2}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 병상
-				</td>
+				<th scope="row"><label for="addr1">소재지</label></th>
+				<td class="output" colspan="4"><input type="text" id="addr1" name="addr1" value="${answer.ADDR1}" style="width:210px;" class="t_text" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/></td>
+				
 			</tr>
 		<c:if test="${fn:length(itemList) > 0}">
 			<tr>
@@ -577,12 +577,8 @@
 			</tr>
 			<tr>
 				<th scope="row"><label for="addr1">소재지</label></th>
-				<td class="output" colspan="2"><input type="text" id="addr1" name="addr1" value="${answer.ADDR1}" style="width:210px;" class="t_text" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/></td>
-				<th scope="row"><label for="cnt1">병상수</label><font color="red">*</font></th>
-				<td class="output">
-					<input id="cnt1" type="text" name="cnt1" style="text-align: center; padding-left: 0px; width:25px;" class="t_text vam" maxlength="3" value="${answer.CNT1 == null ? 0 : answer.CNT1}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 실,  
-					<input id="cnt2" type="text" name="cnt2" style="text-align: center; padding-left: 0px; width:25px;" class="t_text vam" maxlength="3" value="${answer.CNT2 == null ? 0 : answer.CNT2}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 병상
-				</td>
+				<td class="output" colspan="4"><input type="text" id="addr1" name="addr1" value="${answer.ADDR1}" style="width:210px;" class="t_text" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/></td>
+				
 			</tr>
 		<c:if test="${fn:length(itemList) > 0}">
 			<tr>
