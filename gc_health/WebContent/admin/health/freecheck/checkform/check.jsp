@@ -22,14 +22,11 @@
 </head>
 <body style="background:none;padding:10px;">
 <h2 style="padding:15px 0 15px 0;">	
-		${answer.SANGHO_NAME} 점검내역
+		${result.title} - ${answer.SANGHO_NAME} 점검내역
 </h2>
 <p class="title_deco"></p>
 <div class="body">
-	<c:if test="${result.type_cd == '02'}">
 	<jsp:include page="/admin/health/freecheck/checkform/app/application.jsp"></jsp:include>
-	</c:if>
-	
 	
 
 	<c:choose>
