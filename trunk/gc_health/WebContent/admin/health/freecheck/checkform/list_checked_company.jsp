@@ -47,6 +47,7 @@ function excelDown()
 }
 </script>
 
+<base target="_self">
 </head>
 <body style="background:none;padding:10px;">
 <h2 style="padding:15px 0 15px 0;">	
@@ -131,7 +132,7 @@ function excelDown()
 				<th scope="col">이름</th>
 				<th scope="col">전화번호</th>
 				<th scope="col">점검일자</th>
-				<c:if test="${checkformInfo.type_cd == '11'}"><th scope="col">취급품목</th></c:if>
+				<th scope="col">취급품목</th>
 				<th scope="col">관리</th>
 			</tr>
 		</thead>
@@ -175,19 +176,17 @@ function excelDown()
 						</td>
 						
 						<!-- 취급품목 -->
-						<c:if test="${checkformInfo.type_cd == '11'}">
-							<td>
-								<c:if test="${item.CNT > 0}">
-									<strong><a href="" onclick="selectCheckedHandleitemList(${Bean.year_cd},${item.COMPANY_CD},${item.ID}); return false;">${item.CNT} 개</a></strong>
-								</c:if>
-								<c:if test="${item.CNT == null}">
-									취급안함
-								</c:if>
-								<c:if test="${item.CNT == 0}">
-									${item.CNT} 개
-								</c:if>
-							</td>
-						</c:if>
+						<td>
+							<c:if test="${item.CNT > 0}">
+								<strong><a href="javascript:selectCheckedHandleitemList('${Bean.year_cd}','${item.COMPANY_CD}','${item.ID}');">${item.CNT} 개</a></strong>
+							</c:if>
+							<c:if test="${item.CNT == null}">
+								취급안함
+							</c:if>
+							<c:if test="${item.CNT == 0}">
+								${item.CNT} 개
+							</c:if>
+						</td>
 						
 						<!-- 관리 -->
 						<td>
