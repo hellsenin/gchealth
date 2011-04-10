@@ -18,6 +18,16 @@
 <link href="/health/open_content/system/css/blue.css" rel="stylesheet" type="text/css" />
 <link href="/health/open_content/system/css/board_blue.css" rel="stylesheet" type="text/css" />
 
+<script type="text/javascript" src="/health/open_content/system/js/jquery-1.4.2.js"></script>
+<script type="text/javascript">
+	$(function(){
+		$("#cmmt").click(function(){
+			$.post("", {"masterCd":}, function(data){
+			});
+			return false;
+		});
+	});
+</script>
 
 </head>
 <body style="background:none;padding:10px;">
@@ -161,6 +171,43 @@
 		</tbody>
 	</table>
 	
+	<!-- 
+	<table summary="등록정보 테이블로 허가내용을 알 수 있습니다" class="default_view">
+		<caption>등록정보</caption>
+		<colgroup>
+			<col width="*" />
+		</colgroup>
+		<tbody>
+			<tr>
+				<td class="output">
+					상기자율점검 내용은 사실과 틀림없으며, 만약 위의 점검사항과 다르거나 위반사항이 있을경우 약사법등 관계규정에 의한 행정처분을 감수하겠습니다.
+				</td>
+			</tr>
+		</tbody>
+	</table>
+	 
+		<form name="frm" method="post" action="${action}">
+			<input type="hidden" name="masterCd" value="${param.applyCode}" />
+			<input type="hidden" name="answerCd" value="${param.applyId}" />
+			<input type="hidden" name="companyCd" value="${onlineResult.onlineId}" />	
+	<table summary="등록정보 테이블로 허가내용을 알 수 있습니다" class="default_view">
+		<caption>등록정보</caption>
+		<colgroup>
+			<col width="10%" />
+			<col width="90%" />
+		</colgroup>
+		<tbody>
+			<tr>
+				<th class="output depth2_th"><label for="hp">담당자 의견</label></th>
+				<td class="output gubun">
+					<input type="text" id="masterCmmt" name="masterCmmt" value="${answer.masterCmmt}" style="width:500px" class="t_text vam" maxlength="14" title="담당자의견"/>	
+					<input type="button" id="cmmt" name="cmmt" value="담당자의견달기" />			
+				</td>
+			</tr>
+		</tbody>
+	</table>
+		</form>
+	 -->
 <div id="btn_area" class="board_btn_set mt13">
 	<span class="btn_del"><a href="#btn_area" onclick="window.close();">닫기</a></span>
 	<span class="btn_del"><a href="#btn_area" onclick="window.print();">출력</a></span>

@@ -6,12 +6,13 @@
 <%@ taglib prefix="validator" uri="http://www.springmodules.org/tags/commons-validator" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
 
+<c:set var="year" value="${Bean.year_cd}" />
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 	
-		<base target="_self">
+<base target="_self">
 		<title>${companyInfo.company} - 취급현황</title>
 <link href="/health/open_content/system/css/default.css" rel="stylesheet" type="text/css" />
 <link href="/health/open_content/system/css/common.css" rel="stylesheet" type="text/css" />
@@ -103,10 +104,10 @@
 						<th scope="col" class="fir">번호</th>
 						<th scope="col">품명</th>
 						<th scope="col">규격및단위</th>
-						<th scope="col">2008년도<br/>이월량</th>
-						<th scope="col">2009년도<br/>구입량</th>
-						<th scope="col">2009년도<br/>판매(사용)량</th>
-						<th scope="col">2009년12월31일<br/>재고량</th>
+						<th scope="col">${year-2}년도<br/>이월량</th>
+						<th scope="col">${year-1}년도<br/>구입량</th>
+						<th scope="col">${year-1}년도<br/>판매(사용)량</th>
+						<th scope="col">${year-1}년12월31일<br/>재고량</th>
 					</tr>
 				</thead>
 				<tbody>
@@ -146,7 +147,7 @@
 			</table>
 			
 <div id="btn_area" class="board_btn_set mt13">
-	<span class="btn_list"><a href=" href="#btn_area" onclick="window.close();"">닫기</a></span>
+	<span class="btn_list"><a href="btn_area" onclick="window.close();">닫기</a></span>
 </div>
 		
 </div>
