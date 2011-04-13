@@ -245,6 +245,7 @@ function del() {
 			<c:param name="industry_cd" value="${result.industry_cd}"/>
 			<c:param name="industry_name" value="${result.name}"/>
 		</c:url>
+	<span class="btn_list"><a href="/admin/freecheck/selectCompanyListForExcel.do?industryCd=${result.industry_cd}&yearCd=${Bean.year_cd}">엑셀저장</a></span>
 	<span class="btn_del"><a href="${exlUrl}">엑셀등록</a></span>
 </div>
 
