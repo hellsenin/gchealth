@@ -233,7 +233,20 @@ public class FreecheckAdminController {
 		
 		return returnURL;
 	}
-	
+
+	@RequestMapping("/admin/freecheck/selectCompanyListForExcel")
+	public String selectCompanyListForExcel(
+			 HttpServletRequest request
+			, HttpServletResponse response
+			, ModelMap model) {
+
+
+		ZValue zvl = WebFactory.getAttributes(request);
+		model.addAttribute("resultList", service.selectCompanyListForExcel(zvl));
+		String returnURL = "/admin/health/freecheck/industry/companyListExcel";
+		
+		return returnURL;
+	}
 	/**
 	 * 업소 관리 (조회)
 	 * @param bean

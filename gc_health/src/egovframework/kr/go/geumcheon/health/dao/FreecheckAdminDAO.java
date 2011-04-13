@@ -56,6 +56,10 @@ public class FreecheckAdminDAO extends EgovAbstractDAO {
 		return (List<Company>) list("FreecheckAdminDAO.selectCompanyList", bean); 
 	}
 
+	public List<ZValue> selectCompanyListForExcel(ZValue zvl) {
+		return (List<ZValue>) list("FreecheckAdminDAO.selectCompanyListForExcel", zvl); 
+	}
+
 	public List<String> selectCheckListByCompany(int companyCd) {
 		return (List<String>) list("FreecheckAdminDAO.selectCheckListByCompany", companyCd); 
 	}
@@ -345,6 +349,10 @@ public class FreecheckAdminDAO extends EgovAbstractDAO {
 
 	public void addQuestion2ForMigration(ZValue zvl) {
 		insert("FreecheckAdminDAO.addQuestion2ForMigration", zvl);
+	}
+
+	public void writeMasterCmmt(ZValue zvl) {
+		update("FreecheckAdminDAO.writeMasterCmmt", zvl); 
 	}
 
 }
