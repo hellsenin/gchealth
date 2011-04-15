@@ -318,7 +318,7 @@
 						, STATUS
 						, INSERT_DT , INSERT_IP , INSERT_ID , UPDATE_DT , UPDATE_IP , UPDATE_ID
 				FROM	HETB_CK_ANSWER 
-				WHERE	MASTER_CD = $master_cd$ 
+				WHERE	1=1 /* MASTER_CD = $master_cd$ */ 
 		]]>
 		<isNotEqual property="company_cd" compareValue="0">
 			<![CDATA[
@@ -929,6 +929,15 @@
 			  AND YEAR_CD = #year_cd#
     	]]>
     </delete>
+    	
+    <select id="FreecheckUserDAO.selectCheckedAnswerCnt" parameterClass="int" resultClass="int">
+    	<![CDATA[			
+			  SELECT 
+			  	COUNT(*)
+			  FROM HETB_CK_ANSWER
+			  WHERE COMPANY_CD = #company_cd#
+    	]]>
+    </select>
     	
     
 </sqlMap>
