@@ -164,4 +164,8 @@ public class FreecheckUserDAO extends EgovAbstractDAO {
 		return list("FreecheckUserDAO.selectHandleitemListU", company);
 	}
 
+	public int selectCheckedAnswerCnt(int companyCd) {
+		return (Integer) selectByPk("FreecheckUserDAO.selectCheckedAnswerCnt", companyCd);
+	}
+
 }

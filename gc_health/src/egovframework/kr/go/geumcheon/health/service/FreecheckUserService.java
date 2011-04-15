@@ -185,7 +185,12 @@ public class FreecheckUserService {
 	 */
 	public void selectCompanyInfo(Company bean, ModelMap model) throws Exception {
 		/* 저장된 업소 정보 조회 (HETB_CK_ANSWER, HETB_CK_COMPANY) */
-		HashMap answer = null;
+		HashMap answer = dao.selectCompanyInfoAnswer(bean);
+		if(answer == null)
+		{
+			answer = dao.selectCompanyInfo(bean);
+		}
+		/*
 		if("writable".equals(bean.getView_state())) {
 			answer = dao.selectCompanyInfo(bean);
 			if(answer != null) {
@@ -197,10 +202,11 @@ public class FreecheckUserService {
 				model.addAttribute("answer", answer);
 			}
 		}
-		
+		*/
 		if(answer != null)
 		{
 			answer.put("DIVIDE_CD", bean.getDivide_cd());
+			model.addAttribute("answer", answer);
 		}
 		
 		/* 질문 리스트 조회 (HETB_CK_QUESTION) */
@@ -229,6 +235,9 @@ public class FreecheckUserService {
 	
 	
 	public void check(Answer bean, List<Answer> answerList, ModelMap model) throws Exception {
+		int answerCnt = dao.selectCheckedAnswerCnt(bean.getCompany_cd());
+		if(answerCnt > 0) dao.checkUpdateQuestion(bean);
+		else dao.checkQuestion(bean);
 		if("forUpdate".equals(bean.getView_state())) {
 			Company param = new Company();
 			param.setCompany_cd(bean.getCompany_cd());
@@ -240,12 +249,12 @@ public class FreecheckUserService {
 			
 			selectCompanyInfo(param, model);
 		} else if("writable".equals(bean.getView_state())) {
-			dao.checkQuestion(bean);
+			//dao.checkQuestion(bean);
 			for (Answer a2 : answerList) {
 				dao.checkQuestion2(a2);
 			}
 		} else if("update".equals(bean.getView_state())) {
-			dao.checkUpdateQuestion(bean);
+			//dao.checkUpdateQuestion(bean);
 			dao.deleteCheckedQuestion2(bean);
 			for (Answer a2 : answerList) {
 				dao.checkQuestion2(a2);
