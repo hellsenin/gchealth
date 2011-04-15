@@ -147,7 +147,7 @@
 			</table>
 			
 <div id="btn_area" class="board_btn_set mt13">
-	<span class="btn_list"><a href="btn_area" onclick="window.close();">닫기</a></span>
+	<span class="btn_list"><a href="btn_area" onclick="window.close();event.returnValue=false;">닫기</a></span>
 </div>
 		
 </div>
