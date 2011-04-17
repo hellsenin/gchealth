@@ -7,6 +7,22 @@
 <%@ taglib prefix="validator" uri="http://www.springmodules.org/tags/commons-validator" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
+			<c:url var="print_action" value="/health/freecheck/printCheckForm.do">
+				<c:param name="company_cd" value="${Bean.company_cd}"/>
+				<c:param name="find_type_cd" value="${Bean.find_type_cd}"/>
+				<c:param name="year_cd" value="${Bean.year_cd}"/>
+				<c:param name="company_id" value="${Bean.id}"/>
+				<c:param name="pageIndex" value="${Bean.pageIndex}"/>
+				<c:param name="view_state" value="${Bean.view_state}"/>
+				<c:param name="master_cd" value="${result.master_cd}"/>
+				<c:param name="type_cd" value="${Bean.type_cd}"/>
+			</c:url>
+<script>
+function print()
+{
+	window.open("${print_action}","Sample","width=1024,height=700,top=0,left=0,noresizable,toolbar=no,status=no,scrollbars=yes,directory=no");
+}
+</script>
 <form name="mfrm" method="post" action="/health/freecheck/forCheck.do?categoryId=${param.categoryId}" enctype="multipart/form-data">
 	
 			<table class="default_view" summary="제목, 주관부서, 등록일, 조회수, 첨부파일, 내용으로 구성되어 있습니다.">
@@ -99,5 +115,6 @@
 				<c:param name="type_cd_11_yn" value="${Bean.type_cd_11_yn}"/>
 			</c:url>
 			<span class="btn_del"><a href="${list_action}">목록보기</a></span>
+			<span class="btn_del"><a href="javascript:print();">인쇄하기</a></span>
 	</div>
 		</form>
