@@ -154,6 +154,35 @@ public class FreecheckUserController {
 		return Globals.HEALTH_MAIN_PAGE;
 	}
 
+	@RequestMapping("/health/freecheck/printCheckForm.do")
+	public String printCheckForm(
+			@ModelAttribute("Bean") Company bean
+			, HttpServletRequest request
+			, HttpServletResponse response 
+			, ModelMap model) throws Exception {
+
+		HttpSession session = request.getSession();
+		Company company = (Company)session.getAttribute("company");
+		
+		String backwardPage = "/health/freecheck/loginPage.do?categoryId=2589";
+		if(company == null)
+		{
+			WebFactory.printHtml(response, (String)model.get("message"), backwardPage);
+			return null;
+		}
+		
+		// 점검표 불러오기 (생략 가능)
+		service.selectCheckStateView(bean, model);
+		
+		// 업소 정보 불러오기 
+		service.selectCompanyInfo(bean, model);
+		
+		String includePage = "health/dev_content/freecheck/checkForm";
+		model.addAttribute("includePage", includePage);
+		model.addAttribute("CURR_DATE", Calendar.getInstance().getTime());
+		return includePage;
+	}
+
 	@RequestMapping("/health/freecheck/check.do")
 	public String check(
 			@ModelAttribute("Bean") Answer bean
