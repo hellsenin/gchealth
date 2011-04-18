@@ -20,6 +20,7 @@
 <script type="text/javascript" src="/health/open_content/system/js/Calendar.js" ></script>
 
 <script type="text/javascript" src="/health/open_content/system/js/miya_validator.js"></script>
+<script type="text/javascript" src="/health/open_content/system/js/jquery-1.4.2.js"></script>
 
 <script>
 
@@ -47,6 +48,13 @@ function checkAndSubmit(f) {
     v.add("contents", {
 		required: true
     });
+
+    if( $("input[name^=item]").length > 0 )
+	{
+	    v.add("item", {
+			required: true
+	    });
+	}
     
 	result = v.validate();
 	if (!result) {
