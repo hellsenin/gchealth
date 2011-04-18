@@ -796,36 +796,25 @@
         
     <select id="FreecheckUserDAO.checkListState" parameterClass="Company" resultClass="java.util.HashMap">
     	<![CDATA[
-			SELECT b.MASTER_CD, a.ARTICLE9_YN, b.TYPE_CD, NVL(b.CNT, 0) as QUESTION_CNT, 
+			SELECT b.MASTER_CD, b.TYPE_CD, NVL(b.CNT, 0) as QUESTION_CNT, 
 				NVL(a.ANSWER_CNT, 0) as ANSWER_CNT, NVL(a.ANSWER2_CNT, 0) as ANSWER2_CNT, b.START_DT, b.END_DT, b.TITLE
 			FROM 
 			(
-			  SELECT A.ID, B.MASTER_CD, NVL(B.CNT, 0) AS ANSWER_CNT, NVL(C.CNT, 0) AS ANSWER2_CNT, B.ARTICLE9_YN 
+			  SELECT A.ID, C.MASTER_CD, 0 AS ANSWER_CNT, NVL(C.CNT, 0) AS ANSWER2_CNT
 			  FROM HETB_CK_COMPANY A, 
-			  (
-			  	SELECT z.COMPANY_ID, z.MASTER_CD, y.TITLE, COUNT(z.COMPANY_ID) AS CNT, z.ARTICLE9_YN
-			    FROM HETB_CK_ANSWER z, HETB_CK_MASTER y
-			    WHERE z.COMPANY_ID = '$id$' 
-			    AND y.MASTER_CD IN ($masterCdData$)
-			    AND y.MASTER_CD = z.MASTER_CD 
-			    AND z.STATUS = 'N'
-			    GROUP BY z.COMPANY_ID, z.MASTER_CD, y.TITLE, z.ARTICLE9_YN
-			  ) B, 
 			  (
 			  	SELECT z.COMPANY_ID, z.MASTER_CD, y.TYPE_CD, y.TITLE, COUNT(z.COMPANY_ID) AS CNT
 			    FROM HETB_CK_ANSWER2 z, HETB_CK_MASTER y
-			    WHERE z.COMPANY_ID = '$id$' 
+			    WHERE z.COMPANY_CD = '$company_cd$' 
 			    AND y.MASTER_CD IN ($masterCdData$)
 			    AND y.MASTER_CD = z.MASTER_CD 
 			    AND z.STATUS = 'N'
 			    AND y.YEAR_CD = '$year_cd$'
 			    GROUP BY z.COMPANY_ID, z.MASTER_CD, y.TYPE_CD, y.TITLE
 			  ) C
-			  WHERE A.ID = '$id$'
+			  WHERE A.COMPANY_CD = '$company_cd$'
 			    AND A.STATUS = 'N'
-			    AND A.ID = B.COMPANY_ID(+)
 			    AND A.ID = C.COMPANY_ID(+)
-			    AND C.MASTER_CD = B.MASTER_CD
 			    AND A.YEAR_CD = #year_cd#
 			) a, 
 		    (
