@@ -245,12 +245,12 @@
 					<label for="etc24">취급품목</label><font color="red">*</font>
 				</th>
 				<td class="output" colspan="3">
-					<label for="etc24"><input id="etc24" title="취급품목" type="checkbox" class="vam" name="other5" value="1" <c:if test="${fn:contains(answer.OTHER5, 1)}">checked="checked"</c:if> <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 한약(초제)</label> 
-					<label for="etc25"><input id="etc25" title="취급품목" type="checkbox" class="vam" name="other5" value="2" <c:if test="${fn:contains(answer.OTHER5, 2)}">checked="checked"</c:if> <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 의료기기</label> 
-					<label for="etc26"><input id="etc26" title="취급품목" type="checkbox" class="vam" name="other5" value="3" <c:if test="${fn:contains(answer.OTHER5, 3)}">checked="checked"</c:if> <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 향정신성의약품</label> 
-					<label for="etc27"><input id="etc27" title="취급품목" type="checkbox" class="vam" name="other5" value="4" <c:if test="${fn:contains(answer.OTHER5, 4)}">checked="checked"</c:if> <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 마약</label> 
-					<label for="etc28"><input id="etc28" title="취급품목" type="checkbox" class="vam" name="other5" value="5" <c:if test="${fn:contains(answer.OTHER5, 5)}">checked="checked"</c:if> <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 화장품</label> 
-					<label for="etc29"><input id="etc29" title="취급품목" type="checkbox" class="vam" name="other5" value="6" <c:if test="${fn:contains(answer.OTHER5, 6)}">checked="checked"</c:if> <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 의약품만</label> 
+					<label for="etc24"><input id="etc24" title="취급품목" type="checkbox" class="vam" name="item" value="1" <c:if test="${fn:contains(answer.OTHER5, 1)}">checked="checked"</c:if> <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 한약(초제)</label> 
+					<label for="etc25"><input id="etc25" title="취급품목" type="checkbox" class="vam" name="item" value="2" <c:if test="${fn:contains(answer.OTHER5, 2)}">checked="checked"</c:if> <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 의료기기</label> 
+					<label for="etc26"><input id="etc26" title="취급품목" type="checkbox" class="vam" name="item" value="3" <c:if test="${fn:contains(answer.OTHER5, 3)}">checked="checked"</c:if> <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 향정신성의약품</label> 
+					<label for="etc27"><input id="etc27" title="취급품목" type="checkbox" class="vam" name="item" value="4" <c:if test="${fn:contains(answer.OTHER5, 4)}">checked="checked"</c:if> <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 마약</label> 
+					<label for="etc28"><input id="etc28" title="취급품목" type="checkbox" class="vam" name="item" value="5" <c:if test="${fn:contains(answer.OTHER5, 5)}">checked="checked"</c:if> <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 화장품</label> 
+					<label for="etc29"><input id="etc29" title="취급품목" type="checkbox" class="vam" name="item" value="6" <c:if test="${fn:contains(answer.OTHER5, 6)}">checked="checked"</c:if> <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 의약품만</label> 
 				</td>
 			</tr>
 			

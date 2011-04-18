@@ -6,6 +6,7 @@
 <%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
 <%@ taglib prefix="validator" uri="http://www.springmodules.org/tags/commons-validator" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
+<% pageContext.setAttribute("crlf", "\r\n"); %>	
 <HTML>
 <HEAD>
 <TITLE> ${result.title} </TITLE>
@@ -276,7 +277,10 @@ input { border:1px solid gray; }
 <div id="fRoot" style ="width:978px" >
 	<div id="fTitle" style = "font-weight:bold; font-size:30px"><U>${result.title}</U></div>
 	<div id="fTitle_sub" style = "font-weight:bold; font-size:18px; margin-top:8px;">( 업소보관용 )</div>
-	<div id="fTitle_info" style = "font-weight:bold; font-size:16px; text-align:left; margin-top:20px; margin-bottom:10px">※ 대표자께서 직접 검검하시고 점검결과 란에 <u>직접 기재</u>하십시오</div>
+	<div id="fTitle_info" style = "font-weight:bold; font-size:16px; text-align:left; margin-top:20px; margin-bottom:10px">
+	※ 대표자께서 직접 검검하시고 점검결과 란에 <u>직접 기재</u>하십시오<br/>
+	<font color="red">익스플로러6의 경우, 용지를 가로로 설정해서 출력하여 주십시오.</font>
+	</div>
 </div>
 <div ID="center" style="margin-top:2px">
 <form name="userInfoFrm" style="margin:0px; padding:0px">
@@ -340,6 +344,28 @@ input { border:1px solid gray; }
 							<td>( <input type="text" style="width:50px" name="userOtherRegNum2" value="${answer.OTHER3 == '' ? 0 : answer.OTHER3}"> )</td>
 						</tr>
 					</table>
+				</td>
+			</tr>
+		</c:if>
+		<c:if test="${company.divide_cd == 'k04' || company.divide_cd == 'k06'}">
+			<tr height="25">
+				<td><label for="etc17">생물학적제제취급</label></td>
+				<td>
+					<label for="etc17"><input id="etc17" name="article1_yn" type="radio" class="vam" value="Y" <c:if test="${answer.ARTICLE1_YN == 'Y'}">checked="checked"</c:if> <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>예</label>&nbsp;&nbsp;
+					<label for="etc19"><input id="etc19" name="article1_yn" type="radio" class="vam" value="N" <c:if test="${answer.ARTICLE1_YN == 'N'}">checked="checked"</c:if> <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>아니오</label>
+				</td>
+				<td>마약류 취급</td>
+				<td>
+					<label for="etc24"><input id="etc24" type="checkbox" class="vam" name="other3" value="1" <c:if test="${fn:contains(answer.OTHER3, 1)}">checked="checked"</c:if> <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>마약</label>&nbsp;&nbsp;
+					<label for="etc20"><input id="etc20" type="checkbox" class="vam" name="other3" value="2" <c:if test="${fn:contains(answer.OTHER3, 2)}">checked="checked"</c:if> <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>향정신성의약품</label>&nbsp;&nbsp;
+					<label for="etc66"><input id="etc66" type="checkbox" class="vam" name="other3" value="3" <c:if test="${fn:contains(answer.OTHER3, 3)}">checked="checked"</c:if> <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>해당 없음</label>
+				</td>
+			</tr>
+			<tr height="25">
+				<td><label for="name2">도매업무관리자</label></td>
+				<td class="output" colspan="3">
+					<label for="name2">성명 <input type="text" id="name2" name="name2" style="width:120px" class="t_text vam" value="${answer.NAME2}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/></label>
+					<label for="number3">면허번호 <input id="number3" name="number3" type="text" style="width:120px" class="t_text vam" value="${answer.NUMBER3}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/></label>
 				</td>
 			</tr>
 		</c:if>

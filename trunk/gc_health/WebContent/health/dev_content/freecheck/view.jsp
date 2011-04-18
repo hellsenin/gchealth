@@ -115,6 +115,8 @@ function print()
 				<c:param name="type_cd_11_yn" value="${Bean.type_cd_11_yn}"/>
 			</c:url>
 			<span class="btn_del"><a href="${list_action}">목록보기</a></span>
+		<c:if test="${Bean.type_cd != '03'}">
 			<span class="btn_del"><a href="javascript:print();">인쇄하기</a></span>
+		</c:if>
 	</div>
 		</form>

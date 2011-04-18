@@ -9,6 +9,7 @@
 
 <% pageContext.setAttribute("crlf", "\r\n"); %>	
 <script type="text/javascript" src="/health/open_content/system/js/miya_validator.js"></script>
+<script type="text/javascript" src="/health/open_content/system/js/jquery-1.4.2.js"></script>
 <script type="text/javascript">
 function checkAndSubmit(f) {
 	if('${Bean.view_state}' == 'readonly') {
@@ -26,6 +27,14 @@ function checkAndSubmit(f) {
 	    v.add("addr1", {
 			required: true
 	    });
+	    if( $("input[name^=item]").length > 0 )
+		{
+		    v.add("item", {
+				required: true,
+				message: "취급품목을 선택하세요."
+		    });
+		}
+	    
 		var result = v.validate();
 
 		if (!result) {
