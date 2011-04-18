@@ -20,13 +20,6 @@
 
 <script type="text/javascript" src="/health/open_content/system/js/jquery-1.4.2.js"></script>
 <script type="text/javascript">
-	$(function(){
-		$("#cmmt").click(function(){
-			$.post("", {"masterCd":}, function(data){
-			});
-			return false;
-		});
-	});
 </script>
 
 </head>

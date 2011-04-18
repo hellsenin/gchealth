@@ -198,7 +198,7 @@ function excelDown()
 							</c:url>
 							<a href="${delete_url}" onclick="return confirm('삭제한 내역은 복구되지 않습니다. [${item.COMPANY}]의 점검한 내역을 삭제하시겠습니까?');">삭제</a>
 							
-							<a href="" onclick="viewAnswer(${Bean.master_cd}, ${item.COMPANY_CD}, '${item.DIVIDE_CD}'); return false;">보기</a>
+							<a href="javascript:viewAnswer(${Bean.master_cd}, ${item.COMPANY_CD}, '${item.DIVIDE_CD}');">보기</a>
 						</td>
 						
 					</tr>
