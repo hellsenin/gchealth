@@ -288,7 +288,7 @@
 	</table>
 </c:when>
 
-<c:when test="${company.divide_cd == 'k04'}">
+<c:when test="${company.divide_cd == 'k04' || company.divide_cd == 'k06'}">
 
 <!-- 의약품도매상 -->
 
