@@ -55,6 +55,7 @@
 							
 							<c:param name="master_cd" value="${item.MASTER_CD}"/>
 							<c:param name="type_cd" value="${item.TYPE_CD}"/>
+							<c:param name="approval_yn" value="${item.APPROVAL_YN}"/>
 							
 							<c:choose>
 								<c:when test="${item.ANSWER_CNT == 0}">
@@ -80,6 +81,10 @@
 						<fmt:formatDate value="${item.START_DT}" pattern="yyyy년MM월dd일"/> ~ <fmt:formatDate value="${item.END_DT}" pattern="yyyy년MM월dd일"/>
 					</td>
 					<td>
+						<c:if test="${item.APPROVAL_YN == 'Y'}">
+							<strong>승인</strong>
+						</c:if>
+						<c:if test="${item.APPROVAL_YN != 'Y'}">
 						<c:choose>
 							<c:when test="${item.ANSWER2_CNT == 0}">
 								미점검
@@ -91,6 +96,7 @@
 								미완료
 							</c:when>
 						</c:choose>
+						</c:if>
 					</td>
 <!--					<td>-->
 <!--						${item.ANSWER2_CNT}문항-->

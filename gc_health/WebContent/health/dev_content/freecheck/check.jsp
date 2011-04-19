@@ -15,6 +15,9 @@ function checkAndSubmit(f) {
 	if('${Bean.view_state}' == 'readonly') {
 		alert('이미 점검을 완료하셨거나 점검 기간이 아닙니다.');
 		return false;
+	} else if( '${param.approval_yn}' == 'Y' ) {
+		alert('관리자 승인완료 돼었습니다. 수정하실 수 없습니다.');
+		return false;
 	} else {
 		var v = new MiyaValidator(f);
 		
