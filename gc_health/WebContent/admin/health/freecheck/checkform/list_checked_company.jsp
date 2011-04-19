@@ -17,6 +17,7 @@
 <link href="/health/open_content/system/css/blue.css" rel="stylesheet" type="text/css" />
 <link href="/health/open_content/system/css/board_blue.css" rel="stylesheet" type="text/css" />
 
+<script type="text/javascript" src="/health/open_content/system/js/jquery-1.4.2.js"></script>
 <script>
 
 function selectCheckedHandleitemList(year_cd, company_cd, company_id) {
@@ -40,6 +41,13 @@ function viewAnswer(master_cd, company_cd, divide_cd) {
 
 
 function excelDown()
+{
+	var f = document.sfm;
+	f.action = "/admin/freecheck/selectMasterCompanyPointListForExcel.do";
+	f.submit();
+}
+
+function approve(mCd, cCd)
 {
 	var f = document.sfm;
 	f.action = "/admin/freecheck/selectMasterCompanyPointListForExcel.do";
@@ -133,6 +141,7 @@ function excelDown()
 				<th scope="col">전화번호</th>
 				<th scope="col">점검일자</th>
 				<th scope="col">취급품목</th>
+				<th scope="col">승인</th>
 				<th scope="col">관리</th>
 			</tr>
 		</thead>
@@ -186,8 +195,15 @@ function excelDown()
 							<c:if test="${item.CNT == 0}">
 								${item.CNT} 개
 							</c:if>
+						</td>						
+						<td>
+							<c:if test="${item.APPROVAL_YN == 'Y'}">
+								<strong>승인</strong>
+							</c:if>
+							<c:if test="${item.APPROVAL_YN != 'Y'}">
+								미승인
+							</c:if>
 						</td>
-						
 						<!-- 관리 -->
 						<td>
 							<c:url value="/admin/freecheck/checkform/list_checked_company/delete.do" var="delete_url">
@@ -195,10 +211,23 @@ function excelDown()
 								<c:param name="year_cd" value="${Bean.year_cd}"></c:param>
 								<c:param name="delete_company_id" value="${item.ID}"></c:param>
 								<c:param name="type_cd" value="${checkformInfo.type_cd}"></c:param>
+								<c:param name="company_cd" value="${item.COMPANY_CD}"></c:param>
 							</c:url>
 							<a href="${delete_url}" onclick="return confirm('삭제한 내역은 복구되지 않습니다. [${item.COMPANY}]의 점검한 내역을 삭제하시겠습니까?');">삭제</a>
 							
 							<a href="javascript:viewAnswer(${Bean.master_cd}, ${item.COMPANY_CD}, '${item.DIVIDE_CD}');">보기</a>
+							
+							<c:url value="/admin/freecheck/approveMaster.do" var="app_url">
+								<c:param name="master_cd" value="${Bean.master_cd}"></c:param>
+								<c:param name="year_cd" value="${Bean.year_cd}"></c:param>
+								<c:param name="delete_company_id" value="${item.ID}"></c:param>
+								<c:param name="type_cd" value="${checkformInfo.type_cd}"></c:param>
+								<c:param name="company_cd" value="${item.COMPANY_CD}"></c:param>
+								<c:param name="approval_yn" value="Y"></c:param>
+							</c:url>
+							<c:if test="${item.APPROVAL_YN != 'Y'}">
+							<a href="${app_url}" onclick="return confirm('[${item.COMPANY}]의 점검한 내역을 승인하시겠습니까?');">승인</a>
+							</c:if>
 						</td>
 						
 					</tr>
