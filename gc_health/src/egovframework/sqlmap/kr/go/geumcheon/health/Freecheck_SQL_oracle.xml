@@ -1123,6 +1123,8 @@
 								, B.TEL
 								, A.INSERT_DT
 								, C.DIVIDE_CD
+								, E.APPROVAL_YN
+								, E.MASTER_CMMT
 								FROM	HETB_CK_ANSWER A
 										, HETB_CK_COMPANY B
 										, HETB_CK_INDUSTRY C
@@ -1131,11 +1133,14 @@
 					                      FROM HETB_CK_HANDLEITEM
 					                      GROUP BY COMPANY_CD 
 					                    ) D
+					                    , HETB_CK_MASTER_RESULT E
 								WHERE	A.MASTER_CD = $master_cd$ 
 										AND A.STATUS = 'N' 
 										AND	A.COMPANY_CD = B.COMPANY_CD 
 										AND B.INDUSTRY_CD = C.INDUSTRY_CD(+) 
                    						AND B.COMPANY_CD = D.COMPANY_CD(+)
+                   						AND A.COMPANY_CD = E.COMPANY_CD(+)
+                   						AND A.MASTER_CD = E.MASTER_CD(+)
 								ORDER BY A.INSERT_DT DESC
 							) A 
 					
@@ -2131,7 +2136,7 @@
 		]]>
     </insert>
     	
-    <insert id="FreecheckAdminDAO.writeMasterCmmt" parameterClass="zvl">
+    <update id="FreecheckAdminDAO.writeMasterCmmt" parameterClass="zvl">
 		<![CDATA[
 			UPDATE HETB_CK_ANSWER
 			SET MASTER_CMMT = #masterCmmt#     
@@ -2139,6 +2144,37 @@
 		    AND ANSWER_CD = #answerCd#
 		    AND COMPANY_CD = #companyCd#
 		]]>
+    </update>
+    	
+    <insert id="FreecheckAdminDAO.approveMaster" parameterClass="zvl">
+		<![CDATA[
+			
+			INSERT INTO HETB_CK_MASTER_RESULT
+			(
+			  MASTER_CD,
+			  COMPANY_CD,
+			  APPROVAL_YN,
+			  MASTER_CMMT
+			)
+			VALUES
+			(
+				#masterCd#
+				,#companyCd#
+				,#approvalYn#
+				,#masterCmmt#
+			)
+			
+		]]>
     </insert>
+    	
+    <delete id="FreecheckAdminDAO.deleteMasterResult" parameterClass="zvl">
+		<![CDATA[
+			
+			DELETE HETB_CK_MASTER_RESULT
+			WHERE MASTER_CD = #masterCd#
+			AND COMPANY_CD = #companyCd#
+			
+		]]>
+    </delete>
     	
 </sqlMap>
