@@ -1861,4 +1861,18 @@ public class FreecheckAdminController {
     	WebFactory.printHtml(response, "성공적으로 등록되었습니다.", "/admin/freecheck/checkform/list.do?yearCd="+zvl.getString("yearCd"));
 	}
 
+	@RequestMapping("/admin/freecheck/approveMaster.do")
+	public void approveMaster(
+			HttpServletRequest request,
+			HttpServletResponse response,	
+			ModelMap model) throws Exception
+	{
+    	ZValue zvl = WebFactory.getAttributes(request);   
+    	
+    	service.approveMaster(zvl);
+
+    	WebFactory.printHtml(response, "성공적으로 등록되었습니다.", 
+    			"/admin/freecheck/checkform/list_checked_company.do?year_cd="+zvl.getString("yearCd")+"&master_cd="+zvl.getString("masterCd"));
+	}
+
 }

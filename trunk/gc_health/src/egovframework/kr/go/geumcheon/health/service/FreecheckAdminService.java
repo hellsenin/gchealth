@@ -508,10 +508,15 @@ public class FreecheckAdminService {
 	 * @return
 	 */
 	public void deleteCompany(Company bean, ModelMap model) {
-		dao.deleteCompany(bean);
-		bean.setMaster_cd(0);
+		//dao.deleteCompany(bean);
+		//bean.setMaster_cd(0);
 		dao.deleteAnswerForCompanyId(bean);
 		dao.deleteAnswer2ForCompanyId(bean);
+		
+		ZValue zvl = new ZValue();
+		zvl.put("masterCd", bean.getMaster_cd());
+		zvl.put("companyCd", bean.getCompany_cd());
+		dao.deleteMasterResult(zvl);
 	}
 	
 
@@ -1338,6 +1343,10 @@ public class FreecheckAdminService {
 
 	public List<ZValue> selectCompanyListForExcel(ZValue zvl) {
 		return dao.selectCompanyListForExcel(zvl);
+	}
+
+	public void approveMaster(ZValue zvl) throws Exception {
+		dao.approveMaster(zvl);
 	}
 
 //	public static void main(String[] args) {
