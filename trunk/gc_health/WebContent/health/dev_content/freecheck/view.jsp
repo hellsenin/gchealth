@@ -92,6 +92,7 @@ function print()
 			
 			<input type="hidden" name="master_cd" value="${result.master_cd}"/>
 			<input type="hidden" name="type_cd" value="${Bean.type_cd}"/>
+			<input type="hidden" name="approval_yn" value="${param.approval_yn}"/>
 			
 <div class="board_btn_set mt13">
 			<span class="btn_del"><input type="submit" value="온라인점검" /></span>
