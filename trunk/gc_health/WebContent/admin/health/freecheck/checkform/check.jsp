@@ -202,7 +202,7 @@
 		</form>
 	 -->
 <div id="btn_area" class="board_btn_set mt13">
-	<span class="btn_del"><a href="#btn_area" onclick="window.close();">닫기</a></span>
+	<span class="btn_del"><a href="#btn_area" onclick="self.close();event.returnValue=false;">닫기</a></span>
 	<span class="btn_del"><a href="#btn_area" onclick="window.print();">출력</a></span>
 </div>
 
