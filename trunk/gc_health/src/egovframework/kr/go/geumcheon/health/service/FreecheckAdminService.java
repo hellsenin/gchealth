@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
@@ -25,7 +26,6 @@ import org.springframework.web.multipart.MultipartFile;
 
 import egovframework.com.cmm.service.EgovFileMngUtil;
 import egovframework.com.cmm.service.FileVO;
-import egovframework.com.utl.fcc.service.EgovStringUtil;
 import egovframework.kr.go.geumcheon.health.dao.FreecheckAdminDAO;
 import egovframework.kr.go.geumcheon.health.util.PageUtil;
 import egovframework.kr.go.geumcheon.health.util.ZValue;
@@ -1269,18 +1269,18 @@ public class FreecheckAdminService {
 		return dao.selectMasterCompanyList(zvl);
 	}
 	
-	public HashMap<String, ArrayList<ZValue>> selectMasterCompanyFalseQuestionList(ZValue zvl) throws Exception {
-		HashMap<String, ArrayList<ZValue>> result = new HashMap<String, ArrayList<ZValue>>();
+	public HashMap<String, HashSet<ZValue>> selectMasterCompanyFalseQuestionList(ZValue zvl) throws Exception {
+		HashMap<String, HashSet<ZValue>> result = new HashMap<String, HashSet<ZValue>>();
 		List<ZValue> list = dao.selectMasterCompanyFalseQuestionList(zvl);
 		String key = null;
-		ArrayList<ZValue> container = null;
+		HashSet<ZValue> container = null;
 		for(ZValue val : list)
 		{
 			key = val.getString("companyId");
 			container = result.get(key);
 			if(container == null)
 			{
-				container = new ArrayList<ZValue>();
+				container = new HashSet<ZValue>();
 				container.add(val);
 				result.put(key, container);
 			}
