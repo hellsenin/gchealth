@@ -24,7 +24,7 @@ function selectCheckedHandleitemList(year_cd, company_cd, company_id) {
 	var openParam = "dialogWidth:800px;dialogHeight:500px;scroll:yes;status:no;center:yes;resizable:no;";
 	var varParam = new Object();
 	window.showModalDialog('/admin/freecheck/checkform/checked_handleitem_list.do?year_cd='+year_cd+'&company_cd='+company_cd+'&company_id='+company_id, varParam, openParam);
-	return false;
+	//return false;
 };
 
 
@@ -36,7 +36,7 @@ function viewAnswer(master_cd, company_cd, divide_cd) {
 			'&master_cd='+master_cd+
 			'&divide_cd='+divide_cd+
 			'&view_state=readonly', varParam, openParam);
-	return false;
+	//return false;
 };
 
 

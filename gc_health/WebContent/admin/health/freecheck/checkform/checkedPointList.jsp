@@ -201,7 +201,7 @@ function excelDown()
 					
 					<!-- 틀린문제수 -->
 					<td>
-						${item.wrongAnswerCnt}[
+						${fn:length(falseList)}[
 					<c:forEach items="${falseList}" var="f" varStatus="status">
 						${f.qnum},
 					</c:forEach>
