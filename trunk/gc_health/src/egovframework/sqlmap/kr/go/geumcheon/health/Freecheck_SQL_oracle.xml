@@ -1089,22 +1089,41 @@
 		<![CDATA[
 			SELECT	COUNT(*)
 			FROM	(
-						SELECT	A.COMPANY_CD
-						, B.COMPANY
-						, B.INDUSTRY_CD 
-						, NVL(C.NAME, ' ') INDUSTRY_NAME
-						, B.CEO_NAME
-						, B.TEL
-						, A.INSERT_DT
-						, C.DIVIDE_CD
-						FROM	HETB_CK_ANSWER A
-								, HETB_CK_COMPANY B
-								, HETB_CK_INDUSTRY C
-						WHERE	A.MASTER_CD = $master_cd$ 
-								AND A.STATUS = 'N' 
-								AND	A.COMPANY_CD = B.COMPANY_CD 
-								AND B.INDUSTRY_CD = C.INDUSTRY_CD(+) 
-						ORDER BY A.INSERT_DT DESC
+								SELECT	B.COMPANY_CD
+               					, NVL(D.CNT, 0) AS CNT
+								, B.COMPANY
+								, B.ID
+								, B.INDUSTRY_CD 
+								, NVL(C.NAME, ' ') INDUSTRY_NAME
+								, B.CEO_NAME
+								, B.TEL
+								, (SELECT INSERT_DT 
+                                FROM HETB_CK_ANSWER2 WHERE MASTER_CD = $master_cd$ 
+                                AND COMPANY_CD = B.COMPANY_CD AND ROWNUM=1) AS INSERT_DT
+								, C.DIVIDE_CD
+								, E.APPROVAL_YN
+								, E.MASTER_CMMT
+								FROM
+										(
+											SELECT DISTINCT MASTER_CD, COMPANY_CD
+											FROM HETB_CK_ANSWER2
+											WHERE STATUS = 'N'
+										) A
+										, HETB_CK_COMPANY B
+										, HETB_CK_INDUSTRY C
+										, (
+					                      SELECT COMPANY_CD, COUNT(*)  AS CNT
+					                      FROM HETB_CK_HANDLEITEM
+					                      GROUP BY COMPANY_CD 
+					                    ) D
+					                    , HETB_CK_MASTER_RESULT E
+								WHERE	A.MASTER_CD = $master_cd$ 
+										AND	A.COMPANY_CD = B.COMPANY_CD 
+										AND B.INDUSTRY_CD = C.INDUSTRY_CD(+) 
+                   						AND B.COMPANY_CD = D.COMPANY_CD(+)
+                   						AND A.COMPANY_CD = E.COMPANY_CD(+)
+                   						AND A.MASTER_CD = E.MASTER_CD(+)
+								ORDER BY B.COMPANY
 					) A 
 		]]>
 	</select>
@@ -1116,7 +1135,7 @@
 			FROM	( 
 					SELECT	ROWNUM RNUM, A.* 
 					FROM	(
-								SELECT	A.COMPANY_CD
+								SELECT	B.COMPANY_CD
                					, NVL(D.CNT, 0) AS CNT
 								, B.COMPANY
 								, B.ID
@@ -1124,11 +1143,18 @@
 								, NVL(C.NAME, ' ') INDUSTRY_NAME
 								, B.CEO_NAME
 								, B.TEL
-								, A.INSERT_DT
+								, (SELECT INSERT_DT 
+                                FROM HETB_CK_ANSWER2 WHERE MASTER_CD = $master_cd$ 
+                                AND COMPANY_CD = B.COMPANY_CD AND ROWNUM=1) AS INSERT_DT
 								, C.DIVIDE_CD
 								, E.APPROVAL_YN
 								, E.MASTER_CMMT
-								FROM	HETB_CK_ANSWER A
+								FROM
+										(
+											SELECT DISTINCT MASTER_CD, COMPANY_CD
+											FROM HETB_CK_ANSWER2
+											WHERE STATUS = 'N'
+										) A
 										, HETB_CK_COMPANY B
 										, HETB_CK_INDUSTRY C
 										, (
@@ -1138,13 +1164,12 @@
 					                    ) D
 					                    , HETB_CK_MASTER_RESULT E
 								WHERE	A.MASTER_CD = $master_cd$ 
-										AND A.STATUS = 'N' 
 										AND	A.COMPANY_CD = B.COMPANY_CD 
 										AND B.INDUSTRY_CD = C.INDUSTRY_CD(+) 
                    						AND B.COMPANY_CD = D.COMPANY_CD(+)
                    						AND A.COMPANY_CD = E.COMPANY_CD(+)
                    						AND A.MASTER_CD = E.MASTER_CD(+)
-								ORDER BY A.INSERT_DT DESC
+								ORDER BY B.COMPANY
 							) A 
 					
 					)
