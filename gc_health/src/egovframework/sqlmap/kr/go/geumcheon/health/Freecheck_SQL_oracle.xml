@@ -932,9 +932,12 @@
 								GROUP BY MASTER_CD  
 							) B,  
 							( 
-								SELECT	MASTER_CD, COUNT(*) ANSWER_CNT 
-								FROM	HETB_CK_ANSWER WHERE STATUS = 'N'  
-								GROUP BY MASTER_CD  
+								SELECT MASTER_CD, COUNT(*) ANSWER_CNT 
+								FROM (
+                                	SELECT DISTINCT MASTER_CD, COMPANY_CD
+									FROM	HETB_CK_ANSWER2 WHERE STATUS = 'N'
+								)  
+                                GROUP BY MASTER_CD
 							) C,  
 							( 
 								/* 해당분류별 응모대상자 총수 */
