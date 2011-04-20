@@ -1,22 +1,18 @@
 package egovframework.kr.go.geumcheon.health.web;
 
-import java.io.File;
 import java.io.PrintWriter;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
-import jxl.Cell;
-import jxl.Sheet;
-import jxl.Workbook;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -1650,7 +1646,7 @@ public class FreecheckAdminController {
     	}
     	
     	List<ZValue> resultList = service.selectMasterCompanyPointList(zvl);
-    	HashMap<String, ArrayList<ZValue>> falseMap = service.selectMasterCompanyFalseQuestionList(zvl);
+    	HashMap<String, HashSet<ZValue>> falseMap = service.selectMasterCompanyFalseQuestionList(zvl);
 		model.addAttribute("resultList", resultList);
 		model.addAttribute("falseMap", falseMap);
 
@@ -1676,7 +1672,7 @@ public class FreecheckAdminController {
     	}
     	
     	List<ZValue> resultList = service.selectMasterCompanyPointList(zvl);
-    	HashMap<String, ArrayList<ZValue>> falseMap = service.selectMasterCompanyFalseQuestionList(zvl);
+    	HashMap<String, HashSet<ZValue>> falseMap = service.selectMasterCompanyFalseQuestionList(zvl);
 		model.addAttribute("resultList", resultList);
 		model.addAttribute("falseMap", falseMap);
 
@@ -1702,7 +1698,7 @@ public class FreecheckAdminController {
     	}
     	
     	List<ZValue> resultList = service.selectMasterCompanyList(zvl);
-    	HashMap<String, ArrayList<ZValue>> falseMap = service.selectMasterCompanyFalseQuestionList(zvl);
+    	HashMap<String, HashSet<ZValue>> falseMap = service.selectMasterCompanyFalseQuestionList(zvl);
 		model.addAttribute("resultList", resultList);
 		model.addAttribute("falseMap", falseMap);
 
