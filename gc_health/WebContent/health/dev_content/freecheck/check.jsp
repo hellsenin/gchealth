@@ -7,11 +7,20 @@
 <%@ taglib prefix="validator" uri="http://www.springmodules.org/tags/commons-validator" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
-<% pageContext.setAttribute("crlf", "\r\n"); %>	
+<% pageContext.setAttribute("crlf", "\r\n"); %>
+
+<c:set var="showVd" value="${Bean.view_state == 'forUpdate' && Bean.type_cd == '03'}" />
+	
 <script type="text/javascript" src="/health/open_content/system/js/miya_validator.js"></script>
 <script type="text/javascript" src="/health/open_content/system/js/jquery-1.4.2.js"></script>
 <script type="text/javascript">
 function checkAndSubmit(f) {
+
+	if('${Bean.view_state}' == 'forUpdate' && '${Bean.type_cd}' == '03')
+	{
+		alert('법령인지도는 한번만 입력가능합니다.');
+		return false;
+	}
 	if('${Bean.view_state}' == 'readonly') {
 		alert('이미 점검을 완료하셨거나 점검 기간이 아닙니다.');
 		return false;
@@ -44,10 +53,19 @@ function checkAndSubmit(f) {
 			alert(v.getErrorMessage());
 			return false;
 		} else {
-			if (confirm('점검 기간에는 언제든지 수정이 가능합니다. 저장하시겠습니까?')) {
-				return true;
-			} else {
-				return false;
+			if('${Bean.view_state}' == 'writable' && '${Bean.type_cd}' == '03')
+			{
+				if (confirm('법령인지도는 한번만 입력가능합니다. 저장하시겠습니까?')) {
+					return true;
+				}
+			}
+			else
+			{
+				if (confirm('점검 기간에는 언제든지 수정이 가능합니다. 저장하시겠습니까?')) {
+					return true;
+				} else {
+					return false;
+				}
 			}
 		}
 
@@ -144,7 +162,14 @@ function checkAndSubmit(f) {
 																<input type="radio" title="문제 ${qStatus.count}번" name="question2_cd_${qStatus.count}" value="${answerItem.QUESTION2_CD}" id="answer2_${qStatus.count}_${answerItem.QUESTION2_CD}" <c:if test="${fn:indexOf(questionItem.QUESTION2_CD, answerItem.QUESTION2_CD) >= 0}">checked="checked"</c:if> <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>
 															</c:when>
 														</c:choose>
+														<c:choose>
+														<c:when test="${showVd && answerItem.VALIDATION == 'Y'}">
+														<font color="red">${answerItem.QUESTION2}</font>
+														</c:when>
+														<c:otherwise>
 														${answerItem.QUESTION2}
+														</c:otherwise>
+														</c:choose>
 <!--													<label for="answer2_${qStatus.count}_${answerItem.QUESTION2_CD}">-->
 <!--													</label>-->
 													<br/>

@@ -58,7 +58,7 @@
 							<c:param name="approval_yn" value="${item.APPROVAL_YN}"/>
 							
 							<c:choose>
-								<c:when test="${item.ANSWER_CNT == 0}">
+								<c:when test="${item.ANSWER2_CNT == 0}">
 									<c:param name="view_state" value="writable"/>
 								</c:when>
 								<c:otherwise>
