@@ -1123,6 +1123,7 @@
                    						AND B.COMPANY_CD = D.COMPANY_CD(+)
                    						AND A.COMPANY_CD = E.COMPANY_CD(+)
                    						AND A.MASTER_CD = E.MASTER_CD(+)
+                   						AND B.YEAR_CD = #year_cd#
 								ORDER BY B.COMPANY
 					) A 
 		]]>
@@ -1169,6 +1170,7 @@
                    						AND B.COMPANY_CD = D.COMPANY_CD(+)
                    						AND A.COMPANY_CD = E.COMPANY_CD(+)
                    						AND A.MASTER_CD = E.MASTER_CD(+)
+                   						AND B.YEAR_CD = #year_cd#
 								ORDER BY B.COMPANY
 							) A 
 					
