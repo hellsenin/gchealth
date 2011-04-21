@@ -1789,6 +1789,11 @@
 				A1.COMPANY_CD, #masterCd# as MASTER_CD,
 				A1.PASSWD, A1.TEL
 			FROM HETB_CK_COMPANY A1
+            inner JOIN (
+            	SELECT MASTER_CD, COMPANY_CD, COUNT(*) AS CNT
+                FROM HETB_CK_ANSWER2
+                GROUP BY MASTER_CD, COMPANY_CD
+            ) A2 ON A2.MASTER_CD=#masterCd# AND A2.COMPANY_CD = A1.COMPANY_CD AND A2.CNT > 0
 			WHERE YEAR_CD = #yearCd#
 		) A 
 		LEFT OUTER JOIN(
