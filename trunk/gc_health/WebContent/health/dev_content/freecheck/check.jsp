@@ -55,7 +55,8 @@ function checkAndSubmit(f) {
 		} else {
 			if('${Bean.view_state}' == 'writable' && '${Bean.type_cd}' == '03')
 			{
-				if (confirm('법령인지도는 한번만 입력가능합니다. 저장하시겠습니까?')) {
+				alert("법령인지도는 한번제출되면 수정할 수 없습니다.");
+				if (confirm('법령인지도는 한번제출되면 수정할 수 없습니다. 저장하시겠습니까?')) {
 					return true;
 				}
 			}
