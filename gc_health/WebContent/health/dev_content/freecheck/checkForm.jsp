@@ -304,18 +304,6 @@ input { border:1px solid gray; }
 				<td><input type="text" style="width:250px" name="userTel" value="${answer.TEL}"></td>
 			</tr>
 			<tr height="25">
-				<td >작&nbsp;&nbsp;&nbsp;성&nbsp;&nbsp;&nbsp;자</td>
-				<td><input type="text" style="width:250px;" name="userAddr" value="${answer.NAME2}"></td>
-				<td >팩스번호</td>
-				<td><input type="text" style="width:250px;" name="userRegNum" value="${answer.FAX}"></td>
-			</tr>
-			<tr height="25">
-				<td >휴대전화번호</td>
-				<td><input type="text" style="width:250px" name="userTel" value="${answer.HP}"></td>
-				<td >E-mail 주소</td>
-				<td><input type="text" style="width:250px;" name="userMail" value="${answer.EMAIL}"></td>
-			</tr>
-			<tr height="25">
 				<td >소&nbsp;&nbsp;&nbsp;재&nbsp;&nbsp;&nbsp;지</td>
 				<td><input type="text" style="width:250px" name="userFax" value="${answer.ADDR1}"></td>
 				<td >홈페이지주소</td>
@@ -350,22 +338,14 @@ input { border:1px solid gray; }
 		<c:if test="${company.divide_cd == 'k04' || company.divide_cd == 'k06'}">
 			<tr height="25">
 				<td><label for="etc17">생물학적제제취급</label></td>
-				<td>
+				<td class="output">
 					<label for="etc17"><input id="etc17" name="article1_yn" type="radio" class="vam" value="Y" <c:if test="${answer.ARTICLE1_YN == 'Y'}">checked="checked"</c:if> <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>예</label>&nbsp;&nbsp;
 					<label for="etc19"><input id="etc19" name="article1_yn" type="radio" class="vam" value="N" <c:if test="${answer.ARTICLE1_YN == 'N'}">checked="checked"</c:if> <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>아니오</label>
 				</td>
-				<td>마약류 취급</td>
-				<td>
-					<label for="etc24"><input id="etc24" type="checkbox" class="vam" name="other3" value="1" <c:if test="${fn:contains(answer.OTHER3, 1)}">checked="checked"</c:if> <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>마약</label>&nbsp;&nbsp;
-					<label for="etc20"><input id="etc20" type="checkbox" class="vam" name="other3" value="2" <c:if test="${fn:contains(answer.OTHER3, 2)}">checked="checked"</c:if> <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>향정신성의약품</label>&nbsp;&nbsp;
-					<label for="etc66"><input id="etc66" type="checkbox" class="vam" name="other3" value="3" <c:if test="${fn:contains(answer.OTHER3, 3)}">checked="checked"</c:if> <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>해당 없음</label>
-				</td>
-			</tr>
-			<tr height="25">
 				<td><label for="name2">도매업무관리자</label></td>
-				<td class="output" colspan="3">
-					<label for="name2">성명 <input type="text" id="name2" name="name2" style="width:120px" class="t_text vam" value="${answer.NAME2}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/></label>
-					<label for="number3">면허번호 <input id="number3" name="number3" type="text" style="width:120px" class="t_text vam" value="${answer.NUMBER3}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/></label>
+				<td class="output">
+					<label for="name2">성명 <input type="text" id="name2" name="name2" style="width:100px" class="t_text vam" value="${answer.NAME2}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/></label>
+					<label for="number3">면허번호 <input id="number3" name="number3" type="text" style="width:60px" class="t_text vam" value="${answer.NUMBER3}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/></label>
 				</td>
 			</tr>
 		</c:if>

@@ -111,6 +111,7 @@ function checkForm(form)
 <br/>
 <br/>
 	
+	<h4>마약류 취급 현황</h4>
 <table id="tbl" class="default_list" summary="번호,제목,공개여부, 작성자, 등록일, 첨부파일 구성">
     <caption>
     게시물리스트
