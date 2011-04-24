@@ -1346,6 +1346,7 @@ public class FreecheckAdminService {
 	}
 
 	public void approveMaster(ZValue zvl) throws Exception {
+		dao.deleteMasterResult(zvl);
 		dao.approveMaster(zvl);
 	}
 
