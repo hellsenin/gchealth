@@ -120,6 +120,9 @@ public class FreecheckUserService {
 		
 		model.addAttribute("resultListSize", totCnt);
 		model.addAttribute("resultList", resultMany);
+		
+		HashMap companyInfoAnswer = dao.selectCompanyInfoAnswer(bean);
+		model.addAttribute("companyInfoAnswer", companyInfoAnswer);
 
 		String url = "/health/freecheck/list.do";
 		url += "?company_cd="+bean.getCompany_cd();
@@ -228,6 +231,12 @@ public class FreecheckUserService {
 		
 		List<ZValue> itemList = dao.selectItemListForCheck(master_cd);
 		model.addAttribute("itemList", itemList);
+		
+		ZValue paramZvl = new ZValue();
+		paramZvl.put("masterCd",master_cd);
+		paramZvl.put("companyCd",bean.getCompany_cd());
+		ZValue approvedMaster = adminDAO.selectApproveMaster(paramZvl);
+		model.addAttribute("approvedMaster", approvedMaster);
 		
 		model.addAttribute("companyInfo", bean);
 		
