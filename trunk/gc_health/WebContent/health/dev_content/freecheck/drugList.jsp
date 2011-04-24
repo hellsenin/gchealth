@@ -68,7 +68,25 @@ function checkForm(form)
 	return condition;
 }
 
-
+	function printContent(){
+		var printThis = document.getElementById("contentArea").innerHTML;
+		printThis = printThis.replace(/<script[^>]*>[\S\s]*?<\/script[^>]*>/ig, "");
+		//printThis = printThis.replace(/[0-9]{2}(0[1-9]|1[012])(0[1-9]|1[0-9]|2[0-9]|3[01])-?[012349][0-9]{6}/ , "******-*******");
+		win = window.open();
+		self.focus();
+		win.document.open();
+		win.document.write('<'+'html'+'><'+'head'+'>');
+		win.document.write('<link href='+'/health/open_content/system/css/default.css'+' rel='+'stylesheet'+' type='+'text/css'+' />');
+		win.document.write('<link href='+'/health/open_content/system/css/common.css'+' rel='+'stylesheet'+' type='+'text/css'+' />');
+		win.document.write('<link href='+'/health/open_content/system/css/blue.css'+' rel='+'stylesheet'+' type='+'text/css'+' />');
+		win.document.write('<link href='+'/health/open_content/system/css/board_blue.css'+' rel='+'stylesheet'+' type='+'text/css'+' />');
+		win.document.write('<'+'/'+'head'+'><'+'body'+' style="background:none;"><br /><br />');
+		win.document.write(printThis);
+		win.document.write('<'+'/'+'body'+'><'+'/'+'html'+'>');
+		win.document.close();
+		win.print();
+		win.close();
+	}
 </script>
 <div class="comment_box">
 <div class="comment_box_top"></div>
@@ -148,6 +166,9 @@ function checkForm(form)
 <br/>
 <br/>
 <div class="board_btn_set send_mg"> 
+	<span class="register">
+		<a href="javascript:printContent();">출력하기</a>
+	</span> 
 	<span class="register">
 		<a href="javascript:jaddRow();">품목추가</a>
 	</span> 

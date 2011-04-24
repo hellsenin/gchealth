@@ -15,19 +15,87 @@
 <script type="text/javascript" src="/health/open_content/system/js/jquery-1.4.2.js"></script>
 <script type="text/javascript">
 function checkAndSubmit(f) {
-
-	if('${Bean.view_state}' == 'forUpdate' && '${Bean.type_cd}' == '03')
+	var freecheckNonCheckDivideCd = "${freecheckNonCheckDivideCd}";
+	var freecheckNonCheckMasterCd = "${freecheckNonCheckMasterCd}";
+	var nonChecked = freecheckNonCheckDivideCd == "${company.divide_cd}" && freecheckNonCheckMasterCd == "${result.master_cd}";
+	if(!nonChecked)
 	{
-		alert('법령인지도는 한번만 입력가능합니다.');
-		return false;
+		if('${Bean.view_state}' == 'forUpdate' && '${Bean.type_cd}' == '03')
+		{
+			alert('법령인지도는 한번만 입력가능합니다.');
+			return false;
+		}
+		if('${Bean.view_state}' == 'readonly') {
+			alert('이미 점검을 완료하셨거나 점검 기간이 아닙니다.');
+			return false;
+		} else if( '${param.approval_yn}' == 'Y' ) {
+			alert('관리자 승인완료 돼었습니다. 수정하실 수 없습니다.');
+			return false;
+		} else {
+			var v = new MiyaValidator(f);
+			
+		    v.add("sangho_name", {
+				required: true
+		    });
+		    v.add("name1", {
+				required: true
+		    });
+		    v.add("addr1", {
+				required: true
+		    });
+		    if( $("input[name^=item]").length > 0 )
+			{
+			    v.add("item", {
+					required: true,
+					message: "취급품목을 선택하세요."
+			    });
+			}
+		    
+			var result = v.validate();
+	
+			if (!result) {
+				alert(v.getErrorMessage());
+				return false;
+			} else {
+				var condition = true;
+				var name = "";
+				var $item = $(":input:radio[name^=question2_]");
+				$item.each(function(){
+					var radioName = $(this).attr("name");
+					if( $("input[name="+radioName+"]:checked").length == 0 )
+					{
+						condition = false;
+						name = radioName;
+						return false;
+					}
+				});
+				if( !condition )
+				{
+					alert("항목을 선택해 주세요.");
+					$("input[name="+name+"]")[0].focus();
+					return false;
+				}
+				if('${Bean.view_state}' == 'writable' && '${Bean.type_cd}' == '03')
+				{
+					alert("법령인지도는 한번제출되면 수정할 수 없습니다.");
+					if (confirm('법령인지도는 한번제출되면 수정할 수 없습니다. 저장하시겠습니까?')) {
+						return true;
+					}
+				}
+				else
+				{
+					if (confirm('점검 기간에는 언제든지 수정이 가능합니다. 저장하시겠습니까?')) {
+						return true;
+					} else {
+						return false;
+					}
+				}
+			}
+	
+		}
 	}
-	if('${Bean.view_state}' == 'readonly') {
-		alert('이미 점검을 완료하셨거나 점검 기간이 아닙니다.');
-		return false;
-	} else if( '${param.approval_yn}' == 'Y' ) {
-		alert('관리자 승인완료 돼었습니다. 수정하실 수 없습니다.');
-		return false;
-	} else {
+	else
+	{
 		var v = new MiyaValidator(f);
 		
 	    v.add("sangho_name", {
@@ -53,27 +121,37 @@ function checkAndSubmit(f) {
 			alert(v.getErrorMessage());
 			return false;
 		} else {
-			if('${Bean.view_state}' == 'writable' && '${Bean.type_cd}' == '03')
-			{
-				alert("법령인지도는 한번제출되면 수정할 수 없습니다.");
-				if (confirm('법령인지도는 한번제출되면 수정할 수 없습니다. 저장하시겠습니까?')) {
-					return true;
-				}
-			}
-			else
-			{
-				if (confirm('점검 기간에는 언제든지 수정이 가능합니다. 저장하시겠습니까?')) {
-					return true;
-				} else {
-					return false;
-				}
+			if (confirm('점검 기간에는 언제든지 수정이 가능합니다. 저장하시겠습니까?')) {
+				return true;
+			} else {
+				return false;
 			}
 		}
-
 	}
 	
-	
 };
+
+$(function(){
+	var freecheckNonCheckDivideCd = "${freecheckNonCheckDivideCd}";
+	var freecheckNonCheckMasterCd = "${freecheckNonCheckMasterCd}";
+	var nonChecked = freecheckNonCheckDivideCd == "${company.divide_cd}" && freecheckNonCheckMasterCd == "${result.master_cd}";
+	if(nonChecked)
+	{
+		if( "${answer.OTHER5}".indexOf("취급안함") != -1 )
+		{
+			$("#check_form").hide();
+		}
+		$("input[name=item]").click(function(){
+			if($(this).attr("value") == '취급안함')
+			{
+				if(this.checked)
+					$("#check_form").hide();
+				else
+					$("#check_form").show();
+			}
+		});
+	}
+});
 </script>
 
 	<h4>점검 정보</h4>
@@ -297,3 +375,28 @@ function checkAndSubmit(f) {
 			
 			
 	</form>
+
+<c:if test="${not empty approvedMaster}">
+	<br/>
+	<br/>
+	
+		<h4>승인내역</h4>
+	<table summary="등록정보 테이블로 허가내용을 알 수 있습니다" class="default_view">
+		<caption>등록정보</caption>
+		<colgroup>
+			<col width="30%" />
+			<col width="70%" />
+		</colgroup>
+		<tbody>
+			<tr>
+				<th class="output depth2_th"><label for="hp">담당자</label></th>
+				<td class="output gubun">${approvedMaster.official}</td>
+			</tr>
+			<tr>
+				<th class="output depth2_th"><label for="hp">담당자 의견</label></th>
+				<td class="output gubun">${approvedMaster.masterCmmt}			
+				</td>
+			</tr>
+		</tbody>
+	</table>
+</c:if>

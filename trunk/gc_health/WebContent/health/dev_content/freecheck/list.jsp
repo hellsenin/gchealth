@@ -7,6 +7,7 @@
 <%@ taglib prefix="validator" uri="http://www.springmodules.org/tags/commons-validator" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
+<c:set var="other5" value="${companyInfoAnswer.OTHER5}" />
 
 	<h4>${company.company} - ${company.ceo_name}님의 자율점검 리스트 입니다.</h4>
 	<table class="default_list" summary="번호, 제목, 점검기간, 상태, 등록일자로 구성되어 있습니다. 목록 제목을 클릭하면 상세내용으로 이동합니다.">
@@ -86,6 +87,9 @@
 						</c:if>
 						<c:if test="${item.APPROVAL_YN != 'Y'}">
 						<c:choose>
+							<c:when test="${fn:contains(other5, '취급안함') && freecheckNonCheckDivideCd == bean.divide_cd && freecheckNonCheckMasterCd == item.master_cd}">
+								점검완료
+							</c:when>
 							<c:when test="${item.ANSWER2_CNT == 0}">
 								미점검
 							</c:when>
