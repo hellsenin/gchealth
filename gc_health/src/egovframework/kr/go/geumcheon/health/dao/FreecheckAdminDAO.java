@@ -355,6 +355,10 @@ public class FreecheckAdminDAO extends EgovAbstractDAO {
 		update("FreecheckAdminDAO.writeMasterCmmt", zvl); 
 	}
 
+	public ZValue selectApproveMaster(ZValue zvl) {
+		return (ZValue)selectByPk("FreecheckAdminDAO.selectApproveMaster", zvl);
+	}
+
 	public void approveMaster(ZValue zvl) {
 		insert("FreecheckAdminDAO.approveMaster", zvl); 
 	}
