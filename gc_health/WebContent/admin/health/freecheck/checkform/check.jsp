@@ -28,7 +28,7 @@
 	{
 		var url = "/admin/freecheck/approveMaster.do";
 		var param="&official="+$F("official")+"&masterCmmt="+$F("masterCmmt")+"&masterCd=${result.master_cd}&companyCd=${param.company_cd}";
-		alert(param);
+		//alert(param);
 		sendRequest(callbackApproveMaster, param, 'POST', url, true, true);
 	}
 
