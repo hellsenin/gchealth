@@ -768,7 +768,13 @@
 					, other2			= '$other2$'
 					, other3			= '$other3$'
 					, other4			= '$other4$'
+    	]]>
+		<isNotEmpty property="other5">
+			<![CDATA[
 					, other5			= '$other5$'
+				]]> 
+		</isNotEmpty>
+    	<![CDATA[ 
 					, other6			= '$other6$'
 					, other7			= '$other7$'
 					, other8			= '$other8$'

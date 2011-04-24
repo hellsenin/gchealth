@@ -2180,6 +2180,15 @@
 		]]>
     </update>
     	
+    <select id="FreecheckAdminDAO.selectApproveMaster" parameterClass="zvl" resultClass="zvl">
+		<![CDATA[
+			SELECT *
+			FROM HETB_CK_MASTER_RESULT
+			WHERE MASTER_CD = #masterCd#
+			AND COMPANY_CD = #companyCd#
+		]]>
+    </select>
+    	
     <insert id="FreecheckAdminDAO.approveMaster" parameterClass="zvl">
 		<![CDATA[
 			
@@ -2188,14 +2197,16 @@
 			  MASTER_CD,
 			  COMPANY_CD,
 			  APPROVAL_YN,
-			  MASTER_CMMT
+			  MASTER_CMMT,
+			  OFFICIAL
 			)
 			VALUES
 			(
 				#masterCd#
 				,#companyCd#
-				,#approvalYn#
+				,'Y'
 				,#masterCmmt#
+				,#official#
 			)
 			
 		]]>

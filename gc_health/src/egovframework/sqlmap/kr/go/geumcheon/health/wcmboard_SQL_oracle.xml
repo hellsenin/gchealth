@@ -228,7 +228,7 @@
 				   W.ANSWER_SMS, W.ANSWER_EMAIL, W.CREATE_DATE, 
 				   W.CREATE_USER_ID, W.UPDATE_DATE, W.UPDATE_USER_ID
 				FROM gcweb.WCM_BOARD_$communityId$ W
-				WHERE 1=1
+				WHERE 1=1 AND DBSTS NOT IN ('D')
 		 ]]>
 			<isEqual property="searchType" compareValue="1">
 				<isNotEmpty prepend="AND" property="searchTxt">
@@ -270,7 +270,7 @@
 		<![CDATA[ 
 			SELECT COUNT(*) 
 			FROM gcweb.WCM_BOARD_$communityId$ W
-			WHERE 1=1
+			WHERE 1=1 AND DBSTS NOT IN ('D')
 		 ]]>
 			<isEqual property="searchType" compareValue="1">
 				<isNotEmpty prepend="AND" property="searchTxt">
