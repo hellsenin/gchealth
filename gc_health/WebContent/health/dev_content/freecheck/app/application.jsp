@@ -140,7 +140,7 @@
 					<input id="sangho_name" name="sangho_name" type="text" maxlength="14" style="width:150px;" value="${answer.SANGHO_NAME}" class="t_text vam" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>
 				</td>
 				<th scope="row">
-					<label for="number1">허가번호</label>
+					<label for="number1">허가(신고)번호</label>
 				</th>
 				<td class="output">
 					제 <input id="number1" name="number1" type="text" style="width:43px; text-align: center; padding-left: 0px;padding-left: 0px;" maxlength="5" class="t_text vam" value="${answer.NUMBER1}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 호

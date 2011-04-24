@@ -294,7 +294,7 @@ input { border:1px solid gray; }
 			<tr height="25">
 				<td class="titleName">상&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;호</td>
 				<td class="titleField"><input type="text" style="width:250px" name="userComName" value="${answer.SANGHO_NAME}"></td>
-				<td class="titleName">등&nbsp;&nbsp;록&nbsp;&nbsp;번&nbsp;&nbsp;호</td>
+				<td class="titleName">허가(신고)번호</td>
 				<td class="titleField">제 <input type="text" style="width:100px;" name="userLeaveNum" value="${answer.NUMBER1}"> 호</td>
 			</tr>
 			<tr height="25">
