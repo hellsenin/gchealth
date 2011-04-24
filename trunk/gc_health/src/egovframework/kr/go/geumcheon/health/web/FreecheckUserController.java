@@ -24,6 +24,7 @@ import egovframework.kr.go.geumcheon.health.vo.Answer;
 import egovframework.kr.go.geumcheon.health.vo.Company;
 import egovframework.kr.go.geumcheon.health.vo.Master;
 import egovframework.kr.go.geumcheon.health.vo.UsersVO;
+import egovframework.rte.fdl.property.EgovPropertyService;
 
 @Controller
 public class FreecheckUserController {
@@ -34,6 +35,9 @@ public class FreecheckUserController {
 	@Resource(name = "webFactory")
 	private WebFactory WebFactory;
 
+    @Resource(name = "propertiesService")
+    protected EgovPropertyService propertyService;
+    
 	@RequestMapping("/health/freecheck/loginPage.do")
 	public String loginPage(
 		 HttpServletRequest request
@@ -89,6 +93,11 @@ public class FreecheckUserController {
 		
 		// 점검표 리스트 불러오기
 		service.selectCheckStateList(company, model);
+
+		String freecheckNonCheckDivideCd = propertyService.getString("freecheckNonCheckDivideCd");
+		String freecheckNonCheckMasterCd = propertyService.getString("freecheckNonCheckMasterCd");
+		model.addAttribute("freecheckNonCheckDivideCd", freecheckNonCheckDivideCd);
+		model.addAttribute("freecheckNonCheckMasterCd", freecheckNonCheckMasterCd);
 		
 		String includePage = "/health/dev_content/freecheck/list.jsp";
 
@@ -148,9 +157,15 @@ public class FreecheckUserController {
 		// 업소 정보 불러오기 
 		service.selectCompanyInfo(bean, model);
 		
+		model.addAttribute("CURR_DATE", Calendar.getInstance().getTime());
+
+		String freecheckNonCheckDivideCd = propertyService.getString("freecheckNonCheckDivideCd");
+		String freecheckNonCheckMasterCd = propertyService.getString("freecheckNonCheckMasterCd");
+		model.addAttribute("freecheckNonCheckDivideCd", freecheckNonCheckDivideCd);
+		model.addAttribute("freecheckNonCheckMasterCd", freecheckNonCheckMasterCd);
+
 		String includePage = "/health/dev_content/freecheck/check.jsp";
 		model.addAttribute("includePage", includePage);
-		model.addAttribute("CURR_DATE", Calendar.getInstance().getTime());
 		return Globals.HEALTH_MAIN_PAGE;
 	}
 

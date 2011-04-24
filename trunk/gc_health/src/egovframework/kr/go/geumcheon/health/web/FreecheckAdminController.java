@@ -1864,11 +1864,15 @@ public class FreecheckAdminController {
 			ModelMap model) throws Exception
 	{
     	ZValue zvl = WebFactory.getAttributes(request);   
-    	
-    	service.approveMaster(zvl);
 
-    	WebFactory.printHtml(response, "성공적으로 등록되었습니다.", 
-    			"/admin/freecheck/checkform/list_checked_company.do?year_cd="+zvl.getString("yearCd")+"&master_cd="+zvl.getString("masterCd"));
+    	service.approveMaster(zvl);
+    	
+    	zvl.put("resultCode", "1");
+
+		String resultValue = zvl.getJSONValue();
+		response.setContentType("application/x-json; charset=UTF-8");
+		response.setHeader("Cache-Control", "no-cache");
+		response.getWriter().write(resultValue);
 	}
 
 }
