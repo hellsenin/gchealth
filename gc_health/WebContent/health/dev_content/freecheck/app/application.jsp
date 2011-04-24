@@ -26,7 +26,7 @@
 					<input id="sangho_name" name="sangho_name" type="text" maxlength="14" style="width:150px;" value="${answer.SANGHO_NAME}" readonly="readonly" class="t_text vam" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>
 				</td>
 				<th scope="row">
-					<label for="number1">등록번호</label>
+					<label for="number1">허가(신고)번호</label>
 				</th>
 				<td class="output" >
 					<label for="number1">제 <input id="number1" name="number1" type="text" style="width:43px; text-align: center; padding-left: 0px;" maxlength="5" class="t_text vam" value="${answer.NUMBER1}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 호</label>
@@ -216,7 +216,7 @@
 					<input id="sangho_name" name="sangho_name" type="text" maxlength="14" style="width:150px;" value="${answer.SANGHO_NAME == null ? Bean.company : answer.SANGHO_NAME}" class="t_text vam" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>
 				</td>
 				<th scope="row">
-					<label for="number1">허가번호</label><!-- 기존 테이블에 필드가 모자라서 어쩔수 없이 homepage 필드를 사용하게 되었음 -->
+					<label for="number1">신고번호</label><!-- 기존 테이블에 필드가 모자라서 어쩔수 없이 homepage 필드를 사용하게 되었음 -->
 				</th>
 				<td class="output">
 					제 <input id="number1" name="number1" type="text" style="width:43px; text-align: center; padding-left: 0px;" maxlength="5" class="t_text vam" value="${answer.NUMBER1 == null ? Bean.sa_no : answer.NUMBER1}" readonly="readonly" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 호
@@ -300,7 +300,7 @@
 					<input id="sangho_name" name="sangho_name" type="text" maxlength="14" style="width:150px;" value="${answer.SANGHO_NAME == null ? Bean.company : answer.SANGHO_NAME}" class="t_text vam" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>
 				</td>
 				<th scope="row">
-					<label for="number1">허가번호</label>
+					<label for="number1">허가(등록)번호</label>
 				</th>
 				<td class="output">
 					제 <input id="number1" name="number1" type="text" style="width:43px; text-align: center; padding-left: 0px;" maxlength="5" class="t_text vam" value="${answer.NUMBER1 == null ? Bean.sa_no : answer.NUMBER1}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 호
@@ -518,7 +518,7 @@
 					<input id="sangho_name" name="sangho_name" type="text" maxlength="14" style="width:150px;" value="${answer.SANGHO_NAME}" class="t_text vam" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/>
 				</td>
 				<th scope="row">
-					<label for="number1">허가번호</label>
+					<label for="number1">허가(신고)번호</label>
 				</th>
 				<td class="output">
 					제 <input id="number1" name="number1" type="text" style="width:43px; text-align: center; padding-left: 0px;padding-left: 0px;" maxlength="5" class="t_text vam" value="${answer.NUMBER1}" <c:if test="${Bean.view_state == 'readonly'}"> disabled='disabled'</c:if>/> 호

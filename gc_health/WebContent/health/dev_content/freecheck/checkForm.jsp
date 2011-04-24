@@ -7,6 +7,23 @@
 <%@ taglib prefix="validator" uri="http://www.springmodules.org/tags/commons-validator" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <% pageContext.setAttribute("crlf", "\r\n"); %>	
+<c:choose>
+<c:when test="${param.divide_cd == 'k02'}">
+	<c:set var="numTitle" value="허가(신고)번호" />
+</c:when>
+<c:when test="${param.divide_cd == 'k03'}">
+	<c:set var="numTitle" value="신고번호" />
+</c:when>
+<c:when test="${param.divide_cd == 'k05'}">
+	<c:set var="numTitle" value="신고번호" />
+</c:when>
+<c:when test="${param.divide_cd == 'k06'}">
+	<c:set var="numTitle" value="허가(등록)번호" />
+</c:when>
+<c:otherwise>
+	<c:set var="numTitle" value="허가(신고)번호" />
+</c:otherwise>
+</c:choose>
 <HTML>
 <HEAD>
 <TITLE> ${result.title} </TITLE>
@@ -294,7 +311,7 @@ input { border:1px solid gray; }
 			<tr height="25">
 				<td class="titleName">상&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;호</td>
 				<td class="titleField"><input type="text" style="width:250px" name="userComName" value="${answer.SANGHO_NAME}"></td>
-				<td class="titleName">허가(신고)번호</td>
+				<td class="titleName">${numTitle}</td>
 				<td class="titleField">제 <input type="text" style="width:100px;" name="userLeaveNum" value="${answer.NUMBER1}"> 호</td>
 			</tr>
 			<tr height="25">
