@@ -7,6 +7,7 @@
 <%@ taglib prefix="validator" uri="http://www.springmodules.org/tags/commons-validator" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 
+<% pageContext.setAttribute("crlf", "\r\n"); %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -19,7 +20,39 @@
 <link href="/health/open_content/system/css/board_blue.css" rel="stylesheet" type="text/css" />
 
 <script type="text/javascript" src="/health/open_content/system/js/jquery-1.4.2.js"></script>
+<script type="text/javascript" src="/health/open_content/system/js/jslb_ajax.js"></script>
+<script type="text/javascript" src="/health/open_content/system/js/prototype.js"></script>
+<script type="text/javascript" src="/health/open_content/system/js/miya_validator.js"></script>
 <script type="text/javascript">
+	function approveMaster()
+	{
+		var url = "/admin/freecheck/approveMaster.do";
+		var param="&official="+$F("official")+"&masterCmmt="+$F("masterCmmt")+"&masterCd=${result.master_cd}&companyCd=${param.company_cd}";
+		alert(param);
+		sendRequest(callbackApproveMaster, param, 'POST', url, true, true);
+	}
+
+	function callbackApproveMaster(oj)
+	{
+		try 
+		{
+			var jsonData = oj.responseText;
+			var j = eval('(' + jsonData + ')');
+			var code = j.resultCode;
+			if(code == "1")
+			{
+				 alert("성공적으로 승인되었습니다.");
+			}
+			else if(code == "0")
+			{
+				 alert("알수없는 오류입니다.");
+			}
+		}	
+		catch (err) 
+		{
+			alert("FUNCTION : callbackChangeStatus() " + err.description);
+		}
+	}
 </script>
 
 </head>
@@ -90,7 +123,7 @@
 						<th>${qStatus.count}</th>
 						<td class="tal">
 							<dl>
-								<dt style="margin-top: 6px;">${questionItem.QUESTION}</dt>
+								<dt style="margin-top: 6px;">${fn:replace(questionItem.QUESTION,crlf,"<br/>")}</dt>
 								<dd style="margin-top: 6px; margin-bottom: 6px;">
 									<!-- 주관식 -->
 									<c:choose>
@@ -163,26 +196,10 @@
 			</c:if>
 		</tbody>
 	</table>
+	<br/>
+	<br/>
 	
-	<!-- 
-	<table summary="등록정보 테이블로 허가내용을 알 수 있습니다" class="default_view">
-		<caption>등록정보</caption>
-		<colgroup>
-			<col width="*" />
-		</colgroup>
-		<tbody>
-			<tr>
-				<td class="output">
-					상기자율점검 내용은 사실과 틀림없으며, 만약 위의 점검사항과 다르거나 위반사항이 있을경우 약사법등 관계규정에 의한 행정처분을 감수하겠습니다.
-				</td>
-			</tr>
-		</tbody>
-	</table>
-	 
-		<form name="frm" method="post" action="${action}">
-			<input type="hidden" name="masterCd" value="${param.applyCode}" />
-			<input type="hidden" name="answerCd" value="${param.applyId}" />
-			<input type="hidden" name="companyCd" value="${onlineResult.onlineId}" />	
+		<form name="approveForm" method="post" action="/admin/freecheck/approveMaster.do">
 	<table summary="등록정보 테이블로 허가내용을 알 수 있습니다" class="default_view">
 		<caption>등록정보</caption>
 		<colgroup>
@@ -191,20 +208,25 @@
 		</colgroup>
 		<tbody>
 			<tr>
+				<th class="output depth2_th"><label for="hp">담당자</label></th>
+				<td class="output gubun">
+					<input type="text" id="official" name="official" value="${empty approvedMaster.official ? '약무7급 김은정' : approvedMaster.official}" style="width:250px" class="t_text vam" maxlength="14" title="담당자"/>	
+				</td>
+			</tr>
+			<tr>
 				<th class="output depth2_th"><label for="hp">담당자 의견</label></th>
 				<td class="output gubun">
-					<input type="text" id="masterCmmt" name="masterCmmt" value="${answer.masterCmmt}" style="width:500px" class="t_text vam" maxlength="14" title="담당자의견"/>	
-					<input type="button" id="cmmt" name="cmmt" value="담당자의견달기" />			
+					<input type="text" id="masterCmmt" name="masterCmmt" value="${approvedMaster.masterCmmt}" style="width:500px" class="t_text vam" maxlength="14" title="담당자의견"/>			
 				</td>
 			</tr>
 		</tbody>
 	</table>
-		</form>
-	 -->
 <div id="btn_area" class="board_btn_set mt13">
+	<span class="btn_del"><a href="#btn_area" onclick="approveMaster();">승인</a></span>
 	<span class="btn_del"><a href="#btn_area" onclick="self.close();event.returnValue=false;">닫기</a></span>
 	<span class="btn_del"><a href="#btn_area" onclick="window.print();">출력</a></span>
 </div>
+		</form>
 
 </div>
 </body>

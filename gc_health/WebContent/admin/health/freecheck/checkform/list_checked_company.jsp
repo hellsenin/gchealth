@@ -49,9 +49,13 @@ function excelDown()
 
 function approve(mCd, cCd)
 {
-	var f = document.sfm;
-	f.action = "/admin/freecheck/selectMasterCompanyPointListForExcel.do";
-	f.submit();
+	var openParam = "dialogWidth:830px;dialogHeight:600px;scroll:yes;status:no;center:yes;resizable:yes;";
+	var varParam = new Object();
+	window.showModalDialog('/admin/freecheck/approveMaster.do'+
+			'?company_cd='+company_cd+
+			'&master_cd='+master_cd+
+			'&divide_cd='+divide_cd+
+			'&view_state=readonly', varParam, openParam);
 }
 </script>
 
@@ -225,9 +229,6 @@ function approve(mCd, cCd)
 								<c:param name="company_cd" value="${item.COMPANY_CD}"></c:param>
 								<c:param name="approval_yn" value="Y"></c:param>
 							</c:url>
-							<c:if test="${item.APPROVAL_YN != 'Y'}">
-							<a href="${app_url}" onclick="return confirm('[${item.COMPANY}]의 점검한 내역을 승인하시겠습니까?');">승인</a>
-							</c:if>
 						</td>
 						
 					</tr>
