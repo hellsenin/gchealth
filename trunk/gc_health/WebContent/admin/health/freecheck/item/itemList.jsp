@@ -47,7 +47,7 @@ function checkForm(form)
 </script>
 </head>
 <body style="background:none;padding:10px;">
-<h3 class="tit_03">취금품목관리</h3>
+<h3 class="tit_03">취급품목관리</h3>
 
 <fieldset id="src">
 	<legend>게시판 게시물검색</legend>	
