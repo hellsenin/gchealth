@@ -9,6 +9,7 @@ public class Handleitem extends PageBean {
 	private String field2 = "0";
 	private String field3 = "0";
 	private String field4 = "0";
+	private String field5 = "0";
 	private int company_cd = 0;
 	private String company_id = "";
 	private String company_name = "";
@@ -168,6 +169,12 @@ public class Handleitem extends PageBean {
 	}
 	public void setField4(String field4) {
 		this.field4 = field4;
+	}
+	public String getField5() {
+		return field5;
+	}
+	public void setField5(String field5) {
+		this.field5 = field5;
 	}
 	
 	
