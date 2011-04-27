@@ -252,6 +252,7 @@ public class FreecheckUserController {
 			}
 			else
 			{
+				/*
 				Company param = new Company();
 				param.setId(bean.getCompany_id());
 				service.loginFreecheck(param, model);
@@ -271,6 +272,9 @@ public class FreecheckUserController {
 				
 				includePage = "/health/dev_content/freecheck/list.jsp";	
 				model.addAttribute("view_state", "checked");
+				*/
+				WebFactory.printHtml(response, "성공적으로 등록되었습니다.", "/health/freecheck/list.do?categoryId=2589");
+				return null;
 			}
 		} 
 		
