@@ -376,6 +376,7 @@ $(function(){
 			
 	</form>
 
+<!-- 
 <c:if test="${not empty approvedMaster}">
 	<br/>
 	<br/>
@@ -400,3 +401,4 @@ $(function(){
 		</tbody>
 	</table>
 </c:if>
+ -->

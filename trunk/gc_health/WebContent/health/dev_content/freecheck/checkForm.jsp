@@ -7,6 +7,17 @@
 <%@ taglib prefix="validator" uri="http://www.springmodules.org/tags/commons-validator" %>
 <%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <% pageContext.setAttribute("crlf", "\r\n"); %>	
+
+<%
+	java.util.Calendar cal1 = java.util.Calendar.getInstance();
+	int year = cal1.get(java.util.Calendar.YEAR);
+	int month = cal1.get(java.util.Calendar.MONTH);
+	int day = cal1.get(java.util.Calendar.DATE);
+	pageContext.setAttribute("year", year);
+	pageContext.setAttribute("month", month+1);
+	pageContext.setAttribute("day", day);
+%>
+
 <c:choose>
 <c:when test="${param.divide_cd == 'k02'}">
 	<c:set var="numTitle" value="허가(신고)번호" />
@@ -430,7 +441,7 @@ input { border:1px solid gray; }
 				<!-- 상기 자율점검 내용은 사실과 틀림없으며, 만약 위의 점검사항과 다르거나 위반사항이 있을 경우 관계규정에 의한 행정처분을 감수하겠습니다. -->상기 자율점검 내용은 사실과 틀림없으며, 만약 위의 점검사항과 다르거나 위반사항이 있을 경우 약사법등 관계규정에 의한 행정처분을 감수하겠습니다.
 				</p>
 				<p style="text-align:center;">
-				2011. &nbsp;&nbsp;. &nbsp;&nbsp;<br>
+				${year}. &nbsp;&nbsp;${month}. &nbsp;&nbsp;${day}<br>
                 위 점검자 (대표자)&nbsp;&nbsp; <b>${answer.NAME1}</b> &nbsp;&nbsp;(인)
 				</p>
 				<p style="font-weight:bold; font-size:1.5em; margin-left:10px">금천구보건소장 귀하</p>
