@@ -216,7 +216,7 @@
 			<tr>
 				<th class="output depth2_th"><label for="hp">담당자 의견</label></th>
 				<td class="output gubun">
-					<input type="text" id="masterCmmt" name="masterCmmt" value="${approvedMaster.masterCmmt}" style="width:500px" class="t_text vam" maxlength="14" title="담당자의견"/>			
+					<input type="text" id="masterCmmt" name="masterCmmt" value="${empty approvedMaster.masterCmmt ? '이상없음' : approvedMaster.masterCmmt}" style="width:500px" class="t_text vam" maxlength="14" title="담당자의견"/>			
 				</td>
 			</tr>
 		</tbody>
