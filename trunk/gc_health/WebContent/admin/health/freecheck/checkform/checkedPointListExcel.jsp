@@ -25,6 +25,7 @@
 			<td>이름</td>
 			<td>전화번호</td>
 			<td>점검일자</td>
+			<td>취급품목</td>
 			<td>문제수</td>
 			<td>맞은문제수</td>
 			<td>틀린문제수[틀린문항]</td>
@@ -60,9 +61,12 @@
 						<fmt:formatDate value="${item.insertDt}" pattern="yyyy년 MM월 dd일"/>
 					</td>
 					
+					<td>
+						${item.handleitemCnt}
+					</td>
 					<!-- 문제수 -->
 					<td>
-						<a href="${actionUrl}">${item.questionCnt}</a>
+						${item.questionCnt}
 					</td>
 					
 					<!-- 맞은문제수 -->

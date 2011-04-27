@@ -23,7 +23,7 @@
 	
 <body style="background:none;padding:10px;">
 <h2 style="padding:15px 0 15px 0;">	
-		의약업소 자율점검 (점검표관리)
+		마약류취급현황
 </h2>
 				<table summary="의약업소 자율점검 (점검표관리) 페이지" class="default_view">
 					<caption>의약업소 자율점검 (점검표관리)</caption>
@@ -107,6 +107,7 @@
 						<th scope="col">${year-2}년도<br/>이월량</th>
 						<th scope="col">${year-1}년도<br/>구입량</th>
 						<th scope="col">${year-1}년도<br/>판매(사용)량</th>
+            			<th scope="col">${year-1}년도<br/>반품또는폐기량</th>
 						<th scope="col">${year-1}년12월31일<br/>재고량</th>
 					</tr>
 				</thead>
@@ -135,6 +136,9 @@
 								<td>
 									${item.field4}
 								</td>
+								<td>
+									${item.field5}
+								</td>
 							</tr>
 						</c:forEach>
 					</c:if>
@@ -147,6 +151,7 @@
 			</table>
 			
 <div id="btn_area" class="board_btn_set mt13">
+	<span class="btn_del"><a href="#btn_area" onclick="window.print();">출력</a></span>
 	<span class="btn_list"><a href="btn_area" onclick="window.close();event.returnValue=false;">닫기</a></span>
 </div>
 		
