@@ -240,24 +240,25 @@
 				a.OPTION4, a.OPTION5, a.OPTION6, a.OPTION7, a.OPTION8, a.OPTION9, a.OPTION10,
 				a.OPTION11, a.OPTION12, a.OPTION13,	a.OPTION14, a.OPTION15, 
 				a.OPTION16, a.OPTION17, a.OPTION18,	a.OPTION19, a.OPTION20,				
-				(SELECT	D.STRE_FILE_NM
-				FROM
-					COMTNFILE c, COMTNFILEDETAIL d
-				WHERE
-					c.ATCH_FILE_ID = a.ATCH_FILE_ID
-				AND 
-					c.ATCH_FILE_ID = d.ATCH_FILE_ID
-				AND 
-					c.USE_AT = 'Y' AND rownum = 1) as  FILENM,
-				NVL((SELECT	D.FILE_SN
-				FROM
-					COMTNFILE c, COMTNFILEDETAIL d
-				WHERE
-					c.ATCH_FILE_ID = a.ATCH_FILE_ID
-				AND
-					c.ATCH_FILE_ID = d.ATCH_FILE_ID
-				AND
-					c.USE_AT = 'Y' AND rownum = 1),0) as  FILESEQ,	
+				(
+					SELECT	top 1 D.STRE_FILE_NM
+				    FROM COMTNFILE c, COMTNFILEDETAIL d
+					WHERE
+						c.ATCH_FILE_ID = a.ATCH_FILE_ID
+					AND 
+						c.ATCH_FILE_ID = d.ATCH_FILE_ID
+					AND 
+						c.USE_AT = 'Y' order by d.ATCH_FILE_ID desc) as  FILENM,
+				ISNULL((
+					SELECT TOP 1 D.FILE_SN
+					FROM
+						COMTNFILE c, COMTNFILEDETAIL d
+					WHERE
+						c.ATCH_FILE_ID = a.ATCH_FILE_ID
+					AND
+						c.ATCH_FILE_ID = d.ATCH_FILE_ID
+					AND
+						c.USE_AT = 'Y' order by d.ATCH_FILE_ID desc),0) as  FILESEQ,	
 				a.DEPT, a.DONG,
 				NVL(b.COMMENT_CNT,0) AS COMMENT_CNT
 			FROM
