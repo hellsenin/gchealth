@@ -123,6 +123,14 @@ public class FreecheckAdminDAO extends EgovAbstractDAO {
 		update("FreecheckAdminDAO.deleteAnswer2ForCompanyId", bean); 
 	}
 
+	public void deleteAnswerForCompanyCd(Company bean) {
+		delete("FreecheckAdminDAO.deleteAnswerForCompanyCd", bean); 
+	}
+
+	public void deleteAnswer2ForCompanyCd(Company bean) {
+		update("FreecheckAdminDAO.deleteAnswer2ForCompanyCd", bean); 
+	}
+
 	public void deleteHandleItem(Company bean) {
 		delete("FreecheckAdminDAO.deleteHandleItem", bean); 
 	}
