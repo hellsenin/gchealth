@@ -15,6 +15,7 @@
 			<c:param name="company" value="${Bean.company}"/>
 			<c:param name="ceo_name" value="${Bean.ceo_name}"/>
 			<c:param name="id" value="${Bean.id}"/>
+			<c:param name="company_id" value="${Bean.id}"/>
 			<c:param name="grade_cd" value="${Bean.grade_cd}"/>
 			<c:param name="year_cd" value="${Bean.year_cd}"/>
 		</c:url>

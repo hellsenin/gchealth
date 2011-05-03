@@ -47,7 +47,7 @@
 					
 					<!-- 비번 -->
 					<td>
-						${item.passwd}
+						[${item.passwd}]
 					</td>
 					
 					<!-- 대표자 -->
