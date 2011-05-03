@@ -518,11 +518,31 @@ public class FreecheckAdminService {
 		zvl.put("companyCd", bean.getCompany_cd());
 		dao.deleteMasterResult(zvl);
 	}
-	
+
+	public void deleteCompany2(Company bean, ModelMap model) {
+		dao.deleteCompany(bean);
+		//bean.setMaster_cd(0);
+		dao.deleteAnswerForCompanyCd(bean);
+		dao.deleteAnswer2ForCompanyCd(bean);
+		
+		ZValue zvl = new ZValue();
+		zvl.put("masterCd", bean.getMaster_cd());
+		zvl.put("companyCd", bean.getCompany_cd());
+		dao.deleteMasterResult(zvl);
+	}
 
 	public void deleteAnswerForCompanyId(Company bean) {
 		dao.deleteAnswerForCompanyId(bean);
 		dao.deleteAnswer2ForCompanyId(bean);
+		System.out.println("Type_cd : " + bean.getType_cd());
+		if("11".equals(bean.getType_cd())) {
+			dao.deleteHandleItem(bean);
+		}
+	}
+
+	public void deleteAnswerForCompanyCd(Company bean) {
+		dao.deleteAnswerForCompanyCd(bean);
+		dao.deleteAnswer2ForCompanyCd(bean);
 		System.out.println("Type_cd : " + bean.getType_cd());
 		if("11".equals(bean.getType_cd())) {
 			dao.deleteHandleItem(bean);
