@@ -428,7 +428,7 @@ public class FreecheckAdminController {
 			, ModelMap model) {
 		
 
-		service.deleteCompany(bean, model);
+		service.deleteCompany2(bean, model);
 
 		service.selectCompanyList(bean, model);
 		String returnURL = "/admin/health/freecheck/company/list";
@@ -450,11 +450,12 @@ public class FreecheckAdminController {
 		Object p = request.getParameter("delete_company_id");
 		if(p != null) {
 			Company param = new Company();
+			param.setCompany_cd(bean.getCompany_cd());
 			param.setId(p.toString());
 			param.setMaster_cd(bean.getMaster_cd());
 			param.setYear_cd(bean.getYear_cd());
 			param.setType_cd(bean.getType_cd());
-			service.deleteAnswerForCompanyId(param);
+			service.deleteAnswerForCompanyCd(param);
 		}
 		
 		
