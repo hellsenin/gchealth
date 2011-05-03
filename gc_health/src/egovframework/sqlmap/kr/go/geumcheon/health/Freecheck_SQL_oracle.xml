@@ -149,6 +149,7 @@
 		<result property="field2"  				column="FIELD2"/>
 		<result property="field3"  				column="FIELD3"/>
 		<result property="field4"  				column="FIELD4"/>
+		<result property="field5"  				column="FIELD5"/>
 		<result property="company_cd"  			column="COMPANY_CD"/>
 		<result property="company_id"  			column="COMPANY_ID"/>
 		<result property="company_name"  		column="COMPANY_NAME"/>
@@ -890,6 +891,31 @@
 		
 	</delete>
 	
+	<delete id="FreecheckAdminDAO.deleteAnswerForCompanyCd" parameterClass="Company">
+		<![CDATA[
+			DELETE 	FROM HETB_CK_ANSWER
+			WHERE 	COMPANY_CD =  #company_cd#
+		]]>
+		<isNotEqual property="master_cd" compareValue="0">
+			<![CDATA[
+					AND MASTER_CD = $master_cd$
+			]]>
+		</isNotEqual>
+	</delete>
+	
+	<delete id="FreecheckAdminDAO.deleteAnswer2ForCompanyCd" parameterClass="Company">
+		<![CDATA[
+			DELETE 	FROM HETB_CK_ANSWER2
+			WHERE 	COMPANY_CD = #company_cd#
+		]]>
+		<isNotEqual property="master_cd" compareValue="0">
+			<![CDATA[
+					AND MASTER_CD = $master_cd$
+			]]>
+		</isNotEqual>
+		
+	</delete>
+	
     
     <update id="FreecheckAdminDAO.deleteHandleItem" parameterClass="Company">
     	<![CDATA[
@@ -934,8 +960,11 @@
 							( 
 								SELECT MASTER_CD, COUNT(*) ANSWER_CNT 
 								FROM (
-                                	SELECT DISTINCT MASTER_CD, COMPANY_CD
-									FROM	HETB_CK_ANSWER2 WHERE STATUS = 'N'
+                                	SELECT DISTINCT a.MASTER_CD, a.COMPANY_CD
+									FROM	HETB_CK_ANSWER2 a
+                                    inner JOIN HETB_CK_COMPANY b ON b.COMPANY_CD = a.company_cd
+                                    	AND b.STATUS = 'N' AND b.YEAR_CD=#year_cd#
+                                    WHERE a.STATUS = 'N'
 								)  
                                 GROUP BY MASTER_CD
 							) C,  
@@ -1543,6 +1572,7 @@
 					, FIELD2
 					, FIELD3
 					, FIELD4
+					, FIELD5
 					, YEAR_CD
 					, COMPANY_CD
 					, COMPANY_ID
