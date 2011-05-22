@@ -15,7 +15,7 @@
 <body> 
     <table border=1> <!-- border=1은 필수 excel 셀의 테두리가 생기게함 --> 
         <tr bgcolor="#CACACA"> <!-- bgcolor=#CACACA excel 셀의 바탕색을 회색으로 --> 
-            <td colspan="9">
+            <td colspan="11">
             <H3>점검표점수</H3></td> 
         </tr> 
         <tr bgcolor="yellow"> 
@@ -26,6 +26,7 @@
 			<td>전화번호</td>
 			<td>점검일자</td>
 			<td>취급품목</td>
+			<td>승인</td>
 			<td>문제수</td>
 			<td>맞은문제수</td>
 			<td>틀린문제수[틀린문항]</td>
@@ -63,6 +64,9 @@
 					
 					<td>
 						${item.handleitemCnt}
+					</td>
+					<td>
+						${item.approvalYn == 'Y' ? '승인' : '미승인'}
 					</td>
 					<!-- 문제수 -->
 					<td>
